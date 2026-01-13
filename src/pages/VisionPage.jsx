@@ -306,8 +306,8 @@ const VisionPage = () => {
                 transition={{ delay: index * 0.05 }}
                 className="p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20"
               >
-                <h3 className="text-lg font-bold text-white mb-3">{principle.title}</h3>
-                <p className="text-white/80 text-sm leading-relaxed">{principle.description}</p>
+                <h3 className="text-lg font-bold text-robinson-black mb-3">{principle.title}</h3>
+                <p className="text-robinson-gray text-sm leading-relaxed">{principle.description}</p>
               </motion.div>
             ))}
           </div>
@@ -418,7 +418,7 @@ const VisionPage = () => {
               </Link>
               <Link
                 to="/digital-thread"
-                className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-safety-orange transition-all duration-300"
+                className="px-8 py-4 border-2 border-robinson-black text-robinson-black font-semibold rounded-lg hover:bg-white hover:text-safety-orange transition-all duration-300"
               >
                 Digital Thread Deep Dive
               </Link>

@@ -325,10 +325,10 @@ const WhyRobinsonPage = () => {
               transition={{ delay: 0.2 }}
             >
               <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-8 text-center">
-                <Users className="w-16 h-16 text-white mx-auto mb-6" />
-                <div className="text-5xl font-bold text-white mb-2">100%</div>
-                <div className="text-white/80 text-xl mb-6">Employee-Owned</div>
-                <p className="text-white/70">
+                <Users className="w-16 h-16 text-robinson-black mx-auto mb-6" />
+                <div className="text-5xl font-bold text-robinson-black mb-2">100%</div>
+                <div className="text-robinson-gray text-xl mb-6">Employee-Owned</div>
+                <p className="text-robinson-gray/80">
                   Every team member has a stake in Robinson's success—and in the 
                   technology systems that drive it.
                 </p>
@@ -349,7 +349,7 @@ const WhyRobinsonPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
               Now See What I Would Do
             </h2>
-            <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-robinson-gray text-lg mb-10 max-w-2xl mx-auto">
               Based on Robinson's 24/7 operations, global supply chain, and growth ambitions, 
               here's my vision for digital transformation.
             </p>
@@ -363,7 +363,7 @@ const WhyRobinsonPage = () => {
               </Link>
               <Link
                 to="/digital-thread"
-                className="px-8 py-4 border-2 border-white/30 text-robinson-black font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
+                className="px-8 py-4 border-2 border-robinson-gray/30 text-robinson-black font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
               >
                 Digital Thread Strategy
               </Link>
