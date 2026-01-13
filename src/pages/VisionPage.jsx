@@ -160,10 +160,10 @@ const VisionPage = () => {
               <Clock className="w-4 h-4" />
               Immediate Action Plan
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               My First <span className="gradient-text">90 Days</span>
             </h2>
-            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
+            <p className="text-white/90 text-lg max-w-2xl mx-auto">
               A structured approach to learning the business, building relationships, 
               and delivering early wins.
             </p>
@@ -180,17 +180,17 @@ const VisionPage = () => {
                 className="p-8 rounded-2xl bg-white/80 border border-gray-200"
               >
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-safety-orange flex items-center justify-center text-robinson-black font-bold">
+                  <div className="w-12 h-12 rounded-xl bg-safety-orange flex items-center justify-center text-white font-bold">
                     {index + 1}
                   </div>
                   <div>
                     <div className="text-safety-orange font-medium text-sm">{phase.phase}</div>
-                    <div className="text-robinson-black font-bold text-xl">{phase.title}</div>
+                    <div className="text-white font-bold text-xl">{phase.title}</div>
                   </div>
                 </div>
                 <ul className="space-y-3">
                   {phase.items.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-robinson-gray text-sm">
+                    <li key={i} className="flex items-start gap-3 text-white/90 text-sm">
                       <CheckCircle className="w-4 h-4 text-safety-orange flex-shrink-0 mt-0.5" />
                       {item}
                     </li>
@@ -306,8 +306,8 @@ const VisionPage = () => {
                 transition={{ delay: index * 0.05 }}
                 className="p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20"
               >
-                <h3 className="text-lg font-bold text-white mb-3">{principle.title}</h3>
-                <p className="text-white/90 text-sm leading-relaxed">{principle.description}</p>
+                <h3 className="text-lg font-bold text-robinson-black mb-3">{principle.title}</h3>
+                <p className="text-robinson-gray text-sm leading-relaxed">{principle.description}</p>
               </motion.div>
             ))}
           </div>
@@ -327,10 +327,10 @@ const VisionPage = () => {
                 <DollarSign className="w-4 h-4" />
                 Business Impact Focus
               </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Every Initiative Tied to <span className="gradient-text">ROI</span>
               </h2>
-              <p className="text-robinson-gray text-lg mb-8 leading-relaxed">
+              <p className="text-white/90 text-lg mb-8 leading-relaxed">
                 I don't propose technology for technology's sake. Every initiative 
                 I recommend will have clear, measurable business outcomes.
               </p>
@@ -366,19 +366,19 @@ const VisionPage = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl bg-safety-orange/10 text-center">
                     <TrendingUp className="w-8 h-8 text-safety-orange mx-auto mb-2" />
-                    <div className="text-robinson-black font-medium">Growth Focus</div>
+                    <div className="text-white font-medium">Growth Focus</div>
                   </div>
                   <div className="p-4 rounded-xl bg-safety-orange/10 text-center">
                     <Shield className="w-8 h-8 text-safety-orange mx-auto mb-2" />
-                    <div className="text-robinson-black font-medium">Risk Aware</div>
+                    <div className="text-white font-medium">Risk Aware</div>
                   </div>
                   <div className="p-4 rounded-xl bg-safety-orange/10 text-center">
                     <DollarSign className="w-8 h-8 text-safety-orange mx-auto mb-2" />
-                    <div className="text-robinson-black font-medium">Cost Conscious</div>
+                    <div className="text-white font-medium">Cost Conscious</div>
                   </div>
                   <div className="p-4 rounded-xl bg-safety-orange/10 text-center">
                     <Award className="w-8 h-8 text-safety-orange mx-auto mb-2" />
-                    <div className="text-robinson-black font-medium">Quality Driven</div>
+                    <div className="text-white font-medium">Quality Driven</div>
                   </div>
                 </div>
               </div>

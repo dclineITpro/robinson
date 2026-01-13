@@ -194,8 +194,8 @@ const AboutMePage = () => {
                 <div className="w-12 h-12 rounded-xl bg-safety-orange/10 flex items-center justify-center mb-4">
                   <item.icon className="w-6 h-6 text-safety-orange" />
                 </div>
-                <h3 className="text-lg font-bold text-robinson-black mb-2">{item.title}</h3>
-                <p className="text-robinson-gray text-sm leading-relaxed">{item.description}</p>
+                <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
+                <p className="text-white/90 text-sm leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -215,7 +215,7 @@ const AboutMePage = () => {
               <Briefcase className="w-4 h-4 inline mr-2" />
               Career History
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Professional <span className="gradient-text-blue">Experience</span>
             </h2>
           </motion.div>
@@ -363,7 +363,7 @@ const AboutMePage = () => {
               </Link>
               <Link
                 to="/vision"
-                className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
+                className="px-8 py-4 border-2 border-white text-robinson-black font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
               >
                 Review My Vision
               </Link>

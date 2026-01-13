@@ -162,7 +162,7 @@ const WhyRobinsonPage = () => {
                 </div>
               ))}
             </div>
-            <p className="text-center text-robinson-gray-light mt-6 text-sm">
+            <p className="text-center text-white/90 mt-6 text-sm">
               Serving these clients requires world-class IT systems and processes.
             </p>
           </motion.div>
@@ -206,8 +206,8 @@ const WhyRobinsonPage = () => {
               >
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="text-lg font-bold text-white">{location.name}</h3>
-                    <p className="text-white/90-light text-sm">{location.type}</p>
+                    <h3 className="text-lg font-bold text-robinson-black">{location.name}</h3>
+                    <p className="text-robinson-gray-light text-sm">{location.type}</p>
                   </div>
                   {location.isNew && (
                     <span className="px-2 py-1 rounded-full bg-robinson-blue text-white text-xs font-medium">
@@ -251,7 +251,7 @@ const WhyRobinsonPage = () => {
             <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
               Strategic Alignment
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Why This <span className="gradient-text">Role</span> Excites Me
             </h2>
           </motion.div>
@@ -269,8 +269,8 @@ const WhyRobinsonPage = () => {
                 <div className="w-14 h-14 rounded-xl bg-safety-orange/10 flex items-center justify-center mb-6">
                   <reason.icon className="w-7 h-7 text-safety-orange" />
                 </div>
-                <h3 className="text-xl font-bold text-robinson-black mb-3">{reason.title}</h3>
-                <p className="text-robinson-gray leading-relaxed">{reason.description}</p>
+                <h3 className="text-xl font-bold text-white mb-3">{reason.title}</h3>
+                <p className="text-white/90 leading-relaxed">{reason.description}</p>
               </motion.div>
             ))}
           </div>
@@ -356,7 +356,7 @@ const WhyRobinsonPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/vision"
-                className="px-8 py-4 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 flex items-center gap-2"
               >
                 See My Vision
                 <ArrowRight className="w-5 h-5" />
