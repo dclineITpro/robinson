@@ -75,7 +75,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-robinson-black leading-tight mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
           >
             Leading <span className="gradient-text">Robinson</span> Through Digital Transformation
           </motion.h1>
@@ -85,7 +85,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg md:text-xl text-robinson-gray max-w-3xl mx-auto mb-4 leading-relaxed"
+            className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-4 leading-relaxed"
           >
             And I'm ready to lead your digital transformation.
           </motion.p>
@@ -94,7 +94,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="text-md text-robinson-gray max-w-2xl mx-auto mb-10"
+            className="text-md text-white/90 max-w-2xl mx-auto mb-10"
           >
             24/7 manufacturing operations across multiple facilities. Global supply chain complexity. 
             Legacy systems requiring modernization. Cybersecurity as a competitive advantage. 
@@ -110,14 +110,14 @@ const HomePage = () => {
           >
             <Link
               to="/vision"
-              className="px-8 py-4 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 hover:shadow-lg hover:shadow-safety-orange/30 flex items-center gap-2"
+              className="px-8 py-4 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 hover:shadow-lg hover:shadow-safety-orange/30 flex items-center gap-2"
             >
               See My Vision for IT
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               to="/why-robinson"
-              className="px-8 py-4 border-2 border-robinson-gray/30 text-robinson-black font-semibold rounded-lg hover:bg-white/10 hover:border-gray-2000 transition-all duration-300"
+              className="px-8 py-4 border-2 border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-gray-2000 transition-all duration-300"
             >
               Why Robinson?
             </Link>
@@ -130,7 +130,7 @@ const HomePage = () => {
             transition={{ duration: 1, delay: 1.2 }}
             className="absolute bottom-10 left-1/2 -translate-x-1/2"
           >
-            <div className="flex flex-col items-center gap-2 text-robinson-gray/60">
+            <div className="flex flex-col items-center gap-2 text-white/90/60">
               <span className="text-xs uppercase tracking-widest">Explore the strategy</span>
               <motion.div
                 animate={{ y: [0, 8, 0] }}
@@ -170,56 +170,56 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-robinson-gray/30 card-hover"
+              className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20 card-hover"
             >
               <TrendingUp className="w-8 h-8 text-safety-orange mx-auto mb-4" />
-              <div className="text-4xl md:text-5xl font-bold text-robinson-black mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
                 <AnimatedCounter end={25} suffix="+" duration={2} />
               </div>
-              <div className="text-robinson-gray font-medium">Years in IT</div>
-              <div className="text-robinson-gray/70 text-sm">Progressive Leadership</div>
+              <div className="text-white/90 font-medium">Years in IT</div>
+              <div className="text-white/60 text-sm">Progressive Leadership</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-robinson-gray/30 card-hover"
+              className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20 card-hover"
             >
               <Globe className="w-8 h-8 text-safety-orange mx-auto mb-4" />
-              <div className="text-4xl md:text-5xl font-bold text-robinson-black mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
                 <AnimatedCounter end={6} duration={1.5} />
               </div>
-              <div className="text-robinson-gray font-medium">Countries</div>
-              <div className="text-robinson-gray/70 text-sm">Global IT Operations</div>
+              <div className="text-white/90 font-medium">Countries</div>
+              <div className="text-white/60 text-sm">Global IT Operations</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-robinson-gray/30 card-hover"
+              className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20 card-hover"
             >
               <Shield className="w-8 h-8 text-safety-orange mx-auto mb-4" />
-              <div className="text-4xl md:text-5xl font-bold text-robinson-black mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
                 <AnimatedCounter end={0} duration={1} />
               </div>
-              <div className="text-robinson-gray font-medium">Reportable Security Incidents</div>
-              <div className="text-robinson-gray/70 text-sm">Security Excellence</div>
+              <div className="text-white/90 font-medium">Reportable Security Incidents</div>
+              <div className="text-white/60 text-sm">Security Excellence</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-robinson-gray/30 card-hover"
+              className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20 card-hover"
             >
               <Cpu className="w-8 h-8 text-safety-orange mx-auto mb-4" />
-              <div className="text-4xl md:text-5xl font-bold text-robinson-black mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
                 24/7
               </div>
-              <div className="text-robinson-gray font-medium">Manufacturing Support</div>
-              <div className="text-robinson-gray/70 text-sm">International Operations</div>
+              <div className="text-white/90 font-medium">Manufacturing Support</div>
+              <div className="text-white/60 text-sm">International Operations</div>
             </motion.div>
           </div>
         </div>
@@ -316,16 +316,16 @@ const HomePage = () => {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
                 <MapPin className="w-4 h-4 text-safety-orange" />
-                <span className="text-robinson-black text-sm font-medium">I Understand the Vision</span>
+                <span className="text-white text-sm font-medium">I Understand the Vision</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 The Iowa Expansion Changes Everything
               </h2>
-              <p className="text-robinson-gray text-lg mb-6 leading-relaxed">
+              <p className="text-white/90 text-lg mb-6 leading-relaxed">
                 The 560,000 sq. ft. Altoona facility isn't just growth—it's a greenfield 
                 opportunity to build IT infrastructure right from the start.
               </p>
-              <p className="text-robinson-gray/80 mb-8">
+              <p className="text-white/70 mb-8">
                 As IT Director, I would ensure this facility launches with:
               </p>
               <ul className="space-y-3 mb-8">
@@ -335,7 +335,7 @@ const HomePage = () => {
                   'Unified network architecture across all 6 sites',
                   'Scalable cloud infrastructure',
                 ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-3 text-robinson-gray">
+                  <li key={index} className="flex items-center gap-3 text-white/90">
                     <div className="w-2 h-2 bg-safety-orange rounded-full" />
                     {item}
                   </li>
@@ -343,7 +343,7 @@ const HomePage = () => {
               </ul>
               <Link
                 to="/digital-thread"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
               >
                 See My Digital Thread Strategy
                 <ArrowRight className="w-5 h-5" />
@@ -357,24 +357,24 @@ const HomePage = () => {
               transition={{ delay: 0.2 }}
               className="relative"
             >
-              <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-robinson-gray/30 p-8">
-                <h3 className="text-robinson-black font-semibold mb-6 text-center">Altoona, IA - Opening 2027</h3>
+              <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/20 p-8">
+                <h3 className="text-white font-semibold mb-6 text-center">Altoona, IA - Opening 2027</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl bg-white/5 text-center">
                     <div className="text-3xl font-bold text-safety-orange">560K</div>
-                    <div className="text-robinson-gray/70 text-sm">Square Feet</div>
+                    <div className="text-white/60 text-sm">Square Feet</div>
                   </div>
                   <div className="p-4 rounded-xl bg-white/5 text-center">
                     <div className="text-3xl font-bold text-safety-orange">500+</div>
-                    <div className="text-robinson-gray/70 text-sm">New Jobs</div>
+                    <div className="text-white/60 text-sm">New Jobs</div>
                   </div>
                   <div className="p-4 rounded-xl bg-white/5 text-center">
                     <div className="text-3xl font-bold text-safety-orange">2027</div>
-                    <div className="text-robinson-gray/70 text-sm">Grand Opening</div>
+                    <div className="text-white/60 text-sm">Grand Opening</div>
                   </div>
                   <div className="p-4 rounded-xl bg-white/5 text-center">
                     <div className="text-3xl font-bold text-safety-orange">6th</div>
-                    <div className="text-robinson-gray/70 text-sm">Location</div>
+                    <div className="text-white/60 text-sm">Location</div>
                   </div>
                 </div>
               </div>
@@ -395,7 +395,7 @@ const HomePage = () => {
             <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-gold text-sm font-medium mb-6">
               My Strategic Focus
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Three Pillars for <span className="gradient-text-blue">Robinson's Digital Future</span>
             </h2>
           </motion.div>
@@ -430,10 +430,10 @@ const HomePage = () => {
                 className="p-8 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-robinson-gold/50 transition-all duration-300 card-hover"
               >
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${pillar.color} flex items-center justify-center mb-6`}>
-                  <pillar.icon className="w-8 h-8 text-robinson-black" />
+                  <pillar.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-robinson-black mb-4">{pillar.title}</h3>
-                <p className="text-robinson-gray leading-relaxed">{pillar.description}</p>
+                <h3 className="text-2xl font-bold text-white mb-4">{pillar.title}</h3>
+                <p className="text-white/90 leading-relaxed">{pillar.description}</p>
               </motion.div>
             ))}
           </div>

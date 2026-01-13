@@ -182,10 +182,10 @@ const WhyRobinsonPage = () => {
               <MapPin className="w-4 h-4" />
               Hub-and-Spoke Architecture
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               6 Locations, <span className="gradient-text-blue">One Unified Vision</span>
             </h2>
-            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
+            <p className="text-white/90 text-lg max-w-2xl mx-auto">
               Understanding the multi-site architecture is critical for IT strategy.
             </p>
           </motion.div>
@@ -206,18 +206,18 @@ const WhyRobinsonPage = () => {
               >
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="text-lg font-bold text-robinson-black">{location.name}</h3>
-                    <p className="text-robinson-gray-light text-sm">{location.type}</p>
+                    <h3 className="text-lg font-bold text-white">{location.name}</h3>
+                    <p className="text-white/90-light text-sm">{location.type}</p>
                   </div>
                   {location.isNew && (
-                    <span className="px-2 py-1 rounded-full bg-robinson-blue text-robinson-black text-xs font-medium">
+                    <span className="px-2 py-1 rounded-full bg-robinson-blue text-white text-xs font-medium">
                       NEW
                     </span>
                   )}
                 </div>
                 <div className="flex items-center gap-2">
                   <Building2 className="w-5 h-5 text-safety-orange" />
-                  <span className="text-robinson-gray">{location.sqft} sq. ft.</span>
+                  <span className="text-white/90">{location.sqft} sq. ft.</span>
                 </div>
               </motion.div>
             ))}
@@ -229,8 +229,8 @@ const WhyRobinsonPage = () => {
             viewport={{ once: true }}
             className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-robinson-blue/20 to-safety-orange/20 border border-gray-300 text-center"
           >
-            <h3 className="text-2xl font-bold text-robinson-black mb-4">IT Implication</h3>
-            <p className="text-robinson-gray max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold text-white mb-4">IT Implication</h3>
+            <p className="text-white/90 max-w-2xl mx-auto">
               Managing IT across 6 locations requires unified systems, standardized processes, 
               and a hub-and-spoke network architecture. The Iowa expansion is the perfect 
               opportunity to implement these from day one.

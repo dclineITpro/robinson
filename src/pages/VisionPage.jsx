@@ -214,10 +214,10 @@ const VisionPage = () => {
             <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-gold text-sm font-medium mb-6">
               Strategic Roadmap
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Key <span className="gradient-text-blue">Initiatives</span>
             </h2>
-            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
+            <p className="text-white/90 text-lg max-w-2xl mx-auto">
               Six strategic priorities that would drive Robinson's digital transformation.
             </p>
           </motion.div>
@@ -246,9 +246,9 @@ const VisionPage = () => {
                     {priority.impact}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-robinson-black mb-2">{priority.title}</h3>
-                <p className="text-robinson-gray text-sm mb-4">{priority.description}</p>
-                <div className="flex items-center gap-2 text-robinson-gray text-xs">
+                <h3 className="text-lg font-bold text-white mb-2">{priority.title}</h3>
+                <p className="text-white/90 text-sm mb-4">{priority.description}</p>
+                <div className="flex items-center gap-2 text-white/90 text-xs">
                   <Clock className="w-4 h-4" />
                   {priority.timeline}
                 </div>
@@ -264,7 +264,7 @@ const VisionPage = () => {
           >
             <Link
               to="/digital-thread"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-robinson-blue text-white font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300"
             >
               Deep Dive: Digital Thread Strategy
               <ArrowRight className="w-5 h-5" />
@@ -306,8 +306,8 @@ const VisionPage = () => {
                 transition={{ delay: index * 0.05 }}
                 className="p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20"
               >
-                <h3 className="text-lg font-bold text-robinson-black mb-3">{principle.title}</h3>
-                <p className="text-robinson-gray text-sm leading-relaxed">{principle.description}</p>
+                <h3 className="text-lg font-bold text-white mb-3">{principle.title}</h3>
+                <p className="text-white/90 text-sm leading-relaxed">{principle.description}</p>
               </motion.div>
             ))}
           </div>
