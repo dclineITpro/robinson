@@ -117,7 +117,7 @@ const HomePage = () => {
             </Link>
             <Link
               to="/why-robinson"
-              className="px-8 py-4 border-2 border-white/20 text-robinson-black font-semibold rounded-lg hover:bg-gray-100 hover:border-gray-2000 transition-all duration-300"
+              className="px-8 py-4 border-2 border-white/20 text-white font-semibold rounded-lg hover:bg-gray-100 hover:border-gray-2000 transition-all duration-300"
             >
               Why Robinson?
             </Link>
@@ -130,7 +130,7 @@ const HomePage = () => {
             transition={{ duration: 1, delay: 1.2 }}
             className="absolute bottom-10 left-1/2 -translate-x-1/2"
           >
-            <div className="flex flex-col items-center gap-2 text-robinson-gray/60">
+            <div className="flex flex-col items-center gap-2 text-white/90/60">
               <span className="text-xs uppercase tracking-widest">Explore the strategy</span>
               <motion.div
                 animate={{ y: [0, 8, 0] }}
@@ -316,16 +316,16 @@ const HomePage = () => {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 mb-6">
                 <MapPin className="w-4 h-4 text-safety-orange" />
-                <span className="text-robinson-black text-sm font-medium">I Understand the Vision</span>
+                <span className="text-white text-sm font-medium">I Understand the Vision</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 The Iowa Expansion Changes Everything
               </h2>
-              <p className="text-robinson-gray text-lg mb-6 leading-relaxed">
+              <p className="text-white/90 text-lg mb-6 leading-relaxed">
                 The 560,000 sq. ft. Altoona facility isn't just growth—it's a greenfield 
                 opportunity to build IT infrastructure right from the start.
               </p>
-              <p className="text-robinson-gray/80 mb-8">
+              <p className="text-white/70 mb-8">
                 As IT Director, I would ensure this facility launches with:
               </p>
               <ul className="space-y-3 mb-8">
@@ -335,7 +335,7 @@ const HomePage = () => {
                   'Unified network architecture across all 6 sites',
                   'Scalable cloud infrastructure',
                 ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-3 text-robinson-gray">
+                  <li key={index} className="flex items-center gap-3 text-white/90">
                     <div className="w-2 h-2 bg-safety-orange rounded-full" />
                     {item}
                   </li>

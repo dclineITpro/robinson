@@ -297,16 +297,16 @@ const LocationsPage = () => {
                         Coming 2027
                       </span>
                     )}
-                    <span className="px-3 py-1 rounded-full bg-gray-100 text-robinson-gray text-sm">
+                    <span className="px-3 py-1 rounded-full bg-gray-100 text-white/90 text-sm">
                       {currentLocation.type}
                     </span>
                   </div>
                   
-                  <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-4">
+                  <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                     {currentLocation.name}, {currentLocation.state}
                   </h2>
                   
-                  <p className="text-robinson-gray text-lg mb-8 leading-relaxed">
+                  <p className="text-white/90 text-lg mb-8 leading-relaxed">
                     {currentLocation.description}
                   </p>
 
@@ -396,7 +396,7 @@ const LocationsPage = () => {
                     </Link>
                     <Link
                       to="/careers"
-                      className="px-6 py-3 border-2 border-white/20 text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 flex items-center gap-2"
+                      className="px-6 py-3 border-2 border-white/20 text-white font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 flex items-center gap-2"
                     >
                       <Users className="w-5 h-5" />
                       Jobs
@@ -427,14 +427,14 @@ const LocationsPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 text-robinson-black text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 text-white text-sm font-medium mb-6">
               <Sparkles className="w-4 h-4 text-safety-orange" />
               Strategic Expansion
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               560,000 Sq. Ft. Iowa Facility
             </h2>
-            <p className="text-robinson-gray text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
               Our Altoona, Iowa facility represents the largest single investment in Robinson's 
               history. Opening in 2027, this state-of-the-art facility will create 500+ new jobs.
             </p>
@@ -448,7 +448,7 @@ const LocationsPage = () => {
               </Link>
               <Link
                 to="/contact"
-                className="px-8 py-4 border-2 border-white text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
+                className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
               >
                 Learn More
               </Link>

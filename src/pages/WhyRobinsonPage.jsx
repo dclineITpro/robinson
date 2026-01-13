@@ -363,7 +363,7 @@ const WhyRobinsonPage = () => {
               </Link>
               <Link
                 to="/digital-thread"
-                className="px-8 py-4 border-2 border-robinson-gray/30 text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
+                className="px-8 py-4 border-2 border-robinson-gray/30 text-white font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
               >
                 Digital Thread Strategy
               </Link>
