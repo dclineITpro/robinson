@@ -101,7 +101,7 @@ const TechnologyPage = () => {
             <div className="flex flex-wrap gap-4">
               <Link
                 to="/careers"
-                className="px-6 py-3 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 flex items-center gap-2"
+                className="px-6 py-3 bg-robinson-blue text-white font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 flex items-center gap-2"
               >
                 View IT Careers
                 <ArrowRight className="w-5 h-5" />
@@ -187,14 +187,14 @@ const TechnologyPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
                 <GraduationCap className="w-4 h-4 text-safety-orange" />
-                <span className="text-robinson-black text-sm font-medium">Robinson Training Academy</span>
+                <span className="text-white text-sm font-medium">Robinson Training Academy</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Tech-Enablement Hub
               </h2>
-              <p className="text-robinson-gray text-lg mb-8 leading-relaxed">
+              <p className="text-white/90 text-lg mb-8 leading-relaxed">
                 The Robinson Training Academy (RTA) isn't just about manufacturing skills—it's 
                 a comprehensive tech-enablement center where our employee-owners learn to leverage 
                 cutting-edge tools and systems.
@@ -214,7 +214,7 @@ const TechnologyPage = () => {
               </div>
               <Link
                 to="/careers#rta"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
               >
                 Explore RTA Programs
                 <ArrowRight className="w-5 h-5" />

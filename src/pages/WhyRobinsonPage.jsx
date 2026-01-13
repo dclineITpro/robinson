@@ -210,7 +210,7 @@ const WhyRobinsonPage = () => {
                     <p className="text-robinson-gray-light text-sm">{location.type}</p>
                   </div>
                   {location.isNew && (
-                    <span className="px-2 py-1 rounded-full bg-robinson-blue text-robinson-black text-xs font-medium">
+                    <span className="px-2 py-1 rounded-full bg-robinson-blue text-white text-xs font-medium">
                       NEW
                     </span>
                   )}

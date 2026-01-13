@@ -264,7 +264,7 @@ const VisionPage = () => {
           >
             <Link
               to="/digital-thread"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-robinson-blue text-white font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300"
             >
               Deep Dive: Digital Thread Strategy
               <ArrowRight className="w-5 h-5" />
@@ -288,10 +288,10 @@ const VisionPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               My Leadership Principles
             </h2>
-            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
+            <p className="text-white/90 text-lg max-w-2xl mx-auto">
               The values and approaches that guide how I lead IT organizations.
             </p>
           </motion.div>
@@ -304,10 +304,10 @@ const VisionPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="p-6 rounded-2xl bg-gray-50 border-gray-200 border border-white/20"
+                className="p-6 rounded-2xl bg-white/10 border border-white/20"
               >
-                <h3 className="text-lg font-bold text-robinson-black mb-3">{principle.title}</h3>
-                <p className="text-robinson-gray text-sm leading-relaxed">{principle.description}</p>
+                <h3 className="text-lg font-bold text-white mb-3">{principle.title}</h3>
+                <p className="text-white/90 text-sm leading-relaxed">{principle.description}</p>
               </motion.div>
             ))}
           </div>

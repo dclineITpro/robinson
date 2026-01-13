@@ -123,10 +123,10 @@ const DigitalThreadPage = () => {
               <Layers className="w-4 h-4" />
               Technical Deep Dive
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
               The <span className="gradient-text">Digital Thread</span> Strategy
             </h1>
-            <p className="text-white/90 text-lg md:text-xl leading-relaxed">
+            <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
               A comprehensive technical strategy connecting every aspect of Robinson's 
               operations—from CAD design to the 60-foot powder coat booth.
             </p>

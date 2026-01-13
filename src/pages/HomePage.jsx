@@ -313,19 +313,20 @@ const HomePage = () => {
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              className="text-white"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
                 <MapPin className="w-4 h-4 text-safety-orange" />
-                <span className="text-robinson-black text-sm font-medium">I Understand the Vision</span>
+                <span className="text-white text-sm font-medium">I Understand the Vision</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 The Iowa Expansion Changes Everything
               </h2>
-              <p className="text-robinson-gray text-lg mb-6 leading-relaxed">
+              <p className="text-white/90 text-lg mb-6 leading-relaxed">
                 The 560,000 sq. ft. Altoona facility isn't just growth—it's a greenfield 
                 opportunity to build IT infrastructure right from the start.
               </p>
-              <p className="text-robinson-gray/80 mb-8">
+              <p className="text-white/80 mb-8">
                 As IT Director, I would ensure this facility launches with:
               </p>
               <ul className="space-y-3 mb-8">
@@ -335,7 +336,7 @@ const HomePage = () => {
                   'Unified network architecture across all 6 sites',
                   'Scalable cloud infrastructure',
                 ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-3 text-robinson-gray">
+                  <li key={index} className="flex items-center gap-3 text-white/90">
                     <div className="w-2 h-2 bg-safety-orange rounded-full" />
                     {item}
                   </li>
@@ -357,24 +358,24 @@ const HomePage = () => {
               transition={{ delay: 0.2 }}
               className="relative"
             >
-              <div className="bg-gray-50 backdrop-blur-xl rounded-3xl border border-white/20 p-8">
-                <h3 className="text-robinson-black font-semibold mb-6 text-center">Altoona, IA - Opening 2027</h3>
+              <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-8">
+                <h3 className="text-white font-semibold mb-6 text-center">Altoona, IA - Opening 2027</h3>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="p-4 rounded-xl bg-gray-50 text-center">
+                  <div className="p-4 rounded-xl bg-white/5 text-center">
                     <div className="text-3xl font-bold text-safety-orange">560K</div>
-                    <div className="text-robinson-gray/70 text-sm">Square Feet</div>
+                    <div className="text-white/70 text-sm">Square Feet</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-gray-50 text-center">
+                  <div className="p-4 rounded-xl bg-white/5 text-center">
                     <div className="text-3xl font-bold text-safety-orange">500+</div>
-                    <div className="text-robinson-gray/70 text-sm">New Jobs</div>
+                    <div className="text-white/70 text-sm">New Jobs</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-gray-50 text-center">
+                  <div className="p-4 rounded-xl bg-white/5 text-center">
                     <div className="text-3xl font-bold text-safety-orange">2027</div>
-                    <div className="text-robinson-gray/70 text-sm">Grand Opening</div>
+                    <div className="text-white/70 text-sm">Grand Opening</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-gray-50 text-center">
+                  <div className="p-4 rounded-xl bg-white/5 text-center">
                     <div className="text-3xl font-bold text-safety-orange">6th</div>
-                    <div className="text-robinson-gray/70 text-sm">Location</div>
+                    <div className="text-white/70 text-sm">Location</div>
                   </div>
                 </div>
               </div>

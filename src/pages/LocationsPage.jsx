@@ -292,7 +292,7 @@ const LocationsPage = () => {
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     {currentLocation.isNew && (
-                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-robinson-blue text-robinson-black text-sm font-medium">
+                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-robinson-blue text-white text-sm font-medium">
                         <Sparkles className="w-4 h-4" />
                         Coming 2027
                       </span>
