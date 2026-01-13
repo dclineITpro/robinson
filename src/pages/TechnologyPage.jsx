@@ -87,28 +87,28 @@ const TechnologyPage = () => {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-white text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-black text-sm font-medium mb-6">
               <Cpu className="w-4 h-4" />
               Technology & Innovation
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
               The <span className="gradient-text-blue">Digital Thread</span> of Modern Manufacturing
             </h1>
-            <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-robinson-gray text-lg md:text-xl leading-relaxed mb-8">
               At Robinson, technology isn't a back-office expense—it's a core production tool. 
               We're building the manufacturing infrastructure of tomorrow, today.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 to="/careers"
-                className="px-6 py-3 bg-robinson-blue text-white font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 flex items-center gap-2"
+                className="px-6 py-3 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 flex items-center gap-2"
               >
                 View IT Careers
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 to="/contact"
-                className="px-6 py-3 border-2 border-white/20 text-white font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
+                className="px-6 py-3 border-2 border-white/20 text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
               >
                 Partner With Us
               </Link>
@@ -130,10 +130,10 @@ const TechnologyPage = () => {
             <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
               Strategic Initiatives
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
               Three Pillars of <span className="gradient-text">Digital Excellence</span>
             </h2>
-            <p className="text-white/90 text-lg max-w-2xl mx-auto">
+            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Our technology roadmap focuses on three interconnected initiatives that drive 
               operational excellence and competitive advantage.
             </p>
@@ -152,11 +152,11 @@ const TechnologyPage = () => {
                 <div className="w-16 h-16 rounded-2xl bg-robinson-blue/10 flex items-center justify-center mb-6 group-hover:bg-robinson-blue/20 transition-colors">
                   <pillar.icon className="w-8 h-8 text-robinson-gold" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-white/90 mb-6 leading-relaxed">{pillar.description}</p>
+                <h3 className="text-2xl font-bold text-robinson-black mb-4">{pillar.title}</h3>
+                <p className="text-robinson-gray mb-6 leading-relaxed">{pillar.description}</p>
                 <ul className="space-y-3">
                   {pillar.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-3 text-white/90">
+                    <li key={feature} className="flex items-center gap-3 text-robinson-gray">
                       <CheckCircle className="w-5 h-5 text-safety-orange flex-shrink-0" />
                       <span>{feature}</span>
                     </li>
@@ -189,12 +189,12 @@ const TechnologyPage = () => {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 mb-6">
                 <GraduationCap className="w-4 h-4 text-safety-orange" />
-                <span className="text-white text-sm font-medium">Robinson Training Academy</span>
+                <span className="text-robinson-black text-sm font-medium">Robinson Training Academy</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
                 Tech-Enablement Hub
               </h2>
-              <p className="text-white/90 text-lg mb-8 leading-relaxed">
+              <p className="text-robinson-gray text-lg mb-8 leading-relaxed">
                 The Robinson Training Academy (RTA) isn't just about manufacturing skills—it's 
                 a comprehensive tech-enablement center where our employee-owners learn to leverage 
                 cutting-edge tools and systems.
@@ -214,7 +214,7 @@ const TechnologyPage = () => {
               </div>
               <Link
                 to="/careers#rta"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
               >
                 Explore RTA Programs
                 <ArrowRight className="w-5 h-5" />
@@ -286,8 +286,8 @@ const TechnologyPage = () => {
                 <div className="w-14 h-14 rounded-xl bg-safety-orange/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-safety-orange/20 transition-colors">
                   <tech.icon className="w-7 h-7 text-safety-orange" />
                 </div>
-                <h3 className="text-white font-semibold mb-1">{tech.name}</h3>
-                <p className="text-white/90 text-sm">{tech.desc}</p>
+                <h3 className="text-robinson-black font-semibold mb-1">{tech.name}</h3>
+                <p className="text-robinson-gray text-sm">{tech.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -308,10 +308,10 @@ const TechnologyPage = () => {
               <Users className="w-4 h-4" />
               Join Our Team
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
               IT Career <span className="gradient-text">Opportunities</span>
             </h2>
-            <p className="text-white/90 text-lg max-w-2xl mx-auto">
+            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Lead digital transformation at a company where technology drives production excellence.
             </p>
           </motion.div>
@@ -361,16 +361,16 @@ const TechnologyPage = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="mt-16 p-8 lg:p-12 rounded-3xl bg-gradient-to-br from-safety-orange/20 to-safety-orange/5 border border-safety-orange/30 text-center"
           >
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-robinson-black mb-4">
               Technology Meets Ownership
             </h3>
-            <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-robinson-gray text-lg mb-8 max-w-2xl mx-auto">
               As an employee-owner, you'll have a direct stake in the technology initiatives you lead. 
               Your innovations drive company value—and your ESOP account.
             </p>
             <Link
               to="/careers"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
             >
               Explore IT Careers
               <ArrowRight className="w-5 h-5" />

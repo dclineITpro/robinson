@@ -114,28 +114,28 @@ const AboutMePage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-white text-sm font-medium mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-black text-sm font-medium mb-6">
                 <User className="w-4 h-4" />
                 DJ Cline
               </span>
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
                 25+ Years of <span className="gradient-text-blue">IT Experience</span>
               </h1>
-              <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-8">
+              <p className="text-robinson-gray text-lg md:text-xl leading-relaxed mb-8">
                 Experienced IT Director leading technology transformations across manufacturing, 
                 government, and enterprise environments. Expert in cybersecurity, AI integration, 
                 and building high-performing teams.
               </p>
               <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 text-white/90">
+                <div className="flex items-center gap-2 text-robinson-gray">
                   <Users className="w-5 h-5 text-safety-orange" />
                   <span>20+ Years Leadership</span>
                 </div>
-                <div className="flex items-center gap-2 text-white/90">
+                <div className="flex items-center gap-2 text-robinson-gray">
                   <Briefcase className="w-5 h-5 text-safety-orange" />
                   <span>25+ Years Experience</span>
                 </div>
-                <div className="flex items-center gap-2 text-white/90">
+                <div className="flex items-center gap-2 text-robinson-gray">
                   <Building2 className="w-5 h-5 text-safety-orange" />
                   <span>Manufacturing Focus</span>
                 </div>
@@ -151,10 +151,10 @@ const AboutMePage = () => {
                 <div className="aspect-square rounded-3xl bg-gradient-to-br from-robinson-blue/20 to-safety-orange/20 border border-white/30 flex items-center justify-center">
                   <div className="text-center">
                     <User className="w-32 h-32 text-white/20 mx-auto mb-4" />
-                    <p className="text-white/90">Professional Photo</p>
+                    <p className="text-robinson-gray">Professional Photo</p>
                   </div>
                 </div>
-                <div className="absolute -bottom-6 -right-6 p-4 rounded-2xl bg-safety-orange text-white">
+                <div className="absolute -bottom-6 -right-6 p-4 rounded-2xl bg-safety-orange text-robinson-black">
                   <div className="text-3xl font-bold">25+</div>
                   <div className="text-sm">Years in IT</div>
                 </div>
@@ -194,8 +194,8 @@ const AboutMePage = () => {
                 <div className="w-12 h-12 rounded-xl bg-safety-orange/10 flex items-center justify-center mb-4">
                   <item.icon className="w-6 h-6 text-safety-orange" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-white/90 text-sm leading-relaxed">{item.description}</p>
+                <h3 className="text-lg font-bold text-robinson-black mb-2">{item.title}</h3>
+                <p className="text-robinson-gray text-sm leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -215,7 +215,7 @@ const AboutMePage = () => {
               <Briefcase className="w-4 h-4 inline mr-2" />
               Career History
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
               Professional <span className="gradient-text-blue">Experience</span>
             </h2>
           </motion.div>
@@ -346,10 +346,10 @@ const AboutMePage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
               Let's Start the Conversation
             </h2>
-            <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-robinson-gray text-lg mb-10 max-w-2xl mx-auto">
               With 25+ years of IT leadership across 24/7 manufacturing, global operations, and digital transformation, 
               I'm ready to discuss how I can contribute to Robinson's success.
             </p>

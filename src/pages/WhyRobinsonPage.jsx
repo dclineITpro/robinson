@@ -93,10 +93,10 @@ const WhyRobinsonPage = () => {
               <Target className="w-4 h-4" />
               Strategic Alignment
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
               Why <span className="gradient-text">Robinson</span> is the Right Fit
             </h1>
-            <p className="text-white/90 text-lg md:text-xl leading-relaxed">
+            <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
               A 24/7 global manufacturer with operations across multiple continents, complex supply chains, 
               and ambitious growth plans. This is exactly where my 25+ years of IT leadership delivers measurable impact.
             </p>
@@ -162,7 +162,7 @@ const WhyRobinsonPage = () => {
                 </div>
               ))}
             </div>
-            <p className="text-center text-white/90 mt-6 text-sm">
+            <p className="text-center text-robinson-gray mt-6 text-sm">
               Serving these clients requires world-class IT systems and processes.
             </p>
           </motion.div>
@@ -182,10 +182,10 @@ const WhyRobinsonPage = () => {
               <MapPin className="w-4 h-4" />
               Hub-and-Spoke Architecture
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
               6 Locations, <span className="gradient-text-blue">One Unified Vision</span>
             </h2>
-            <p className="text-white/90 text-lg max-w-2xl mx-auto">
+            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Understanding the multi-site architecture is critical for IT strategy.
             </p>
           </motion.div>
@@ -210,14 +210,14 @@ const WhyRobinsonPage = () => {
                     <p className="text-robinson-gray-light text-sm">{location.type}</p>
                   </div>
                   {location.isNew && (
-                    <span className="px-2 py-1 rounded-full bg-robinson-blue text-white text-xs font-medium">
+                    <span className="px-2 py-1 rounded-full bg-robinson-blue text-robinson-black text-xs font-medium">
                       NEW
                     </span>
                   )}
                 </div>
                 <div className="flex items-center gap-2">
                   <Building2 className="w-5 h-5 text-safety-orange" />
-                  <span className="text-white/90">{location.sqft} sq. ft.</span>
+                  <span className="text-robinson-gray">{location.sqft} sq. ft.</span>
                 </div>
               </motion.div>
             ))}
@@ -229,8 +229,8 @@ const WhyRobinsonPage = () => {
             viewport={{ once: true }}
             className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-robinson-blue/20 to-safety-orange/20 border border-gray-300 text-center"
           >
-            <h3 className="text-2xl font-bold text-white mb-4">IT Implication</h3>
-            <p className="text-white/90 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold text-robinson-black mb-4">IT Implication</h3>
+            <p className="text-robinson-gray max-w-2xl mx-auto">
               Managing IT across 6 locations requires unified systems, standardized processes, 
               and a hub-and-spoke network architecture. The Iowa expansion is the perfect 
               opportunity to implement these from day one.
@@ -251,7 +251,7 @@ const WhyRobinsonPage = () => {
             <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
               Strategic Alignment
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
               Why This <span className="gradient-text">Role</span> Excites Me
             </h2>
           </motion.div>
@@ -269,8 +269,8 @@ const WhyRobinsonPage = () => {
                 <div className="w-14 h-14 rounded-xl bg-safety-orange/10 flex items-center justify-center mb-6">
                   <reason.icon className="w-7 h-7 text-safety-orange" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">{reason.title}</h3>
-                <p className="text-white/90 leading-relaxed">{reason.description}</p>
+                <h3 className="text-xl font-bold text-robinson-black mb-3">{reason.title}</h3>
+                <p className="text-robinson-gray leading-relaxed">{reason.description}</p>
               </motion.div>
             ))}
           </div>
@@ -292,14 +292,14 @@ const WhyRobinsonPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
                 The ESOP Advantage
               </h2>
-              <p className="text-white/90 text-lg mb-6 leading-relaxed">
+              <p className="text-robinson-gray text-lg mb-6 leading-relaxed">
                 "Build your career, own the company." This isn't just a tagline—it's a 
                 fundamental difference in how Robinson operates.
               </p>
-              <p className="text-white/90 mb-8">
+              <p className="text-robinson-gray mb-8">
                 As an IT Director, I understand that employee ownership means:
               </p>
               <ul className="space-y-4">
@@ -310,8 +310,8 @@ const WhyRobinsonPage = () => {
                   'Higher retention means institutional knowledge stays',
                   'Alignment between IT initiatives and business outcomes',
                 ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 text-white/90">
-                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                  <li key={index} className="flex items-start gap-3 text-robinson-gray">
+                    <CheckCircle className="w-5 h-5 text-robinson-black flex-shrink-0 mt-0.5" />
                     {item}
                   </li>
                 ))}
@@ -356,14 +356,14 @@ const WhyRobinsonPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/vision"
-                className="px-8 py-4 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 flex items-center gap-2"
               >
                 See My Vision
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 to="/digital-thread"
-                className="px-8 py-4 border-2 border-robinson-gray/30 text-white font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
+                className="px-8 py-4 border-2 border-robinson-gray/30 text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
               >
                 Digital Thread Strategy
               </Link>

@@ -126,10 +126,10 @@ const LocationsPage = () => {
               <MapPin className="w-4 h-4" />
               Hub-and-Spoke Network
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
               <span className="gradient-text">6 Locations</span> Across the Midwest
             </h1>
-            <p className="text-white/90 text-lg md:text-xl leading-relaxed">
+            <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
               1.4 million square feet of advanced manufacturing space strategically positioned 
               to serve customers throughout North America.
             </p>
@@ -167,15 +167,15 @@ const LocationsPage = () => {
                           {location.name}, {location.state}
                         </span>
                         {location.isNew && (
-                          <span className="px-2 py-0.5 rounded-full bg-safety-orange text-white text-xs font-medium">
+                          <span className="px-2 py-0.5 rounded-full bg-safety-orange text-robinson-black text-xs font-medium">
                             NEW
                           </span>
                         )}
                       </div>
-                      <div className="text-white/90 text-sm">{location.sqft} sq. ft.</div>
+                      <div className="text-robinson-gray text-sm">{location.sqft} sq. ft.</div>
                     </div>
                     <ChevronRight className={`w-5 h-5 transition-colors ${
-                      selectedLocation === location.id ? 'text-safety-orange' : 'text-white/90'
+                      selectedLocation === location.id ? 'text-safety-orange' : 'text-robinson-gray'
                     }`} />
                   </div>
                 </motion.button>
@@ -263,11 +263,11 @@ const LocationsPage = () => {
                 <div className="absolute bottom-4 left-4 flex items-center gap-4 text-sm">
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 rounded-full bg-safety-orange" />
-                    <span className="text-white/90">Wisconsin</span>
+                    <span className="text-robinson-gray">Wisconsin</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 rounded-full bg-robinson-blue" />
-                    <span className="text-white/90">Iowa (2027)</span>
+                    <span className="text-robinson-gray">Iowa (2027)</span>
                   </div>
                 </div>
               </div>
@@ -292,21 +292,21 @@ const LocationsPage = () => {
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     {currentLocation.isNew && (
-                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-robinson-blue text-white text-sm font-medium">
+                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-robinson-blue text-robinson-black text-sm font-medium">
                         <Sparkles className="w-4 h-4" />
                         Coming 2027
                       </span>
                     )}
-                    <span className="px-3 py-1 rounded-full bg-gray-100 text-white/90 text-sm">
+                    <span className="px-3 py-1 rounded-full bg-gray-100 text-robinson-gray text-sm">
                       {currentLocation.type}
                     </span>
                   </div>
                   
-                  <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                  <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-4">
                     {currentLocation.name}, {currentLocation.state}
                   </h2>
                   
-                  <p className="text-white/90 text-lg mb-8 leading-relaxed">
+                  <p className="text-robinson-gray text-lg mb-8 leading-relaxed">
                     {currentLocation.description}
                   </p>
 
@@ -342,17 +342,17 @@ const LocationsPage = () => {
                   {/* Contact */}
                   {!currentLocation.isNew && (
                     <div className="space-y-3">
-                      <div className="flex items-center gap-3 text-white/90">
+                      <div className="flex items-center gap-3 text-robinson-gray">
                         <MapPin className="w-5 h-5 text-safety-orange" />
                         <span>{currentLocation.address}</span>
                       </div>
-                      <div className="flex items-center gap-3 text-white/90">
+                      <div className="flex items-center gap-3 text-robinson-gray">
                         <Phone className="w-5 h-5 text-safety-orange" />
                         <a href={`tel:${currentLocation.phone}`} className="hover:text-safety-orange transition-colors">
                           {currentLocation.phone}
                         </a>
                       </div>
-                      <div className="flex items-center gap-3 text-white/90">
+                      <div className="flex items-center gap-3 text-robinson-gray">
                         <Mail className="w-5 h-5 text-safety-orange" />
                         <a href={`mailto:${currentLocation.email}`} className="hover:text-safety-orange transition-colors">
                           {currentLocation.email}
@@ -374,7 +374,7 @@ const LocationsPage = () => {
                         <Factory className={`w-24 h-24 mx-auto mb-4 ${
                           currentLocation.isNew ? 'text-robinson-blue/40' : 'text-safety-orange/40'
                         }`} />
-                        <div className="text-white/60 text-lg">{currentLocation.name} Facility</div>
+                        <div className="text-robinson-gray/70 text-lg">{currentLocation.name} Facility</div>
                         {currentLocation.isNew && (
                           <div className="mt-4 px-4 py-2 rounded-full bg-robinson-blue/20 text-robinson-gold text-sm inline-block">
                             Under Construction
@@ -389,14 +389,14 @@ const LocationsPage = () => {
                   <div className="mt-6 flex gap-4">
                     <Link
                       to="/contact"
-                      className="flex-1 px-6 py-3 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 text-center flex items-center justify-center gap-2"
+                      className="flex-1 px-6 py-3 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 text-center flex items-center justify-center gap-2"
                     >
                       Contact This Location
                       <ArrowRight className="w-5 h-5" />
                     </Link>
                     <Link
                       to="/careers"
-                      className="px-6 py-3 border-2 border-white/20 text-white font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 flex items-center gap-2"
+                      className="px-6 py-3 border-2 border-white/20 text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 flex items-center gap-2"
                     >
                       <Users className="w-5 h-5" />
                       Jobs
@@ -427,28 +427,28 @@ const LocationsPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 text-white text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 text-robinson-black text-sm font-medium mb-6">
               <Sparkles className="w-4 h-4 text-safety-orange" />
               Strategic Expansion
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
               560,000 Sq. Ft. Iowa Facility
             </h2>
-            <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-robinson-gray text-lg mb-10 max-w-2xl mx-auto">
               Our Altoona, Iowa facility represents the largest single investment in Robinson's 
               history. Opening in 2027, this state-of-the-art facility will create 500+ new jobs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/careers"
-                className="px-8 py-4 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 flex items-center gap-2"
               >
                 Join the Iowa Team
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 to="/contact"
-                className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
+                className="px-8 py-4 border-2 border-white text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
               >
                 Learn More
               </Link>
