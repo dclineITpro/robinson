@@ -108,7 +108,7 @@ const TechnologyPage = () => {
               </Link>
               <Link
                 to="/contact"
-                className="px-6 py-3 border-2 border-white/20 text-robinson-black font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
+                className="px-6 py-3 border-2 border-white/20 text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
               >
                 Partner With Us
               </Link>
@@ -187,7 +187,7 @@ const TechnologyPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 mb-6">
                 <GraduationCap className="w-4 h-4 text-safety-orange" />
                 <span className="text-robinson-black text-sm font-medium">Robinson Training Academy</span>
               </div>
@@ -206,7 +206,7 @@ const TechnologyPage = () => {
                   { label: 'Tech Courses', value: '25+' },
                   { label: 'Completion Rate', value: '94%' },
                 ].map((stat) => (
-                  <div key={stat.label} className="p-4 rounded-xl bg-white/5 backdrop-blur-sm">
+                  <div key={stat.label} className="p-4 rounded-xl bg-gray-50 border-gray-200">
                     <div className="text-3xl font-bold text-safety-orange mb-1">{stat.value}</div>
                     <div className="text-robinson-gray/70 text-sm">{stat.label}</div>
                   </div>
@@ -228,7 +228,7 @@ const TechnologyPage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <div className="aspect-square rounded-3xl bg-white/5 backdrop-blur-xl border border-white/20 p-8 flex items-center justify-center">
+              <div className="aspect-square rounded-3xl bg-gray-50 backdrop-blur-xl border border-white/20 p-8 flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-4 w-full">
                   {[
                     { icon: Cpu, label: 'ERP Training' },
@@ -242,7 +242,7 @@ const TechnologyPage = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                      className="aspect-square rounded-2xl bg-white/10 flex flex-col items-center justify-center gap-3 hover:bg-white/20 transition-colors cursor-pointer"
+                      className="aspect-square rounded-2xl bg-gray-100 flex flex-col items-center justify-center gap-3 hover:bg-white/20 transition-colors cursor-pointer"
                     >
                       <item.icon className="w-10 h-10 text-safety-orange" />
                       <span className="text-robinson-black text-sm font-medium">{item.label}</span>
@@ -337,7 +337,7 @@ const TechnologyPage = () => {
                   {role.highlights.map((highlight) => (
                     <span
                       key={highlight}
-                      className="px-3 py-1 rounded-full bg-white/5 text-robinson-gray text-xs"
+                      className="px-3 py-1 rounded-full bg-gray-50 text-robinson-gray text-xs"
                     >
                       {highlight}
                     </span>

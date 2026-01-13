@@ -304,7 +304,7 @@ const VisionPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20"
+                className="p-6 rounded-2xl bg-gray-50 border-gray-200 border border-white/20"
               >
                 <h3 className="text-lg font-bold text-robinson-black mb-3">{principle.title}</h3>
                 <p className="text-robinson-gray text-sm leading-relaxed">{principle.description}</p>

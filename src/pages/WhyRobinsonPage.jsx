@@ -299,7 +299,7 @@ const WhyRobinsonPage = () => {
                 "Build your career, own the company." This isn't just a tagline—it's a 
                 fundamental difference in how Robinson operates.
               </p>
-              <p className="text-white/80 mb-8">
+              <p className="text-white/90 mb-8">
                 As an IT Director, I understand that employee ownership means:
               </p>
               <ul className="space-y-4">
@@ -324,7 +324,7 @@ const WhyRobinsonPage = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-8 text-center">
+              <div className="bg-gray-50 border-gray-200 rounded-3xl border border-white/20 p-8 text-center">
                 <Users className="w-16 h-16 text-robinson-black mx-auto mb-6" />
                 <div className="text-5xl font-bold text-robinson-black mb-2">100%</div>
                 <div className="text-robinson-gray text-xl mb-6">Employee-Owned</div>
@@ -363,7 +363,7 @@ const WhyRobinsonPage = () => {
               </Link>
               <Link
                 to="/digital-thread"
-                className="px-8 py-4 border-2 border-robinson-gray/30 text-robinson-black font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
+                className="px-8 py-4 border-2 border-robinson-gray/30 text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
               >
                 Digital Thread Strategy
               </Link>

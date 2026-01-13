@@ -297,7 +297,7 @@ const LocationsPage = () => {
                         Coming 2027
                       </span>
                     )}
-                    <span className="px-3 py-1 rounded-full bg-white/10 text-robinson-gray text-sm">
+                    <span className="px-3 py-1 rounded-full bg-gray-100 text-robinson-gray text-sm">
                       {currentLocation.type}
                     </span>
                   </div>
@@ -312,12 +312,12 @@ const LocationsPage = () => {
 
                   {/* Stats */}
                   <div className="grid grid-cols-2 gap-6 mb-8">
-                    <div className="p-6 rounded-xl bg-white/50 border border-gray-200">
+                    <div className="p-6 rounded-xl bg-gray-500 border border-gray-200">
                       <Building2 className="w-8 h-8 text-safety-orange mb-3" />
                       <div className="text-2xl font-bold text-robinson-black">{currentLocation.sqft}</div>
                       <div className="text-robinson-gray-light text-sm">Square Feet</div>
                     </div>
-                    <div className="p-6 rounded-xl bg-white/50 border border-gray-200">
+                    <div className="p-6 rounded-xl bg-gray-500 border border-gray-200">
                       <Users className="w-8 h-8 text-safety-orange mb-3" />
                       <div className="text-2xl font-bold text-robinson-black">{currentLocation.employees}</div>
                       <div className="text-robinson-gray-light text-sm">Employee-Owners</div>
@@ -396,7 +396,7 @@ const LocationsPage = () => {
                     </Link>
                     <Link
                       to="/careers"
-                      className="px-6 py-3 border-2 border-white/20 text-robinson-black font-semibold rounded-lg hover:bg-white/10 transition-all duration-300 flex items-center gap-2"
+                      className="px-6 py-3 border-2 border-white/20 text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 flex items-center gap-2"
                     >
                       <Users className="w-5 h-5" />
                       Jobs
@@ -427,7 +427,7 @@ const LocationsPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-robinson-black text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 text-robinson-black text-sm font-medium mb-6">
               <Sparkles className="w-4 h-4 text-safety-orange" />
               Strategic Expansion
             </span>
@@ -448,7 +448,7 @@ const LocationsPage = () => {
               </Link>
               <Link
                 to="/contact"
-                className="px-8 py-4 border-2 border-white text-robinson-black font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
+                className="px-8 py-4 border-2 border-white text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
               >
                 Learn More
               </Link>

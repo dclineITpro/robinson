@@ -117,7 +117,7 @@ const HomePage = () => {
             </Link>
             <Link
               to="/why-robinson"
-              className="px-8 py-4 border-2 border-white/20 text-robinson-black font-semibold rounded-lg hover:bg-white/10 hover:border-gray-2000 transition-all duration-300"
+              className="px-8 py-4 border-2 border-white/20 text-robinson-black font-semibold rounded-lg hover:bg-gray-100 hover:border-gray-2000 transition-all duration-300"
             >
               Why Robinson?
             </Link>
@@ -157,7 +157,7 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <span className="text-white/80 text-sm font-medium uppercase tracking-widest">
+            <span className="text-white/90 text-sm font-medium uppercase tracking-widest">
               My Track Record
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mt-4">
@@ -170,7 +170,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20 card-hover"
+              className="text-center p-6 rounded-2xl bg-gray-50 border-gray-200 border border-white/20 card-hover"
             >
               <TrendingUp className="w-8 h-8 text-safety-orange mx-auto mb-4" />
               <div className="text-4xl md:text-5xl font-bold text-robinson-black mb-2">
@@ -184,7 +184,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20 card-hover"
+              className="text-center p-6 rounded-2xl bg-gray-50 border-gray-200 border border-white/20 card-hover"
             >
               <Globe className="w-8 h-8 text-safety-orange mx-auto mb-4" />
               <div className="text-4xl md:text-5xl font-bold text-robinson-black mb-2">
@@ -198,7 +198,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20 card-hover"
+              className="text-center p-6 rounded-2xl bg-gray-50 border-gray-200 border border-white/20 card-hover"
             >
               <Shield className="w-8 h-8 text-safety-orange mx-auto mb-4" />
               <div className="text-4xl md:text-5xl font-bold text-robinson-black mb-2">
@@ -212,7 +212,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20 card-hover"
+              className="text-center p-6 rounded-2xl bg-gray-50 border-gray-200 border border-white/20 card-hover"
             >
               <Cpu className="w-8 h-8 text-safety-orange mx-auto mb-4" />
               <div className="text-4xl md:text-5xl font-bold text-robinson-black mb-2">
@@ -314,7 +314,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 mb-6">
                 <MapPin className="w-4 h-4 text-safety-orange" />
                 <span className="text-robinson-black text-sm font-medium">I Understand the Vision</span>
               </div>
@@ -357,22 +357,22 @@ const HomePage = () => {
               transition={{ delay: 0.2 }}
               className="relative"
             >
-              <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/20 p-8">
+              <div className="bg-gray-50 backdrop-blur-xl rounded-3xl border border-white/20 p-8">
                 <h3 className="text-robinson-black font-semibold mb-6 text-center">Altoona, IA - Opening 2027</h3>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="p-4 rounded-xl bg-white/5 text-center">
+                  <div className="p-4 rounded-xl bg-gray-50 text-center">
                     <div className="text-3xl font-bold text-safety-orange">560K</div>
                     <div className="text-robinson-gray/70 text-sm">Square Feet</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-white/5 text-center">
+                  <div className="p-4 rounded-xl bg-gray-50 text-center">
                     <div className="text-3xl font-bold text-safety-orange">500+</div>
                     <div className="text-robinson-gray/70 text-sm">New Jobs</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-white/5 text-center">
+                  <div className="p-4 rounded-xl bg-gray-50 text-center">
                     <div className="text-3xl font-bold text-safety-orange">2027</div>
                     <div className="text-robinson-gray/70 text-sm">Grand Opening</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-white/5 text-center">
+                  <div className="p-4 rounded-xl bg-gray-50 text-center">
                     <div className="text-3xl font-bold text-safety-orange">6th</div>
                     <div className="text-robinson-gray/70 text-sm">Location</div>
                   </div>
@@ -486,7 +486,7 @@ const HomePage = () => {
               </Link>
               <Link
                 to="/vision"
-                className="px-8 py-4 border-2 border-robinson-black text-robinson-black font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
+                className="px-8 py-4 border-2 border-robinson-black text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
               >
                 See My Full Vision
               </Link>

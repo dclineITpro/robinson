@@ -363,7 +363,7 @@ const AboutMePage = () => {
               </Link>
               <Link
                 to="/vision"
-                className="px-8 py-4 border-2 border-white text-robinson-black font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
+                className="px-8 py-4 border-2 border-white text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
               >
                 Review My Vision
               </Link>
