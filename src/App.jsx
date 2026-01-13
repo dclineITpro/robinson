@@ -10,7 +10,7 @@ import AboutMePage from './pages/AboutMePage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/robinson">
       <ScrollToTop />
       <div className="min-h-screen bg-white">
         <Navbar />
