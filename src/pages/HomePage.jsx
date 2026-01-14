@@ -220,7 +220,7 @@ const HomePage = () => {
                 24/7
               </div>
               <div className="font-semibold text-lg">Manufacturing Support</div>
-              <div className="text-white/80 text-sm mt-1">U.S. Operations</div>
+              <div className="text-white/80 text-sm mt-1">Mission Critical Systems</div>
             </motion.div>
           </div>
         </div>
