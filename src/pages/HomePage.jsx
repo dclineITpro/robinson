@@ -117,50 +117,6 @@ const HomePage = () => {
               }}
             />
           </svg>
-
-          {/* Welding Spark Embers */}
-          <motion.div 
-            className="absolute top-1/4 right-[15%] w-2 h-2 bg-safety-orange rounded-full blur-sm"
-            animate={{ 
-              y: [0, 400],
-              opacity: [1, 0],
-              scale: [1, 0.3]
-            }}
-            transition={{ 
-              duration: 3,
-              repeat: Infinity,
-              ease: "easeIn",
-              delay: 0
-            }}
-          />
-          <motion.div 
-            className="absolute top-1/3 right-[20%] w-1.5 h-1.5 bg-yellow-400 rounded-full blur-sm"
-            animate={{ 
-              y: [0, 350],
-              opacity: [1, 0],
-              scale: [1, 0.2]
-            }}
-            transition={{ 
-              duration: 2.5,
-              repeat: Infinity,
-              ease: "easeIn",
-              delay: 0.5
-            }}
-          />
-          <motion.div 
-            className="absolute top-1/4 left-[18%] w-2 h-2 bg-safety-orange rounded-full blur-sm"
-            animate={{ 
-              y: [0, 380],
-              opacity: [1, 0],
-              scale: [1, 0.3]
-            }}
-            transition={{ 
-              duration: 2.8,
-              repeat: Infinity,
-              ease: "easeIn",
-              delay: 1
-            }}
-          />
           
           {/* Intense Arc Light Glows */}
           <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-safety-orange/20 rounded-full blur-[120px]" />

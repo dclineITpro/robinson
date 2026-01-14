@@ -11,12 +11,14 @@ const WeldingSparks = () => {
     const ctx = canvas.getContext('2d');
     let animationFrameId;
     let sparks = [];
+    let slagTrail = []; // Welding slag trail
     let mouseX = 0;
     let mouseY = 0;
     let lastX = 0;
     let lastY = 0;
     let isMoving = false;
     let moveTimeout;
+    const MAX_TRAIL_LENGTH = 30; // Limit trail for performance
 
     const resizeCanvas = () => {
       const parent = canvas.parentElement;
@@ -49,20 +51,40 @@ const WeldingSparks = () => {
 
     const handleMouseMove = (e) => {
       const rect = canvas.getBoundingClientRect();
-      mouseX = e.clientX - rect.left;
-      mouseY = e.clientY - rect.top;
+      const newX = e.clientX - rect.left;
+      const newY = e.clientY - rect.top;
       
-      const dx = mouseX - lastX;
-      const dy = mouseY - lastY;
+      const dx = newX - lastX;
+      const dy = newY - lastY;
       const distance = Math.sqrt(dx * dx + dy * dy);
       
-      // Only generate sparks if moving fast enough or explicitly active
-      if (distance > 2) {
-        isActiveRef.current = true;
+      // Always update mouse position
+      mouseX = newX;
+      mouseY = newY;
+      
+      // Always mark as active when mouse moves
+      isActiveRef.current = true;
+      
+      // Add to slag trail if moving
+      if (distance > 1) {
         isMoving = true;
         
+        // Add slag trail point
+        slagTrail.push({
+          x: mouseX,
+          y: mouseY,
+          life: 1.0,
+          decay: 0.015,
+          size: 3 + Math.random() * 2
+        });
+        
+        // Limit trail length for performance
+        if (slagTrail.length > MAX_TRAIL_LENGTH) {
+          slagTrail.shift();
+        }
+        
         // Generate sparks based on movement speed
-        const sparkCount = Math.min(Math.floor(distance / 2), 5);
+        const sparkCount = Math.min(Math.floor(distance / 3), 3);
         for (let i = 0; i < sparkCount; i++) {
           sparks.push(createSpark(mouseX, mouseY));
         }
@@ -77,26 +99,72 @@ const WeldingSparks = () => {
       }, 100);
     };
 
+    const handleMouseEnter = () => {
+      isActiveRef.current = true;
+    };
+
+    const handleMouseLeave = () => {
+      isActiveRef.current = false;
+      slagTrail = []; // Clear trail when leaving
+      sparks = [];
+    };
+
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
+      // Draw slag trail (welding residue)
+      for (let i = 0; i < slagTrail.length; i++) {
+        const slag = slagTrail[i];
+        
+        // Update life
+        slag.life -= slag.decay;
+        
+        if (slag.life > 0) {
+          ctx.beginPath();
+          ctx.arc(slag.x, slag.y, slag.size * slag.life, 0, Math.PI * 2);
+          
+          // Slag color: dark orange/brown cooling metal
+          const alpha = slag.life * 0.8;
+          if (slag.life > 0.7) {
+            ctx.fillStyle = `rgba(255, 140, 0, ${alpha})`; // Hot orange
+          } else if (slag.life > 0.4) {
+            ctx.fillStyle = `rgba(139, 69, 19, ${alpha})`; // Cooling brown
+          } else {
+            ctx.fillStyle = `rgba(80, 40, 20, ${alpha})`; // Dark slag
+          }
+          
+          ctx.fill();
+        } else {
+          // Remove dead slag
+          slagTrail.splice(i, 1);
+          i--;
+        }
+      }
+      
       // Draw torch tip (cursor) if active
       if (isActiveRef.current && mouseX !== 0 && mouseY !== 0) {
-        // Core
+        // Stronger glow with shadow
+        ctx.shadowBlur = 20;
+        ctx.shadowColor = 'rgba(255, 165, 0, 0.8)';
+        
+        // Core - bright white
         ctx.beginPath();
-        ctx.arc(mouseX, mouseY, 3, 0, Math.PI * 2);
+        ctx.arc(mouseX, mouseY, 5, 0, Math.PI * 2);
         ctx.fillStyle = '#FFFFFF';
         ctx.fill();
         
-        // Glow
+        ctx.shadowBlur = 0; // Reset shadow
+        
+        // Inner Glow - bright orange
         ctx.beginPath();
-        ctx.arc(mouseX, mouseY, 10, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(212, 175, 55, 0.4)'; // Robinson Gold glow
+        ctx.arc(mouseX, mouseY, 12, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255, 140, 0, 0.6)';
         ctx.fill();
         
+        // Outer Glow - yellow
         ctx.beginPath();
         ctx.arc(mouseX, mouseY, 20, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(0, 71, 171, 0.2)'; // Robinson Blue outer glow
+        ctx.fillStyle = 'rgba(255, 215, 0, 0.3)';
         ctx.fill();
       }
 
@@ -141,9 +209,9 @@ const WeldingSparks = () => {
 
     const parent = canvas.parentElement;
     if (parent) {
-      parent.addEventListener('mousemove', handleMouseMove);
-      parent.addEventListener('mouseenter', () => { isActiveRef.current = true; });
-      parent.addEventListener('mouseleave', () => { isActiveRef.current = false; });
+      parent.addEventListener('mousemove', handleMouseMove, { passive: true });
+      parent.addEventListener('mouseenter', handleMouseEnter, { passive: true });
+      parent.addEventListener('mouseleave', handleMouseLeave, { passive: true });
     }
 
     animate();
@@ -152,9 +220,8 @@ const WeldingSparks = () => {
       window.removeEventListener('resize', resizeCanvas);
       if (parent) {
         parent.removeEventListener('mousemove', handleMouseMove);
-        // Note: anonymous functions above can't be removed perfectly unless named, 
-        // but since we are unmounting, the element listeners should be garbage collected or we should name them.
-        // For safety, let's just make the dependency array empty so this cleanup only runs on unmount.
+        parent.removeEventListener('mouseenter', handleMouseEnter);
+        parent.removeEventListener('mouseleave', handleMouseLeave);
       }
       cancelAnimationFrame(animationFrameId);
       clearTimeout(moveTimeout);
