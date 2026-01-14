@@ -34,7 +34,7 @@ const LocationsPage = () => {
       state: 'Wisconsin',
       type: 'Manufacturing',
       sqft: '150,000',
-      employees: '150+',
+      employees: '200+',
       capabilities: ['Powder Coating', 'Finishing', 'Assembly'],
       address: '2107 American Blvd',
       phone: '(920) 336-1700',
