@@ -186,7 +186,7 @@ const WeldingSparks = () => {
       if (isActiveRef.current && mouseX !== 0 && mouseY !== 0) {
         // Stronger glow with shadow
         ctx.shadowBlur = 20;
-        ctx.shadowColor = 'rgba(255, 165, 0, 0.8)';
+        ctx.shadowColor = 'rgba(255, 255, 255, 0.8)';
         
         // Core - bright white
         ctx.beginPath();
@@ -196,16 +196,16 @@ const WeldingSparks = () => {
         
         ctx.shadowBlur = 0; // Reset shadow
         
-        // Inner Glow - bright orange
+        // Inner Glow - bright white
         ctx.beginPath();
         ctx.arc(mouseX, mouseY, 12, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(255, 140, 0, 0.6)';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
         ctx.fill();
         
-        // Outer Glow - yellow
+        // Outer Glow - white
         ctx.beginPath();
         ctx.arc(mouseX, mouseY, 20, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(255, 215, 0, 0.3)';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
         ctx.fill();
       }
 
