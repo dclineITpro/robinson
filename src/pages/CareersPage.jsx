@@ -114,11 +114,11 @@ const CareersPage = () => {
               <Users className="w-4 h-4" />
               Join Our Team
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
               Build Your Career,{' '}
-              <span className="gradient-text">Own the Company</span>
+              <span className="gradient-text-blue">Own the Company</span>
             </h1>
-            <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-robinson-gray text-lg md:text-xl leading-relaxed mb-8">
               At Robinson, you're not just an employee—you're an owner. Join a team where 
               your hard work directly builds your future through our 100% Employee Stock Ownership Plan.
             </p>

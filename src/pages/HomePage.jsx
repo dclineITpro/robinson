@@ -255,10 +255,10 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <span className="text-robinson-gray text-sm font-medium uppercase tracking-widest">
+            <span className="text-white/80 text-sm font-medium uppercase tracking-widest">
               My Track Record
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-robinson-black mt-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mt-4">
               Proven Results in IT Leadership
             </h2>
           </motion.div>

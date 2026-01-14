@@ -61,10 +61,10 @@ const ContactPage = () => {
               <MessageSquare className="w-4 h-4" />
               Get in Touch
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Let's Build <span className="gradient-text">Something Great</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
+              Let's Build <span className="gradient-text-blue">Something Great</span>
             </h1>
-            <p className="text-white/90 text-lg md:text-xl leading-relaxed">
+            <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
               Whether you need a quote, have questions about our capabilities, or want to 
               discuss a partnership, our team is ready to help.
             </p>

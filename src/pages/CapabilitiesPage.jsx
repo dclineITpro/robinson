@@ -156,10 +156,10 @@ const CapabilitiesPage = () => {
               <Cog className="w-4 h-4" />
               Full-Service Fabrication
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              World-Class <span className="gradient-text">Capabilities</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
+              World-Class <span className="gradient-text-blue">Capabilities</span>
             </h1>
-            <p className="text-white/90 text-lg md:text-xl leading-relaxed">
+            <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
               From raw material to finished product, our integrated manufacturing capabilities 
               deliver complete solutions under one roof.
             </p>
