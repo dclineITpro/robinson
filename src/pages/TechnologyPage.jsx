@@ -332,7 +332,7 @@ const TechnologyPage = () => {
       </section>
 
       {/* IT Career Opportunities */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-robinson-blue">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -341,14 +341,14 @@ const TechnologyPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-6">
               <Users className="w-4 h-4" />
               Join Our Team
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              IT Career <span className="text-robinson-blue">Opportunities</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              IT Career Opportunities
             </h2>
-            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
+            <p className="text-white/85 text-lg max-w-2xl mx-auto">
               Lead digital transformation at a company where technology drives production excellence.
             </p>
           </motion.div>
@@ -361,20 +361,20 @@ const TechnologyPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-white/80 border border-gray-200 hover:border-robinson-blue/30 transition-all duration-300 group"
+                className="p-8 rounded-2xl bg-white/10 border border-white/15 shadow-xl shadow-black/20 hover:-translate-y-1 hover:scale-[1.01] transition-all duration-300 group"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <Zap className="w-6 h-6 text-robinson-blue" />
-                  <h3 className="text-xl font-bold text-robinson-black group-hover:text-robinson-blue transition-colors">
+                  <Zap className="w-6 h-6 text-white" />
+                  <h3 className="text-xl font-bold text-white group-hover:text-white transition-colors">
                     {role.title}
                   </h3>
                 </div>
-                <p className="text-robinson-gray mb-6 leading-relaxed">{role.description}</p>
+                <p className="text-white/80 mb-6 leading-relaxed">{role.description}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   {role.highlights.map((highlight) => (
                     <span
                       key={highlight}
-                      className="px-3 py-1 rounded-full bg-gray-50 text-robinson-gray text-xs"
+                      className="px-3 py-1 rounded-full bg-white/15 text-white/85 text-xs"
                     >
                       {highlight}
                     </span>
@@ -382,7 +382,7 @@ const TechnologyPage = () => {
                 </div>
                 <Link
                   to="/careers"
-                  className="inline-flex items-center gap-2 text-robinson-blue hover:text-robinson-blue-light transition-colors font-medium"
+                  className="inline-flex items-center gap-2 text-white hover:text-white/80 transition-colors font-medium"
                 >
                   View Position
                   <ArrowRight className="w-4 h-4" />
@@ -396,18 +396,18 @@ const TechnologyPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-16 p-8 lg:p-12 rounded-3xl bg-gradient-to-br from-robinson-blue/20 to-robinson-blue/5 border border-robinson-blue/30 text-center"
+            className="mt-16 p-8 lg:p-12 rounded-3xl bg-white/10 border border-white/20 text-center shadow-2xl shadow-black/25"
           >
-            <h3 className="text-2xl md:text-3xl font-bold text-robinson-black mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Technology Meets Ownership
             </h3>
-            <p className="text-robinson-gray text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-white/85 text-lg mb-8 max-w-2xl mx-auto">
               As an employee-owner, you'll have a direct stake in the technology initiatives you lead. 
               Your innovations drive company value—and your ESOP account.
             </p>
             <Link
               to="/careers"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300 shadow-lg shadow-black/20"
             >
               Explore IT Careers
               <ArrowRight className="w-5 h-5" />

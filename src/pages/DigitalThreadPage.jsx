@@ -317,7 +317,7 @@ const DigitalThreadPage = () => {
       </section>
 
       {/* Robinson Training Academy */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -325,14 +325,14 @@ const DigitalThreadPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
                 <Settings className="w-4 h-4" />
                 Tech Enablement
               </span>
               <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
                 Robinson Training Academy: <span className="text-robinson-blue">Tech Curriculum</span>
               </h2>
-              <p className="text-white/90 text-lg mb-8 leading-relaxed">
+              <p className="text-robinson-gray text-lg mb-8 leading-relaxed">
                 The RTA is already a cornerstone of Robinson's culture. I would expand it 
                 to include technology training that empowers every employee-owner to 
                 leverage new digital tools.
@@ -340,7 +340,8 @@ const DigitalThreadPage = () => {
               <p className="text-robinson-gray mb-6">
                 Proposed technology courses for the RTA:
               </p>
-            </motion.div>
+            </motion.div
+>
 
             <motion.div
               initial={{ opacity: 0, x: 50 }}
@@ -370,7 +371,7 @@ const DigitalThreadPage = () => {
       </section>
 
       {/* Security Focus */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-robinson-blue">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -378,14 +379,14 @@ const DigitalThreadPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-6">
               <Lock className="w-4 h-4 inline mr-2" />
               Critical Priority
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Cybersecurity is <span className="text-red-400">Non-Negotiable</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Cybersecurity is Non-Negotiable
             </h2>
-            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
+            <p className="text-white/85 text-lg max-w-2xl mx-auto">
               In manufacturing, a security breach can halt production. With Tier-1 clients 
               like Rolls-Royce, security isn't optional—it's a competitive requirement.
             </p>
@@ -404,13 +405,13 @@ const DigitalThreadPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-gray-50/50 border border-red-500/20 text-center"
+                className="p-6 rounded-2xl bg-white/10 border border-white/20 text-center shadow-lg shadow-black/20"
               >
-                <div className="w-14 h-14 rounded-xl bg-red-500/10 flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="w-7 h-7 text-red-400" />
+                <div className="w-14 h-14 rounded-xl bg-white/15 flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-robinson-black mb-2">{item.title}</h3>
-                <p className="text-robinson-gray text-sm">{item.desc}</p>
+                <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
+                <p className="text-white/80 text-sm">{item.desc}</p>
               </motion.div>
             ))}
           </div>
