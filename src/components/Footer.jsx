@@ -34,8 +34,8 @@ const Footer = () => {
           {/* Brand Column */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-robinson-gold rounded flex items-center justify-center">
-                <span className="text-robinson-black font-bold text-lg">R</span>
+              <div className="w-10 h-10 bg-robinson-blue rounded flex items-center justify-center">
+                <span className="text-white font-bold text-lg">R</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-robinson-black font-bold text-lg">ROBINSON INC.</span>
@@ -51,7 +51,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/dj-cline-22219834/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-robinson-bg flex items-center justify-center text-robinson-gray hover:text-robinson-gold hover:bg-robinson-bg-dark transition-all duration-300"
+                className="w-10 h-10 rounded-lg bg-robinson-bg flex items-center justify-center text-robinson-gray hover:text-robinson-blue hover:bg-robinson-bg-dark transition-all duration-300"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
@@ -59,7 +59,7 @@ const Footer = () => {
                 href="https://dclineitpro.github.io/portfolio/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-robinson-bg flex items-center justify-center text-robinson-gray hover:text-robinson-gold hover:bg-robinson-bg-dark transition-all duration-300"
+                className="w-10 h-10 rounded-lg bg-robinson-bg flex items-center justify-center text-robinson-gray hover:text-robinson-blue hover:bg-robinson-bg-dark transition-all duration-300"
               >
                 <Globe className="w-5 h-5" />
               </a>
@@ -74,7 +74,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link 
                     to={link.path}
-                    className="text-robinson-gray hover:text-robinson-gold transition-colors duration-300 text-sm"
+                    className="text-robinson-gray hover:text-robinson-blue transition-colors duration-300 text-sm"
                   >
                     {link.name}
                   </Link>
@@ -91,7 +91,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link 
                     to={link.path}
-                    className="text-robinson-gray hover:text-robinson-gold transition-colors duration-300 text-sm"
+                    className="text-robinson-gray hover:text-robinson-blue transition-colors duration-300 text-sm"
                   >
                     {link.name}
                   </Link>
@@ -108,7 +108,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link 
                     to={link.path}
-                    className="text-robinson-gray hover:text-robinson-gold transition-colors duration-300 text-sm"
+                    className="text-robinson-gray hover:text-robinson-blue transition-colors duration-300 text-sm"
                   >
                     {link.name}
                   </Link>
@@ -133,7 +133,7 @@ const Footer = () => {
                 href="https://www.robinsoninc.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-robinson-gray hover:text-robinson-gold text-sm transition-colors"
+                className="flex items-center gap-1 text-robinson-gray hover:text-robinson-blue text-sm transition-colors"
               >
                 Robinson Official Site <ArrowUpRight className="w-4 h-4" />
               </a>

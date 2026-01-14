@@ -46,10 +46,10 @@ const Navbar = () => {
           {/* Logo - Robinson Inc Official Branding */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="relative">
-              <div className="w-12 h-12 bg-robinson-gold rounded flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
-                <span className="text-robinson-black font-bold text-2xl">R</span>
+              <div className="w-12 h-12 bg-robinson-blue rounded flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
+                <span className="text-white font-bold text-2xl">R</span>
               </div>
-              <div className="absolute -inset-1 bg-robinson-gold/20 rounded blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute -inset-1 bg-robinson-blue/20 rounded blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="flex flex-col">
               <span className="text-robinson-black font-bold text-xl tracking-tight">ROBINSON</span>
@@ -70,7 +70,7 @@ const Navbar = () => {
                   to={link.path}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 flex items-center gap-1 ${
                     location.pathname === link.path
-                      ? 'text-robinson-gold'
+                      ? 'text-robinson-blue'
                       : 'text-robinson-gray hover:text-robinson-black hover:bg-robinson-bg'
                   }`}
                 >
@@ -141,7 +141,7 @@ const Navbar = () => {
                     to={link.path}
                     className={`block px-4 py-3 rounded-lg text-base font-medium transition-all duration-300 ${
                       location.pathname === link.path
-                        ? 'text-robinson-gold bg-robinson-gold/10'
+                        ? 'text-robinson-blue bg-robinson-blue/10'
                         : 'text-robinson-gray hover:text-robinson-black hover:bg-robinson-bg'
                     }`}
                   >
