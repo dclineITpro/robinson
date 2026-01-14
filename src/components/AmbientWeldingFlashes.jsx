@@ -35,11 +35,9 @@ const AmbientWeldingFlashes = () => {
       if (timeSinceMove < 200 && Math.random() > 0.4) { // Increased frequency (was 0.7, now 0.4)
         const id = Date.now() + Math.random();
         
-        // Spawn flash near mouse position with some randomness
-        const offsetX = (Math.random() - 0.5) * 20; // Random offset ±10%
-        const offsetY = (Math.random() - 0.5) * 20; // Random offset ±10%
-        const x = Math.max(0, Math.min(100, mousePositionRef.current.x + offsetX));
-        const y = Math.max(0, Math.min(100, mousePositionRef.current.y + offsetY));
+        // Spawn flash at mouse position
+        const x = mousePositionRef.current.x;
+        const y = mousePositionRef.current.y;
         const duration = Math.random() * 0.2 + 0.1; // Fast flash
         
         setFlashes(prev => [...prev, { id, x, y, duration }]);
