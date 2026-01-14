@@ -20,7 +20,7 @@ const HomePage = () => {
 
   const robinsonStats = [
     { value: '1.3M', label: 'Sq. Ft.', desc: 'Total Footprint (with Iowa)' },
-    { value: '3', label: 'WI Locations', desc: 'Plus Iowa Expansion (2027)' },
+    { value: '4', label: 'WI Locations', desc: 'Plus Iowa Expansion (2027)' },
     { value: '100%', label: 'Employee-Owned', desc: 'ESOP Company' },
     { value: 'Top 10', label: 'FAB 40', desc: 'Industry Ranking' },
   ];

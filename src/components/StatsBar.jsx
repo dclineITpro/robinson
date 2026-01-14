@@ -83,13 +83,13 @@ const StatsBar = () => {
               </div>
               <div className="text-3xl md:text-4xl font-bold text-robinson-black mb-1">
                 {stat.prefix && <span>{stat.prefix}</span>}
-                {stat.value === 1.4 ? (
-                  <AnimatedCounter end={14} duration={2} suffix="" />
+                {stat.value === 1.3 ? (
+                  <AnimatedCounter end={13} duration={2} suffix="" />
                 ) : (
                   <AnimatedCounter end={stat.value} duration={2} />
                 )}
-                {stat.value === 1.4 ? (
-                  <span className="text-2xl">.0M</span>
+                {stat.value === 1.3 ? (
+                  <span className="text-2xl">.3M</span>
                 ) : (
                   <span>{stat.suffix}</span>
                 )}
