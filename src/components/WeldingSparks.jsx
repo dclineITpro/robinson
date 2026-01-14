@@ -139,28 +139,37 @@ const WeldingSparks = () => {
           ctx.beginPath();
           ctx.arc(slag.x, slag.y, radius, 0, Math.PI * 2);
           
-          // Realistic molten metal cooling: white hot (quick 15%) -> red hot (medium 25%) -> cooled black (long 60%)
+          // Gradient cooling from white hot to orange to dark gray
           const agePercent = slag.age / slag.maxAge;
           
-          if (agePercent < 0.15) {
-            // Phase 1: Glowing white hot - very brief (0-15% of life)
-            const phaseProgress = agePercent / 0.15;
-            const phaseAlpha = 1.0 - phaseProgress * 0.1; // 1.0 to 0.9
-            ctx.fillStyle = `rgba(255, 255, 255, ${phaseAlpha})`;
-            ctx.shadowBlur = 12;
-            ctx.shadowColor = 'rgba(255, 255, 255, 0.9)';
-          } else if (agePercent < 0.40) {
-            // Phase 2: Glowing red hot - medium duration (15-40% of life)
-            const phaseProgress = (agePercent - 0.15) / 0.25;
-            const phaseAlpha = 0.9 - phaseProgress * 0.2; // 0.9 to 0.7
-            ctx.fillStyle = `rgba(255, 0, 0, ${phaseAlpha})`;
-            ctx.shadowBlur = 8;
-            ctx.shadowColor = 'rgba(255, 0, 0, 0.6)';
+          // Define color stops
+          const white = [255, 255, 255];
+          const orange = [255, 140, 0];
+          const darkGray = [70, 70, 70];
+          
+          let r, g, b;
+          if (agePercent <= 0.4) {
+            const t = agePercent / 0.4;
+            r = white[0] + t * (orange[0] - white[0]);
+            g = white[1] + t * (orange[1] - white[1]);
+            b = white[2] + t * (orange[2] - white[2]);
           } else {
-            // Phase 3: Cooling to black slag - longest duration (40-100% of life)
-            const phaseProgress = (agePercent - 0.40) / 0.60;
-            const phaseAlpha = 0.7 - phaseProgress * 0.6; // 0.7 to 0.1 (slow fade)
-            ctx.fillStyle = `rgba(0, 0, 0, ${phaseAlpha})`;
+            const t = (agePercent - 0.4) / 0.6;
+            r = orange[0] + t * (darkGray[0] - orange[0]);
+            g = orange[1] + t * (darkGray[1] - orange[1]);
+            b = orange[2] + t * (darkGray[2] - orange[2]);
+          }
+          
+          // Alpha fades linearly
+          const alpha = 0.9 - agePercent * 0.8; // 0.9 to 0.1
+          
+          ctx.fillStyle = `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, ${alpha})`;
+          
+          // Shadow
+          if (agePercent < 0.4) {
+            ctx.shadowBlur = 12;
+            ctx.shadowColor = `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, 0.9)`;
+          } else {
             ctx.shadowBlur = 0;
           }
           
