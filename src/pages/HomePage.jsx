@@ -6,6 +6,8 @@ import {
   Cpu, Database, Brain, Wifi, ChevronDown, Briefcase, Heart, TrendingUp, Shield, Globe
 } from 'lucide-react';
 import AnimatedCounter from '../components/AnimatedCounter';
+import WeldingSparks from '../components/WeldingSparks';
+import AmbientWeldingFlashes from '../components/AmbientWeldingFlashes';
 
 const HomePage = () => {
   const heroRef = useRef(null);

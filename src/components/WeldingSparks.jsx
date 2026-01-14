@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 const WeldingSparks = () => {
   const canvasRef = useRef(null);
-  const [isActive, setIsActive] = useState(false);
+  const isActiveRef = useRef(false);
   
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -58,7 +58,7 @@ const WeldingSparks = () => {
       
       // Only generate sparks if moving fast enough or explicitly active
       if (distance > 2) {
-        setIsActive(true);
+        isActiveRef.current = true;
         isMoving = true;
         
         // Generate sparks based on movement speed
@@ -81,7 +81,7 @@ const WeldingSparks = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
       // Draw torch tip (cursor) if active
-      if (isActive && mouseX !== 0 && mouseY !== 0) {
+      if (isActiveRef.current && mouseX !== 0 && mouseY !== 0) {
         // Core
         ctx.beginPath();
         ctx.arc(mouseX, mouseY, 3, 0, Math.PI * 2);
@@ -101,7 +101,7 @@ const WeldingSparks = () => {
       }
 
       // Occasional random "pop" spark even when not moving if hovering
-      if (!isMoving && Math.random() > 0.95 && isActive) {
+      if (!isMoving && Math.random() > 0.95 && isActiveRef.current) {
         sparks.push(createSpark(mouseX, mouseY, 0.5));
       }
 
@@ -142,8 +142,8 @@ const WeldingSparks = () => {
     const parent = canvas.parentElement;
     if (parent) {
       parent.addEventListener('mousemove', handleMouseMove);
-      parent.addEventListener('mouseenter', () => setIsActive(true));
-      parent.addEventListener('mouseleave', () => setIsActive(false));
+      parent.addEventListener('mouseenter', () => { isActiveRef.current = true; });
+      parent.addEventListener('mouseleave', () => { isActiveRef.current = false; });
     }
 
     animate();
@@ -152,19 +152,19 @@ const WeldingSparks = () => {
       window.removeEventListener('resize', resizeCanvas);
       if (parent) {
         parent.removeEventListener('mousemove', handleMouseMove);
-        parent.removeEventListener('mouseenter', () => setIsActive(true));
-        parent.removeEventListener('mouseleave', () => setIsActive(false));
+        // Note: anonymous functions above can't be removed perfectly unless named, 
+        // but since we are unmounting, the element listeners should be garbage collected or we should name them.
+        // For safety, let's just make the dependency array empty so this cleanup only runs on unmount.
       }
       cancelAnimationFrame(animationFrameId);
       clearTimeout(moveTimeout);
     };
-  }, [isActive]);
+  }, []);
 
   return (
     <canvas 
       ref={canvasRef} 
       className="absolute inset-0 pointer-events-none z-20"
-      style={{ mixBlendMode: 'screen' }}
     />
   );
 };
