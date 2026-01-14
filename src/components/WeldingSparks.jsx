@@ -96,7 +96,7 @@ const WeldingSparks = () => {
           x: mouseX,
           y: mouseY,
           age: 0, // Track age instead of life for consistent color progression
-          maxAge: 120, // Frames to live (about 2 seconds at 60fps)
+          maxAge: 300, // Frames to live (about 5 seconds at 60fps) - ensures all phases are visible
           size: 4 + Math.random() * 2
         });
         
