@@ -154,7 +154,7 @@ const AboutMePage = () => {
                     <p className="text-robinson-gray">Professional Photo</p>
                   </div>
                 </div>
-                <div className="absolute -bottom-6 -right-6 p-4 rounded-2xl bg-robinson-blue text-robinson-black">
+                <div className="absolute -bottom-6 -right-6 p-4 rounded-2xl bg-robinson-gold text-robinson-black">
                   <div className="text-3xl font-bold">25+</div>
                   <div className="text-sm">Years in IT</div>
                 </div>

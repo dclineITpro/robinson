@@ -107,7 +107,7 @@ const IowaCountdown = () => {
 
             <Link
               to="/locations#altoona"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 hover:shadow-lg hover:shadow-safety-orange/30"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300 hover:shadow-lg hover:shadow-robinson-gold/30"
             >
               Learn About Iowa Expansion
               <ArrowRight className="w-5 h-5" />

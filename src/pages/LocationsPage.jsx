@@ -167,7 +167,7 @@ const LocationsPage = () => {
                           {location.name}, {location.state}
                         </span>
                         {location.isNew && (
-                          <span className="px-2 py-0.5 rounded-full bg-robinson-blue text-robinson-black text-xs font-medium">
+                          <span className="px-2 py-0.5 rounded-full bg-robinson-gold text-robinson-black text-xs font-medium">
                             NEW
                           </span>
                         )}
