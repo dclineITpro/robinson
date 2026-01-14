@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 const WeldingSparks = () => {
   const canvasRef = useRef(null);
   const isActiveRef = useRef(false);
+  const boundsRef = useRef(null);
   
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -20,16 +21,24 @@ const WeldingSparks = () => {
     let moveTimeout;
     const MAX_TRAIL_LENGTH = 30; // Limit trail for performance
 
+    const updateBounds = () => {
+      boundsRef.current = canvas.getBoundingClientRect();
+    };
+
     const resizeCanvas = () => {
       const parent = canvas.parentElement;
       if (parent) {
         canvas.width = parent.offsetWidth;
         canvas.height = parent.offsetHeight;
+        updateBounds();
       }
     };
 
     window.addEventListener('resize', resizeCanvas);
     resizeCanvas();
+    
+    // Update bounds periodically to handle any layout changes
+    const boundsInterval = setInterval(updateBounds, 100);
 
     const createSpark = (x, y, velocityMult = 1) => {
       const angle = Math.random() * Math.PI * 2;
@@ -50,12 +59,17 @@ const WeldingSparks = () => {
     };
 
     const handleMouseMove = (e) => {
-      const rect = canvas.getBoundingClientRect();
+      if (!boundsRef.current) {
+        updateBounds();
+        if (!boundsRef.current) return;
+      }
+      
+      const rect = boundsRef.current;
       const newX = e.clientX - rect.left;
       const newY = e.clientY - rect.top;
       
       // Check if mouse is within canvas bounds
-      const isInBounds = newX >= 0 && newX <= canvas.width && newY >= 0 && newY <= canvas.height;
+      const isInBounds = newX >= 0 && newX <= rect.width && newY >= 0 && newY <= rect.height;
       
       if (!isInBounds) {
         isActiveRef.current = false;
@@ -66,7 +80,7 @@ const WeldingSparks = () => {
       const dy = newY - lastY;
       const distance = Math.sqrt(dx * dx + dy * dy);
       
-      // Always update mouse position
+      // Always update mouse position when in bounds
       mouseX = newX;
       mouseY = newY;
       
@@ -224,6 +238,7 @@ const WeldingSparks = () => {
       document.removeEventListener('mousemove', handleMouseMove);
       cancelAnimationFrame(animationFrameId);
       clearTimeout(moveTimeout);
+      clearInterval(boundsInterval);
     };
   }, []);
 

@@ -53,22 +53,9 @@ const HomePage = () => {
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 cursor-none">
         <WeldingSparks />
-        {/* Welding-Themed Background */}
+        {/* Welding Effects Only */}
         <div className="absolute inset-0 overflow-hidden">
           <AmbientWeldingFlashes />
-          
-          {/* Metal Texture Base */}
-          <div className="absolute inset-0 opacity-30">
-            <div className="absolute inset-0 bg-[linear-gradient(45deg,#1a1a1a_25%,transparent_25%,transparent_75%,#1a1a1a_75%,#1a1a1a),linear-gradient(45deg,#1a1a1a_25%,transparent_25%,transparent_75%,#1a1a1a_75%,#1a1a1a)] bg-[size:60px_60px] bg-[position:0_0,30px_30px]"></div>
-          </div>
-          
-          {/* Brushed Metal Effect */}
-          <div className="absolute inset-0 opacity-20 bg-gradient-to-r from-transparent via-gray-400/10 to-transparent bg-[size:200px_100%] animate-[shimmer_8s_linear_infinite]"></div>
-          
-          {/* Intense Arc Light Glows */}
-          <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-safety-orange/20 rounded-full blur-[120px]" />
-          <div className="absolute bottom-1/3 right-1/4 w-[600px] h-[600px] bg-blue-400/15 rounded-full blur-[140px]" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-yellow-300/10 rounded-full blur-[100px]" />
         </div>
 
         <motion.div 
