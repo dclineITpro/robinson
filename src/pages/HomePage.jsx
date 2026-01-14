@@ -70,10 +70,10 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/20 border border-safety-orange/50 mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/30 mb-8"
           >
-            <Briefcase className="w-4 h-4 text-safety-orange" />
-            <span className="text-safety-orange text-sm font-medium">DJ Cline | IT Director Candidate</span>
+            <Briefcase className="w-4 h-4 text-white" />
+            <span className="text-white text-sm font-medium">DJ Cline | IT Director Candidate</span>
           </motion.div>
 
           {/* Main Headline */}
@@ -83,7 +83,7 @@ const HomePage = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
           >
-            Leading <span className="text-safety-orange">Robinson</span> Through Digital Transformation
+            Leading <span className="text-white">Robinson</span> Through Digital Transformation
           </motion.h1>
 
           {/* Subheadline */}
@@ -323,7 +323,7 @@ const HomePage = () => {
               className="text-white"
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
-                <MapPin className="w-4 h-4 text-safety-orange" />
+                <MapPin className="w-4 h-4 text-white" />
                 <span className="text-white text-sm font-medium">I Understand the Vision</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -344,7 +344,7 @@ const HomePage = () => {
                   'Scalable cloud infrastructure',
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3 text-white/90">
-                    <div className="w-2 h-2 bg-safety-orange rounded-full" />
+                    <div className="w-2 h-2 bg-white rounded-full" />
                     {item}
                   </li>
                 ))}
@@ -369,19 +369,19 @@ const HomePage = () => {
                 <h3 className="text-white font-semibold mb-6 text-center">Altoona, IA - Opening 2027</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl bg-white/5 text-center">
-                    <div className="text-3xl font-bold text-safety-orange">560K</div>
+                    <div className="text-3xl font-bold text-white">560K</div>
                     <div className="text-white/70 text-sm">Square Feet</div>
                   </div>
                   <div className="p-4 rounded-xl bg-white/5 text-center">
-                    <div className="text-3xl font-bold text-safety-orange">500+</div>
+                    <div className="text-3xl font-bold text-white">500+</div>
                     <div className="text-white/70 text-sm">New Jobs</div>
                   </div>
                   <div className="p-4 rounded-xl bg-white/5 text-center">
-                    <div className="text-3xl font-bold text-safety-orange">2027</div>
+                    <div className="text-3xl font-bold text-white">2027</div>
                     <div className="text-white/70 text-sm">Grand Opening</div>
                   </div>
                   <div className="p-4 rounded-xl bg-white/5 text-center">
-                    <div className="text-3xl font-bold text-safety-orange">6th</div>
+                    <div className="text-3xl font-bold text-white">6th</div>
                     <div className="text-white/70 text-sm">Location</div>
                   </div>
                 </div>
@@ -400,7 +400,7 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-gold text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               My Strategic Focus
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
@@ -420,7 +420,7 @@ const HomePage = () => {
                 icon: Brain,
                 title: 'AI-Driven Predictive Maintenance',
                 description: 'Leverage IoT sensors and machine learning to predict equipment failures before they impact production.',
-                color: 'from-safety-orange to-yellow-500',
+                color: 'from-orange-500 to-yellow-500',
               },
               {
                 icon: Wifi,
@@ -435,7 +435,7 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-robinson-gold/50 transition-all duration-300 card-hover"
+                className="p-8 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-robinson-blue/50 transition-all duration-300 card-hover"
               >
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${pillar.color} flex items-center justify-center mb-6`}>
                   <pillar.icon className="w-8 h-8 text-robinson-black" />
@@ -454,7 +454,7 @@ const HomePage = () => {
           >
             <Link
               to="/digital-thread"
-              className="inline-flex items-center gap-2 text-safety-orange hover:text-safety-orange-light transition-colors font-medium"
+              className="inline-flex items-center gap-2 text-robinson-blue hover:text-robinson-blue-light transition-colors font-medium"
             >
               Explore my complete Digital Thread strategy
               <ArrowRight className="w-5 h-5" />
@@ -487,7 +487,7 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/about-me"
-                className="px-8 py-4 bg-white text-safety-orange font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-white text-robinson-blue font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
               >
                 View My Background
                 <ArrowRight className="w-5 h-5" />
