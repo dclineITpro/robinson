@@ -63,17 +63,17 @@ const AmbientWeldingFlashes = () => {
         <motion.div
           key={flash.id}
           initial={{ opacity: 0, scale: 0.3 }}
-          animate={{ opacity: [0, 1, 0], scale: [0.3, 1.8, 2.5] }}
+          animate={{ opacity: [0, 1, 0], scale: [0.225, 1.35, 1.875] }}
           transition={{ duration: flash.duration, ease: "easeInOut" }}
-          className="absolute rounded-full blur-[80px]"
+          className="absolute rounded-full blur-[60px]"
           style={{
             left: `${flash.x}%`,
             top: `${flash.y}%`,
-            width: '400px',
-            height: '400px',
+            width: '300px',
+            height: '300px',
             transform: 'translate(-50%, -50%)',
             background: 'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 10%, rgba(200,240,255,0.8) 30%, rgba(150,200,255,0.4) 50%, rgba(0,71,171,0.1) 70%, transparent 100%)', // Intense welding arc light
-            boxShadow: '0 0 100px 40px rgba(255,255,255,0.8), 0 0 200px 80px rgba(200,230,255,0.6)'
+            boxShadow: '0 0 75px 30px rgba(255,255,255,0.8), 0 0 150px 60px rgba(200,230,255,0.6)'
           }}
         />
       ))}
