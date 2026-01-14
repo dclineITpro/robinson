@@ -163,11 +163,10 @@ const LocationsPage = () => {
               Hub-and-Spoke Network
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
-              <span className="text-robinson-blue">6 Locations</span> Across the Midwest
+              <span className="text-robinson-blue">5 Wisconsin Locations</span> + Iowa Expansion
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
-              1.4 million square feet of advanced manufacturing space strategically positioned 
-              to serve customers throughout North America.
+              1.4 million square feet of advanced manufacturing space across Wisconsin with an Iowa expansion coming online.
             </p>
           </motion.div>
         </div>

@@ -129,7 +129,7 @@ const WhyRobinsonPage = () => {
               Why <span className="text-robinson-blue">Robinson</span> is the Right Fit
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
-              A 24/7 global manufacturer with operations across multiple continents, complex supply chains, 
+              A 24/7 Midwest manufacturer with five Wisconsin facilities and an Iowa expansion underway, complex supply chains, 
               and ambitious growth plans. This is exactly where my 25+ years of IT leadership delivers measurable impact.
             </p>
           </motion.div>
@@ -183,7 +183,7 @@ const WhyRobinsonPage = () => {
             viewport={{ once: true }}
             className="p-8 rounded-2xl bg-white/80 border border-gray-200"
           >
-            <h3 className="text-xl font-bold text-robinson-black mb-6 text-center">Tier-1 Global Clients</h3>
+            <h3 className="text-xl font-bold text-robinson-black mb-6 text-center">Tier-1 OEM Clients</h3>
             <div className="flex flex-wrap justify-center gap-6">
               {tierOneClients.map((client) => (
                 <div
@@ -215,7 +215,7 @@ const WhyRobinsonPage = () => {
               Hub-and-Spoke Architecture
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              6 Locations, <span className="text-robinson-blue-blue">One Unified Vision</span>
+              5 Wisconsin Facilities + Iowa Expansion
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Understanding the multi-site architecture is critical for IT strategy.
@@ -263,9 +263,8 @@ const WhyRobinsonPage = () => {
           >
             <h3 className="text-2xl font-bold text-robinson-black mb-4">IT Implication</h3>
             <p className="text-robinson-gray max-w-2xl mx-auto">
-              Managing IT across 6 locations requires unified systems, standardized processes, 
-              and a hub-and-spoke network architecture. The Iowa expansion is the perfect 
-              opportunity to implement these from day one.
+              Managing IT across five Wisconsin facilities with an Iowa expansion requires unified systems, standardized processes, 
+              and a hub-and-spoke network architecture. The Iowa expansion is the perfect opportunity to implement these from day one.
             </p>
           </motion.div>
         </div>
@@ -382,7 +381,7 @@ const WhyRobinsonPage = () => {
               Now See What I Would Do
             </h2>
             <p className="text-robinson-gray text-lg mb-10 max-w-2xl mx-auto">
-              Based on Robinson's 24/7 operations, global supply chain, and growth ambitions, 
+              Based on Robinson's 24/7 operations, multi-site supply chain, and growth ambitions, 
               here's my vision for digital transformation.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

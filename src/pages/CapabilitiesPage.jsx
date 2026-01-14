@@ -263,7 +263,7 @@ const CapabilitiesPage = () => {
               Certified <span className="text-robinson-blue-blue">Excellence</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
-              Our quality management systems meet the rigorous standards of Tier-1 global OEMs.
+              Our quality management systems meet the rigorous standards of Tier-1 OEMs.
             </p>
           </motion.div>
 

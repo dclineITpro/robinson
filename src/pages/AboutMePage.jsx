@@ -18,10 +18,10 @@ const AboutMePage = () => {
       location: 'Dubuque, IA',
       period: 'September 2015 - Present',
       highlights: [
-        'Lead IT operations for a 24/7 international manufacturer, overseeing infrastructure, support, compliance, and security for teams across the US, Mexico, and Asia',
+        'Lead IT operations for a 24/7 manufacturer with multi-site teams across the US, overseeing infrastructure, support, compliance, and security',
         'Spearheaded the technical infrastructure transition from AS/400 to SAP and implemented Microsoft 365, enhancing operational efficiency',
         'Developed and enforced a comprehensive security program from the ground up, reducing vulnerabilities through policy standardization and advanced tools',
-        'Collaborate with global stakeholders to deliver scalable solutions, including SDWAN/SASE and cloud infrastructure upgrades',
+        'Collaborate with cross-functional stakeholders to deliver scalable solutions, including SDWAN/SASE and cloud infrastructure upgrades',
         'AI expert utilizing locally hosted AI to customize technology while keeping proprietary data secure',
       ],
     },
@@ -31,7 +31,7 @@ const AboutMePage = () => {
       location: 'Keokuk, IA',
       period: 'May 2012 - September 2015',
       highlights: [
-        'Directed technical operations for North America\'s division of a global starch manufacturer, serving as liaison between IT and business units',
+        'Directed technical operations for a North American manufacturing division, serving as liaison between IT and business units',
         'Pioneered technology deployments, positioning the US subsidiary as the company\'s innovation leader',
         'Managed ITIL/ITSM processes and helpdesk operations, improving service delivery metrics across 4 sites',
       ],
@@ -62,7 +62,7 @@ const AboutMePage = () => {
   ];
 
   const skills = [
-    { category: 'Strategic', items: ['IT Strategy & Roadmapping', 'Digital Transformation', 'Global Operations', 'ITIL/ITSM'] },
+    { category: 'Strategic', items: ['IT Strategy & Roadmapping', 'Digital Transformation', 'Multi-site Operations', 'ITIL/ITSM'] },
     { category: 'Technical', items: ['SAP ERP', 'Microsoft 365', 'SDWAN/SASE', 'Cloud Infrastructure'] },
     { category: 'Security', items: ['XDR', 'Security Compliance', 'Policy Standardization', 'FBI Audit Experience'] },
     { category: 'Leadership', items: ['AI/ML Integration', 'Team Building', 'Cross-functional Collaboration', 'Enterprise Architecture'] },
@@ -72,7 +72,7 @@ const AboutMePage = () => {
     {
       icon: Building2,
       title: 'Manufacturing IT Leadership',
-      description: 'Currently leading IT for a 24/7 international manufacturer with operations across the US, Mexico, and Asia.',
+      description: 'Currently leading IT for a 24/7 manufacturer with multiple U.S. sites.',
     },
     {
       icon: Database,
@@ -91,8 +91,8 @@ const AboutMePage = () => {
     },
     {
       icon: Users,
-      title: 'Global Team Leadership',
-      description: 'Experience managing IT operations and teams across multiple countries and time zones.',
+      title: 'Multi-Site Team Leadership',
+      description: 'Experience managing IT operations and teams across multiple U.S. sites and time zones.',
     },
     {
       icon: Heart,
@@ -360,7 +360,7 @@ const AboutMePage = () => {
                 exactly the kind of greenfield opportunity where I can apply these skills.
               </p>
               <p>
-                I understand Robinson's 24/7 operations, global supply chain complexity, and growth ambitions. 
+                I understand Robinson's 24/7 operations, multi-site supply chain complexity, and growth ambitions. 
                 I've developed a comprehensive vision for digital transformation. Now I'm ready to discuss how I can 
                 help Robinson write its next chapter.
               </p>
@@ -387,7 +387,7 @@ const AboutMePage = () => {
               Let's Start the Conversation
             </h2>
             <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
-              With 25+ years of IT leadership across 24/7 manufacturing, global operations, and digital transformation, 
+              With 25+ years of IT leadership across 24/7 manufacturing, multi-site operations, and digital transformation, 
               I'm ready to discuss how I can contribute to Robinson's success.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
