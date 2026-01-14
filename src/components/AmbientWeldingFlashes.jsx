@@ -9,17 +9,9 @@ const AmbientWeldingFlashes = () => {
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      if (!containerRef.current) return;
-      
-      const rect = containerRef.current.getBoundingClientRect();
-      const isInBounds = e.clientX >= rect.left && e.clientX <= rect.right && 
-                         e.clientY >= rect.top && e.clientY <= rect.bottom;
-      
-      if (!isInBounds) return;
-      
-      // Store mouse position as percentage of container
-      const xPercent = ((e.clientX - rect.left) / rect.width) * 100;
-      const yPercent = ((e.clientY - rect.top) / rect.height) * 100;
+      // Calculate mouse position as percentage of window
+      const xPercent = (e.clientX / window.innerWidth) * 100;
+      const yPercent = (e.clientY / window.innerHeight) * 100;
       mousePositionRef.current = { x: xPercent, y: yPercent };
       
       // Update all flash positions to follow the mouse
