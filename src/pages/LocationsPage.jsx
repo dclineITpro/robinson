@@ -49,7 +49,7 @@ const LocationsPage = () => {
       state: 'Iowa',
       type: 'New Facility - 2027',
       sqft: '560,000',
-      employees: '500+ (Projected)',
+      employees: '100+ (Projected)',
       capabilities: ['Full-Service Fabrication', 'Advanced Automation', 'Powder Coating', 'Assembly'],
       address: 'Coming Soon - Altoona, IA',
       phone: '(515) 555-0000',
@@ -423,7 +423,7 @@ const LocationsPage = () => {
             </h2>
             <p className="text-robinson-gray text-lg mb-10 max-w-2xl mx-auto">
               Our Altoona, Iowa facility represents the largest single investment in Robinson's 
-              history. Opening in 2027, this state-of-the-art facility will create 500+ new jobs.
+              history. Opening in 2027, this state-of-the-art facility will create 100+ new jobs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link

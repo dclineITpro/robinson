@@ -339,8 +339,6 @@ const ContactPage = () => {
                           >
                             <option value="">Any location</option>
                             <option value="depere">De Pere, WI</option>
-                            <option value="manitowoc">Manitowoc, WI</option>
-                            <option value="altoona">Altoona, IA</option>
                           </select>
                         </div>
                       </div>

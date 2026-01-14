@@ -32,10 +32,10 @@ const WhyRobinsonPage = () => {
   ];
 
   const locations = [
-    { name: 'De Pere Main Campus', type: 'Headquarters', sqft: '1740 Eisenhower Rd' },
-    { name: 'De Pere South', type: 'Manufacturing', sqft: '2107 American Blvd' },
-    { name: 'Manitowoc Campus', type: 'Manufacturing', sqft: '2121 South 30th Street' },
-    { name: 'Altoona, IA (2027)', type: 'New Facility', sqft: '560,000', isNew: true },
+    { name: 'De Pere Main Campus', type: 'Headquarters', sqft: '300,000', address: '1740 Eisenhower Rd' },
+    { name: 'De Pere South', type: 'Manufacturing', sqft: '200,000', address: '2107 American Blvd' },
+    { name: 'Manitowoc Campus', type: 'Manufacturing', sqft: '270,000', address: '2121 South 30th Street' },
+    { name: 'Altoona, IA (2027)', type: 'New Facility', sqft: '560,000', isNew: true, address: 'Coming Soon' },
   ];
 
   const whyThisRole = [
@@ -245,9 +245,15 @@ const WhyRobinsonPage = () => {
                     </span>
                   )}
                 </div>
-                <div className="flex items-center gap-2">
-                  <Building2 className="w-5 h-5 text-robinson-blue" />
-                  <span className="text-robinson-gray">{location.sqft} sq. ft.</span>
+                <div className="flex flex-col gap-2">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-robinson-blue" />
+                    <span className="text-robinson-gray text-sm">{location.address}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Building2 className="w-4 h-4 text-robinson-blue" />
+                    <span className="text-robinson-gray text-sm">{location.sqft} sq. ft.</span>
+                  </div>
                 </div>
               </motion.div>
             ))}
