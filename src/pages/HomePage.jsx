@@ -160,7 +160,7 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <span className="text-robinson-gold text-sm font-medium uppercase tracking-widest">
+            <span className="text-robinson-blue/60 text-sm font-medium uppercase tracking-widest">
               My Track Record
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-robinson-blue mt-4">
@@ -173,9 +173,9 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center p-8 rounded-2xl bg-robinson-bg border-2 border-robinson-gold/20 hover:border-robinson-gold hover:shadow-premium-gold transition-all duration-300"
+              className="text-center p-8 rounded-lg bg-white border border-gray-200 hover:shadow-lg transition-all duration-300"
             >
-              <TrendingUp className="w-10 h-10 text-robinson-gold mx-auto mb-4" />
+              <TrendingUp className="w-10 h-10 text-robinson-blue mx-auto mb-4" />
               <div className="text-5xl md:text-6xl font-bold text-robinson-blue mb-2">
                 <AnimatedCounter end={25} suffix="+" duration={2} />
               </div>
@@ -187,9 +187,9 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-center p-8 rounded-2xl bg-robinson-bg border-2 border-robinson-gold/20 hover:border-robinson-gold hover:shadow-premium-gold transition-all duration-300"
+              className="text-center p-8 rounded-lg bg-white border border-gray-200 hover:shadow-lg transition-all duration-300"
             >
-              <Globe className="w-10 h-10 text-robinson-gold mx-auto mb-4" />
+              <Globe className="w-10 h-10 text-robinson-blue mx-auto mb-4" />
               <div className="text-5xl md:text-6xl font-bold text-robinson-blue mb-2">
                 <AnimatedCounter end={6} duration={1.5} />
               </div>
@@ -201,9 +201,9 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-center p-8 rounded-2xl bg-robinson-bg border-2 border-robinson-gold/20 hover:border-robinson-gold hover:shadow-premium-gold transition-all duration-300"
+              className="text-center p-8 rounded-lg bg-white border border-gray-200 hover:shadow-lg transition-all duration-300"
             >
-              <Shield className="w-10 h-10 text-robinson-gold mx-auto mb-4" />
+              <Shield className="w-10 h-10 text-robinson-blue mx-auto mb-4" />
               <div className="text-5xl md:text-6xl font-bold text-robinson-blue mb-2">
                 <AnimatedCounter end={0} duration={1} />
               </div>
@@ -215,9 +215,9 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-center p-8 rounded-2xl bg-robinson-bg border-2 border-robinson-gold/20 hover:border-robinson-gold hover:shadow-premium-gold transition-all duration-300"
+              className="text-center p-8 rounded-lg bg-white border border-gray-200 hover:shadow-lg transition-all duration-300"
             >
-              <Cpu className="w-10 h-10 text-robinson-gold mx-auto mb-4" />
+              <Cpu className="w-10 h-10 text-robinson-blue mx-auto mb-4" />
               <div className="text-5xl md:text-6xl font-bold text-robinson-blue mb-2">
                 24/7
               </div>
@@ -240,10 +240,10 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <span className="text-robinson-gold text-sm font-bold uppercase tracking-widest">
+            <span className="text-white/70 text-sm font-medium uppercase tracking-widest">
               I Know Robinson
             </span>
-            <p className="text-white/90 text-lg mt-4 max-w-2xl mx-auto">Understanding your business is the foundation of effective IT leadership</p>
+            <p className="text-white text-lg mt-4 max-w-2xl mx-auto">Understanding your business is the foundation of effective IT leadership</p>
           </motion.div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {robinsonStats.map((stat, index) => (
@@ -253,9 +253,9 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center p-6 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-all duration-300"
+                className="text-center p-6 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-all duration-300"
               >
-                <div className="text-5xl md:text-6xl font-bold text-robinson-gold mb-3">{stat.value}</div>
+                <div className="text-5xl md:text-6xl font-bold text-white mb-3">{stat.value}</div>
                 <div className="text-white font-semibold text-lg">{stat.label}</div>
                 <div className="text-white/70 text-sm mt-1">{stat.desc}</div>
               </motion.div>
@@ -273,11 +273,11 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-5 py-2 rounded-full bg-robinson-gold/10 border-2 border-robinson-gold/30 text-robinson-gold text-sm font-bold uppercase tracking-wider mb-6">
+            <span className="inline-block px-5 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/20 text-robinson-blue text-sm font-medium uppercase tracking-wider mb-6">
               Strategic Alignment
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-blue mb-6">
-              Why <span className="text-robinson-gold">Robinson</span> is the Right Fit
+              Why <span className="text-robinson-blue">Robinson</span> is the Right Fit
             </h2>
             <p className="text-robinson-gray text-lg max-w-3xl mx-auto leading-relaxed">
               A 24/7 global manufacturer with complex supply chains, legacy systems, and ambitious growth plans. 
@@ -293,10 +293,10 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-robinson-bg border-2 border-transparent hover:border-robinson-gold hover:shadow-premium-gold transition-all duration-300 group"
+                className="p-8 rounded-lg bg-white border border-gray-200 hover:shadow-lg transition-all duration-300"
               >
-                <div className="w-14 h-14 rounded-xl bg-robinson-gold/10 flex items-center justify-center mb-5 group-hover:bg-robinson-gold/20 transition-colors duration-300">
-                  <item.icon className="w-7 h-7 text-robinson-gold" />
+                <div className="w-14 h-14 rounded-lg bg-robinson-blue/10 flex items-center justify-center mb-5">
+                  <item.icon className="w-7 h-7 text-robinson-blue" />
                 </div>
                 <h3 className="text-xl font-bold text-robinson-blue mb-3">{item.title}</h3>
                 <p className="text-robinson-gray leading-relaxed">{item.description}</p>
