@@ -401,10 +401,10 @@ const ContactPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-robinson-black mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Visit Our Headquarters
             </h2>
-            <p className="text-robinson-gray">
+            <p className="text-white/85">
               Located in De Pere, Wisconsin—the heart of America's manufacturing corridor.
             </p>
           </motion.div>
@@ -414,14 +414,14 @@ const ContactPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="aspect-[21/9] rounded-3xl bg-white/80 border border-gray-300 overflow-hidden relative"
+            className="aspect-[21/9] rounded-3xl bg-white text-robinson-blue border border-white/30 overflow-hidden relative shadow-2xl"
           >
             {/* Map placeholder */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
-                <MapPin className="w-16 h-16 text-robinson-blue/40 mx-auto mb-4" />
-                <p className="text-robinson-gray">Interactive map would be displayed here</p>
-                <p className="text-robinson-gray text-sm">De Pere, Wisconsin</p>
+                <MapPin className="w-16 h-16 text-robinson-blue mx-auto mb-4" />
+                <p className="text-robinson-blue">Interactive map would be displayed here</p>
+                <p className="text-robinson-blue text-sm">De Pere, Wisconsin</p>
               </div>
             </div>
             <div className="absolute inset-0 grid-bg opacity-20" />

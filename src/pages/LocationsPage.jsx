@@ -348,15 +348,15 @@ const LocationsPage = () => {
 
                   {/* Stats */}
                   <div className="grid grid-cols-2 gap-6 mb-8">
-                    <div className="p-6 rounded-xl bg-gray-500 border border-gray-200">
-                      <Building2 className="w-8 h-8 text-robinson-blue mb-3" />
-                      <div className="text-2xl font-bold text-robinson-black">{currentLocation.sqft}</div>
-                      <div className="text-robinson-gray-light text-sm">Square Feet</div>
+                    <div className="p-6 rounded-xl bg-robinson-blue text-white shadow-lg">
+                      <Building2 className="w-8 h-8 text-white mb-3" />
+                      <div className="text-2xl font-bold">{currentLocation.sqft}</div>
+                      <div className="text-white/80 text-sm">Square Feet</div>
                     </div>
-                    <div className="p-6 rounded-xl bg-gray-500 border border-gray-200">
-                      <Users className="w-8 h-8 text-robinson-blue mb-3" />
-                      <div className="text-2xl font-bold text-robinson-black">{currentLocation.employees}</div>
-                      <div className="text-robinson-gray-light text-sm">Employee-Owners</div>
+                    <div className="p-6 rounded-xl bg-robinson-blue text-white shadow-lg">
+                      <Users className="w-8 h-8 text-white mb-3" />
+                      <div className="text-2xl font-bold">{currentLocation.employees}</div>
+                      <div className="text-white/80 text-sm">Employee-Owners</div>
                     </div>
                   </div>
 

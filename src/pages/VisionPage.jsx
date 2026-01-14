@@ -214,22 +214,17 @@ const VisionPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-white/10 border border-white/15 shadow-xl shadow-black/20"
+                className="p-8 rounded-2xl bg-white text-robinson-blue shadow-lg hover:shadow-xl transition-all duration-300 h-full"
               >
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-white/90 flex items-center justify-center text-robinson-blue font-bold">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <div className="text-white/80 font-medium text-sm">{phase.phase}</div>
-                    <div className="text-white font-bold text-xl">{phase.title}</div>
-                  </div>
+                <div className="w-12 h-12 rounded-xl bg-robinson-blue/10 flex items-center justify-center mb-4">
+                  <phase.icon className="w-6 h-6 text-robinson-blue" />
                 </div>
-                <ul className="space-y-3">
-                  {phase.items.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-white/85 text-sm">
-                      <CheckCircle className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
-                      {item}
+                <h3 className="text-xl font-bold mb-3">{phase.title}</h3>
+                <ul className="space-y-2 text-robinson-gray">
+                  {phase.items.map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-robinson-blue mt-1" />
+                      <span>{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -267,25 +262,14 @@ const VisionPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="p-6 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-robinson-blue/30 transition-all duration-300"
+                className="p-6 rounded-2xl bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-robinson-blue/10 flex items-center justify-center">
-                    <priority.icon className="w-6 h-6 text-robinson-blue" />
-                  </div>
-                  <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                    priority.impact === 'Critical' 
-                      ? 'bg-red-500/20 text-red-400' 
-                      : priority.impact === 'High'
-                      ? 'bg-safety-orange/20 text-robinson-blue'
-                      : 'bg-blue-500/20 text-blue-400'
-                  }`}>
-                    {priority.impact}
-                  </span>
+                <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center mb-4">
+                  <priority.icon className="w-5 h-5 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-robinson-black mb-2">{priority.title}</h3>
-                <p className="text-robinson-gray text-sm mb-4">{priority.description}</p>
-                <div className="flex items-center gap-2 text-robinson-gray text-xs">
+                <h3 className="text-lg font-bold mb-2">{priority.title}</h3>
+                <p className="text-white/85 text-sm mb-4">{priority.description}</p>
+                <div className="flex items-center gap-2 text-white/80 text-xs">
                   <Clock className="w-4 h-4" />
                   {priority.timeline}
                 </div>
@@ -341,10 +325,10 @@ const VisionPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="p-6 rounded-2xl bg-white/10 border border-white/20"
+                className="p-6 rounded-2xl bg-white text-robinson-blue shadow-lg"
               >
-                <h3 className="text-lg font-bold text-white mb-3">{principle.title}</h3>
-                <p className="text-white/90 text-sm leading-relaxed">{principle.description}</p>
+                <h3 className="text-lg font-bold mb-3">{principle.title}</h3>
+                <p className="text-robinson-gray text-sm leading-relaxed">{principle.description}</p>
               </motion.div>
             ))}
           </div>

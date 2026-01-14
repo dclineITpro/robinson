@@ -184,26 +184,26 @@ const CapabilitiesPage = () => {
                 }`}
               >
                 {/* Content */}
-                <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                <div className={`${index % 2 === 1 ? 'lg:order-2' : ''} p-8 rounded-3xl bg-robinson-blue text-white shadow-lg`}>
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-16 h-16 rounded-2xl bg-safety-orange/10 flex items-center justify-center">
-                      <capability.icon className="w-8 h-8 text-robinson-blue" />
+                    <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center">
+                      <capability.icon className="w-8 h-8 text-white" />
                     </div>
                     <div>
-                      <h2 className="text-3xl md:text-4xl font-bold text-robinson-black">{capability.title}</h2>
-                      <p className="text-robinson-blue font-medium">{capability.subtitle}</p>
+                      <h2 className="text-3xl md:text-4xl font-bold">{capability.title}</h2>
+                      <p className="text-white/85 font-medium">{capability.subtitle}</p>
                     </div>
                   </div>
 
-                  <p className="text-robinson-gray text-lg mb-8 leading-relaxed">
+                  <p className="text-white/85 text-lg mb-8 leading-relaxed">
                     {capability.description}
                   </p>
 
                   <div className="grid grid-cols-2 gap-4 mb-8">
                     {capability.features.map((feature) => (
                       <div key={feature} className="flex items-center gap-2">
-                        <CheckCircle className="w-5 h-5 text-robinson-blue flex-shrink-0" />
-                        <span className="text-robinson-gray text-sm">{feature}</span>
+                        <CheckCircle className="w-5 h-5 text-white flex-shrink-0" />
+                        <span className="text-white/80 text-sm">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -219,24 +219,24 @@ const CapabilitiesPage = () => {
 
                 {/* Specs Card */}
                 <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
-                  <div className="p-8 rounded-3xl bg-gray-50/50 border border-gray-300">
-                    <h3 className="text-robinson-black font-semibold mb-6 flex items-center gap-2">
-                      <Ruler className="w-5 h-5 text-robinson-blue" />
+                  <div className="p-8 rounded-3xl bg-robinson-blue text-white shadow-lg">
+                    <h3 className="font-semibold mb-6 flex items-center gap-2">
+                      <Ruler className="w-5 h-5 text-white" />
                       Technical Specifications
                     </h3>
                     <div className="grid grid-cols-2 gap-6">
                       {capability.specs.map((spec) => (
-                        <div key={spec.label} className="p-4 rounded-xl bg-white/50 border border-gray-200">
-                          <div className="text-2xl font-bold text-robinson-blue mb-1">{spec.value}</div>
-                          <div className="text-robinson-gray-light text-sm">{spec.label}</div>
+                        <div key={spec.label} className="p-4 rounded-xl bg-white/10">
+                          <div className="text-2xl font-bold mb-1 text-white">{spec.value}</div>
+                          <div className="text-white/80 text-sm">{spec.label}</div>
                         </div>
                       ))}
                     </div>
 
                     {/* Visual placeholder */}
-                    <div className="mt-8 aspect-video rounded-2xl bg-white/80 border border-gray-200 flex items-center justify-center relative overflow-hidden">
-                      <capability.icon className="w-20 h-20 text-robinson-blue/20" />
-                      <div className="absolute inset-0 grid-bg opacity-20" />
+                    <div className="mt-8 aspect-video rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center relative overflow-hidden">
+                      <capability.icon className="w-20 h-20 text-white/60" />
+                      <div className="absolute inset-0 grid-bg opacity-10" />
                     </div>
                   </div>
                 </div>

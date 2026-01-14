@@ -226,13 +226,13 @@ const AboutMePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="p-6 rounded-2xl bg-white/80 border border-gray-200 hover:border-robinson-blue/30 transition-all duration-300"
+                className="p-6 rounded-2xl bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-safety-orange/10 flex items-center justify-center mb-4">
-                  <item.icon className="w-6 h-6 text-robinson-blue" />
+                <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-4">
+                  <item.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-robinson-black mb-2">{item.title}</h3>
-                <p className="text-robinson-gray text-sm leading-relaxed">{item.description}</p>
+                <h3 className="text-lg font-bold mb-2">{item.title}</h3>
+                <p className="text-white/85 text-sm leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -265,13 +265,13 @@ const AboutMePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-gray-50/50 border border-gray-200"
+                className="p-8 rounded-2xl bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-6">
                   <div>
-                    <h3 className="text-2xl font-bold text-robinson-black">{job.title}</h3>
-                    <p className="text-robinson-blue font-medium">{job.company}</p>
-                    <div className="flex items-center gap-4 mt-2 text-robinson-gray-light text-sm">
+                    <h3 className="text-2xl font-bold">{job.title}</h3>
+                    <p className="text-white/85 font-medium">{job.company}</p>
+                    <div className="flex items-center gap-4 mt-2 text-white/75 text-sm">
                       <span className="flex items-center gap-1">
                         <MapPin className="w-4 h-4" />
                         {job.location}
@@ -285,8 +285,8 @@ const AboutMePage = () => {
                 </div>
                 <ul className="grid md:grid-cols-2 gap-3">
                   {job.highlights.map((highlight) => (
-                    <li key={highlight} className="flex items-start gap-3 text-robinson-gray text-sm">
-                      <CheckCircle className="w-4 h-4 text-robinson-blue flex-shrink-0 mt-0.5" />
+                    <li key={highlight} className="flex items-start gap-3 text-white/85 text-sm">
+                      <CheckCircle className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
                       {highlight}
                     </li>
                   ))}

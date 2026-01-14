@@ -349,18 +349,18 @@ const DigitalThreadPage = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <div className="p-6 rounded-2xl bg-white/80 border border-gray-200">
+              <div className="p-6 rounded-2xl bg-robinson-blue text-white shadow-lg">
                 <div className="space-y-3">
                   {rtaTechCurriculum.map((course) => (
                     <div
                       key={course.course}
-                      className="flex items-center justify-between p-4 rounded-xl bg-gray-50/50 border border-gray-200"
+                      className="flex items-center justify-between p-4 rounded-xl bg-white/10"
                     >
                       <div>
-                        <div className="text-robinson-black font-medium">{course.course}</div>
-                        <div className="text-robinson-gray-light text-sm">{course.audience}</div>
+                        <div className="font-medium">{course.course}</div>
+                        <div className="text-white/80 text-sm">{course.audience}</div>
                       </div>
-                      <div className="text-robinson-blue font-medium text-sm">{course.duration}</div>
+                      <div className="text-white font-medium text-sm">{course.duration}</div>
                     </div>
                   ))}
                 </div>

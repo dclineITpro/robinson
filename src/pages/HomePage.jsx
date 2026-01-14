@@ -173,56 +173,56 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center p-8 rounded-lg bg-white border border-gray-200 hover:shadow-lg transition-all duration-300"
+              className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <TrendingUp className="w-10 h-10 text-robinson-blue mx-auto mb-4" />
-              <div className="text-5xl md:text-6xl font-bold text-robinson-blue mb-2">
+              <TrendingUp className="w-10 h-10 text-white mx-auto mb-4" />
+              <div className="text-5xl md:text-6xl font-bold mb-2">
                 <AnimatedCounter end={25} suffix="+" duration={2} />
               </div>
-              <div className="text-robinson-blue font-semibold text-lg">Years in IT</div>
-              <div className="text-robinson-gray text-sm mt-1">Progressive Leadership</div>
+              <div className="font-semibold text-lg">Years in IT</div>
+              <div className="text-white/80 text-sm mt-1">Progressive Leadership</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-center p-8 rounded-lg bg-white border border-gray-200 hover:shadow-lg transition-all duration-300"
+              className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <Globe className="w-10 h-10 text-robinson-blue mx-auto mb-4" />
-              <div className="text-5xl md:text-6xl font-bold text-robinson-blue mb-2">
+              <Globe className="w-10 h-10 text-white mx-auto mb-4" />
+              <div className="text-5xl md:text-6xl font-bold mb-2">
                 <AnimatedCounter end={6} duration={1.5} />
               </div>
-              <div className="text-robinson-blue font-semibold text-lg">Countries</div>
-              <div className="text-robinson-gray text-sm mt-1">Global IT Operations</div>
+              <div className="font-semibold text-lg">Countries</div>
+              <div className="text-white/80 text-sm mt-1">Global IT Operations</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-center p-8 rounded-lg bg-white border border-gray-200 hover:shadow-lg transition-all duration-300"
+              className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <Shield className="w-10 h-10 text-robinson-blue mx-auto mb-4" />
-              <div className="text-5xl md:text-6xl font-bold text-robinson-blue mb-2">
+              <Shield className="w-10 h-10 text-white mx-auto mb-4" />
+              <div className="text-5xl md:text-6xl font-bold mb-2">
                 <AnimatedCounter end={0} duration={1} />
               </div>
-              <div className="text-robinson-blue font-semibold text-lg">Security Incidents</div>
-              <div className="text-robinson-gray text-sm mt-1">Security Excellence</div>
+              <div className="font-semibold text-lg">Security Incidents</div>
+              <div className="text-white/80 text-sm mt-1">Security Excellence</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-center p-8 rounded-lg bg-white border border-gray-200 hover:shadow-lg transition-all duration-300"
+              className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <Cpu className="w-10 h-10 text-robinson-blue mx-auto mb-4" />
-              <div className="text-5xl md:text-6xl font-bold text-robinson-blue mb-2">
+              <Cpu className="w-10 h-10 text-white mx-auto mb-4" />
+              <div className="text-5xl md:text-6xl font-bold mb-2">
                 24/7
               </div>
-              <div className="text-robinson-blue font-semibold text-lg">Manufacturing Support</div>
-              <div className="text-robinson-gray text-sm mt-1">International Operations</div>
+              <div className="font-semibold text-lg">Manufacturing Support</div>
+              <div className="text-white/80 text-sm mt-1">International Operations</div>
             </motion.div>
           </div>
         </div>
@@ -253,11 +253,11 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center p-6 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-all duration-300"
+                className="text-center p-6 rounded-lg bg-white text-robinson-blue shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl md:text-6xl font-bold text-white mb-3">{stat.value}</div>
-                <div className="text-white font-semibold text-lg">{stat.label}</div>
-                <div className="text-white/70 text-sm mt-1">{stat.desc}</div>
+                <div className="text-5xl md:text-6xl font-bold mb-3">{stat.value}</div>
+                <div className="font-semibold text-lg">{stat.label}</div>
+                <div className="text-robinson-gray text-sm mt-1">{stat.desc}</div>
               </motion.div>
             ))}
           </div>
@@ -293,13 +293,13 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-8 rounded-lg bg-white border border-gray-200 hover:shadow-lg transition-all duration-300"
+                className="p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="w-14 h-14 rounded-lg bg-robinson-blue/10 flex items-center justify-center mb-5">
-                  <item.icon className="w-7 h-7 text-robinson-blue" />
+                <div className="w-14 h-14 rounded-lg bg-white/20 flex items-center justify-center mb-5">
+                  <item.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-robinson-blue mb-3">{item.title}</h3>
-                <p className="text-robinson-gray leading-relaxed">{item.description}</p>
+                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                <p className="text-white/85 leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -365,24 +365,24 @@ const HomePage = () => {
               transition={{ delay: 0.2 }}
               className="relative"
             >
-              <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-8">
-                <h3 className="text-white font-semibold mb-6 text-center">Altoona, IA - Opening 2027</h3>
+              <div className="bg-white text-robinson-blue rounded-3xl border border-white/50 p-8 shadow-2xl">
+                <h3 className="font-semibold mb-6 text-center">Altoona, IA - Opening 2027</h3>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="p-4 rounded-xl bg-white/5 text-center">
-                    <div className="text-3xl font-bold text-white">560K</div>
-                    <div className="text-white/70 text-sm">Square Feet</div>
+                  <div className="p-4 rounded-xl bg-robinson-blue/10 text-center">
+                    <div className="text-3xl font-bold">560K</div>
+                    <div className="text-robinson-gray text-sm">Square Feet</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-white/5 text-center">
-                    <div className="text-3xl font-bold text-white">500+</div>
-                    <div className="text-white/70 text-sm">New Jobs</div>
+                  <div className="p-4 rounded-xl bg-robinson-blue/10 text-center">
+                    <div className="text-3xl font-bold">500+</div>
+                    <div className="text-robinson-gray text-sm">New Jobs</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-white/5 text-center">
-                    <div className="text-3xl font-bold text-white">2027</div>
-                    <div className="text-white/70 text-sm">Grand Opening</div>
+                  <div className="p-4 rounded-xl bg-robinson-blue/10 text-center">
+                    <div className="text-3xl font-bold">2027</div>
+                    <div className="text-robinson-gray text-sm">Grand Opening</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-white/5 text-center">
-                    <div className="text-3xl font-bold text-white">6th</div>
-                    <div className="text-white/70 text-sm">Location</div>
+                  <div className="p-4 rounded-xl bg-robinson-blue/10 text-center">
+                    <div className="text-3xl font-bold">6th</div>
+                    <div className="text-robinson-gray text-sm">Location</div>
                   </div>
                 </div>
               </div>
@@ -435,13 +435,13 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-robinson-blue/50 transition-all duration-300 card-hover"
+                className="p-8 rounded-2xl bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300 card-hover"
               >
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${pillar.color} flex items-center justify-center mb-6`}>
-                  <pillar.icon className="w-8 h-8 text-robinson-black" />
+                  <pillar.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-robinson-black mb-4">{pillar.title}</h3>
-                <p className="text-robinson-gray leading-relaxed">{pillar.description}</p>
+                <h3 className="text-2xl font-bold mb-4">{pillar.title}</h3>
+                <p className="text-white/85 leading-relaxed">{pillar.description}</p>
               </motion.div>
             ))}
           </div>
