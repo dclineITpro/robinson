@@ -51,7 +51,19 @@ const HomePage = () => {
   return (
     <main>
       {/* Hero Section */}
-      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 cursor-none">
+      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden cursor-none" style={{
+        background: `
+          linear-gradient(90deg, rgba(40,40,40,0.8) 0%, rgba(60,60,60,0.8) 50%, rgba(40,40,40,0.8) 100%),
+          repeating-linear-gradient(
+            0deg,
+            #2a2a2a,
+            #2a2a2a 2px,
+            #353535 2px,
+            #353535 4px
+          ),
+          linear-gradient(180deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%)
+        `
+      }}>
         {/* Welding Effects Only */}
         <div className="absolute inset-0 overflow-hidden">
           <AmbientWeldingFlashes />

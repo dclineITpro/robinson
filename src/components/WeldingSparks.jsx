@@ -96,7 +96,7 @@ const WeldingSparks = () => {
           x: mouseX,
           y: mouseY,
           life: 1.0,
-          decay: 0.012,
+          decay: 0.008, // Slower decay to keep slag visible longer
           size: 4 + Math.random() * 2
         });
         
@@ -138,20 +138,20 @@ const WeldingSparks = () => {
           ctx.arc(slag.x, slag.y, radius, 0, Math.PI * 2);
           
           // Slag color: glowing white -> orange -> gray (molten metal cooling)
-          const alpha = Math.min(slag.life * 1.2, 1.0);
-          if (slag.life > 0.75) {
+          const alpha = Math.min(slag.life * 1.5, 1.0);
+          if (slag.life > 0.7) {
             // Glowing white hot
             ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
             ctx.shadowBlur = 8;
             ctx.shadowColor = 'rgba(255, 255, 255, 0.8)';
-          } else if (slag.life > 0.4) {
+          } else if (slag.life > 0.35) {
             // Glowing orange
             ctx.fillStyle = `rgba(255, 140, 0, ${alpha})`;
             ctx.shadowBlur = 5;
             ctx.shadowColor = 'rgba(255, 140, 0, 0.6)';
           } else {
-            // Cooling to gray slag
-            ctx.fillStyle = `rgba(120, 120, 120, ${alpha * 0.7})`;
+            // Cooling to dark gray slag - more visible
+            ctx.fillStyle = `rgba(80, 80, 80, ${Math.min(alpha * 1.5, 0.9)})`;
             ctx.shadowBlur = 0;
           }
           
