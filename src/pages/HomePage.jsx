@@ -58,7 +58,6 @@ const HomePage = () => {
         </div>
 
         <motion.div 
-          style={{ opacity, y }}
           className="relative z-10 max-w-5xl mx-auto px-6 text-center pointer-events-none"
         >
           {/* Badge */}
