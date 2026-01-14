@@ -60,7 +60,7 @@ const HomePage = () => {
 
         <motion.div 
           style={{ opacity, y }}
-          className="relative z-10 max-w-5xl mx-auto px-6 text-center"
+          className="relative z-10 max-w-5xl mx-auto px-6 text-center pointer-events-none"
         >
           {/* Badge */}
           <motion.div
@@ -109,7 +109,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-auto"
           >
             <Link
               to="/vision"
