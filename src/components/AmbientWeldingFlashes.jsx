@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from 'react';
 const AmbientWeldingFlashes = () => {
   const [flashes, setFlashes] = useState([]);
   const lastMoveTimeRef = useRef(Date.now());
+  const mousePositionRef = useRef({ x: 50, y: 50 }); // Store mouse position as percentage
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -15,6 +16,11 @@ const AmbientWeldingFlashes = () => {
                          e.clientY >= rect.top && e.clientY <= rect.bottom;
       
       if (!isInBounds) return;
+      
+      // Store mouse position as percentage of container
+      const xPercent = ((e.clientX - rect.left) / rect.width) * 100;
+      const yPercent = ((e.clientY - rect.top) / rect.height) * 100;
+      mousePositionRef.current = { x: xPercent, y: yPercent };
       
       lastMoveTimeRef.current = Date.now();
     };
@@ -28,8 +34,12 @@ const AmbientWeldingFlashes = () => {
       // Only create flashes if mouse moved in last 200ms
       if (timeSinceMove < 200 && Math.random() > 0.7) {
         const id = Date.now() + Math.random();
-        const x = Math.random() * 100; // %
-        const y = Math.random() * 100; // %
+        
+        // Spawn flash near mouse position with some randomness
+        const offsetX = (Math.random() - 0.5) * 20; // Random offset ±10%
+        const offsetY = (Math.random() - 0.5) * 20; // Random offset ±10%
+        const x = Math.max(0, Math.min(100, mousePositionRef.current.x + offsetX));
+        const y = Math.max(0, Math.min(100, mousePositionRef.current.y + offsetY));
         const duration = Math.random() * 0.2 + 0.1; // Fast flash
         
         setFlashes(prev => [...prev, { id, x, y, duration }]);
