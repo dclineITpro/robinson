@@ -99,8 +99,8 @@ const WeldingSparks = () => {
           size: 4 + Math.random() * 2
         });
         
-        // Generate sparks based on movement speed
-        const sparkCount = Math.min(Math.floor(distance / 3), 3);
+        // Generate sparks based on movement speed - more frequent
+        const sparkCount = Math.min(Math.floor(distance / 2), 5);
         for (let i = 0; i < sparkCount; i++) {
           sparks.push(createSpark(mouseX, mouseY));
         }
@@ -117,6 +117,11 @@ const WeldingSparks = () => {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      // Add idle sparking even when mouse is not moving
+      if (isActiveRef.current && Math.random() > 0.7) {
+        sparks.push(createSpark(mouseX, mouseY, 0.5));
+      }
       
       // Draw slag trail (welding residue)
       for (let i = 0; i < slagTrail.length; i++) {
