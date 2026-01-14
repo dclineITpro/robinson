@@ -188,11 +188,11 @@ const HomePage = () => {
               className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <Globe className="w-10 h-10 text-white mx-auto mb-4" />
-              <div className="text-5xl md:text-6xl font-bold mb-2">
-                <AnimatedCounter end={5} duration={1.2} />
+              <div className="text-4xl md:text-5xl font-bold mb-2 pt-2">
+                Global
               </div>
-              <div className="font-semibold text-lg">Facilities</div>
-              <div className="text-white/80 text-sm mt-1">Wisconsin sites (Iowa coming)</div>
+              <div className="font-semibold text-lg">Operations</div>
+              <div className="text-white/80 text-sm mt-1">US, Mexico & Asia Leadership</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
