@@ -51,110 +51,121 @@ const HomePage = () => {
   return (
     <main>
       {/* Hero Section */}
-      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white cursor-none">
+      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 cursor-none">
         <WeldingSparks />
-        {/* Animated Digital Manufacturing Background */}
+        {/* Welding-Themed Background */}
         <div className="absolute inset-0 overflow-hidden">
           <AmbientWeldingFlashes />
-          {/* Base Grid */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_100%_200px,#D4AF3715,transparent)]"></div>
           
-          {/* Animated "Digital Threads" - moving lines */}
-          <svg className="absolute inset-0 w-full h-full opacity-20 pointer-events-none">
+          {/* Metal Texture Base */}
+          <div className="absolute inset-0 opacity-30">
+            <div className="absolute inset-0 bg-[linear-gradient(45deg,#1a1a1a_25%,transparent_25%,transparent_75%,#1a1a1a_75%,#1a1a1a),linear-gradient(45deg,#1a1a1a_25%,transparent_25%,transparent_75%,#1a1a1a_75%,#1a1a1a)] bg-[size:60px_60px] bg-[position:0_0,30px_30px]"></div>
+          </div>
+          
+          {/* Brushed Metal Effect */}
+          <div className="absolute inset-0 opacity-20 bg-gradient-to-r from-transparent via-gray-400/10 to-transparent bg-[size:200px_100%] animate-[shimmer_8s_linear_infinite]"></div>
+          
+          {/* Arc Welding Light Rays */}
+          <svg className="absolute inset-0 w-full h-full opacity-40 pointer-events-none">
             <defs>
-              <linearGradient id="thread-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <linearGradient id="arc-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stopColor="transparent" />
-                <stop offset="50%" stopColor="#D4AF37" />
+                <stop offset="50%" stopColor="#FFD700" stopOpacity="0.8" />
+                <stop offset="100%" stopColor="transparent" />
+              </linearGradient>
+              <linearGradient id="blue-arc-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="transparent" />
+                <stop offset="50%" stopColor="#0047AB" stopOpacity="0.6" />
                 <stop offset="100%" stopColor="transparent" />
               </linearGradient>
             </defs>
             <motion.path
-              d="M0 200 Q 400 100 800 300 T 1600 200"
+              d="M0 300 Q 400 200 800 400 T 1600 300"
               fill="none"
-              stroke="url(#thread-gradient)"
+              stroke="url(#arc-gradient)"
+              strokeWidth="3"
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ 
+                pathLength: [0, 1, 1], 
+                pathOffset: [0, 0, 1],
+                opacity: [0, 0.8, 0]
+              }}
+              transition={{ 
+                duration: 6, 
+                repeat: Infinity, 
+                ease: "easeInOut",
+                times: [0, 0.7, 1]
+              }}
+            />
+            <motion.path
+              d="M1600 200 Q 1200 400 800 300 T 0 400"
+              fill="none"
+              stroke="url(#blue-arc-gradient)"
               strokeWidth="2"
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ 
                 pathLength: [0, 1, 1], 
                 pathOffset: [0, 0, 1],
-                opacity: [0, 1, 0]
+                opacity: [0, 0.6, 0]
               }}
               transition={{ 
                 duration: 8, 
                 repeat: Infinity, 
-                ease: "linear",
-                times: [0, 0.8, 1]
-              }}
-            />
-            <motion.path
-              d="M0 400 Q 300 500 600 400 T 1200 500"
-              fill="none"
-              stroke="url(#thread-gradient)"
-              strokeWidth="2"
-              initial={{ pathLength: 0, opacity: 0 }}
-              animate={{ 
-                pathLength: [0, 1, 1], 
-                pathOffset: [0, 0, 1],
-                opacity: [0, 1, 0]
-              }}
-              transition={{ 
-                duration: 10, 
-                repeat: Infinity, 
-                ease: "linear",
-                delay: 2,
-                times: [0, 0.8, 1]
-              }}
-            />
-             <motion.path
-              d="M1600 100 Q 1200 300 800 200 T 0 300"
-              fill="none"
-              stroke="#0047AB"
-              strokeWidth="1"
-              strokeOpacity="0.3"
-              initial={{ pathLength: 0, opacity: 0 }}
-              animate={{ 
-                pathLength: [0, 1, 1], 
-                pathOffset: [0, 0, 1],
-                opacity: [0, 1, 0]
-              }}
-              transition={{ 
-                duration: 12, 
-                repeat: Infinity, 
-                ease: "linear",
-                delay: 1,
-                times: [0, 0.8, 1]
+                ease: "easeInOut",
+                delay: 1.5,
+                times: [0, 0.7, 1]
               }}
             />
           </svg>
 
-          {/* Floating Elements */}
+          {/* Welding Spark Embers */}
           <motion.div 
-            className="absolute top-20 right-[10%] w-64 h-64 border border-robinson-gold/10 rounded-full"
+            className="absolute top-1/4 right-[15%] w-2 h-2 bg-safety-orange rounded-full blur-sm"
             animate={{ 
-              rotate: 360,
-              scale: [1, 1.1, 1]
+              y: [0, 400],
+              opacity: [1, 0],
+              scale: [1, 0.3]
             }}
             transition={{ 
-              rotate: { duration: 60, repeat: Infinity, ease: "linear" },
-              scale: { duration: 10, repeat: Infinity, ease: "easeInOut" }
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeIn",
+              delay: 0
             }}
           />
           <motion.div 
-            className="absolute bottom-20 left-[10%] w-96 h-96 border border-robinson-blue/10 rounded-full"
+            className="absolute top-1/3 right-[20%] w-1.5 h-1.5 bg-yellow-400 rounded-full blur-sm"
             animate={{ 
-              rotate: -360,
-              scale: [1, 1.2, 1]
+              y: [0, 350],
+              opacity: [1, 0],
+              scale: [1, 0.2]
             }}
             transition={{ 
-              rotate: { duration: 80, repeat: Infinity, ease: "linear" },
-              scale: { duration: 15, repeat: Infinity, ease: "easeInOut" }
+              duration: 2.5,
+              repeat: Infinity,
+              ease: "easeIn",
+              delay: 0.5
+            }}
+          />
+          <motion.div 
+            className="absolute top-1/4 left-[18%] w-2 h-2 bg-safety-orange rounded-full blur-sm"
+            animate={{ 
+              y: [0, 380],
+              opacity: [1, 0],
+              scale: [1, 0.3]
+            }}
+            transition={{ 
+              duration: 2.8,
+              repeat: Infinity,
+              ease: "easeIn",
+              delay: 1
             }}
           />
           
-          {/* Subtle Ambient Glows */}
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-robinson-gold/5 rounded-full blur-[150px]" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-robinson-blue/5 rounded-full blur-[150px]" />
+          {/* Intense Arc Light Glows */}
+          <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-safety-orange/20 rounded-full blur-[120px]" />
+          <div className="absolute bottom-1/3 right-1/4 w-[600px] h-[600px] bg-blue-400/15 rounded-full blur-[140px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-yellow-300/10 rounded-full blur-[100px]" />
         </div>
 
         <motion.div 
@@ -166,10 +177,10 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/20 border border-safety-orange/50 mb-8"
           >
-            <Briefcase className="w-4 h-4 text-robinson-gold" />
-            <span className="text-robinson-gold text-sm font-medium">DJ Cline | IT Director Candidate</span>
+            <Briefcase className="w-4 h-4 text-safety-orange" />
+            <span className="text-safety-orange text-sm font-medium">DJ Cline | IT Director Candidate</span>
           </motion.div>
 
           {/* Main Headline */}
@@ -177,9 +188,9 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-robinson-black leading-tight mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
           >
-            Leading <span className="gradient-text">Robinson</span> Through Digital Transformation
+            Leading <span className="text-safety-orange">Robinson</span> Through Digital Transformation
           </motion.h1>
 
           {/* Subheadline */}
@@ -187,7 +198,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg md:text-xl text-robinson-gray max-w-3xl mx-auto mb-4 leading-relaxed"
+            className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-4 leading-relaxed"
           >
             And I'm ready to lead your digital transformation.
           </motion.p>
@@ -196,7 +207,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="text-md text-robinson-gray max-w-2xl mx-auto mb-10"
+            className="text-md text-gray-400 max-w-2xl mx-auto mb-10"
           >
             24/7 manufacturing operations across multiple facilities. Global supply chain complexity. 
             Legacy systems requiring modernization. Cybersecurity as a competitive advantage. 
@@ -219,7 +230,7 @@ const HomePage = () => {
             </Link>
             <Link
               to="/why-robinson"
-              className="px-8 py-4 border-2 border-white/20 text-robinson-black font-semibold rounded-lg hover:bg-gray-100 hover:border-gray-2000 transition-all duration-300"
+              className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-white/50 transition-all duration-300"
             >
               Why Robinson?
             </Link>
@@ -232,7 +243,7 @@ const HomePage = () => {
             transition={{ duration: 1, delay: 1.2 }}
             className="absolute bottom-10 left-1/2 -translate-x-1/2"
           >
-            <div className="flex flex-col items-center gap-2 text-robinson-gray/60">
+            <div className="flex flex-col items-center gap-2 text-gray-400">
               <span className="text-xs uppercase tracking-widest">Explore the strategy</span>
               <motion.div
                 animate={{ y: [0, 8, 0] }}
