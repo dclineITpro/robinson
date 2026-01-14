@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import robinsonLogo from '../assets/robinson-logo.webp';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,16 +46,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo - Robinson Inc Official Branding */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="w-12 h-12 bg-robinson-blue rounded flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
-                <span className="text-white font-bold text-2xl">R</span>
-              </div>
-              <div className="absolute -inset-1 bg-robinson-blue/20 rounded blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-robinson-black font-bold text-xl tracking-tight">ROBINSON</span>
-              <span className="text-robinson-gray text-xs tracking-widest">INC.</span>
-            </div>
+            <img 
+              src={robinsonLogo} 
+              alt="Robinson Inc." 
+              className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+            />
           </Link>
 
           {/* Desktop Navigation */}

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Linkedin, Globe, Briefcase, ArrowUpRight } from 'lucide-react';
+import robinsonLogo from '../assets/robinson-logo.webp';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -33,14 +34,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-robinson-blue rounded flex items-center justify-center">
-                <span className="text-white font-bold text-lg">R</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-robinson-black font-bold text-lg">ROBINSON INC.</span>
-                <span className="text-robinson-gray text-xs">IT Director Candidate Presentation</span>
-              </div>
+            <div className="mb-6">
+              <img src={robinsonLogo} alt="Robinson Inc." className="h-14 w-auto mb-2" />
+              <div className="text-robinson-gray text-xs font-medium">IT Director Candidate Presentation</div>
             </div>
             <p className="text-robinson-gray text-sm leading-relaxed mb-6">
               20+ years of technology leadership across manufacturing, government, 
