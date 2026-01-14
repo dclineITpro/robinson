@@ -22,6 +22,9 @@ const AmbientWeldingFlashes = () => {
       const yPercent = ((e.clientY - rect.top) / rect.height) * 100;
       mousePositionRef.current = { x: xPercent, y: yPercent };
       
+      // Update all flash positions to follow the mouse
+      setFlashes(prev => prev.map(flash => ({ ...flash, x: xPercent, y: yPercent })));
+      
       lastMoveTimeRef.current = Date.now();
     };
 
