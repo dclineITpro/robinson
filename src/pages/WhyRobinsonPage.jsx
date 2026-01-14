@@ -24,20 +24,19 @@ const WhyRobinsonPage = () => {
       category: 'Scale & Capacity',
       items: [
         { label: 'Total Footprint', value: '1.4 Million Sq. Ft.' },
-        { label: 'Locations', value: '6 Facilities' },
-        { label: 'States', value: 'Wisconsin & Iowa' },
-        { label: 'Expansion', value: '560K Sq. Ft. (2027)' },
+        { label: 'Locations', value: '4 WI Facilities + IA Expansion' },
+        { label: 'States', value: 'Wisconsin (current) & Iowa (2027)' },
+        { label: 'Expansion', value: 'Altoona, IA — 560K Sq. Ft. (2027)' },
       ],
     },
   ];
 
   const locations = [
-    { name: 'De Pere, WI', type: 'Headquarters', sqft: '350,000' },
-    { name: 'Manitowoc, WI', type: 'Manufacturing', sqft: '280,000' },
-    { name: 'Green Bay, WI', type: 'Manufacturing', sqft: '200,000' },
-    { name: 'Appleton, WI', type: 'Manufacturing', sqft: '150,000' },
-    { name: 'Oshkosh, WI', type: 'Manufacturing', sqft: '120,000' },
-    { name: 'Altoona, IA', type: 'New Facility (2027)', sqft: '560,000', isNew: true },
+    { name: 'De Pere Main Campus', type: 'Headquarters', sqft: '1740 Eisenhower Rd' },
+    { name: 'De Pere Facility 2', type: 'Manufacturing', sqft: '2107 American Blvd' },
+    { name: 'De Pere Facility 3', type: 'Manufacturing', sqft: '2121 American Blvd' },
+    { name: 'Manitowoc Campus', type: 'Manufacturing', sqft: '2121 South 30th Street' },
+    { name: 'Altoona, IA (2027)', type: 'New Facility', sqft: '560,000', isNew: true },
   ];
 
   const whyThisRole = [

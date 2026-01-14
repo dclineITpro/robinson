@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Robinson SPA Redirect</title>
+    <script>
+      // GitHub Pages SPA redirect: stash the attempted path, then send to root
+      (function() {
+        var redirectPath = window.location.pathname + window.location.search + window.location.hash;
+        // Store for the SPA to read and restore
+        sessionStorage.setItem('spa-redirect', redirectPath);
+        // Redirect to the app root (project page base)
+        window.location.replace('/robinson/');
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <meta http-equiv="refresh" content="0;url=/robinson/index.html" />
+    </noscript>
+  </body>
+</html>
