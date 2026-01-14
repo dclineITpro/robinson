@@ -184,9 +184,13 @@ const WeldingSparks = () => {
       
       // Draw torch tip (cursor) if active
       if (isActiveRef.current && mouseX !== 0 && mouseY !== 0) {
+        // Pulsing effect for flashing white
+        const time = Date.now() * 0.005;
+        const pulse = 0.5 + 0.5 * Math.sin(time); // 0 to 1
+        
         // Stronger glow with shadow
         ctx.shadowBlur = 20;
-        ctx.shadowColor = 'rgba(255, 255, 255, 0.8)';
+        ctx.shadowColor = `rgba(255, 255, 255, ${0.8 * pulse})`;
         
         // Core - bright white
         ctx.beginPath();
@@ -196,16 +200,16 @@ const WeldingSparks = () => {
         
         ctx.shadowBlur = 0; // Reset shadow
         
-        // Inner Glow - bright white
+        // Inner Glow - bright white with pulse
         ctx.beginPath();
         ctx.arc(mouseX, mouseY, 12, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+        ctx.fillStyle = `rgba(255, 255, 255, ${0.6 * pulse})`;
         ctx.fill();
         
-        // Outer Glow - white
+        // Outer Glow - white with pulse
         ctx.beginPath();
         ctx.arc(mouseX, mouseY, 20, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+        ctx.fillStyle = `rgba(255, 255, 255, ${0.3 * pulse})`;
         ctx.fill();
       }
 
