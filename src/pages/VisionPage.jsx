@@ -401,10 +401,10 @@ const VisionPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Let's Discuss the Details
             </h2>
-            <p className="text-robinson-black text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
               This is just the overview. I'd love to discuss specific initiatives, 
               timelines, and how my experience aligns with Robinson's needs.
             </p>

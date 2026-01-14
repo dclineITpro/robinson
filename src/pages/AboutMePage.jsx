@@ -346,10 +346,10 @@ const AboutMePage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Let's Start the Conversation
             </h2>
-            <p className="text-robinson-gray text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
               With 25+ years of IT leadership across 24/7 manufacturing, global operations, and digital transformation, 
               I'm ready to discuss how I can contribute to Robinson's success.
             </p>
@@ -363,7 +363,7 @@ const AboutMePage = () => {
               </Link>
               <Link
                 to="/vision"
-                className="px-8 py-4 border-2 border-white text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
+                className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-robinson-blue transition-all duration-300"
               >
                 Review My Vision
               </Link>
