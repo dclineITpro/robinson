@@ -1,14 +1,33 @@
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 const AmbientWeldingFlashes = () => {
   const [flashes, setFlashes] = useState([]);
+  const lastMoveTimeRef = useRef(Date.now());
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    // Create random flashes occasionally
+    const handleMouseMove = (e) => {
+      if (!containerRef.current) return;
+      
+      const rect = containerRef.current.getBoundingClientRect();
+      const isInBounds = e.clientX >= rect.left && e.clientX <= rect.right && 
+                         e.clientY >= rect.top && e.clientY <= rect.bottom;
+      
+      if (!isInBounds) return;
+      
+      lastMoveTimeRef.current = Date.now();
+    };
+
+    document.addEventListener('mousemove', handleMouseMove, { passive: true });
+
+    // Create flashes only if mouse has moved recently
     const interval = setInterval(() => {
-      if (Math.random() > 0.7) { // 30% chance per interval
-        const id = Date.now();
+      const timeSinceMove = Date.now() - lastMoveTimeRef.current;
+      
+      // Only create flashes if mouse moved in last 200ms
+      if (timeSinceMove < 200 && Math.random() > 0.7) {
+        const id = Date.now() + Math.random();
         const x = Math.random() * 100; // %
         const y = Math.random() * 100; // %
         const duration = Math.random() * 0.2 + 0.1; // Fast flash
@@ -20,13 +39,16 @@ const AmbientWeldingFlashes = () => {
           setFlashes(prev => prev.filter(f => f.id !== id));
         }, duration * 1000 + 100);
       }
-    }, 2000); // Check every 2 seconds
+    }, 150); // Check more frequently
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
   }, []);
 
   return (
-    <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+    <div ref={containerRef} className="absolute inset-0 pointer-events-none overflow-hidden z-0">
       {flashes.map(flash => (
         <motion.div
           key={flash.id}

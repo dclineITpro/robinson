@@ -65,59 +65,6 @@ const HomePage = () => {
           {/* Brushed Metal Effect */}
           <div className="absolute inset-0 opacity-20 bg-gradient-to-r from-transparent via-gray-400/10 to-transparent bg-[size:200px_100%] animate-[shimmer_8s_linear_infinite]"></div>
           
-          {/* Arc Welding Light Rays */}
-          <svg className="absolute inset-0 w-full h-full opacity-40 pointer-events-none">
-            <defs>
-              <linearGradient id="arc-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="transparent" />
-                <stop offset="50%" stopColor="#FFD700" stopOpacity="0.8" />
-                <stop offset="100%" stopColor="transparent" />
-              </linearGradient>
-              <linearGradient id="blue-arc-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="transparent" />
-                <stop offset="50%" stopColor="#0047AB" stopOpacity="0.6" />
-                <stop offset="100%" stopColor="transparent" />
-              </linearGradient>
-            </defs>
-            <motion.path
-              d="M0 300 Q 400 200 800 400 T 1600 300"
-              fill="none"
-              stroke="url(#arc-gradient)"
-              strokeWidth="3"
-              initial={{ pathLength: 0, opacity: 0 }}
-              animate={{ 
-                pathLength: [0, 1, 1], 
-                pathOffset: [0, 0, 1],
-                opacity: [0, 0.8, 0]
-              }}
-              transition={{ 
-                duration: 6, 
-                repeat: Infinity, 
-                ease: "easeInOut",
-                times: [0, 0.7, 1]
-              }}
-            />
-            <motion.path
-              d="M1600 200 Q 1200 400 800 300 T 0 400"
-              fill="none"
-              stroke="url(#blue-arc-gradient)"
-              strokeWidth="2"
-              initial={{ pathLength: 0, opacity: 0 }}
-              animate={{ 
-                pathLength: [0, 1, 1], 
-                pathOffset: [0, 0, 1],
-                opacity: [0, 0.6, 0]
-              }}
-              transition={{ 
-                duration: 8, 
-                repeat: Infinity, 
-                ease: "easeInOut",
-                delay: 1.5,
-                times: [0, 0.7, 1]
-              }}
-            />
-          </svg>
-          
           {/* Intense Arc Light Glows */}
           <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-safety-orange/20 rounded-full blur-[120px]" />
           <div className="absolute bottom-1/3 right-1/4 w-[600px] h-[600px] bg-blue-400/15 rounded-full blur-[140px]" />

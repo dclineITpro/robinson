@@ -54,6 +54,14 @@ const WeldingSparks = () => {
       const newX = e.clientX - rect.left;
       const newY = e.clientY - rect.top;
       
+      // Check if mouse is within canvas bounds
+      const isInBounds = newX >= 0 && newX <= canvas.width && newY >= 0 && newY <= canvas.height;
+      
+      if (!isInBounds) {
+        isActiveRef.current = false;
+        return;
+      }
+      
       const dx = newX - lastX;
       const dy = newY - lastY;
       const distance = Math.sqrt(dx * dx + dy * dy);
@@ -62,7 +70,7 @@ const WeldingSparks = () => {
       mouseX = newX;
       mouseY = newY;
       
-      // Always mark as active when mouse moves
+      // Always mark as active when mouse moves in bounds
       isActiveRef.current = true;
       
       // Add to slag trail if moving
@@ -74,8 +82,8 @@ const WeldingSparks = () => {
           x: mouseX,
           y: mouseY,
           life: 1.0,
-          decay: 0.015,
-          size: 3 + Math.random() * 2
+          decay: 0.012,
+          size: 4 + Math.random() * 2
         });
         
         // Limit trail length for performance
@@ -99,16 +107,6 @@ const WeldingSparks = () => {
       }, 100);
     };
 
-    const handleMouseEnter = () => {
-      isActiveRef.current = true;
-    };
-
-    const handleMouseLeave = () => {
-      isActiveRef.current = false;
-      slagTrail = []; // Clear trail when leaving
-      sparks = [];
-    };
-
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
@@ -123,17 +121,26 @@ const WeldingSparks = () => {
           ctx.beginPath();
           ctx.arc(slag.x, slag.y, slag.size * slag.life, 0, Math.PI * 2);
           
-          // Slag color: dark orange/brown cooling metal
-          const alpha = slag.life * 0.8;
-          if (slag.life > 0.7) {
-            ctx.fillStyle = `rgba(255, 140, 0, ${alpha})`; // Hot orange
+          // Slag color: glowing white -> orange -> gray (molten metal cooling)
+          const alpha = Math.min(slag.life * 1.2, 1.0);
+          if (slag.life > 0.75) {
+            // Glowing white hot
+            ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+            ctx.shadowBlur = 8;
+            ctx.shadowColor = 'rgba(255, 255, 255, 0.8)';
           } else if (slag.life > 0.4) {
-            ctx.fillStyle = `rgba(139, 69, 19, ${alpha})`; // Cooling brown
+            // Glowing orange
+            ctx.fillStyle = `rgba(255, 140, 0, ${alpha})`;
+            ctx.shadowBlur = 5;
+            ctx.shadowColor = 'rgba(255, 140, 0, 0.6)';
           } else {
-            ctx.fillStyle = `rgba(80, 40, 20, ${alpha})`; // Dark slag
+            // Cooling to gray slag
+            ctx.fillStyle = `rgba(120, 120, 120, ${alpha * 0.7})`;
+            ctx.shadowBlur = 0;
           }
           
           ctx.fill();
+          ctx.shadowBlur = 0; // Reset shadow
         } else {
           // Remove dead slag
           slagTrail.splice(i, 1);
@@ -207,22 +214,14 @@ const WeldingSparks = () => {
       animationFrameId = requestAnimationFrame(animate);
     };
 
-    const parent = canvas.parentElement;
-    if (parent) {
-      parent.addEventListener('mousemove', handleMouseMove, { passive: true });
-      parent.addEventListener('mouseenter', handleMouseEnter, { passive: true });
-      parent.addEventListener('mouseleave', handleMouseLeave, { passive: true });
-    }
+    // Use document-level listener to ensure it never stops
+    document.addEventListener('mousemove', handleMouseMove, { passive: true });
 
     animate();
 
     return () => {
       window.removeEventListener('resize', resizeCanvas);
-      if (parent) {
-        parent.removeEventListener('mousemove', handleMouseMove);
-        parent.removeEventListener('mouseenter', handleMouseEnter);
-        parent.removeEventListener('mouseleave', handleMouseLeave);
-      }
+      document.removeEventListener('mousemove', handleMouseMove);
       cancelAnimationFrame(animationFrameId);
       clearTimeout(moveTimeout);
     };
