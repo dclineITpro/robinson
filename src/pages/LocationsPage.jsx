@@ -1,12 +1,15 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { 
   MapPin, Building2, Users, Phone, Mail, ExternalLink,
   ArrowRight, ChevronRight, Sparkles, Factory
 } from 'lucide-react';
+import WeldingSparks from '../components/WeldingSparks';
+import AmbientWeldingFlashes from '../components/AmbientWeldingFlashes';
 
 const LocationsPage = () => {
+  const heroRef = useRef(null);
   const [selectedLocation, setSelectedLocation] = useState('depere');
 
   const locations = {
@@ -106,7 +109,40 @@ const LocationsPage = () => {
   const currentLocation = locations[selectedLocation];
 
   return (
-    <main className="pt-20">
+    <main>
+      {/* Hero Section with Welding Effects */}
+      <section ref={heroRef} className="relative min-h-[60vh] flex items-center justify-center overflow-hidden cursor-none" style={{
+        backgroundColor: '#2a2a2a',
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23444;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23333;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23222;stop-opacity:1' /%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='100%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23444;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23333;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23222;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='%232a2a2a' width='80' height='80'/%3E%3Cellipse cx='20' cy='20' rx='15' ry='5' fill='url(%23g1)' transform='rotate(45 20 20)'/%3E%3Cellipse cx='60' cy='20' rx='15' ry='5' fill='url(%23g2)' transform='rotate(-45 60 20)'/%3E%3Cellipse cx='20' cy='60' rx='15' ry='5' fill='url(%23g2)' transform='rotate(-45 20 60)'/%3E%3Cellipse cx='60' cy='60' rx='15' ry='5' fill='url(%23g1)' transform='rotate(45 60 60)'/%3E%3C/svg%3E")`,
+        backgroundSize: '80px 80px',
+        backgroundRepeat: 'repeat'
+      }}>
+        <div className="absolute inset-0 overflow-hidden">
+          <AmbientWeldingFlashes />
+        </div>
+
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pointer-events-none">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+          >
+            Robinson Locations
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed"
+          >
+            Six facilities across the Midwest, with a seventh opening in Iowa in 2027.
+          </motion.p>
+        </div>
+        
+        <WeldingSparks />
+      </section>
+
       {/* Hero Section */}
       <section className="relative py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-industrial-dark via-industrial-gray to-industrial-dark">
