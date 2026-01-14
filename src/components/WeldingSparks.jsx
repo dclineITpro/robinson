@@ -58,18 +58,10 @@ const WeldingSparks = () => {
       };
     };
 
-    let eventCount = 0;
-    
     const handleMouseMove = (e) => {
-      eventCount++;
-      const now = Date.now();
-      
       if (!boundsRef.current) {
         updateBounds();
-        if (!boundsRef.current) {
-          console.log(`[${now}] Event #${eventCount}: No bounds available`);
-          return;
-        }
+        if (!boundsRef.current) return;
       }
       
       const rect = boundsRef.current;
@@ -78,16 +70,6 @@ const WeldingSparks = () => {
       
       // Check if mouse is within canvas bounds
       const isInBounds = newX >= 0 && newX <= rect.width && newY >= 0 && newY <= rect.height;
-      
-      if (eventCount % 30 === 0) { // Log every 30th event to avoid spam
-        console.log(`[${now}] Event #${eventCount}:`, {
-          isInBounds,
-          mousePos: `${Math.round(newX)},${Math.round(newY)}`,
-          canvasSize: `${Math.round(rect.width)}x${Math.round(rect.height)}`,
-          isActive: isActiveRef.current,
-          target: e.target.tagName
-        });
-      }
       
       if (!isInBounds) {
         isActiveRef.current = false;
@@ -150,8 +132,10 @@ const WeldingSparks = () => {
         slag.life -= slag.decay;
         
         if (slag.life > 0) {
+          // Ensure radius is always positive
+          const radius = Math.max(0.1, slag.size * slag.life);
           ctx.beginPath();
-          ctx.arc(slag.x, slag.y, slag.size * slag.life, 0, Math.PI * 2);
+          ctx.arc(slag.x, slag.y, radius, 0, Math.PI * 2);
           
           // Slag color: glowing white -> orange -> gray (molten metal cooling)
           const alpha = Math.min(slag.life * 1.2, 1.0);
@@ -222,8 +206,9 @@ const WeldingSparks = () => {
         spark.life -= spark.decay;
         
         // Render
+        const sparkRadius = Math.max(0.1, spark.size * spark.life);
         ctx.beginPath();
-        ctx.arc(spark.x, spark.y, spark.size * spark.life, 0, Math.PI * 2);
+        ctx.arc(spark.x, spark.y, sparkRadius, 0, Math.PI * 2);
         
         // Color transition based on life
         if (spark.life > 0.7) {
