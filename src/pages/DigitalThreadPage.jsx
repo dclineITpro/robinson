@@ -16,7 +16,7 @@ const DigitalThreadPage = () => {
       title: 'ERP Modernization',
       color: 'from-blue-500 to-cyan-500',
       challenge: 'Multiple locations with potentially disparate systems create data silos and inefficiencies.',
-      solution: 'Implement a unified, cloud-ready ERP platform that provides real-time visibility across all 6 facilities.',
+      solution: 'Implement a unified, cloud-ready ERP platform that provides real-time visibility across all operations.',
       benefits: [
         'Single source of truth for all operations',
         'Real-time production tracking and scheduling',

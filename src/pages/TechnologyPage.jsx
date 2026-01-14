@@ -59,7 +59,7 @@ const TechnologyPage = () => {
   const itRoles = [
     {
       title: 'IT Director',
-      description: 'Lead digital transformation across 5 Wisconsin locations and the upcoming Iowa expansion (1.4M sq. ft. total).',
+      description: 'Lead digital transformation across 3 Wisconsin locations and the upcoming Iowa expansion (~1.3M sq. ft. total).',
       highlights: ['Strategic leadership', 'Team development', 'Vendor management', 'Budget oversight'],
     },
     {
@@ -306,7 +306,7 @@ const TechnologyPage = () => {
               Our Technology Stack
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
-              Modern infrastructure powering 1.4 million square feet of advanced manufacturing.
+              Modern infrastructure powering 1.3 million square feet of advanced manufacturing.
             </p>
           </motion.div>
 

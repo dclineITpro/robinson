@@ -37,32 +37,25 @@ const StatsBar = () => {
   const stats = [
     {
       icon: Building2,
-      value: 1.4,
+      value: 1.3,
       suffix: ' Million',
       label: 'Square Feet',
       description: 'Manufacturing Space',
     },
     {
-      icon: MapPin,
-      value: 6,
-      suffix: '',
-      label: 'Locations',
-      description: 'Across the Midwest',
-    },
-    {
       icon: Users,
-      value: 100,
-      suffix: '%',
-      label: 'Employee-Owned',
+      value: 600,
+      suffix: '+',
+      label: 'Employee-Owners',
       description: 'ESOP Company',
     },
     {
-      icon: Award,
-      value: 10,
+      icon: MapPin,
+      value: 4,
       suffix: '',
-      label: 'Top 10',
-      description: 'FAB 40 Ranking',
-      prefix: 'Top ',
+      label: 'Locations',
+      description: '3 in WI + Iowa Expansion',
+      prefix: '',
     },
   ];
 

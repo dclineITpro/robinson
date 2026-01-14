@@ -10,21 +10,21 @@ import AmbientWeldingFlashes from '../components/AmbientWeldingFlashes';
 
 const LocationsPage = () => {
   const heroRef = useRef(null);
-  const [selectedLocation, setSelectedLocation] = useState('depere');
+  const [selectedLocation, setSelectedLocation] = useState('manitowoc');
 
   const locations = {
     depere: {
       id: 'depere',
       name: 'De Pere',
       state: 'Wisconsin',
-      type: 'Headquarters',
-      sqft: '350,000',
+      type: 'Headquarters & Manufacturing',
+      sqft: '500,000+',
       employees: '400+',
       capabilities: ['Laser Cutting', 'Forming', 'Welding', 'Powder Coating', 'Assembly'],
-      address: '1234 Industrial Drive, De Pere, WI 54115',
+      address: '1740 Eisenhower Rd & 2107 American Blvd',
       phone: '(920) 336-1700',
-      email: 'depere@robinsonmetal.com',
-      description: 'Our flagship facility and corporate headquarters, featuring state-of-the-art laser cutting and comprehensive fabrication capabilities.',
+      email: 'sales@robinsoninc.com',
+      description: 'Our main campus consists of multiple facilities including our headquarters and specialized production centers.',
       featured: true,
       coordinates: { lat: 44.4489, lng: -88.0603 },
     },
@@ -33,60 +33,15 @@ const LocationsPage = () => {
       name: 'Manitowoc',
       state: 'Wisconsin',
       type: 'Manufacturing',
-      sqft: '280,000',
-      employees: '300+',
+      sqft: '270,000',
+      employees: '150+',
       capabilities: ['Heavy Fabrication', 'Welding', 'Machining', 'Assembly'],
-      address: '5678 Harbor Road, Manitowoc, WI 54220',
-      phone: '(920) 682-5000',
-      email: 'manitowoc@robinsonmetal.com',
+      address: '2121 South 30th Street, Manitowoc, WI 54220',
+      phone: '(920) 494-7411',
+      email: 'sales@robinsoninc.com',
       description: 'Specializing in heavy fabrication and large-scale welding projects for industrial and marine applications.',
       featured: false,
       coordinates: { lat: 44.0886, lng: -87.6576 },
-    },
-    greenbay: {
-      id: 'greenbay',
-      name: 'Green Bay',
-      state: 'Wisconsin',
-      type: 'Manufacturing',
-      sqft: '200,000',
-      employees: '200+',
-      capabilities: ['Laser Cutting', 'Forming', 'Welding', 'Finishing'],
-      address: '910 Commerce Way, Green Bay, WI 54304',
-      phone: '(920) 494-3000',
-      email: 'greenbay@robinsonmetal.com',
-      description: 'High-volume production facility with advanced automation and lean manufacturing processes.',
-      featured: false,
-      coordinates: { lat: 44.5133, lng: -88.0133 },
-    },
-    appleton: {
-      id: 'appleton',
-      name: 'Appleton',
-      state: 'Wisconsin',
-      type: 'Manufacturing',
-      sqft: '150,000',
-      employees: '150+',
-      capabilities: ['Precision Fabrication', 'Welding', 'Assembly'],
-      address: '2345 Valley Road, Appleton, WI 54914',
-      phone: '(920) 734-2000',
-      email: 'appleton@robinsonmetal.com',
-      description: 'Focused on precision fabrication and complex assemblies for demanding applications.',
-      featured: false,
-      coordinates: { lat: 44.2619, lng: -88.4154 },
-    },
-    oshkosh: {
-      id: 'oshkosh',
-      name: 'Oshkosh',
-      state: 'Wisconsin',
-      type: 'Manufacturing',
-      sqft: '120,000',
-      employees: '100+',
-      capabilities: ['Welding', 'Assembly', 'Finishing'],
-      address: '6789 Industrial Park, Oshkosh, WI 54901',
-      phone: '(920) 231-4000',
-      email: 'oshkosh@robinsonmetal.com',
-      description: 'Specialized welding and assembly operations supporting regional OEM customers.',
-      featured: false,
-      coordinates: { lat: 44.0247, lng: -88.5426 },
     },
     altoona: {
       id: 'altoona',
@@ -98,7 +53,7 @@ const LocationsPage = () => {
       capabilities: ['Full-Service Fabrication', 'Advanced Automation', 'Powder Coating', 'Assembly'],
       address: 'Coming Soon - Altoona, IA',
       phone: '(515) 555-0000',
-      email: 'iowa@robinsonmetal.com',
+      email: 'sales@robinsoninc.com',
       description: 'Our most ambitious project: a massive 560,000 sq. ft. state-of-the-art facility opening in 2027, expanding our Midwest footprint.',
       featured: true,
       isNew: true,
@@ -136,7 +91,7 @@ const LocationsPage = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed"
           >
-            Six facilities across the Midwest, with a seventh opening in Iowa in 2027.
+            Three facilities across Wisconsin, with a fourth opening in Iowa in 2027.
           </motion.p>
         </div>
         
@@ -163,10 +118,10 @@ const LocationsPage = () => {
               Hub-and-Spoke Network
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
-              <span className="text-robinson-blue">5 Wisconsin Locations</span> + Iowa Expansion
+              <span className="text-robinson-blue">3 Wisconsin Locations</span> + Iowa Expansion
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
-              1.4 million square feet of advanced manufacturing space across Wisconsin with an Iowa expansion coming online.
+              Over 1.3 million square feet of advanced manufacturing space across Wisconsin with an Iowa expansion coming online.
             </p>
           </motion.div>
         </div>
@@ -243,9 +198,6 @@ const LocationsPage = () => {
                       const positions = {
                         depere: { x: 220, y: 100 },
                         manitowoc: { x: 260, y: 120 },
-                        greenbay: { x: 230, y: 90 },
-                        appleton: { x: 200, y: 130 },
-                        oshkosh: { x: 180, y: 160 },
                         altoona: { x: 70, y: 180 },
                       };
                       const pos = positions[loc.id];

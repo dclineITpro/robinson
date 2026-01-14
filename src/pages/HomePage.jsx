@@ -19,8 +19,8 @@ const HomePage = () => {
   const y = useTransform(scrollYProgress, [0, 0.5], [0, 100]);
 
   const robinsonStats = [
-    { value: '1.4M', label: 'Sq. Ft.', desc: 'Manufacturing Space' },
-    { value: '5', label: 'Locations', desc: 'Across Wisconsin (Iowa coming 2027)' },
+    { value: '1.3M', label: 'Sq. Ft.', desc: 'Total Footprint (with Iowa)' },
+    { value: '3', label: 'WI Locations', desc: 'Plus Iowa Expansion (2027)' },
     { value: '100%', label: 'Employee-Owned', desc: 'ESOP Company' },
     { value: 'Top 10', label: 'FAB 40', desc: 'Industry Ranking' },
   ];

@@ -38,9 +38,7 @@ const ContactPage = () => {
   const locations = [
     { name: 'De Pere, WI (HQ)', phone: '(920) 336-1700' },
     { name: 'Manitowoc, WI', phone: '(920) 682-5000' },
-    { name: 'Green Bay, WI', phone: '(920) 494-3000' },
-    { name: 'Appleton, WI', phone: '(920) 734-2000' },
-    { name: 'Oshkosh, WI', phone: '(920) 231-4000' },
+    { name: 'Altoona, IA (Coming 2027)', phone: '(515) 555-0000' },
   ];
 
   return (
@@ -130,7 +128,7 @@ const ContactPage = () => {
                     <div>
                       <h3 className="text-robinson-black font-semibold mb-1">Headquarters</h3>
                       <p className="text-robinson-gray text-sm">
-                        1234 Industrial Drive<br />
+                        1740 Eisenhower Rd<br />
                         De Pere, WI 54115
                       </p>
                     </div>
@@ -342,9 +340,7 @@ const ContactPage = () => {
                             <option value="">Any location</option>
                             <option value="depere">De Pere, WI</option>
                             <option value="manitowoc">Manitowoc, WI</option>
-                            <option value="greenbay">Green Bay, WI</option>
-                            <option value="appleton">Appleton, WI</option>
-                            <option value="oshkosh">Oshkosh, WI</option>
+                            <option value="altoona">Altoona, IA</option>
                           </select>
                         </div>
                       </div>

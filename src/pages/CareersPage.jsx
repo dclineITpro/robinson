@@ -77,7 +77,7 @@ const CareersPage = () => {
     },
     {
       title: 'Production Supervisor',
-      location: 'Green Bay, WI',
+      location: 'De Pere, WI',
       type: 'Full-time',
       department: 'Operations',
       featured: false,

@@ -7,13 +7,10 @@ import {
 
 const AboutPage = () => {
   const timeline = [
-    { year: '1980', event: 'Robinson founded in De Pere, Wisconsin' },
-    { year: '1995', event: 'Converted to 100% Employee Stock Ownership Plan (ESOP)' },
-    { year: '2005', event: 'Expanded to 500,000 sq. ft. across multiple facilities' },
-    { year: '2015', event: 'Achieved FAB 40 Top 10 ranking' },
-    { year: '2020', event: 'Surpassed 1 million sq. ft. of manufacturing space' },
-    { year: '2025', event: 'Announced 560,000 sq. ft. Iowa expansion' },
-    { year: '2027', event: 'Altoona, IA facility grand opening (projected)' },
+    { year: '1923', event: 'Founded by Al Robinson in Green Bay, Wisconsin' },
+    { year: '1975', event: 'Maurie and Tom Robinson launch Robinson Metal & Roofing' },
+    { year: '2020', event: 'Expanded with new facility in De Pere' },
+    { year: '2023', event: 'Became 100% Employee-Owned (ESOP)' },
   ];
 
   const values = [
@@ -80,11 +77,11 @@ const AboutPage = () => {
               About Robinson
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Built by <span className="text-robinson-blue">Employee-Owners</span> Since 1980
+              Built on <span className="text-robinson-blue">Excellence</span> Since 1923
             </h1>
             <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-8">
-              For over four decades, Robinson has been a leader in custom metal fabrication. 
-              As a 100% employee-owned company, we bring an ownership mentality to every project.
+              For over a century, Robinson has been a leader in custom metal fabrication. 
+              Now as a 100% employee-owned company, we bring an ownership mentality to every project.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -110,9 +107,9 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { value: '40+', label: 'Years in Business' },
-              { value: '1.4M', label: 'Sq. Ft. Manufacturing' },
-              { value: '1,500+', label: 'Employee-Owners' },
+              { value: '100+', label: 'Years in Business' },
+              { value: '1.3M', label: 'Sq. Ft. Manufacturing' },
+              { value: '600+', label: 'Employee-Owners' },
               { value: 'Top 10', label: 'FAB 40 Ranking' },
             ].map((stat, index) => (
               <motion.div
@@ -153,7 +150,7 @@ const AboutPage = () => {
                 defined by a commitment to quality, innovation, and most importantly—our people.
               </p>
               <p className="text-robinson-gray text-lg mb-8 leading-relaxed">
-                In 1995, we made a transformative decision: convert to 100% employee ownership. 
+                In 2023, we made a transformative decision: convert to 100% employee ownership. 
                 This wasn't just a financial restructuring—it was a cultural revolution that 
                 aligned every team member's interests with our customers' success.
               </p>
