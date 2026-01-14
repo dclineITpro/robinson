@@ -134,26 +134,27 @@ const WeldingSparks = () => {
           ctx.beginPath();
           ctx.arc(slag.x, slag.y, radius, 0, Math.PI * 2);
           
-          // ALWAYS progress through: white (0-33%) -> orange (33-66%) -> gray (66-100%)
+          // Realistic molten metal cooling: white hot (quick 15%) -> orange glow (medium 25%) -> gray slag (long 60%)
           const agePercent = slag.age / slag.maxAge;
           
-          if (agePercent < 0.33) {
-            // Phase 1: Glowing white hot (0-33% of life)
-            const phaseAlpha = 1.0 - (agePercent / 0.33) * 0.2; // 1.0 to 0.8
+          if (agePercent < 0.15) {
+            // Phase 1: Glowing white hot - very brief (0-15% of life)
+            const phaseProgress = agePercent / 0.15;
+            const phaseAlpha = 1.0 - phaseProgress * 0.1; // 1.0 to 0.9
             ctx.fillStyle = `rgba(255, 255, 255, ${phaseAlpha})`;
-            ctx.shadowBlur = 10;
-            ctx.shadowColor = 'rgba(255, 255, 255, 0.8)';
-          } else if (agePercent < 0.66) {
-            // Phase 2: Glowing orange (33-66% of life)
-            const phaseProgress = (agePercent - 0.33) / 0.33;
-            const phaseAlpha = 0.8 - phaseProgress * 0.2; // 0.8 to 0.6
+            ctx.shadowBlur = 12;
+            ctx.shadowColor = 'rgba(255, 255, 255, 0.9)';
+          } else if (agePercent < 0.40) {
+            // Phase 2: Glowing orange - medium duration (15-40% of life)
+            const phaseProgress = (agePercent - 0.15) / 0.25;
+            const phaseAlpha = 0.9 - phaseProgress * 0.2; // 0.9 to 0.7
             ctx.fillStyle = `rgba(255, 140, 0, ${phaseAlpha})`;
-            ctx.shadowBlur = 6;
-            ctx.shadowColor = 'rgba(255, 140, 0, 0.5)';
+            ctx.shadowBlur = 8;
+            ctx.shadowColor = 'rgba(255, 140, 0, 0.6)';
           } else {
-            // Phase 3: Cooling to dark gray slag (66-100% of life)
-            const phaseProgress = (agePercent - 0.66) / 0.34;
-            const phaseAlpha = 0.6 - phaseProgress * 0.5; // 0.6 to 0.1 (fade out)
+            // Phase 3: Cooling to dark gray slag - longest duration (40-100% of life)
+            const phaseProgress = (agePercent - 0.40) / 0.60;
+            const phaseAlpha = 0.7 - phaseProgress * 0.6; // 0.7 to 0.1 (slow fade)
             ctx.fillStyle = `rgba(70, 70, 70, ${phaseAlpha})`;
             ctx.shadowBlur = 0;
           }

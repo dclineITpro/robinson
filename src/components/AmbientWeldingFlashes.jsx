@@ -32,7 +32,7 @@ const AmbientWeldingFlashes = () => {
       const timeSinceMove = Date.now() - lastMoveTimeRef.current;
       
       // Only create flashes if mouse moved in last 200ms
-      if (timeSinceMove < 200 && Math.random() > 0.7) {
+      if (timeSinceMove < 200 && Math.random() > 0.4) { // Increased frequency (was 0.7, now 0.4)
         const id = Date.now() + Math.random();
         
         // Spawn flash near mouse position with some randomness
@@ -49,7 +49,7 @@ const AmbientWeldingFlashes = () => {
           setFlashes(prev => prev.filter(f => f.id !== id));
         }, duration * 1000 + 100);
       }
-    }, 150); // Check more frequently
+    }, 80); // Check very frequently for more flashes
 
     return () => {
       clearInterval(interval);
