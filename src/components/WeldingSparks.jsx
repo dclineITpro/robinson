@@ -19,7 +19,6 @@ const WeldingSparks = () => {
     let lastY = 0;
     let isMoving = false;
     let moveTimeout;
-    const MAX_TRAIL_LENGTH = 30; // Limit trail for performance
 
     const updateBounds = () => {
       boundsRef.current = canvas.getBoundingClientRect();
@@ -99,11 +98,6 @@ const WeldingSparks = () => {
           maxAge: 300, // Frames to live (about 5 seconds at 60fps) - ensures all phases are visible
           size: 4 + Math.random() * 2
         });
-        
-        // Limit trail length for performance
-        if (slagTrail.length > MAX_TRAIL_LENGTH) {
-          slagTrail.shift();
-        }
         
         // Generate sparks based on movement speed
         const sparkCount = Math.min(Math.floor(distance / 3), 3);
