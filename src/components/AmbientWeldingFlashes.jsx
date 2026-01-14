@@ -30,9 +30,12 @@ const AmbientWeldingFlashes = () => {
 
     document.addEventListener('mousemove', handleMouseMove, { passive: true });
 
-    // Create flashes at mouse position when active
+    // Create flashes only if mouse has moved recently
     const interval = setInterval(() => {
-      if (isActiveRef.current && Math.random() > 0.9) { // Occasional flashes at mouse position
+      const timeSinceMove = Date.now() - lastMoveTimeRef.current;
+      
+      // Only create flashes if mouse moved in last 200ms
+      if (timeSinceMove < 200 && Math.random() > 0.4) { // Increased frequency (was 0.7, now 0.4)
         const id = Date.now() + Math.random();
         
         // Spawn flash at mouse position
@@ -47,7 +50,7 @@ const AmbientWeldingFlashes = () => {
           setFlashes(prev => prev.filter(f => f.id !== id));
         }, duration * 1000 + 100);
       }
-    }, 80); // Check frequently
+    }, 80); // Check very frequently for more flashes
 
     return () => {
       clearInterval(interval);
