@@ -58,10 +58,18 @@ const WeldingSparks = () => {
       };
     };
 
+    let eventCount = 0;
+    
     const handleMouseMove = (e) => {
+      eventCount++;
+      const now = Date.now();
+      
       if (!boundsRef.current) {
         updateBounds();
-        if (!boundsRef.current) return;
+        if (!boundsRef.current) {
+          console.log(`[${now}] Event #${eventCount}: No bounds available`);
+          return;
+        }
       }
       
       const rect = boundsRef.current;
@@ -70,6 +78,16 @@ const WeldingSparks = () => {
       
       // Check if mouse is within canvas bounds
       const isInBounds = newX >= 0 && newX <= rect.width && newY >= 0 && newY <= rect.height;
+      
+      if (eventCount % 30 === 0) { // Log every 30th event to avoid spam
+        console.log(`[${now}] Event #${eventCount}:`, {
+          isInBounds,
+          mousePos: `${Math.round(newX)},${Math.round(newY)}`,
+          canvasSize: `${Math.round(rect.width)}x${Math.round(rect.height)}`,
+          isActive: isActiveRef.current,
+          target: e.target.tagName
+        });
+      }
       
       if (!isInBounds) {
         isActiveRef.current = false;
