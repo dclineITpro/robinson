@@ -129,8 +129,7 @@ const WhyRobinsonPage = () => {
               Why <span className="text-robinson-blue">Robinson</span> is the Right Fit
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
-              A 24/7 Midwest manufacturer with five Wisconsin facilities and an Iowa expansion underway, complex supply chains, 
-              and ambitious growth plans. This is exactly where my 25+ years of IT leadership delivers measurable impact.
+              A 24/7 Midwest manufacturer serving global clients from five Wisconsin facilities and an Iowa expansion underway. This is exactly where my 25+ years of IT leadership delivers measurable impact.
             </p>
           </motion.div>
         </div>
@@ -183,7 +182,7 @@ const WhyRobinsonPage = () => {
             viewport={{ once: true }}
             className="p-8 rounded-2xl bg-white/80 border border-gray-200"
           >
-            <h3 className="text-xl font-bold text-robinson-black mb-6 text-center">Tier-1 OEM Clients</h3>
+            <h3 className="text-xl font-bold text-robinson-black mb-6 text-center">Tier-1 Global Clients</h3>
             <div className="flex flex-wrap justify-center gap-6">
               {tierOneClients.map((client) => (
                 <div

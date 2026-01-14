@@ -30,7 +30,7 @@ const AboutPage = () => {
     {
       icon: Target,
       title: 'Customer Focus',
-      description: 'Building long-term partnerships with Tier-1 OEM clients through reliability.',
+      description: 'Building long-term partnerships with Tier-1 global clients through reliability.',
     },
     {
       icon: Heart,

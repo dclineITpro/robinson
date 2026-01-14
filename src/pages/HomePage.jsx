@@ -102,9 +102,7 @@ const HomePage = () => {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="text-md text-gray-400 max-w-2xl mx-auto mb-10"
           >
-            24/7 manufacturing operations across multiple facilities. Multi-site supply chain complexity. 
-            Legacy systems requiring modernization. Cybersecurity as a competitive advantage. 
-            This is where I deliver results.
+            24/7 manufacturing operations across multiple facilities. Global supply chain complexity. Legacy systems requiring modernization. Cybersecurity as a competitive advantage. This is where I deliver results.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -280,7 +278,7 @@ const HomePage = () => {
               Why <span className="text-robinson-blue">Robinson</span> is the Right Fit
             </h2>
             <p className="text-robinson-gray text-lg max-w-3xl mx-auto leading-relaxed">
-              A 24/7 U.S. manufacturer with complex supply chains, legacy systems, and ambitious growth plans. 
+              A 24/7 U.S. manufacturer serving global markets with complex supply chains, legacy systems, and ambitious growth plans. 
               This is exactly where my experience delivering results matters most.
             </p>
           </motion.div>
