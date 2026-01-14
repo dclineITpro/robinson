@@ -111,12 +111,8 @@ const WhyRobinsonPage = () => {
         <WeldingSparks />
       </section>
 
-      {/* Hero */}
-      <section className="relative py-24 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-industrial-dark via-industrial-gray to-industrial-dark">
-          <div className="absolute inset-0 grid-bg opacity-30" />
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-safety-orange/20 rounded-full blur-[150px]" />
-        </div>
+      {/* Hero Section */}
+      <section className="relative py-24 lg:py-32 overflow-hidden bg-white">
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div
