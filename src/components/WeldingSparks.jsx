@@ -139,7 +139,7 @@ const WeldingSparks = () => {
           ctx.beginPath();
           ctx.arc(slag.x, slag.y, radius, 0, Math.PI * 2);
           
-          // Realistic molten metal cooling: white hot (quick 15%) -> orange glow (medium 25%) -> gray slag (long 60%)
+          // Realistic molten metal cooling: white hot (quick 15%) -> red hot (medium 25%) -> cooled black (long 60%)
           const agePercent = slag.age / slag.maxAge;
           
           if (agePercent < 0.15) {
@@ -150,17 +150,17 @@ const WeldingSparks = () => {
             ctx.shadowBlur = 12;
             ctx.shadowColor = 'rgba(255, 255, 255, 0.9)';
           } else if (agePercent < 0.40) {
-            // Phase 2: Glowing orange - medium duration (15-40% of life)
+            // Phase 2: Glowing red hot - medium duration (15-40% of life)
             const phaseProgress = (agePercent - 0.15) / 0.25;
             const phaseAlpha = 0.9 - phaseProgress * 0.2; // 0.9 to 0.7
-            ctx.fillStyle = `rgba(255, 140, 0, ${phaseAlpha})`;
+            ctx.fillStyle = `rgba(255, 0, 0, ${phaseAlpha})`;
             ctx.shadowBlur = 8;
-            ctx.shadowColor = 'rgba(255, 140, 0, 0.6)';
+            ctx.shadowColor = 'rgba(255, 0, 0, 0.6)';
           } else {
-            // Phase 3: Cooling to dark gray slag - longest duration (40-100% of life)
+            // Phase 3: Cooling to black slag - longest duration (40-100% of life)
             const phaseProgress = (agePercent - 0.40) / 0.60;
             const phaseAlpha = 0.7 - phaseProgress * 0.6; // 0.7 to 0.1 (slow fade)
-            ctx.fillStyle = `rgba(70, 70, 70, ${phaseAlpha})`;
+            ctx.fillStyle = `rgba(0, 0, 0, ${phaseAlpha})`;
             ctx.shadowBlur = 0;
           }
           
