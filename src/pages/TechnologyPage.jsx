@@ -370,7 +370,7 @@ const TechnologyPage = () => {
             </p>
             <Link
               to="/careers"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
             >
               Explore IT Careers
               <ArrowRight className="w-5 h-5" />

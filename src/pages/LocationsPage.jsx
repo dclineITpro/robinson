@@ -389,7 +389,7 @@ const LocationsPage = () => {
                   <div className="mt-6 flex gap-4">
                     <Link
                       to="/contact"
-                      className="flex-1 px-6 py-3 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 text-center flex items-center justify-center gap-2"
+                      className="flex-1 px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
                     >
                       Contact This Location
                       <ArrowRight className="w-5 h-5" />
@@ -441,7 +441,7 @@ const LocationsPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/careers"
-                className="px-8 py-4 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
               >
                 Join the Iowa Team
                 <ArrowRight className="w-5 h-5" />

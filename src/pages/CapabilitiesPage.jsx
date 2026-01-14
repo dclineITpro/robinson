@@ -210,7 +210,7 @@ const CapabilitiesPage = () => {
 
                   <Link
                     to="/contact"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300"
+                    className="inline-flex items-center gap-2 px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
                   >
                     Request a Quote
                     <ArrowRight className="w-5 h-5" />

@@ -418,7 +418,7 @@ const VisionPage = () => {
               </Link>
               <Link
                 to="/digital-thread"
-                className="px-8 py-4 border-2 border-robinson-black text-robinson-black font-semibold rounded-lg hover:bg-white hover:text-robinson-blue transition-all duration-300"
+                className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-robinson-blue transition-all duration-300"
               >
                 Digital Thread Deep Dive
               </Link>

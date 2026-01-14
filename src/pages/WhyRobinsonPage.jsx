@@ -292,14 +292,14 @@ const WhyRobinsonPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 The ESOP Advantage
               </h2>
-              <p className="text-robinson-gray text-lg mb-6 leading-relaxed">
+              <p className="text-white/90 text-lg mb-6 leading-relaxed">
                 "Build your career, own the company." This isn't just a tagline—it's a 
                 fundamental difference in how Robinson operates.
               </p>
-              <p className="text-robinson-gray mb-8">
+              <p className="text-white/90 mb-8">
                 As an IT Director, I understand that employee ownership means:
               </p>
               <ul className="space-y-4">
@@ -310,8 +310,8 @@ const WhyRobinsonPage = () => {
                   'Higher retention means institutional knowledge stays',
                   'Alignment between IT initiatives and business outcomes',
                 ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 text-robinson-gray">
-                    <CheckCircle className="w-5 h-5 text-robinson-black flex-shrink-0 mt-0.5" />
+                  <li key={index} className="flex items-start gap-3 text-white/90">
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
                     {item}
                   </li>
                 ))}
@@ -324,11 +324,11 @@ const WhyRobinsonPage = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <div className="bg-gray-50 border-gray-200 rounded-3xl border border-white/20 p-8 text-center">
-                <Users className="w-16 h-16 text-robinson-black mx-auto mb-6" />
-                <div className="text-5xl font-bold text-robinson-black mb-2">100%</div>
-                <div className="text-robinson-gray text-xl mb-6">Employee-Owned</div>
-                <p className="text-robinson-gray/80">
+              <div className="bg-white/10 backdrop-blur-sm rounded-3xl border border-white/20 p-8 text-center">
+                <Users className="w-16 h-16 text-white mx-auto mb-6" />
+                <div className="text-5xl font-bold text-white mb-2">100%</div>
+                <div className="text-white text-xl mb-6">Employee-Owned</div>
+                <p className="text-white/80">
                   Every team member has a stake in Robinson's success—and in the 
                   technology systems that drive it.
                 </p>
@@ -356,7 +356,7 @@ const WhyRobinsonPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/vision"
-                className="px-8 py-4 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300 flex items-center gap-2"
               >
                 See My Vision
                 <ArrowRight className="w-5 h-5" />

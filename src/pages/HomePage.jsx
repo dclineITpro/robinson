@@ -464,20 +464,14 @@ const HomePage = () => {
       </section>
 
       {/* CTA - Let's Talk */}
-      <section className="py-24 bg-gradient-to-br from-safety-orange to-safety-orange-dark relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                           linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-          backgroundSize: '40px 40px',
-        }} />
-
+      <section className="py-24 bg-white">
         <div className="relative max-w-4xl mx-auto px-6 lg:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-robinson-blue mb-6">
               Ready to Discuss How I Can Help?
             </h2>
             <p className="text-robinson-gray text-lg mb-10 max-w-2xl mx-auto">
@@ -487,14 +481,14 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/about-me"
-                className="px-8 py-4 bg-white text-robinson-blue font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300 flex items-center gap-2"
               >
                 View My Background
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 to="/vision"
-                className="px-8 py-4 border-2 border-robinson-black text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
+                className="px-8 py-4 border-2 border-robinson-blue text-robinson-blue font-semibold rounded-lg hover:bg-robinson-bg transition-all duration-300"
               >
                 See My Full Vision
               </Link>
