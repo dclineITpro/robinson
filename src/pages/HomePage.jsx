@@ -52,7 +52,6 @@ const HomePage = () => {
     <main>
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 cursor-none">
-        <WeldingSparks />
         {/* Welding Effects Only */}
         <div className="absolute inset-0 overflow-hidden">
           <AmbientWeldingFlashes />
@@ -144,6 +143,8 @@ const HomePage = () => {
             </div>
           </motion.div>
         </motion.div>
+        
+        <WeldingSparks />
       </section>
 
       {/* My Track Record - Animated Counters */}

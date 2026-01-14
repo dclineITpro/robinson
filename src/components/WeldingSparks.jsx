@@ -61,10 +61,7 @@ const WeldingSparks = () => {
     const handleMouseMove = (e) => {
       if (!boundsRef.current) {
         updateBounds();
-        if (!boundsRef.current) {
-          console.log('WeldingSparks: No bounds available');
-          return;
-        }
+        if (!boundsRef.current) return;
       }
       
       const rect = boundsRef.current;
@@ -73,15 +70,6 @@ const WeldingSparks = () => {
       
       // Check if mouse is within canvas bounds
       const isInBounds = newX >= 0 && newX <= rect.width && newY >= 0 && newY <= rect.height;
-      
-      console.log('WeldingSparks: mousemove', { 
-        isInBounds, 
-        newX: Math.round(newX), 
-        newY: Math.round(newY), 
-        rectWidth: Math.round(rect.width), 
-        rectHeight: Math.round(rect.height),
-        isActive: isActiveRef.current
-      });
       
       if (!isInBounds) {
         isActiveRef.current = false;
@@ -257,7 +245,7 @@ const WeldingSparks = () => {
   return (
     <canvas 
       ref={canvasRef} 
-      className="absolute inset-0 z-20"
+      className="absolute inset-0 z-50"
     />
   );
 };
