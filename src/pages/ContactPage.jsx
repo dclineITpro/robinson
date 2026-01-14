@@ -36,7 +36,9 @@ const ContactPage = () => {
   };
 
   const locations = [
-    { name: 'De Pere, WI (HQ)', phone: '(920) 336-1700' },
+    { name: 'De Pere Main (HQ)', phone: '(920) 336-1700' },
+    { name: 'De Pere Facility 2', phone: '(920) 336-1700' },
+    { name: 'De Pere Facility 3', phone: '(920) 336-1700' },
     { name: 'Manitowoc, WI', phone: '(920) 682-5000' },
     { name: 'Altoona, IA (Coming 2027)', phone: '(515) 555-0000' },
   ];
@@ -338,7 +340,9 @@ const ContactPage = () => {
                             className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black focus:border-robinson-blue focus:outline-none transition-colors"
                           >
                             <option value="">Any location</option>
-                            <option value="depere">De Pere, WI</option>
+                            <option value="depere_main">De Pere Main Campus</option>
+                            <option value="depere_fac2">De Pere Facility 2</option>
+                            <option value="depere_fac3">De Pere Facility 3</option>
                             <option value="manitowoc">Manitowoc, WI</option>
                             <option value="altoona">Altoona, IA</option>
                           </select>

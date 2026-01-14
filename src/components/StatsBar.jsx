@@ -44,7 +44,7 @@ const StatsBar = () => {
     },
     {
       icon: Users,
-      value: 600,
+      value: 850,
       suffix: '+',
       label: 'Employee-Owners',
       description: 'ESOP Company',

@@ -109,7 +109,7 @@ const AboutPage = () => {
             {[
               { value: '100+', label: 'Years in Business' },
               { value: '1.3M', label: 'Sq. Ft. Manufacturing' },
-              { value: '600+', label: 'Employee-Owners' },
+              { value: '850+', label: 'Employee-Owners' },
               { value: 'Top 10', label: 'FAB 40 Ranking' },
             ].map((stat, index) => (
               <motion.div
