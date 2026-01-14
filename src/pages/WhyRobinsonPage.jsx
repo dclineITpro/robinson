@@ -89,12 +89,12 @@ const WhyRobinsonPage = () => {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <Target className="w-4 h-4" />
               Strategic Alignment
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
-              Why <span className="gradient-text">Robinson</span> is the Right Fit
+              Why <span className="text-robinson-blue">Robinson</span> is the Right Fit
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
               A 24/7 global manufacturer with operations across multiple continents, complex supply chains, 
@@ -114,7 +114,7 @@ const WhyRobinsonPage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              What I Know About <span className="gradient-text">Robinson</span>
+              What I Know About <span className="text-robinson-blue">Robinson</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Demonstrating that I've done my homework on the company, its operations, and its strategic direction.
@@ -136,7 +136,7 @@ const WhyRobinsonPage = () => {
                   {section.items.map((item) => (
                     <div key={item.label} className="flex justify-between items-center py-3 border-b border-gray-200 last:border-0">
                       <span className="text-robinson-gray">{item.label}</span>
-                      <span className="text-safety-orange font-semibold">{item.value}</span>
+                      <span className="text-robinson-blue font-semibold">{item.value}</span>
                     </div>
                   ))}
                 </div>
@@ -156,7 +156,7 @@ const WhyRobinsonPage = () => {
               {tierOneClients.map((client) => (
                 <div
                   key={client}
-                  className="px-6 py-3 rounded-lg bg-safety-orange/10 border border-safety-orange/30 text-safety-orange font-medium"
+                  className="px-6 py-3 rounded-lg bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue font-medium"
                 >
                   {client}
                 </div>
@@ -178,12 +178,12 @@ const WhyRobinsonPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-gold text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <MapPin className="w-4 h-4" />
               Hub-and-Spoke Architecture
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              6 Locations, <span className="gradient-text-blue">One Unified Vision</span>
+              6 Locations, <span className="text-robinson-blue-blue">One Unified Vision</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Understanding the multi-site architecture is critical for IT strategy.
@@ -201,7 +201,7 @@ const WhyRobinsonPage = () => {
                 className={`p-6 rounded-2xl border transition-all duration-300 ${
                   location.isNew 
                     ? 'bg-robinson-blue/10 border-robinson-blue/30' 
-                    : 'bg-gray-50/50 border-gray-200 hover:border-safety-orange/30'
+                    : 'bg-gray-50/50 border-gray-200 hover:border-robinson-blue/30'
                 }`}
               >
                 <div className="flex items-start justify-between mb-4">
@@ -216,7 +216,7 @@ const WhyRobinsonPage = () => {
                   )}
                 </div>
                 <div className="flex items-center gap-2">
-                  <Building2 className="w-5 h-5 text-safety-orange" />
+                  <Building2 className="w-5 h-5 text-robinson-blue" />
                   <span className="text-robinson-gray">{location.sqft} sq. ft.</span>
                 </div>
               </motion.div>
@@ -227,7 +227,7 @@ const WhyRobinsonPage = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-robinson-blue/20 to-safety-orange/20 border border-gray-300 text-center"
+            className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-robinson-blue/20 to-robinson-blue/20 border border-gray-300 text-center"
           >
             <h3 className="text-2xl font-bold text-robinson-black mb-4">IT Implication</h3>
             <p className="text-robinson-gray max-w-2xl mx-auto">
@@ -248,11 +248,11 @@ const WhyRobinsonPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               Strategic Alignment
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Why This <span className="gradient-text">Role</span> Excites Me
+              Why This <span className="text-robinson-blue">Role</span> Excites Me
             </h2>
           </motion.div>
 
@@ -264,10 +264,10 @@ const WhyRobinsonPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-white/80 border border-gray-200 hover:border-safety-orange/30 transition-all duration-300"
+                className="p-8 rounded-2xl bg-white/80 border border-gray-200 hover:border-robinson-blue/30 transition-all duration-300"
               >
                 <div className="w-14 h-14 rounded-xl bg-safety-orange/10 flex items-center justify-center mb-6">
-                  <reason.icon className="w-7 h-7 text-safety-orange" />
+                  <reason.icon className="w-7 h-7 text-robinson-blue" />
                 </div>
                 <h3 className="text-xl font-bold text-robinson-black mb-3">{reason.title}</h3>
                 <p className="text-robinson-gray leading-relaxed">{reason.description}</p>
@@ -278,7 +278,7 @@ const WhyRobinsonPage = () => {
       </section>
 
       {/* ESOP Deep Dive */}
-      <section className="py-24 bg-gradient-to-br from-safety-orange to-safety-orange-dark relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-robinson-blue to-robinson-blue-dark relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{
           backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
                            linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
@@ -356,7 +356,7 @@ const WhyRobinsonPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/vision"
-                className="px-8 py-4 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 flex items-center gap-2"
               >
                 See My Vision
                 <ArrowRight className="w-5 h-5" />
@@ -376,6 +376,7 @@ const WhyRobinsonPage = () => {
 };
 
 export default WhyRobinsonPage;
+
 
 
 

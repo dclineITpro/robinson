@@ -122,12 +122,12 @@ const LocationsPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <MapPin className="w-4 h-4" />
               Hub-and-Spoke Network
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
-              <span className="gradient-text">6 Locations</span> Across the Midwest
+              <span className="text-robinson-blue">6 Locations</span> Across the Midwest
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
               1.4 million square feet of advanced manufacturing space strategically positioned 
@@ -144,7 +144,7 @@ const LocationsPage = () => {
             {/* Location List */}
             <div className="space-y-3">
               <h3 className="text-robinson-black font-semibold mb-4 flex items-center gap-2">
-                <Factory className="w-5 h-5 text-safety-orange" />
+                <Factory className="w-5 h-5 text-robinson-blue" />
                 Our Facilities
               </h3>
               {Object.values(locations).map((location) => (
@@ -153,7 +153,7 @@ const LocationsPage = () => {
                   onClick={() => setSelectedLocation(location.id)}
                   className={`w-full text-left p-4 rounded-xl border transition-all duration-300 ${
                     selectedLocation === location.id
-                      ? 'bg-safety-orange/10 border-safety-orange'
+                      ? 'bg-safety-orange/10 border-robinson-blue'
                       : 'bg-gray-50/50 border-gray-200 hover:border-white/20'
                   }`}
                   whileHover={{ x: 4 }}
@@ -162,12 +162,12 @@ const LocationsPage = () => {
                     <div>
                       <div className="flex items-center gap-2">
                         <span className={`font-semibold ${
-                          selectedLocation === location.id ? 'text-safety-orange' : 'text-robinson-black'
+                          selectedLocation === location.id ? 'text-robinson-blue' : 'text-robinson-black'
                         }`}>
                           {location.name}, {location.state}
                         </span>
                         {location.isNew && (
-                          <span className="px-2 py-0.5 rounded-full bg-safety-orange text-robinson-black text-xs font-medium">
+                          <span className="px-2 py-0.5 rounded-full bg-robinson-blue text-robinson-black text-xs font-medium">
                             NEW
                           </span>
                         )}
@@ -175,7 +175,7 @@ const LocationsPage = () => {
                       <div className="text-robinson-gray text-sm">{location.sqft} sq. ft.</div>
                     </div>
                     <ChevronRight className={`w-5 h-5 transition-colors ${
-                      selectedLocation === location.id ? 'text-safety-orange' : 'text-robinson-gray'
+                      selectedLocation === location.id ? 'text-robinson-blue' : 'text-robinson-gray'
                     }`} />
                   </div>
                 </motion.button>
@@ -262,7 +262,7 @@ const LocationsPage = () => {
                 {/* Legend */}
                 <div className="absolute bottom-4 left-4 flex items-center gap-4 text-sm">
                   <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 rounded-full bg-safety-orange" />
+                    <div className="w-3 h-3 rounded-full bg-robinson-blue" />
                     <span className="text-robinson-gray">Wisconsin</span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -313,12 +313,12 @@ const LocationsPage = () => {
                   {/* Stats */}
                   <div className="grid grid-cols-2 gap-6 mb-8">
                     <div className="p-6 rounded-xl bg-gray-500 border border-gray-200">
-                      <Building2 className="w-8 h-8 text-safety-orange mb-3" />
+                      <Building2 className="w-8 h-8 text-robinson-blue mb-3" />
                       <div className="text-2xl font-bold text-robinson-black">{currentLocation.sqft}</div>
                       <div className="text-robinson-gray-light text-sm">Square Feet</div>
                     </div>
                     <div className="p-6 rounded-xl bg-gray-500 border border-gray-200">
-                      <Users className="w-8 h-8 text-safety-orange mb-3" />
+                      <Users className="w-8 h-8 text-robinson-blue mb-3" />
                       <div className="text-2xl font-bold text-robinson-black">{currentLocation.employees}</div>
                       <div className="text-robinson-gray-light text-sm">Employee-Owners</div>
                     </div>
@@ -331,7 +331,7 @@ const LocationsPage = () => {
                       {currentLocation.capabilities.map((cap) => (
                         <span
                           key={cap}
-                          className="px-4 py-2 rounded-lg bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm"
+                          className="px-4 py-2 rounded-lg bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm"
                         >
                           {cap}
                         </span>
@@ -343,18 +343,18 @@ const LocationsPage = () => {
                   {!currentLocation.isNew && (
                     <div className="space-y-3">
                       <div className="flex items-center gap-3 text-robinson-gray">
-                        <MapPin className="w-5 h-5 text-safety-orange" />
+                        <MapPin className="w-5 h-5 text-robinson-blue" />
                         <span>{currentLocation.address}</span>
                       </div>
                       <div className="flex items-center gap-3 text-robinson-gray">
-                        <Phone className="w-5 h-5 text-safety-orange" />
-                        <a href={`tel:${currentLocation.phone}`} className="hover:text-safety-orange transition-colors">
+                        <Phone className="w-5 h-5 text-robinson-blue" />
+                        <a href={`tel:${currentLocation.phone}`} className="hover:text-robinson-blue transition-colors">
                           {currentLocation.phone}
                         </a>
                       </div>
                       <div className="flex items-center gap-3 text-robinson-gray">
-                        <Mail className="w-5 h-5 text-safety-orange" />
-                        <a href={`mailto:${currentLocation.email}`} className="hover:text-safety-orange transition-colors">
+                        <Mail className="w-5 h-5 text-robinson-blue" />
+                        <a href={`mailto:${currentLocation.email}`} className="hover:text-robinson-blue transition-colors">
                           {currentLocation.email}
                         </a>
                       </div>
@@ -367,16 +367,16 @@ const LocationsPage = () => {
                   <div className={`aspect-square rounded-3xl overflow-hidden border ${
                     currentLocation.isNew 
                       ? 'bg-gradient-to-br from-robinson-blue/20 to-robinson-blue/5 border-robinson-blue/30' 
-                      : 'bg-gradient-to-br from-safety-orange/20 to-safety-orange/5 border-safety-orange/30'
+                      : 'bg-gradient-to-br from-robinson-blue/20 to-robinson-blue/5 border-robinson-blue/30'
                   }`}>
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center">
                         <Factory className={`w-24 h-24 mx-auto mb-4 ${
-                          currentLocation.isNew ? 'text-robinson-blue/40' : 'text-safety-orange/40'
+                          currentLocation.isNew ? 'text-robinson-blue/40' : 'text-robinson-blue/40'
                         }`} />
                         <div className="text-robinson-gray/70 text-lg">{currentLocation.name} Facility</div>
                         {currentLocation.isNew && (
-                          <div className="mt-4 px-4 py-2 rounded-full bg-robinson-blue/20 text-robinson-gold text-sm inline-block">
+                          <div className="mt-4 px-4 py-2 rounded-full bg-robinson-blue/20 text-robinson-blue text-sm inline-block">
                             Under Construction
                           </div>
                         )}
@@ -389,7 +389,7 @@ const LocationsPage = () => {
                   <div className="mt-6 flex gap-4">
                     <Link
                       to="/contact"
-                      className="flex-1 px-6 py-3 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 text-center flex items-center justify-center gap-2"
+                      className="flex-1 px-6 py-3 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 text-center flex items-center justify-center gap-2"
                     >
                       Contact This Location
                       <ArrowRight className="w-5 h-5" />
@@ -428,7 +428,7 @@ const LocationsPage = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 text-robinson-black text-sm font-medium mb-6">
-              <Sparkles className="w-4 h-4 text-safety-orange" />
+              <Sparkles className="w-4 h-4 text-robinson-blue" />
               Strategic Expansion
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
@@ -441,7 +441,7 @@ const LocationsPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/careers"
-                className="px-8 py-4 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 flex items-center gap-2"
               >
                 Join the Iowa Team
                 <ArrowRight className="w-5 h-5" />
@@ -461,6 +461,7 @@ const LocationsPage = () => {
 };
 
 export default LocationsPage;
+
 
 
 

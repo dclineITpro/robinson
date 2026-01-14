@@ -110,13 +110,13 @@ const CareersPage = () => {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <Users className="w-4 h-4" />
               Join Our Team
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
               Build Your Career,{' '}
-              <span className="gradient-text-blue">Own the Company</span>
+              <span className="text-robinson-blue-blue">Own the Company</span>
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed mb-8">
               At Robinson, you're not just an employee—you're an owner. Join a team where 
@@ -125,7 +125,7 @@ const CareersPage = () => {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#positions"
-                className="px-6 py-3 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 flex items-center gap-2"
+                className="px-6 py-3 bg-robinson-blue text-white font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 flex items-center gap-2"
               >
                 View Open Positions
                 <ArrowRight className="w-5 h-5" />
@@ -142,7 +142,7 @@ const CareersPage = () => {
       </section>
 
       {/* The Ownership Advantage */}
-      <section id="esop" className="py-24 bg-gradient-to-br from-safety-orange to-safety-orange-dark relative overflow-hidden">
+      <section id="esop" className="py-24 bg-gradient-to-br from-robinson-blue to-robinson-blue-dark relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 opacity-10" style={{
             backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
@@ -226,11 +226,11 @@ const CareersPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               Why Robinson
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Benefits That <span className="gradient-text">Matter</span>
+              Benefits That <span className="text-robinson-blue">Matter</span>
             </h2>
             <p className="text-white/90 text-lg max-w-2xl mx-auto">
               We invest in our employee-owners with comprehensive benefits designed for your success.
@@ -245,10 +245,10 @@ const CareersPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-safety-orange/30 transition-all duration-300 group"
+                className="p-8 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-robinson-blue/30 transition-all duration-300 group"
               >
                 <div className="w-14 h-14 rounded-xl bg-safety-orange/10 flex items-center justify-center mb-6 group-hover:bg-safety-orange/20 transition-colors">
-                  <benefit.icon className="w-7 h-7 text-safety-orange" />
+                  <benefit.icon className="w-7 h-7 text-robinson-blue" />
                 </div>
                 <h3 className="text-xl font-bold text-robinson-black mb-3">{benefit.title}</h3>
                 <p className="text-robinson-gray leading-relaxed">{benefit.description}</p>
@@ -268,12 +268,12 @@ const CareersPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-gold text-sm font-medium mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
                 <GraduationCap className="w-4 h-4" />
                 Robinson Training Academy
               </span>
               <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-                Invest in Your <span className="gradient-text-blue">Growth</span>
+                Invest in Your <span className="text-robinson-blue-blue">Growth</span>
               </h2>
               <p className="text-robinson-gray text-lg mb-8 leading-relaxed">
                 The Robinson Training Academy (RTA) provides comprehensive training programs 
@@ -289,7 +289,7 @@ const CareersPage = () => {
                   'Technology & software skills',
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-robinson-gold" />
+                    <CheckCircle className="w-5 h-5 text-robinson-blue" />
                     <span className="text-robinson-gray">{item}</span>
                   </div>
                 ))}
@@ -313,7 +313,7 @@ const CareersPage = () => {
                   key={stat.label}
                   className="p-6 rounded-2xl bg-white/80 border border-gray-200 text-center"
                 >
-                  <div className="text-3xl font-bold text-robinson-gold mb-2">{stat.value}</div>
+                  <div className="text-3xl font-bold text-robinson-blue mb-2">{stat.value}</div>
                   <div className="text-robinson-gray-light text-sm">{stat.label}</div>
                 </div>
               ))}
@@ -332,11 +332,11 @@ const CareersPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               Now Hiring
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Open <span className="gradient-text">Positions</span>
+              Open <span className="text-robinson-blue">Positions</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Find your place at Robinson. We're always looking for talented individuals 
@@ -357,19 +357,19 @@ const CareersPage = () => {
                   to={`/careers/${position.title.toLowerCase().replace(/\s+/g, '-')}`}
                   className={`block p-6 rounded-2xl border transition-all duration-300 group ${
                     position.featured
-                      ? 'bg-safety-orange/10 border-safety-orange/30 hover:border-safety-orange'
-                      : 'bg-gray-50/50 border-gray-200 hover:border-safety-orange/30'
+                      ? 'bg-safety-orange/10 border-robinson-blue/30 hover:border-robinson-blue'
+                      : 'bg-gray-50/50 border-gray-200 hover:border-robinson-blue/30'
                   }`}
                 >
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                     <div className="flex items-start gap-4">
                       {position.featured && (
                         <div className="flex-shrink-0">
-                          <Star className="w-6 h-6 text-safety-orange" />
+                          <Star className="w-6 h-6 text-robinson-blue" />
                         </div>
                       )}
                       <div>
-                        <h3 className="text-xl font-bold text-robinson-black group-hover:text-safety-orange transition-colors">
+                        <h3 className="text-xl font-bold text-robinson-black group-hover:text-robinson-blue transition-colors">
                           {position.title}
                         </h3>
                         <div className="flex flex-wrap items-center gap-4 mt-2 text-robinson-gray-light text-sm">
@@ -388,7 +388,7 @@ const CareersPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="flex items-center gap-2 text-safety-orange">
+                    <div className="flex items-center gap-2 text-robinson-blue">
                       <span className="font-medium">Apply Now</span>
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </div>
@@ -410,7 +410,7 @@ const CareersPage = () => {
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 border-2 border-safety-orange text-safety-orange font-semibold rounded-lg hover:bg-safety-orange hover:text-robinson-black transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3 border-2 border-robinson-blue text-robinson-blue font-semibold rounded-lg hover:bg-robinson-blue hover:text-robinson-black transition-all duration-300"
             >
               Submit General Application
               <ArrowRight className="w-5 h-5" />
@@ -438,7 +438,7 @@ const CareersPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="#positions"
-                className="px-8 py-4 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 flex items-center gap-2"
               >
                 Browse All Positions
                 <ArrowRight className="w-5 h-5" />
@@ -458,6 +458,7 @@ const CareersPage = () => {
 };
 
 export default CareersPage;
+
 
 
 

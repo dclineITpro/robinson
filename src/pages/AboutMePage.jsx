@@ -119,7 +119,7 @@ const AboutMePage = () => {
                 DJ Cline
               </span>
               <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
-                25+ Years of <span className="gradient-text-blue">IT Experience</span>
+                25+ Years of <span className="text-robinson-blue-blue">IT Experience</span>
               </h1>
               <p className="text-robinson-gray text-lg md:text-xl leading-relaxed mb-8">
                 Experienced IT Director leading technology transformations across manufacturing, 
@@ -128,15 +128,15 @@ const AboutMePage = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center gap-2 text-robinson-gray">
-                  <Users className="w-5 h-5 text-safety-orange" />
+                  <Users className="w-5 h-5 text-robinson-blue" />
                   <span>20+ Years Leadership</span>
                 </div>
                 <div className="flex items-center gap-2 text-robinson-gray">
-                  <Briefcase className="w-5 h-5 text-safety-orange" />
+                  <Briefcase className="w-5 h-5 text-robinson-blue" />
                   <span>25+ Years Experience</span>
                 </div>
                 <div className="flex items-center gap-2 text-robinson-gray">
-                  <Building2 className="w-5 h-5 text-safety-orange" />
+                  <Building2 className="w-5 h-5 text-robinson-blue" />
                   <span>Manufacturing Focus</span>
                 </div>
               </div>
@@ -148,13 +148,13 @@ const AboutMePage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="relative">
-                <div className="aspect-square rounded-3xl bg-gradient-to-br from-robinson-blue/20 to-safety-orange/20 border border-white/30 flex items-center justify-center">
+                <div className="aspect-square rounded-3xl bg-gradient-to-br from-robinson-blue/20 to-robinson-blue/20 border border-white/30 flex items-center justify-center">
                   <div className="text-center">
                     <User className="w-32 h-32 text-white/20 mx-auto mb-4" />
                     <p className="text-robinson-gray">Professional Photo</p>
                   </div>
                 </div>
-                <div className="absolute -bottom-6 -right-6 p-4 rounded-2xl bg-safety-orange text-robinson-black">
+                <div className="absolute -bottom-6 -right-6 p-4 rounded-2xl bg-robinson-blue text-robinson-black">
                   <div className="text-3xl font-bold">25+</div>
                   <div className="text-sm">Years in IT</div>
                 </div>
@@ -174,7 +174,7 @@ const AboutMePage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Why I'm the <span className="gradient-text">Right Fit</span>
+              Why I'm the <span className="text-robinson-blue">Right Fit</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               My background aligns directly with Robinson's needs and culture.
@@ -189,10 +189,10 @@ const AboutMePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="p-6 rounded-2xl bg-white/80 border border-gray-200 hover:border-safety-orange/30 transition-all duration-300"
+                className="p-6 rounded-2xl bg-white/80 border border-gray-200 hover:border-robinson-blue/30 transition-all duration-300"
               >
                 <div className="w-12 h-12 rounded-xl bg-safety-orange/10 flex items-center justify-center mb-4">
-                  <item.icon className="w-6 h-6 text-safety-orange" />
+                  <item.icon className="w-6 h-6 text-robinson-blue" />
                 </div>
                 <h3 className="text-lg font-bold text-robinson-black mb-2">{item.title}</h3>
                 <p className="text-robinson-gray text-sm leading-relaxed">{item.description}</p>
@@ -211,12 +211,12 @@ const AboutMePage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-gold text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <Briefcase className="w-4 h-4 inline mr-2" />
               Career History
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Professional <span className="gradient-text-blue">Experience</span>
+              Professional <span className="text-robinson-blue-blue">Experience</span>
             </h2>
           </motion.div>
 
@@ -233,7 +233,7 @@ const AboutMePage = () => {
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-6">
                   <div>
                     <h3 className="text-2xl font-bold text-robinson-black">{job.title}</h3>
-                    <p className="text-safety-orange font-medium">{job.company}</p>
+                    <p className="text-robinson-blue font-medium">{job.company}</p>
                     <div className="flex items-center gap-4 mt-2 text-robinson-gray-light text-sm">
                       <span className="flex items-center gap-1">
                         <MapPin className="w-4 h-4" />
@@ -249,7 +249,7 @@ const AboutMePage = () => {
                 <ul className="grid md:grid-cols-2 gap-3">
                   {job.highlights.map((highlight) => (
                     <li key={highlight} className="flex items-start gap-3 text-robinson-gray text-sm">
-                      <CheckCircle className="w-4 h-4 text-safety-orange flex-shrink-0 mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-robinson-blue flex-shrink-0 mt-0.5" />
                       {highlight}
                     </li>
                   ))}
@@ -270,7 +270,7 @@ const AboutMePage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Skills & <span className="gradient-text">Expertise</span>
+              Skills & <span className="text-robinson-blue">Expertise</span>
             </h2>
           </motion.div>
 
@@ -284,11 +284,11 @@ const AboutMePage = () => {
                 transition={{ delay: index * 0.1 }}
                 className="p-6 rounded-2xl bg-white/80 border border-gray-200"
               >
-                <h3 className="text-lg font-bold text-safety-orange mb-4">{skillGroup.category}</h3>
+                <h3 className="text-lg font-bold text-robinson-blue mb-4">{skillGroup.category}</h3>
                 <ul className="space-y-2">
                   {skillGroup.items.map((skill) => (
                     <li key={skill} className="text-robinson-gray text-sm flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-safety-orange rounded-full" />
+                      <div className="w-1.5 h-1.5 bg-robinson-blue rounded-full" />
                       {skill}
                     </li>
                   ))}
@@ -308,7 +308,7 @@ const AboutMePage = () => {
             viewport={{ once: true }}
             className="p-8 lg:p-12 rounded-3xl bg-gray-50/50 border border-gray-300"
           >
-            <Heart className="w-12 h-12 text-safety-orange mb-6" />
+            <Heart className="w-12 h-12 text-robinson-blue mb-6" />
             <h2 className="text-3xl font-bold text-robinson-black mb-6">A Personal Note from DJ Cline</h2>
             <div className="space-y-4 text-robinson-gray leading-relaxed">
               <p>
@@ -333,7 +333,7 @@ const AboutMePage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-gradient-to-br from-safety-orange to-safety-orange-dark relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-robinson-blue to-robinson-blue-dark relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{
           backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
                            linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
@@ -356,7 +356,7 @@ const AboutMePage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/"
-                className="px-8 py-4 bg-white text-safety-orange font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-white text-robinson-blue font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
               >
                 Back to Overview
                 <ArrowRight className="w-5 h-5" />
@@ -376,6 +376,7 @@ const AboutMePage = () => {
 };
 
 export default AboutMePage;
+
 
 
 

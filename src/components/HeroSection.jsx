@@ -39,7 +39,7 @@ const HeroSection = () => {
             {[...Array(20)].map((_, i) => (
               <div
                 key={i}
-                className="absolute w-1 h-1 bg-safety-orange rounded-full animate-spark"
+                className="absolute w-1 h-1 bg-robinson-blue rounded-full animate-spark"
                 style={{
                   left: `${Math.random() * 100}%`,
                   top: `${Math.random() * 100}%`,
@@ -66,10 +66,10 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 mb-8"
           >
-            <span className="w-2 h-2 bg-safety-orange rounded-full animate-pulse" />
-            <span className="text-safety-orange text-sm font-medium">100% Employee-Owned ESOP</span>
+            <span className="w-2 h-2 bg-robinson-blue rounded-full animate-pulse" />
+            <span className="text-robinson-blue text-sm font-medium">100% Employee-Owned ESOP</span>
           </motion.div>
 
           {/* Main Headline */}
@@ -80,7 +80,7 @@ const HeroSection = () => {
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 text-shadow"
           >
             The Future of Fabrication is{' '}
-            <span className="gradient-text">Owned by the People</span>{' '}
+            <span className="text-robinson-blue">Owned by the People</span>{' '}
             Who Build It
           </motion.h1>
 
@@ -105,7 +105,7 @@ const HeroSection = () => {
           >
             <Link
               to="/capabilities"
-              className="px-8 py-4 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 hover:shadow-lg hover:shadow-safety-orange/30 flex items-center gap-2"
+              className="px-8 py-4 bg-robinson-blue text-white font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 hover:shadow-lg hover:shadow-safety-orange/30 flex items-center gap-2"
             >
               Explore Capabilities
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -155,6 +155,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 

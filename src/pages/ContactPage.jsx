@@ -57,12 +57,12 @@ const ContactPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <MessageSquare className="w-4 h-4" />
               Get in Touch
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
-              Let's Build <span className="gradient-text-blue">Something Great</span>
+              Let's Build <span className="text-robinson-blue-blue">Something Great</span>
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
               Whether you need a quote, have questions about our capabilities, or want to 
@@ -89,7 +89,7 @@ const ContactPage = () => {
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-safety-orange/10 flex items-center justify-center flex-shrink-0">
-                      <Building2 className="w-6 h-6 text-safety-orange" />
+                      <Building2 className="w-6 h-6 text-robinson-blue" />
                     </div>
                     <div>
                       <h3 className="text-robinson-black font-semibold mb-1">Headquarters</h3>
@@ -102,11 +102,11 @@ const ContactPage = () => {
 
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-safety-orange/10 flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-safety-orange" />
+                      <Phone className="w-6 h-6 text-robinson-blue" />
                     </div>
                     <div>
                       <h3 className="text-robinson-black font-semibold mb-1">Phone</h3>
-                      <a href="tel:+19203361700" className="text-robinson-gray text-sm hover:text-safety-orange transition-colors">
+                      <a href="tel:+19203361700" className="text-robinson-gray text-sm hover:text-robinson-blue transition-colors">
                         (920) 336-1700
                       </a>
                     </div>
@@ -114,11 +114,11 @@ const ContactPage = () => {
 
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-safety-orange/10 flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-safety-orange" />
+                      <Mail className="w-6 h-6 text-robinson-blue" />
                     </div>
                     <div>
                       <h3 className="text-robinson-black font-semibold mb-1">Email</h3>
-                      <a href="mailto:info@robinsonmetal.com" className="text-robinson-gray text-sm hover:text-safety-orange transition-colors">
+                      <a href="mailto:info@robinsonmetal.com" className="text-robinson-gray text-sm hover:text-robinson-blue transition-colors">
                         info@robinsonmetal.com
                       </a>
                     </div>
@@ -126,7 +126,7 @@ const ContactPage = () => {
 
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-safety-orange/10 flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-safety-orange" />
+                      <Clock className="w-6 h-6 text-robinson-blue" />
                     </div>
                     <div>
                       <h3 className="text-robinson-black font-semibold mb-1">Business Hours</h3>
@@ -142,14 +142,14 @@ const ContactPage = () => {
               {/* All Locations */}
               <div className="p-6 rounded-2xl bg-gray-50/50 border border-gray-200">
                 <h3 className="text-robinson-black font-semibold mb-4 flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-safety-orange" />
+                  <MapPin className="w-5 h-5 text-robinson-blue" />
                   All Locations
                 </h3>
                 <div className="space-y-3">
                   {locations.map((loc) => (
                     <div key={loc.name} className="flex items-center justify-between text-sm">
                       <span className="text-robinson-gray">{loc.name}</span>
-                      <a href={`tel:${loc.phone.replace(/[^0-9]/g, '')}`} className="text-robinson-gray-light hover:text-safety-orange transition-colors">
+                      <a href={`tel:${loc.phone.replace(/[^0-9]/g, '')}`} className="text-robinson-gray-light hover:text-robinson-blue transition-colors">
                         {loc.phone}
                       </a>
                     </div>
@@ -157,7 +157,7 @@ const ContactPage = () => {
                 </div>
                 <Link
                   to="/locations"
-                  className="mt-4 inline-flex items-center gap-2 text-safety-orange hover:text-safety-orange-light transition-colors text-sm font-medium"
+                  className="mt-4 inline-flex items-center gap-2 text-robinson-blue hover:text-robinson-blue-light transition-colors text-sm font-medium"
                 >
                   View All Locations
                   <ArrowRight className="w-4 h-4" />
@@ -196,7 +196,7 @@ const ContactPage = () => {
                           location: '',
                         });
                       }}
-                      className="px-6 py-3 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
+                      className="px-6 py-3 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300"
                     >
                       Send Another Message
                     </button>
@@ -219,7 +219,7 @@ const ContactPage = () => {
                             value={formData.name}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black placeholder-steel-gray focus:border-safety-orange focus:outline-none transition-colors"
+                            className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black placeholder-steel-gray focus:border-robinson-blue focus:outline-none transition-colors"
                             placeholder="John Smith"
                           />
                         </div>
@@ -234,7 +234,7 @@ const ContactPage = () => {
                             value={formData.email}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black placeholder-steel-gray focus:border-safety-orange focus:outline-none transition-colors"
+                            className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black placeholder-steel-gray focus:border-robinson-blue focus:outline-none transition-colors"
                             placeholder="john@company.com"
                           />
                         </div>
@@ -251,7 +251,7 @@ const ContactPage = () => {
                             name="company"
                             value={formData.company}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black placeholder-steel-gray focus:border-safety-orange focus:outline-none transition-colors"
+                            className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black placeholder-steel-gray focus:border-robinson-blue focus:outline-none transition-colors"
                             placeholder="Your Company"
                           />
                         </div>
@@ -265,7 +265,7 @@ const ContactPage = () => {
                             name="phone"
                             value={formData.phone}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black placeholder-steel-gray focus:border-safety-orange focus:outline-none transition-colors"
+                            className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black placeholder-steel-gray focus:border-robinson-blue focus:outline-none transition-colors"
                             placeholder="(555) 123-4567"
                           />
                         </div>
@@ -282,7 +282,7 @@ const ContactPage = () => {
                             value={formData.subject}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black focus:border-safety-orange focus:outline-none transition-colors"
+                            className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black focus:border-robinson-blue focus:outline-none transition-colors"
                           >
                             <option value="">Select a subject</option>
                             <option value="quote">Request a Quote</option>
@@ -301,7 +301,7 @@ const ContactPage = () => {
                             name="location"
                             value={formData.location}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black focus:border-safety-orange focus:outline-none transition-colors"
+                            className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black focus:border-robinson-blue focus:outline-none transition-colors"
                           >
                             <option value="">Any location</option>
                             <option value="depere">De Pere, WI</option>
@@ -324,7 +324,7 @@ const ContactPage = () => {
                           onChange={handleChange}
                           required
                           rows={6}
-                          className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black placeholder-steel-gray focus:border-safety-orange focus:outline-none transition-colors resize-none"
+                          className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-robinson-black placeholder-steel-gray focus:border-robinson-blue focus:outline-none transition-colors resize-none"
                           placeholder="Tell us about your project or inquiry..."
                         />
                       </div>
@@ -332,7 +332,7 @@ const ContactPage = () => {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full px-8 py-4 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-full px-8 py-4 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                       >
                         {isSubmitting ? (
                           <>
@@ -383,7 +383,7 @@ const ContactPage = () => {
             {/* Map placeholder */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
-                <MapPin className="w-16 h-16 text-safety-orange/40 mx-auto mb-4" />
+                <MapPin className="w-16 h-16 text-robinson-blue/40 mx-auto mb-4" />
                 <p className="text-robinson-gray">Interactive map would be displayed here</p>
                 <p className="text-robinson-gray text-sm">De Pere, Wisconsin</p>
               </div>
@@ -418,7 +418,7 @@ const ContactPage = () => {
             </p>
             <Link
               to="/careers"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-robinson-blue text-white font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300"
             >
               View Open Positions
               <ArrowRight className="w-5 h-5" />
@@ -431,6 +431,7 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
 
 
 

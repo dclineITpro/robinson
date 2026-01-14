@@ -59,11 +59,11 @@ const CapabilitiesPreview = () => {
           className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16"
         >
           <div>
-            <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               World-Class Manufacturing
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-4">
-              Our <span className="gradient-text">Capabilities</span>
+              Our <span className="text-robinson-blue">Capabilities</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-xl">
               Integrated manufacturing solutions from raw material to finished product, 
@@ -72,7 +72,7 @@ const CapabilitiesPreview = () => {
           </div>
           <Link
             to="/capabilities"
-            className="inline-flex items-center gap-2 text-safety-orange hover:text-safety-orange-light transition-colors font-medium"
+            className="inline-flex items-center gap-2 text-robinson-blue hover:text-robinson-blue-light transition-colors font-medium"
           >
             View All Capabilities
             <ArrowRight className="w-5 h-5" />
@@ -91,23 +91,23 @@ const CapabilitiesPreview = () => {
             >
               <Link
                 to={capability.link}
-                className="block h-full p-8 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-safety-orange/30 transition-all duration-300 hover-lift group"
+                className="block h-full p-8 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-robinson-blue/30 transition-all duration-300 hover-lift group"
               >
                 <div className="flex items-start justify-between mb-6">
                   <div className="w-14 h-14 rounded-xl bg-safety-orange/10 flex items-center justify-center group-hover:bg-safety-orange/20 transition-colors">
-                    <capability.icon className="w-7 h-7 text-safety-orange" />
+                    <capability.icon className="w-7 h-7 text-robinson-blue" />
                   </div>
                   <span className="px-3 py-1 rounded-full bg-white/5 text-robinson-gray text-xs font-medium">
                     {capability.stats}
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-robinson-black mb-3 group-hover:text-safety-orange transition-colors">
+                <h3 className="text-xl font-bold text-robinson-black mb-3 group-hover:text-robinson-blue transition-colors">
                   {capability.title}
                 </h3>
                 <p className="text-robinson-gray leading-relaxed">
                   {capability.description}
                 </p>
-                <div className="mt-6 flex items-center gap-2 text-safety-orange opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="mt-6 flex items-center gap-2 text-robinson-blue opacity-0 group-hover:opacity-100 transition-opacity">
                   <span className="text-sm font-medium">Learn more</span>
                   <ArrowRight className="w-4 h-4" />
                 </div>
@@ -122,7 +122,7 @@ const CapabilitiesPreview = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            <div className="h-full p-8 rounded-2xl bg-gradient-to-br from-safety-orange/20 to-safety-orange/5 border border-safety-orange/30 flex flex-col justify-center">
+            <div className="h-full p-8 rounded-2xl bg-gradient-to-br from-robinson-blue/20 to-robinson-blue/5 border border-robinson-blue/30 flex flex-col justify-center">
               <h3 className="text-2xl font-bold text-robinson-black mb-4">
                 Ready to Start Your Project?
               </h3>
@@ -131,7 +131,7 @@ const CapabilitiesPreview = () => {
               </p>
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300"
               >
                 Request a Quote
                 <ArrowRight className="w-5 h-5" />
@@ -145,6 +145,7 @@ const CapabilitiesPreview = () => {
 };
 
 export default CapabilitiesPreview;
+
 
 
 

@@ -75,12 +75,12 @@ const AboutPage = () => {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <Building2 className="w-4 h-4" />
               About Robinson
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Built by <span className="gradient-text">Employee-Owners</span> Since 1980
+              Built by <span className="text-robinson-blue">Employee-Owners</span> Since 1980
             </h1>
             <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-8">
               For over four decades, Robinson has been a leader in custom metal fabrication. 
@@ -89,7 +89,7 @@ const AboutPage = () => {
             <div className="flex flex-wrap gap-4">
               <Link
                 to="/careers"
-                className="px-6 py-3 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 flex items-center gap-2"
+                className="px-6 py-3 bg-robinson-blue text-white font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 flex items-center gap-2"
               >
                 Join Our Team
                 <ArrowRight className="w-5 h-5" />
@@ -123,7 +123,7 @@ const AboutPage = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-4xl md:text-5xl font-bold text-safety-orange mb-2">{stat.value}</div>
+                <div className="text-4xl md:text-5xl font-bold text-robinson-blue mb-2">{stat.value}</div>
                 <div className="text-robinson-gray">{stat.label}</div>
               </motion.div>
             ))}
@@ -141,11 +141,11 @@ const AboutPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+              <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
                 Our Story
               </span>
               <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-                From Small Shop to <span className="gradient-text">Industry Leader</span>
+                From Small Shop to <span className="text-robinson-blue">Industry Leader</span>
               </h2>
               <p className="text-robinson-gray text-lg mb-6 leading-relaxed">
                 What started as a small fabrication shop in De Pere, Wisconsin has grown into 
@@ -159,7 +159,7 @@ const AboutPage = () => {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-16 h-16 rounded-xl bg-safety-orange/10 flex items-center justify-center">
-                  <Award className="w-8 h-8 text-safety-orange" />
+                  <Award className="w-8 h-8 text-robinson-blue" />
                 </div>
                 <div>
                   <div className="text-robinson-black font-semibold">FAB 40 Top 10</div>
@@ -176,7 +176,7 @@ const AboutPage = () => {
             >
               <div className="relative aspect-square rounded-3xl bg-gray-50/50 border border-gray-300 overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Building2 className="w-32 h-32 text-safety-orange/20" />
+                  <Building2 className="w-32 h-32 text-robinson-blue/20" />
                 </div>
                 <div className="absolute inset-0 grid-bg opacity-20" />
                 <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-industrial-dark to-transparent">
@@ -199,12 +199,12 @@ const AboutPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <Calendar className="w-4 h-4" />
               Our Journey
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Milestones in <span className="gradient-text">Excellence</span>
+              Milestones in <span className="text-robinson-blue">Excellence</span>
             </h2>
           </motion.div>
 
@@ -226,11 +226,11 @@ const AboutPage = () => {
                 >
                   <div className={`flex-1 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
                     <div className="inline-block p-6 rounded-xl bg-white/80 border border-gray-200">
-                      <div className="text-safety-orange font-bold text-xl mb-2">{item.year}</div>
+                      <div className="text-robinson-blue font-bold text-xl mb-2">{item.year}</div>
                       <div className="text-robinson-gray">{item.event}</div>
                     </div>
                   </div>
-                  <div className="relative z-10 w-4 h-4 rounded-full bg-safety-orange hidden lg:block" />
+                  <div className="relative z-10 w-4 h-4 rounded-full bg-robinson-blue hidden lg:block" />
                   <div className="flex-1" />
                 </motion.div>
               ))}
@@ -249,11 +249,11 @@ const AboutPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               What We Stand For
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Our <span className="gradient-text">Core Values</span>
+              Our <span className="text-robinson-blue">Core Values</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               These principles guide every decision we make and every part we produce.
@@ -268,10 +268,10 @@ const AboutPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-safety-orange/30 transition-all duration-300 group"
+                className="p-8 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-robinson-blue/30 transition-all duration-300 group"
               >
                 <div className="w-14 h-14 rounded-xl bg-safety-orange/10 flex items-center justify-center mb-6 group-hover:bg-safety-orange/20 transition-colors">
-                  <value.icon className="w-7 h-7 text-safety-orange" />
+                  <value.icon className="w-7 h-7 text-robinson-blue" />
                 </div>
                 <h3 className="text-xl font-bold text-robinson-black mb-3">{value.title}</h3>
                 <p className="text-robinson-gray leading-relaxed">{value.description}</p>
@@ -291,12 +291,12 @@ const AboutPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-gold text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <Users className="w-4 h-4" />
               Leadership Team
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Meet Our <span className="gradient-text-blue">Leaders</span>
+              Meet Our <span className="text-robinson-blue-blue">Leaders</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Experienced professionals guiding Robinson's continued growth and success.
@@ -317,7 +317,7 @@ const AboutPage = () => {
                   <Users className="w-12 h-12 text-robinson-blue/40" />
                 </div>
                 <h3 className="text-xl font-bold text-robinson-black mb-1">{leader.name}</h3>
-                <div className="text-robinson-gold font-medium mb-2">{leader.title}</div>
+                <div className="text-robinson-blue font-medium mb-2">{leader.title}</div>
                 <div className="text-robinson-gray-light text-sm">{leader.years} at Robinson</div>
               </motion.div>
             ))}
@@ -326,7 +326,7 @@ const AboutPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-gradient-to-br from-safety-orange to-safety-orange-dark relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-robinson-blue to-robinson-blue-dark relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 opacity-10" style={{
             backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
@@ -352,7 +352,7 @@ const AboutPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/contact"
-                className="px-8 py-4 bg-white text-safety-orange font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-white text-robinson-blue font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
               >
                 Get in Touch
                 <ArrowRight className="w-5 h-5" />
@@ -372,6 +372,7 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
 
 
 

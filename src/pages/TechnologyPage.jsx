@@ -92,7 +92,7 @@ const TechnologyPage = () => {
               Technology & Innovation
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
-              The <span className="gradient-text-blue">Digital Thread</span> of Modern Manufacturing
+              The <span className="text-robinson-blue-blue">Digital Thread</span> of Modern Manufacturing
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed mb-8">
               At Robinson, technology isn't a back-office expense—it's a core production tool. 
@@ -127,11 +127,11 @@ const TechnologyPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               Strategic Initiatives
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Three Pillars of <span className="gradient-text">Digital Excellence</span>
+              Three Pillars of <span className="text-robinson-blue">Digital Excellence</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Our technology roadmap focuses on three interconnected initiatives that drive 
@@ -150,14 +150,14 @@ const TechnologyPage = () => {
                 className="p-8 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-robinson-blue/30 transition-all duration-300 group"
               >
                 <div className="w-16 h-16 rounded-2xl bg-robinson-blue/10 flex items-center justify-center mb-6 group-hover:bg-robinson-blue/20 transition-colors">
-                  <pillar.icon className="w-8 h-8 text-robinson-gold" />
+                  <pillar.icon className="w-8 h-8 text-robinson-blue" />
                 </div>
                 <h3 className="text-2xl font-bold text-robinson-black mb-4">{pillar.title}</h3>
                 <p className="text-robinson-gray mb-6 leading-relaxed">{pillar.description}</p>
                 <ul className="space-y-3">
                   {pillar.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-3 text-robinson-gray">
-                      <CheckCircle className="w-5 h-5 text-safety-orange flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-robinson-blue flex-shrink-0" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -188,7 +188,7 @@ const TechnologyPage = () => {
               transition={{ duration: 0.8 }}
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
-                <GraduationCap className="w-4 h-4 text-safety-orange" />
+                <GraduationCap className="w-4 h-4 text-robinson-blue" />
                 <span className="text-white text-sm font-medium">Robinson Training Academy</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -207,14 +207,14 @@ const TechnologyPage = () => {
                   { label: 'Completion Rate', value: '94%' },
                 ].map((stat) => (
                   <div key={stat.label} className="p-4 rounded-xl bg-gray-50 border-gray-200">
-                    <div className="text-3xl font-bold text-safety-orange mb-1">{stat.value}</div>
+                    <div className="text-3xl font-bold text-robinson-blue mb-1">{stat.value}</div>
                     <div className="text-robinson-gray/70 text-sm">{stat.label}</div>
                   </div>
                 ))}
               </div>
               <Link
                 to="/careers#rta"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-robinson-blue text-white font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300"
               >
                 Explore RTA Programs
                 <ArrowRight className="w-5 h-5" />
@@ -244,7 +244,7 @@ const TechnologyPage = () => {
                       transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                       className="aspect-square rounded-2xl bg-gray-100 flex flex-col items-center justify-center gap-3 hover:bg-white/20 transition-colors cursor-pointer"
                     >
-                      <item.icon className="w-10 h-10 text-safety-orange" />
+                      <item.icon className="w-10 h-10 text-robinson-blue" />
                       <span className="text-robinson-black text-sm font-medium">{item.label}</span>
                     </motion.div>
                   ))}
@@ -281,10 +281,10 @@ const TechnologyPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="p-6 rounded-2xl bg-gray-50/50 border border-gray-200 text-center hover:border-safety-orange/30 transition-all duration-300 group"
+                className="p-6 rounded-2xl bg-gray-50/50 border border-gray-200 text-center hover:border-robinson-blue/30 transition-all duration-300 group"
               >
                 <div className="w-14 h-14 rounded-xl bg-safety-orange/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-safety-orange/20 transition-colors">
-                  <tech.icon className="w-7 h-7 text-safety-orange" />
+                  <tech.icon className="w-7 h-7 text-robinson-blue" />
                 </div>
                 <h3 className="text-robinson-black font-semibold mb-1">{tech.name}</h3>
                 <p className="text-robinson-gray text-sm">{tech.desc}</p>
@@ -304,12 +304,12 @@ const TechnologyPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <Users className="w-4 h-4" />
               Join Our Team
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              IT Career <span className="gradient-text">Opportunities</span>
+              IT Career <span className="text-robinson-blue">Opportunities</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Lead digital transformation at a company where technology drives production excellence.
@@ -324,11 +324,11 @@ const TechnologyPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-white/80 border border-gray-200 hover:border-safety-orange/30 transition-all duration-300 group"
+                className="p-8 rounded-2xl bg-white/80 border border-gray-200 hover:border-robinson-blue/30 transition-all duration-300 group"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <Zap className="w-6 h-6 text-safety-orange" />
-                  <h3 className="text-xl font-bold text-robinson-black group-hover:text-safety-orange transition-colors">
+                  <Zap className="w-6 h-6 text-robinson-blue" />
+                  <h3 className="text-xl font-bold text-robinson-black group-hover:text-robinson-blue transition-colors">
                     {role.title}
                   </h3>
                 </div>
@@ -345,7 +345,7 @@ const TechnologyPage = () => {
                 </div>
                 <Link
                   to="/careers"
-                  className="inline-flex items-center gap-2 text-safety-orange hover:text-safety-orange-light transition-colors font-medium"
+                  className="inline-flex items-center gap-2 text-robinson-blue hover:text-robinson-blue-light transition-colors font-medium"
                 >
                   View Position
                   <ArrowRight className="w-4 h-4" />
@@ -359,7 +359,7 @@ const TechnologyPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-16 p-8 lg:p-12 rounded-3xl bg-gradient-to-br from-safety-orange/20 to-safety-orange/5 border border-safety-orange/30 text-center"
+            className="mt-16 p-8 lg:p-12 rounded-3xl bg-gradient-to-br from-robinson-blue/20 to-robinson-blue/5 border border-robinson-blue/30 text-center"
           >
             <h3 className="text-2xl md:text-3xl font-bold text-robinson-black mb-4">
               Technology Meets Ownership
@@ -370,7 +370,7 @@ const TechnologyPage = () => {
             </p>
             <Link
               to="/careers"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300"
             >
               Explore IT Careers
               <ArrowRight className="w-5 h-5" />
@@ -383,6 +383,7 @@ const TechnologyPage = () => {
 };
 
 export default TechnologyPage;
+
 
 
 

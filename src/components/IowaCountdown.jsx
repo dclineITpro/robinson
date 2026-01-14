@@ -76,13 +76,13 @@ const IowaCountdown = () => {
           >
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
-              <Sparkles className="w-4 h-4 text-safety-orange" />
+              <Sparkles className="w-4 h-4 text-robinson-blue" />
               <span className="text-white text-sm font-medium">Strategic Expansion</span>
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6 leading-tight">
               Countdown to{' '}
-              <span className="text-safety-orange">Iowa 2027</span>
+              <span className="text-robinson-blue">Iowa 2027</span>
             </h2>
 
             <p className="text-robinson-black/80 text-lg mb-8 leading-relaxed">
@@ -99,7 +99,7 @@ const IowaCountdown = () => {
                   key={index}
                   className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 backdrop-blur-sm"
                 >
-                  <feature.icon className="w-5 h-5 text-safety-orange" />
+                  <feature.icon className="w-5 h-5 text-robinson-blue" />
                   <span className="text-robinson-black text-sm font-medium">{feature.text}</span>
                 </div>
               ))}
@@ -107,7 +107,7 @@ const IowaCountdown = () => {
 
             <Link
               to="/locations#altoona"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 hover:shadow-lg hover:shadow-safety-orange/30"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300 hover:shadow-lg hover:shadow-safety-orange/30"
             >
               Learn About Iowa Expansion
               <ArrowRight className="w-5 h-5" />
@@ -164,7 +164,7 @@ const IowaCountdown = () => {
                     whileInView={{ width: '45%' }}
                     viewport={{ once: true }}
                     transition={{ duration: 1.5, ease: 'easeOut' }}
-                    className="h-full bg-gradient-to-r from-safety-orange to-safety-orange-light rounded-full"
+                    className="h-full bg-gradient-to-r from-robinson-blue to-robinson-blue-light rounded-full"
                   />
                 </div>
               </div>
@@ -177,6 +177,7 @@ const IowaCountdown = () => {
 };
 
 export default IowaCountdown;
+
 
 
 

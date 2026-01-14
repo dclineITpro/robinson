@@ -22,9 +22,9 @@ const ScrollytellingSection = () => {
       icon: Scissors,
       title: 'Laser Cutting',
       description: 'High-speed fiber lasers cut with micron-level precision.',
-      color: 'from-safety-orange to-yellow-500',
+      color: 'from-robinson-blue to-yellow-500',
       bgColor: 'bg-safety-orange/10',
-      borderColor: 'border-safety-orange/30',
+      borderColor: 'border-robinson-blue/30',
     },
     {
       icon: Wrench,
@@ -54,9 +54,9 @@ const ScrollytellingSection = () => {
       icon: CheckCircle,
       title: 'Quality Delivery',
       description: 'Rigorous inspection ensures every part meets Tier-1 standards.',
-      color: 'from-safety-orange to-red-500',
+      color: 'from-robinson-blue to-red-500',
       bgColor: 'bg-safety-orange/10',
-      borderColor: 'border-safety-orange/30',
+      borderColor: 'border-robinson-blue/30',
     },
   ];
 
@@ -79,12 +79,12 @@ const ScrollytellingSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+          <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
             The Digital Thread
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
             From Concept to{' '}
-            <span className="gradient-text">Completion</span>
+            <span className="text-robinson-blue">Completion</span>
           </h2>
           <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
             Follow a metal part's journey through our integrated manufacturing process, 
@@ -98,7 +98,7 @@ const ScrollytellingSection = () => {
           <div className="absolute left-1/2 top-0 bottom-0 w-px bg-white/10 -translate-x-1/2 hidden lg:block">
             <motion.div
               style={{ height: lineProgress }}
-              className="w-full bg-gradient-to-b from-safety-orange via-robinson-blue to-safety-orange"
+              className="w-full bg-gradient-to-b from-robinson-blue via-robinson-blue to-robinson-blue"
             />
           </div>
 
@@ -164,6 +164,7 @@ const ScrollytellingSection = () => {
 };
 
 export default ScrollytellingSection;
+
 
 
 

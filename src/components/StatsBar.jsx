@@ -86,7 +86,7 @@ const StatsBar = () => {
               className="text-center group"
             >
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-safety-orange/10 mb-4 group-hover:bg-safety-orange/20 transition-colors duration-300">
-                <stat.icon className="w-7 h-7 text-safety-orange" />
+                <stat.icon className="w-7 h-7 text-robinson-blue" />
               </div>
               <div className="text-3xl md:text-4xl font-bold text-robinson-black mb-1">
                 {stat.prefix && <span>{stat.prefix}</span>}
@@ -112,6 +112,7 @@ const StatsBar = () => {
 };
 
 export default StatsBar;
+
 
 
 

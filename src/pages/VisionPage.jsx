@@ -137,7 +137,7 @@ const VisionPage = () => {
               My Vision for Robinson IT
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
-              A <span className="gradient-text-blue">Strategic Vision</span> for Digital Transformation
+              A <span className="text-robinson-blue-blue">Strategic Vision</span> for Digital Transformation
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
               Here's how I would approach the IT Director role at Robinson—from 
@@ -156,12 +156,12 @@ const VisionPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <Clock className="w-4 h-4" />
               Immediate Action Plan
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              My First <span className="gradient-text">90 Days</span>
+              My First <span className="text-robinson-blue">90 Days</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               A structured approach to learning the business, building relationships, 
@@ -180,18 +180,18 @@ const VisionPage = () => {
                 className="p-8 rounded-2xl bg-white/80 border border-gray-200"
               >
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-safety-orange flex items-center justify-center text-robinson-black font-bold">
+                  <div className="w-12 h-12 rounded-xl bg-robinson-blue flex items-center justify-center text-robinson-black font-bold">
                     {index + 1}
                   </div>
                   <div>
-                    <div className="text-safety-orange font-medium text-sm">{phase.phase}</div>
+                    <div className="text-robinson-blue font-medium text-sm">{phase.phase}</div>
                     <div className="text-robinson-black font-bold text-xl">{phase.title}</div>
                   </div>
                 </div>
                 <ul className="space-y-3">
                   {phase.items.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-robinson-gray text-sm">
-                      <CheckCircle className="w-4 h-4 text-safety-orange flex-shrink-0 mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-robinson-blue flex-shrink-0 mt-0.5" />
                       {item}
                     </li>
                   ))}
@@ -211,11 +211,11 @@ const VisionPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-gold text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               Strategic Roadmap
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Key <span className="gradient-text-blue">Initiatives</span>
+              Key <span className="text-robinson-blue-blue">Initiatives</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Six strategic priorities that would drive Robinson's digital transformation.
@@ -234,13 +234,13 @@ const VisionPage = () => {
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className="w-12 h-12 rounded-xl bg-robinson-blue/10 flex items-center justify-center">
-                    <priority.icon className="w-6 h-6 text-robinson-gold" />
+                    <priority.icon className="w-6 h-6 text-robinson-blue" />
                   </div>
                   <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                     priority.impact === 'Critical' 
                       ? 'bg-red-500/20 text-red-400' 
                       : priority.impact === 'High'
-                      ? 'bg-safety-orange/20 text-safety-orange'
+                      ? 'bg-safety-orange/20 text-robinson-blue'
                       : 'bg-blue-500/20 text-blue-400'
                   }`}>
                     {priority.impact}
@@ -323,12 +323,12 @@ const VisionPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
                 <DollarSign className="w-4 h-4" />
                 Business Impact Focus
               </span>
               <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-                Every Initiative Tied to <span className="gradient-text">ROI</span>
+                Every Initiative Tied to <span className="text-robinson-blue">ROI</span>
               </h2>
               <p className="text-robinson-gray text-lg mb-8 leading-relaxed">
                 I don't propose technology for technology's sake. Every initiative 
@@ -343,7 +343,7 @@ const VisionPage = () => {
                 ].map((item) => (
                   <div key={item.metric} className="flex items-center justify-between p-4 rounded-xl bg-gray-50/50 border border-gray-200">
                     <span className="text-robinson-gray">{item.metric}</span>
-                    <span className="text-safety-orange font-bold">{item.target}</span>
+                    <span className="text-robinson-blue font-bold">{item.target}</span>
                   </div>
                 ))}
               </div>
@@ -365,19 +365,19 @@ const VisionPage = () => {
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl bg-safety-orange/10 text-center">
-                    <TrendingUp className="w-8 h-8 text-safety-orange mx-auto mb-2" />
+                    <TrendingUp className="w-8 h-8 text-robinson-blue mx-auto mb-2" />
                     <div className="text-robinson-black font-medium">Growth Focus</div>
                   </div>
                   <div className="p-4 rounded-xl bg-safety-orange/10 text-center">
-                    <Shield className="w-8 h-8 text-safety-orange mx-auto mb-2" />
+                    <Shield className="w-8 h-8 text-robinson-blue mx-auto mb-2" />
                     <div className="text-robinson-black font-medium">Risk Aware</div>
                   </div>
                   <div className="p-4 rounded-xl bg-safety-orange/10 text-center">
-                    <DollarSign className="w-8 h-8 text-safety-orange mx-auto mb-2" />
+                    <DollarSign className="w-8 h-8 text-robinson-blue mx-auto mb-2" />
                     <div className="text-robinson-black font-medium">Cost Conscious</div>
                   </div>
                   <div className="p-4 rounded-xl bg-safety-orange/10 text-center">
-                    <Award className="w-8 h-8 text-safety-orange mx-auto mb-2" />
+                    <Award className="w-8 h-8 text-robinson-blue mx-auto mb-2" />
                     <div className="text-robinson-black font-medium">Quality Driven</div>
                   </div>
                 </div>
@@ -388,7 +388,7 @@ const VisionPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-gradient-to-br from-safety-orange to-safety-orange-dark relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-robinson-blue to-robinson-blue-dark relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{
           backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
                            linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
@@ -411,14 +411,14 @@ const VisionPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/about-me"
-                className="px-8 py-4 bg-white text-safety-orange font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-white text-robinson-blue font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
               >
                 View My Background
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 to="/digital-thread"
-                className="px-8 py-4 border-2 border-robinson-black text-robinson-black font-semibold rounded-lg hover:bg-white hover:text-safety-orange transition-all duration-300"
+                className="px-8 py-4 border-2 border-robinson-black text-robinson-black font-semibold rounded-lg hover:bg-white hover:text-robinson-blue transition-all duration-300"
               >
                 Digital Thread Deep Dive
               </Link>
@@ -431,6 +431,7 @@ const VisionPage = () => {
 };
 
 export default VisionPage;
+
 
 
 

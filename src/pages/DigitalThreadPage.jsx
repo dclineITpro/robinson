@@ -25,7 +25,7 @@ const DigitalThreadPage = () => {
     {
       icon: Brain,
       title: 'AI-Driven Predictive Maintenance',
-      color: 'from-safety-orange to-yellow-500',
+      color: 'from-robinson-blue to-yellow-500',
       challenge: 'Unplanned equipment downtime disrupts production schedules and impacts Tier-1 client deliveries.',
       solution: 'Deploy IoT sensors and machine learning algorithms to predict equipment failures before they occur.',
       benefits: [
@@ -119,12 +119,12 @@ const DigitalThreadPage = () => {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <Layers className="w-4 h-4" />
               Technical Deep Dive
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
-              The <span className="gradient-text">Digital Thread</span> Strategy
+              The <span className="text-robinson-blue">Digital Thread</span> Strategy
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
               A comprehensive technical strategy connecting every aspect of Robinson's 
@@ -144,7 +144,7 @@ const DigitalThreadPage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Three Pillars of <span className="gradient-text">Digital Excellence</span>
+              Three Pillars of <span className="text-robinson-blue">Digital Excellence</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Each pillar addresses a critical business need while building toward 
@@ -171,12 +171,12 @@ const DigitalThreadPage = () => {
                   </div>
 
                   <div className="mb-6">
-                    <h4 className="text-safety-orange font-semibold mb-2">The Challenge</h4>
+                    <h4 className="text-robinson-blue font-semibold mb-2">The Challenge</h4>
                     <p className="text-robinson-gray">{pillar.challenge}</p>
                   </div>
 
                   <div className="mb-6">
-                    <h4 className="text-robinson-gold font-semibold mb-2">My Solution</h4>
+                    <h4 className="text-robinson-blue font-semibold mb-2">My Solution</h4>
                     <p className="text-robinson-gray">{pillar.solution}</p>
                   </div>
 
@@ -200,7 +200,7 @@ const DigitalThreadPage = () => {
                   <ul className="space-y-3">
                     {pillar.benefits.map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3 text-robinson-gray">
-                        <CheckCircle className="w-5 h-5 text-safety-orange flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-5 h-5 text-robinson-blue flex-shrink-0 mt-0.5" />
                         {benefit}
                       </li>
                     ))}
@@ -228,7 +228,7 @@ const DigitalThreadPage = () => {
             className="text-center mb-16"
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-6">
-              <Zap className="w-4 h-4 text-safety-orange" />
+              <Zap className="w-4 h-4 text-robinson-blue" />
               Greenfield Opportunity
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -254,7 +254,7 @@ const DigitalThreadPage = () => {
                 <ul className="space-y-2">
                   {section.items.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-white/80 text-sm">
-                      <div className="w-1.5 h-1.5 bg-safety-orange rounded-full mt-2 flex-shrink-0" />
+                      <div className="w-1.5 h-1.5 bg-robinson-blue rounded-full mt-2 flex-shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -288,12 +288,12 @@ const DigitalThreadPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
                 <Settings className="w-4 h-4" />
                 Tech Enablement
               </span>
               <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-                Robinson Training Academy: <span className="gradient-text">Tech Curriculum</span>
+                Robinson Training Academy: <span className="text-robinson-blue">Tech Curriculum</span>
               </h2>
               <p className="text-white/90 text-lg mb-8 leading-relaxed">
                 The RTA is already a cornerstone of Robinson's culture. I would expand it 
@@ -322,7 +322,7 @@ const DigitalThreadPage = () => {
                         <div className="text-robinson-black font-medium">{course.course}</div>
                         <div className="text-robinson-gray-light text-sm">{course.audience}</div>
                       </div>
-                      <div className="text-safety-orange font-medium text-sm">{course.duration}</div>
+                      <div className="text-robinson-blue font-medium text-sm">{course.duration}</div>
                     </div>
                   ))}
                 </div>
@@ -381,7 +381,7 @@ const DigitalThreadPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-gradient-to-br from-safety-orange to-safety-orange-dark relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-robinson-blue to-robinson-blue-dark relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{
           backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
                            linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
@@ -404,7 +404,7 @@ const DigitalThreadPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/about-me"
-                className="px-8 py-4 bg-white text-safety-orange font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-white text-robinson-blue font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
               >
                 See My Background
                 <ArrowRight className="w-5 h-5" />
@@ -424,6 +424,7 @@ const DigitalThreadPage = () => {
 };
 
 export default DigitalThreadPage;
+
 
 
 

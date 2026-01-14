@@ -152,12 +152,12 @@ const CapabilitiesPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-safety-orange/30 text-safety-orange text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <Cog className="w-4 h-4" />
               Full-Service Fabrication
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
-              World-Class <span className="gradient-text-blue">Capabilities</span>
+              World-Class <span className="text-robinson-blue-blue">Capabilities</span>
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
               From raw material to finished product, our integrated manufacturing capabilities 
@@ -187,11 +187,11 @@ const CapabilitiesPage = () => {
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                   <div className="flex items-center gap-4 mb-6">
                     <div className="w-16 h-16 rounded-2xl bg-safety-orange/10 flex items-center justify-center">
-                      <capability.icon className="w-8 h-8 text-safety-orange" />
+                      <capability.icon className="w-8 h-8 text-robinson-blue" />
                     </div>
                     <div>
                       <h2 className="text-3xl md:text-4xl font-bold text-robinson-black">{capability.title}</h2>
-                      <p className="text-safety-orange font-medium">{capability.subtitle}</p>
+                      <p className="text-robinson-blue font-medium">{capability.subtitle}</p>
                     </div>
                   </div>
 
@@ -202,7 +202,7 @@ const CapabilitiesPage = () => {
                   <div className="grid grid-cols-2 gap-4 mb-8">
                     {capability.features.map((feature) => (
                       <div key={feature} className="flex items-center gap-2">
-                        <CheckCircle className="w-5 h-5 text-safety-orange flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-robinson-blue flex-shrink-0" />
                         <span className="text-robinson-gray text-sm">{feature}</span>
                       </div>
                     ))}
@@ -210,7 +210,7 @@ const CapabilitiesPage = () => {
 
                   <Link
                     to="/contact"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-robinson-blue text-robinson-black font-semibold rounded-lg hover:bg-robinson-blue-light transition-all duration-300"
                   >
                     Request a Quote
                     <ArrowRight className="w-5 h-5" />
@@ -221,13 +221,13 @@ const CapabilitiesPage = () => {
                 <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                   <div className="p-8 rounded-3xl bg-gray-50/50 border border-gray-300">
                     <h3 className="text-robinson-black font-semibold mb-6 flex items-center gap-2">
-                      <Ruler className="w-5 h-5 text-safety-orange" />
+                      <Ruler className="w-5 h-5 text-robinson-blue" />
                       Technical Specifications
                     </h3>
                     <div className="grid grid-cols-2 gap-6">
                       {capability.specs.map((spec) => (
                         <div key={spec.label} className="p-4 rounded-xl bg-white/50 border border-gray-200">
-                          <div className="text-2xl font-bold text-safety-orange mb-1">{spec.value}</div>
+                          <div className="text-2xl font-bold text-robinson-blue mb-1">{spec.value}</div>
                           <div className="text-robinson-gray-light text-sm">{spec.label}</div>
                         </div>
                       ))}
@@ -235,7 +235,7 @@ const CapabilitiesPage = () => {
 
                     {/* Visual placeholder */}
                     <div className="mt-8 aspect-video rounded-2xl bg-white/80 border border-gray-200 flex items-center justify-center relative overflow-hidden">
-                      <capability.icon className="w-20 h-20 text-safety-orange/20" />
+                      <capability.icon className="w-20 h-20 text-robinson-blue/20" />
                       <div className="absolute inset-0 grid-bg opacity-20" />
                     </div>
                   </div>
@@ -256,11 +256,11 @@ const CapabilitiesPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-gold text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               Quality Assurance
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Certified <span className="gradient-text-blue">Excellence</span>
+              Certified <span className="text-robinson-blue-blue">Excellence</span>
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Our quality management systems meet the rigorous standards of Tier-1 global OEMs.
@@ -282,7 +282,7 @@ const CapabilitiesPage = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-6 rounded-2xl bg-white/80 border border-gray-200 text-center"
               >
-                <div className="text-xl font-bold text-robinson-gold mb-2">{item.cert}</div>
+                <div className="text-xl font-bold text-robinson-blue mb-2">{item.cert}</div>
                 <div className="text-robinson-gray-light text-sm">{item.desc}</div>
               </motion.div>
             ))}
@@ -291,7 +291,7 @@ const CapabilitiesPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-gradient-to-br from-safety-orange to-safety-orange-dark relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-robinson-blue to-robinson-blue-dark relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 opacity-10" style={{
             backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
@@ -317,7 +317,7 @@ const CapabilitiesPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/contact"
-                className="px-8 py-4 bg-white text-safety-orange font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-white text-robinson-blue font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
               >
                 Request a Quote
                 <ArrowRight className="w-5 h-5" />
@@ -337,6 +337,7 @@ const CapabilitiesPage = () => {
 };
 
 export default CapabilitiesPage;
+
 
 
 
