@@ -3,8 +3,9 @@ import { useEffect, useState, useRef } from 'react';
 
 const AmbientWeldingFlashes = () => {
   const [flashes, setFlashes] = useState([]);
+  const [mousePos, setMousePos] = useState({ x: 50, y: 50 });
   const lastMoveTimeRef = useRef(Date.now());
-  const mousePositionRef = useRef({ x: 50, y: 50 }); // Store mouse position as percentage
+  const mousePositionRef = useRef({ x: 50, y: 50 }); // For interval access
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -13,9 +14,7 @@ const AmbientWeldingFlashes = () => {
       const xPercent = (e.clientX / window.innerWidth) * 100;
       const yPercent = (e.clientY / window.innerHeight) * 100;
       mousePositionRef.current = { x: xPercent, y: yPercent };
-      
-      // Update all flash positions to follow the mouse
-      setFlashes(prev => prev.map(flash => ({ ...flash, x: xPercent, y: yPercent })));
+      setMousePos({ x: xPercent, y: yPercent });
       
       lastMoveTimeRef.current = Date.now();
     };
@@ -60,8 +59,8 @@ const AmbientWeldingFlashes = () => {
           transition={{ duration: flash.duration, ease: "easeInOut" }}
           className="absolute rounded-full blur-[60px]"
           style={{
-            left: `${flash.x}%`,
-            top: `${flash.y}%`,
+            left: `${mousePos.x}%`,
+            top: `${mousePos.y}%`,
             width: '300px',
             height: '300px',
             transform: 'translate(-50%, -50%)',
