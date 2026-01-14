@@ -217,7 +217,7 @@ const VisionPage = () => {
                 className="p-8 rounded-2xl bg-white/80 border border-gray-200"
               >
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-robinson-blue flex items-center justify-center text-robinson-black font-bold">
+                  <div className="w-12 h-12 rounded-xl bg-robinson-blue flex items-center justify-center text-white font-bold">
                     {index + 1}
                   </div>
                   <div>
