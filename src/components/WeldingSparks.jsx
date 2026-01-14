@@ -95,8 +95,8 @@ const WeldingSparks = () => {
         slagTrail.push({
           x: mouseX,
           y: mouseY,
-          life: 1.0,
-          decay: 0.008, // Slower decay to keep slag visible longer
+          age: 0, // Track age instead of life for consistent color progression
+          maxAge: 120, // Frames to live (about 2 seconds at 60fps)
           size: 4 + Math.random() * 2
         });
         
@@ -128,37 +128,46 @@ const WeldingSparks = () => {
       for (let i = 0; i < slagTrail.length; i++) {
         const slag = slagTrail[i];
         
-        // Update life
-        slag.life -= slag.decay;
+        // Update age
+        slag.age++;
         
-        if (slag.life > 0) {
-          // Ensure radius is always positive
-          const radius = Math.max(0.1, slag.size * slag.life);
+        if (slag.age < slag.maxAge) {
+          // Calculate life percentage (1.0 = new, 0.0 = old)
+          const lifePercent = 1 - (slag.age / slag.maxAge);
+          
+          // Size shrinks as it cools
+          const radius = Math.max(0.5, slag.size * (0.5 + lifePercent * 0.5));
           ctx.beginPath();
           ctx.arc(slag.x, slag.y, radius, 0, Math.PI * 2);
           
-          // Slag color: glowing white -> orange -> gray (molten metal cooling)
-          const alpha = Math.min(slag.life * 1.5, 1.0);
-          if (slag.life > 0.7) {
-            // Glowing white hot
-            ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
-            ctx.shadowBlur = 8;
+          // ALWAYS progress through: white (0-33%) -> orange (33-66%) -> gray (66-100%)
+          const agePercent = slag.age / slag.maxAge;
+          
+          if (agePercent < 0.33) {
+            // Phase 1: Glowing white hot (0-33% of life)
+            const phaseAlpha = 1.0 - (agePercent / 0.33) * 0.2; // 1.0 to 0.8
+            ctx.fillStyle = `rgba(255, 255, 255, ${phaseAlpha})`;
+            ctx.shadowBlur = 10;
             ctx.shadowColor = 'rgba(255, 255, 255, 0.8)';
-          } else if (slag.life > 0.35) {
-            // Glowing orange
-            ctx.fillStyle = `rgba(255, 140, 0, ${alpha})`;
-            ctx.shadowBlur = 5;
-            ctx.shadowColor = 'rgba(255, 140, 0, 0.6)';
+          } else if (agePercent < 0.66) {
+            // Phase 2: Glowing orange (33-66% of life)
+            const phaseProgress = (agePercent - 0.33) / 0.33;
+            const phaseAlpha = 0.8 - phaseProgress * 0.2; // 0.8 to 0.6
+            ctx.fillStyle = `rgba(255, 140, 0, ${phaseAlpha})`;
+            ctx.shadowBlur = 6;
+            ctx.shadowColor = 'rgba(255, 140, 0, 0.5)';
           } else {
-            // Cooling to dark gray slag - more visible
-            ctx.fillStyle = `rgba(80, 80, 80, ${Math.min(alpha * 1.5, 0.9)})`;
+            // Phase 3: Cooling to dark gray slag (66-100% of life)
+            const phaseProgress = (agePercent - 0.66) / 0.34;
+            const phaseAlpha = 0.6 - phaseProgress * 0.5; // 0.6 to 0.1 (fade out)
+            ctx.fillStyle = `rgba(70, 70, 70, ${phaseAlpha})`;
             ctx.shadowBlur = 0;
           }
           
           ctx.fill();
           ctx.shadowBlur = 0; // Reset shadow
         } else {
-          // Remove dead slag
+          // Remove old slag
           slagTrail.splice(i, 1);
           i--;
         }

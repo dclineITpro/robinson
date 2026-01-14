@@ -52,17 +52,12 @@ const HomePage = () => {
     <main>
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden cursor-none" style={{
-        background: `
-          linear-gradient(90deg, rgba(40,40,40,0.8) 0%, rgba(60,60,60,0.8) 50%, rgba(40,40,40,0.8) 100%),
-          repeating-linear-gradient(
-            0deg,
-            #2a2a2a,
-            #2a2a2a 2px,
-            #353535 2px,
-            #353535 4px
-          ),
-          linear-gradient(180deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%)
-        `
+        backgroundColor: '#1a1a1a',
+        backgroundImage: `
+          url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='diamond' x='0' y='0' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath d='M50 0 L100 50 L50 100 L0 50 Z' fill='%23333' stroke='%23444' stroke-width='2'/%3E%3Cpath d='M25 25 L35 25 L30 35 Z' fill='%23555'/%3E%3Cpath d='M65 25 L75 25 L70 35 Z' fill='%23555'/%3E%3Cpath d='M25 65 L35 65 L30 75 Z' fill='%23555'/%3E%3Cpath d='M65 65 L75 65 L70 75 Z' fill='%23555'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23diamond)'/%3E%3C/svg%3E"),
+          linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))
+        `,
+        backgroundSize: '200px 200px, cover'
       }}>
         {/* Welding Effects Only */}
         <div className="absolute inset-0 overflow-hidden">
