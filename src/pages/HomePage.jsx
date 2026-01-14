@@ -50,9 +50,107 @@ const HomePage = () => {
     <main>
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
-        {/* Clean Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white">
+        {/* Animated Digital Manufacturing Background */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Base Grid */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_100%_200px,#D4AF3715,transparent)]"></div>
+          
+          {/* Animated "Digital Threads" - moving lines */}
+          <svg className="absolute inset-0 w-full h-full opacity-20 pointer-events-none">
+            <defs>
+              <linearGradient id="thread-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="transparent" />
+                <stop offset="50%" stopColor="#D4AF37" />
+                <stop offset="100%" stopColor="transparent" />
+              </linearGradient>
+            </defs>
+            <motion.path
+              d="M0 200 Q 400 100 800 300 T 1600 200"
+              fill="none"
+              stroke="url(#thread-gradient)"
+              strokeWidth="2"
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ 
+                pathLength: [0, 1, 1], 
+                pathOffset: [0, 0, 1],
+                opacity: [0, 1, 0]
+              }}
+              transition={{ 
+                duration: 8, 
+                repeat: Infinity, 
+                ease: "linear",
+                times: [0, 0.8, 1]
+              }}
+            />
+            <motion.path
+              d="M0 400 Q 300 500 600 400 T 1200 500"
+              fill="none"
+              stroke="url(#thread-gradient)"
+              strokeWidth="2"
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ 
+                pathLength: [0, 1, 1], 
+                pathOffset: [0, 0, 1],
+                opacity: [0, 1, 0]
+              }}
+              transition={{ 
+                duration: 10, 
+                repeat: Infinity, 
+                ease: "linear",
+                delay: 2,
+                times: [0, 0.8, 1]
+              }}
+            />
+             <motion.path
+              d="M1600 100 Q 1200 300 800 200 T 0 300"
+              fill="none"
+              stroke="#0047AB"
+              strokeWidth="1"
+              strokeOpacity="0.3"
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ 
+                pathLength: [0, 1, 1], 
+                pathOffset: [0, 0, 1],
+                opacity: [0, 1, 0]
+              }}
+              transition={{ 
+                duration: 12, 
+                repeat: Infinity, 
+                ease: "linear",
+                delay: 1,
+                times: [0, 0.8, 1]
+              }}
+            />
+          </svg>
+
+          {/* Floating Elements */}
+          <motion.div 
+            className="absolute top-20 right-[10%] w-64 h-64 border border-robinson-gold/10 rounded-full"
+            animate={{ 
+              rotate: 360,
+              scale: [1, 1.1, 1]
+            }}
+            transition={{ 
+              rotate: { duration: 60, repeat: Infinity, ease: "linear" },
+              scale: { duration: 10, repeat: Infinity, ease: "easeInOut" }
+            }}
+          />
+          <motion.div 
+            className="absolute bottom-20 left-[10%] w-96 h-96 border border-robinson-blue/10 rounded-full"
+            animate={{ 
+              rotate: -360,
+              scale: [1, 1.2, 1]
+            }}
+            transition={{ 
+              rotate: { duration: 80, repeat: Infinity, ease: "linear" },
+              scale: { duration: 15, repeat: Infinity, ease: "easeInOut" }
+            }}
+          />
+          
+          {/* Subtle Ambient Glows */}
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-robinson-gold/5 rounded-full blur-[150px]" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-robinson-blue/5 rounded-full blur-[150px]" />
         </div>
 
         <motion.div 
