@@ -10,23 +10,53 @@ import AmbientWeldingFlashes from '../components/AmbientWeldingFlashes';
 
 const LocationsPage = () => {
   const heroRef = useRef(null);
-  const [selectedLocation, setSelectedLocation] = useState('manitowoc');
+  const [selectedLocation, setSelectedLocation] = useState('depere_main');
 
   const locations = {
-    depere: {
-      id: 'depere',
-      name: 'De Pere',
+    depere_main: {
+      id: 'depere_main',
+      name: 'De Pere Main Campus',
       state: 'Wisconsin',
       type: 'Headquarters & Manufacturing',
-      sqft: '500,000+',
-      employees: '400+',
-      capabilities: ['Laser Cutting', 'Forming', 'Welding', 'Powder Coating', 'Assembly'],
-      address: '1740 Eisenhower Rd & 2107 American Blvd',
+      sqft: '300,000',
+      employees: '300+',
+      capabilities: ['Laser Cutting', 'Forming', 'Welding', 'Assembly'],
+      address: '1740 Eisenhower Rd, De Pere, WI 54115',
       phone: '(920) 336-1700',
       email: 'sales@robinsoninc.com',
-      description: 'Our main campus consists of multiple facilities including our headquarters and specialized production centers.',
+      description: 'Our flagship facility and corporate headquarters, featuring state-of-the-art laser cutting and comprehensive fabrication capabilities.',
       featured: true,
-      coordinates: { lat: 44.4489, lng: -88.0603 },
+      coordinates: { lat: 44.4289, lng: -88.0603 },
+    },
+    depere_fac2: {
+      id: 'depere_fac2',
+      name: 'De Pere Facility 2',
+      state: 'Wisconsin',
+      type: 'Manufacturing',
+      sqft: '150,000',
+      employees: '100+',
+      capabilities: ['Powder Coating', 'Finishing', 'Assembly'],
+      address: '2107 American Blvd',
+      phone: '(920) 336-1700',
+      email: 'sales@robinsoninc.com',
+      description: 'Specialized facility focused on high-volume powder coating and finishing operations.',
+      featured: false,
+      coordinates: { lat: 44.4189, lng: -88.0703 },
+    },
+    depere_fac3: {
+      id: 'depere_fac3',
+      name: 'De Pere Facility 3',
+      state: 'Wisconsin',
+      type: 'Manufacturing',
+      sqft: '100,000',
+      employees: '50+',
+      capabilities: ['Specialized Fabrication', 'Assembly'],
+      address: '2121 American Blvd',
+      phone: '(920) 336-1700',
+      email: 'sales@robinsoninc.com',
+      description: 'Dedicated manufacturing space for specialized fabrication projects and assembly.',
+      featured: false,
+      coordinates: { lat: 44.4195, lng: -88.0703 },
     },
     manitowoc: {
       id: 'manitowoc',
@@ -36,7 +66,7 @@ const LocationsPage = () => {
       sqft: '270,000',
       employees: '150+',
       capabilities: ['Heavy Fabrication', 'Welding', 'Machining', 'Assembly'],
-      address: '2121 South 30th Street, Manitowoc, WI 54220',
+      address: '2121 South 30th Street',
       phone: '(920) 494-7411',
       email: 'sales@robinsoninc.com',
       description: 'Specializing in heavy fabrication and large-scale welding projects for industrial and marine applications.',
@@ -81,7 +111,7 @@ const LocationsPage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+            className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6"
           >
             Robinson Locations
           </motion.h1>
@@ -91,7 +121,7 @@ const LocationsPage = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed"
           >
-            Three facilities across Wisconsin, with a fourth opening in Iowa in 2027.
+            Four facilities across Wisconsin, with a fifth opening in Iowa in 2027.
           </motion.p>
         </div>
         
@@ -118,7 +148,7 @@ const LocationsPage = () => {
               Hub-and-Spoke Network
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
-              <span className="text-robinson-blue">3 Wisconsin Locations</span> + Iowa Expansion
+              <span className="text-robinson-blue">4 Wisconsin Locations</span> + Iowa Expansion
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
               Over 1.3 million square feet of advanced manufacturing space across Wisconsin with an Iowa expansion coming online.
@@ -196,7 +226,9 @@ const LocationsPage = () => {
                     {/* Location markers */}
                     {Object.values(locations).map((loc, index) => {
                       const positions = {
-                        depere: { x: 220, y: 100 },
+                        depere_main: { x: 220, y: 100 },
+                        depere_fac2: { x: 215, y: 105 },
+                        depere_fac3: { x: 225, y: 105 },
                         manitowoc: { x: 260, y: 120 },
                         altoona: { x: 70, y: 180 },
                       };

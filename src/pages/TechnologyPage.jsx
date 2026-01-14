@@ -59,7 +59,7 @@ const TechnologyPage = () => {
   const itRoles = [
     {
       title: 'IT Director',
-      description: 'Lead digital transformation across 3 Wisconsin locations and the upcoming Iowa expansion (~1.3M sq. ft. total).',
+      description: 'Lead digital transformation across 4 Wisconsin locations and the upcoming Iowa expansion (~1.3M sq. ft. total).',
       highlights: ['Strategic leadership', 'Team development', 'Vendor management', 'Budget oversight'],
     },
     {

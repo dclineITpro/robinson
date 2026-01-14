@@ -51,10 +51,10 @@ const StatsBar = () => {
     },
     {
       icon: MapPin,
-      value: 4,
+      value: 5,
       suffix: '',
       label: 'Locations',
-      description: '3 in WI + Iowa Expansion',
+      description: '4 in WI + Iowa Expansion',
       prefix: '',
     },
   ];

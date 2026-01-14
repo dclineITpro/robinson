@@ -24,7 +24,7 @@ const WhyRobinsonPage = () => {
       category: 'Scale & Capacity',
       items: [
         { label: 'Total Footprint', value: '~1.3 Million Sq. Ft.' },
-        { label: 'Locations', value: '3 WI Facilities + IA Expansion' },
+        { label: 'Locations', value: '4 WI Facilities + IA Expansion' },
         { label: 'States', value: 'Wisconsin (current) & Iowa (2027)' },
         { label: 'Expansion', value: 'Altoona, IA — 560K Sq. Ft. (2027)' },
       ],
@@ -33,7 +33,8 @@ const WhyRobinsonPage = () => {
 
   const locations = [
     { name: 'De Pere Main Campus', type: 'Headquarters', sqft: '300,000', address: '1740 Eisenhower Rd' },
-    { name: 'De Pere South', type: 'Manufacturing', sqft: '200,000', address: '2107 American Blvd' },
+    { name: 'De Pere Facility 2', type: 'Manufacturing', sqft: '150,000', address: '2107 American Blvd' },
+    { name: 'De Pere Facility 3', type: 'Manufacturing', sqft: '100,000', address: '2121 American Blvd' },
     { name: 'Manitowoc Campus', type: 'Manufacturing', sqft: '270,000', address: '2121 South 30th Street' },
     { name: 'Altoona, IA (2027)', type: 'New Facility', sqft: '560,000', isNew: true, address: 'Coming Soon' },
   ];
@@ -128,7 +129,7 @@ const WhyRobinsonPage = () => {
               Why <span className="text-robinson-blue">Robinson</span> is the Right Fit
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
-              A 24/7 Midwest manufacturer serving global clients from three Wisconsin facilities and an Iowa expansion underway. This is exactly where my 25+ years of IT leadership delivers measurable impact.
+              A 24/7 Midwest manufacturer serving global clients from four Wisconsin facilities and an Iowa expansion underway. This is exactly where my 25+ years of IT leadership delivers measurable impact.
             </p>
           </motion.div>
         </div>
@@ -213,7 +214,7 @@ const WhyRobinsonPage = () => {
               Hub-and-Spoke Architecture
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              3 Wisconsin Facilities + Iowa Expansion
+              4 Wisconsin Facilities + Iowa Expansion
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Understanding the multi-site architecture is critical for IT strategy.
@@ -267,7 +268,7 @@ const WhyRobinsonPage = () => {
           >
             <h3 className="text-2xl font-bold text-robinson-black mb-4">IT Implication</h3>
             <p className="text-robinson-gray max-w-2xl mx-auto">
-              Managing IT across three Wisconsin facilities with an Iowa expansion requires unified systems, standardized processes, 
+              Managing IT across four Wisconsin facilities with an Iowa expansion requires unified systems, standardized processes, 
               and a hub-and-spoke network architecture. The Iowa expansion is the perfect opportunity to implement these from day one.
             </p>
           </motion.div>

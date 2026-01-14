@@ -16,7 +16,7 @@ const VisionPage = () => {
       phase: 'Days 1-30',
       title: 'Listen & Learn',
       items: [
-        'Meet with leadership across all 3 Wisconsin facilities plus Iowa project leads',
+        'Meet with leadership across all 4 Wisconsin facilities plus Iowa project leads',
         'Audit current IT infrastructure and systems',
         'Understand pain points from production floor to C-suite',
         'Review Iowa facility IT requirements and timeline',
