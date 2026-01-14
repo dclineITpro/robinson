@@ -165,14 +165,14 @@ const WhyRobinsonPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-white/80 border border-gray-200"
+                className="p-8 rounded-2xl bg-robinson-blue/90 border border-white/10 shadow-2xl shadow-robinson-blue/30 hover:-translate-y-1.5 hover:scale-[1.02] transition-transform duration-300"
               >
-                <h3 className="text-xl font-bold text-robinson-black mb-6">{section.category}</h3>
+                <h3 className="text-xl font-bold text-white mb-6">{section.category}</h3>
                 <div className="space-y-4">
                   {section.items.map((item) => (
-                    <div key={item.label} className="flex justify-between items-center py-3 border-b border-gray-200 last:border-0">
-                      <span className="text-robinson-gray">{item.label}</span>
-                      <span className="text-robinson-blue font-semibold">{item.value}</span>
+                    <div key={item.label} className="flex justify-between items-center py-3 border-b border-white/10 last:border-0">
+                      <span className="text-white/80">{item.label}</span>
+                      <span className="text-white font-semibold">{item.value}</span>
                     </div>
                   ))}
                 </div>
@@ -192,7 +192,7 @@ const WhyRobinsonPage = () => {
               {tierOneClients.map((client) => (
                 <div
                   key={client}
-                  className="px-6 py-3 rounded-lg bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue font-medium"
+                  className="px-6 py-3 rounded-lg bg-robinson-blue text-white font-medium border border-white/10 shadow-lg shadow-robinson-blue/30 hover:-translate-y-1 hover:scale-105 transition-transform duration-300"
                 >
                   {client}
                 </div>
