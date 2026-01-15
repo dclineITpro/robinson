@@ -24,7 +24,7 @@ const DigitalThreadPage = () => {
         'Automated reporting and analytics',
         'Scalable for Iowa expansion',
       ],
-      technologies: ['SAP S/4HANA or Microsoft Dynamics 365', 'Cloud-native architecture', 'API-first integration'],
+      technologies: ['Legacy system integration', 'Cloud-native architecture', 'API-first integration'],
     },
     {
       icon: Brain,
