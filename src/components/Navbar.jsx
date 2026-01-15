@@ -66,8 +66,8 @@ const Navbar = () => {
                   to={link.path}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 flex items-center gap-1 ${
                     location.pathname === link.path
-                      ? 'text-robinson-blue'
-                      : 'text-robinson-gray hover:text-robinson-black hover:bg-robinson-bg'
+                      ? 'text-white'
+                      : 'text-white hover:text-white/90 hover:bg-white/10'
                   }`}
                 >
                   {link.name}
@@ -82,13 +82,13 @@ const Navbar = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-full left-0 mt-2 w-56 bg-gray-50/95 backdrop-blur-xl rounded-xl border border-gray-300 shadow-2xl overflow-hidden"
+                      className="absolute top-full left-0 mt-2 w-56 bg-white/90 backdrop-blur-xl rounded-xl border border-white/20 shadow-2xl overflow-hidden"
                     >
                       {link.dropdown.map((item) => (
                         <Link
                           key={item.name}
                           to={item.path}
-                          className="block px-4 py-3 text-sm text-robinson-gray hover:text-robinson-black hover:bg-robinson-bg transition-colors duration-200 border-b border-gray-200 last:border-0"
+                          className="block px-4 py-3 text-sm text-white hover:text-white/90 hover:bg-white/10 transition-colors duration-200 border-b border-white/20 last:border-0"
                         >
                           {item.name}
                         </Link>
@@ -113,7 +113,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-robinson-gray hover:text-robinson-black transition-colors"
+            className="lg:hidden p-2 text-white hover:text-white/90 transition-colors"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -128,7 +128,7 @@ const Navbar = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-white backdrop-blur-xl border-t border-gray-200"
+            className="lg:hidden bg-robinson-blue/95 backdrop-blur-xl border-t border-white/20"
           >
             <div className="px-6 py-6 space-y-2">
               {navLinks.map((link) => (
@@ -137,8 +137,8 @@ const Navbar = () => {
                     to={link.path}
                     className={`block px-4 py-3 rounded-lg text-base font-medium transition-all duration-300 ${
                       location.pathname === link.path
-                        ? 'text-robinson-blue bg-robinson-blue/10'
-                        : 'text-robinson-gray hover:text-robinson-black hover:bg-robinson-bg'
+                        ? 'text-white bg-white/10'
+                        : 'text-white hover:text-white/90 hover:bg-white/10'
                     }`}
                   >
                     {link.name}
@@ -149,7 +149,7 @@ const Navbar = () => {
                         <Link
                           key={item.name}
                           to={item.path}
-                          className="block px-4 py-2 text-sm text-robinson-gray-light hover:text-robinson-gray transition-colors"
+                          className="block px-4 py-2 text-sm text-white/70 hover:text-white transition-colors"
                         >
                           {item.name}
                         </Link>
