@@ -177,26 +177,6 @@ const AboutMePage = () => {
                   <span>Manufacturing Focus</span>
                 </div>
               </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              <div className="relative">
-                <div className="aspect-square rounded-3xl bg-gradient-to-br from-robinson-blue/20 to-robinson-blue/20 border border-white/30 flex items-center justify-center">
-                  <div className="text-center">
-                    <User className="w-32 h-32 text-white/20 mx-auto mb-4" />
-                    <p className="text-robinson-gray">Professional Photo</p>
-                  </div>
-                </div>
-                <div className="absolute -bottom-6 -right-6 p-4 rounded-2xl bg-robinson-gold text-robinson-black">
-                  <div className="text-3xl font-bold">25+</div>
-                  <div className="text-sm">Years in IT</div>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
