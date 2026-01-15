@@ -341,3 +341,170 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Sparkler effect for buttons */
+.sparkler {
+  position: relative;
+  overflow: visible;
+  transition: filter 0.3s ease;
+}
+
+.sparkler:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+
+/* Sparks from corners and edges */
+.sparkler::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #FFD700;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  top: -4px;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+.sparkler::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #FFD700;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  top: -4px;
+  left: 90%;
+  transform: translateX(-50%);
+}
+
+.sparkler:hover::before {
+  animation: sparkle-up-left 0.6s ease-out forwards;
+}
+
+.sparkler:hover::after {
+  animation: sparkle-up-right 0.6s ease-out forwards;
+}
+
+/* Additional sparks */
+.sparkler .spark-left,
+.sparkler .spark-right,
+.sparkler .spark-down {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #FFD700;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.sparkler .spark-left {
+  top: 50%;
+  left: -4px;
+  transform: translateY(-50%);
+}
+
+.sparkler .spark-right {
+  top: 50%;
+  right: -4px;
+  transform: translateY(-50%);
+}
+
+.sparkler .spark-down {
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sparkler:hover .spark-left {
+  animation: sparkle-left 0.6s ease-out forwards;
+}
+
+.sparkler:hover .spark-right {
+  animation: sparkle-right 0.6s ease-out forwards;
+}
+
+.sparkler:hover .spark-down {
+  animation: sparkle-down 0.6s ease-out forwards;
+}
+
+@keyframes sparkle-up-left {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-60%) translateY(-15px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-70%) translateY(-30px) scale(0);
+  }
+}
+
+@keyframes sparkle-up-right {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-40%) translateY(-15px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-30%) translateY(-30px) scale(0);
+  }
+}
+
+@keyframes sparkle-left {
+  0% {
+    opacity: 1;
+    transform: translateX(0) translateY(-50%) scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-15px) translateY(-50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-30px) translateY(-50%) scale(0);
+  }
+}
+
+@keyframes sparkle-right {
+  0% {
+    opacity: 1;
+    transform: translateX(0) translateY(-50%) scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(15px) translateY(-50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(30px) translateY(-50%) scale(0);
+  }
+}
+
+@keyframes sparkle-down {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(15px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(30px) scale(0);
+  }
+}

@@ -48,7 +48,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-3 group">
             <img 
               src={robinsonLogo} 
-              alt="Robinson Inc." 
+              alt="Robinson" 
               className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-lg" 
             />
           </Link>
@@ -67,7 +67,7 @@ const Navbar = () => {
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 flex items-center gap-1 ${
                     location.pathname === link.path
                       ? 'text-white'
-                      : 'text-white hover:text-white/90 hover:bg-white/10'
+                      : 'text-white hover:text-robinson-black hover:bg-white'
                   }`}
                 >
                   {link.name}
@@ -104,8 +104,11 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center gap-4">
             <Link
               to="/about-me"
-              className="px-6 py-2.5 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300 hover:shadow-lg"
+              className="sparkler px-6 py-2.5 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300 hover:shadow-lg"
             >
+              <div className="spark-left"></div>
+              <div className="spark-right"></div>
+              <div className="spark-down"></div>
               Contact Me
             </Link>
           </div>
@@ -138,7 +141,7 @@ const Navbar = () => {
                     className={`block px-4 py-3 rounded-lg text-base font-medium transition-all duration-300 ${
                       location.pathname === link.path
                         ? 'text-white bg-white/10'
-                        : 'text-white hover:text-white/90 hover:bg-white/10'
+                        : 'text-white hover:text-robinson-black hover:bg-white'
                     }`}
                   >
                     {link.name}

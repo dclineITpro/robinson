@@ -140,7 +140,7 @@ const VisionPage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 text-shadow"
           >
             My Vision for Robinson's IT Future
           </motion.h1>
@@ -148,10 +148,28 @@ const VisionPage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed"
+            className="text-lg md:text-xl text-white max-w-3xl mx-auto mb-10 leading-relaxed text-shadow"
           >
             A strategic roadmap for digital transformation, operational excellence, and competitive advantage.
           </motion.p>
+
+          {/* Hero CTA Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-auto"
+          >
+            <Link
+              to="/digital-thread"
+              className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
+            >
+              <div className="spark-left"></div>
+              <div className="spark-right"></div>
+              <div className="spark-down"></div>
+              Explore Digital Thread
+            </Link>
+          </motion.div>
         </div>
         
         <WeldingSparks />
@@ -432,21 +450,6 @@ const VisionPage = () => {
               This is just the overview. I'd love to discuss specific initiatives, 
               timelines, and how my experience aligns with Robinson's needs.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                to="/about-me"
-                className="px-8 py-4 bg-white text-robinson-blue font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
-              >
-                View My Background
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                to="/digital-thread"
-                className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-robinson-blue transition-all duration-300"
-              >
-                Digital Thread Deep Dive
-              </Link>
-            </div>
           </motion.div>
         </div>
       </section>

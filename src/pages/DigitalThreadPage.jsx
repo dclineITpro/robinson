@@ -124,7 +124,7 @@ const DigitalThreadPage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 text-shadow"
           >
             The Digital Thread Strategy
           </motion.h1>
@@ -132,10 +132,28 @@ const DigitalThreadPage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed"
+            className="text-lg md:text-xl text-white max-w-3xl mx-auto mb-10 leading-relaxed text-shadow"
           >
             Connecting design, manufacturing, and delivery through integrated technology systems.
           </motion.p>
+
+          {/* Hero CTA Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-auto"
+          >
+            <Link
+              to="/about-me"
+              className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
+            >
+              <div className="spark-left"></div>
+              <div className="spark-right"></div>
+              <div className="spark-down"></div>
+              Meet DJ Cline
+            </Link>
+          </motion.div>
         </div>
         
         <WeldingSparks />
@@ -347,7 +365,6 @@ const DigitalThreadPage = () => {
                         <div className="font-medium text-robinson-blue">{course.course}</div>
                         <div className="text-robinson-gray text-sm">{course.audience}</div>
                       </div>
-                      <div className="text-robinson-blue font-medium text-sm">{course.duration}</div>
                     </div>
                   ))}
                 </div>
@@ -358,7 +375,7 @@ const DigitalThreadPage = () => {
       </section>
 
       {/* Security Focus */}
-      <section className="py-24 bg-robinson-blue">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -366,25 +383,26 @@ const DigitalThreadPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
               <Lock className="w-4 h-4 inline mr-2" />
               Critical Priority
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
               Cybersecurity is Non-Negotiable
             </h2>
-            <p className="text-white/85 text-lg max-w-2xl mx-auto">
+            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               In manufacturing, a security breach can halt production. With Tier-1 clients 
               like Rolls-Royce, security isn't optional—it's a competitive requirement.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
             {[
               { icon: Lock, title: 'Zero Trust', desc: 'Verify every access request' },
               { icon: Shield, title: 'OT Security', desc: 'Protect manufacturing systems' },
               { icon: Server, title: 'SOC Monitoring', desc: '24/7 threat detection' },
               { icon: Cloud, title: 'Secure Cloud', desc: 'Encrypted data at rest & transit' },
+              { icon: Brain, title: 'AI Data Privacy & Controls', desc: 'Secure AI training data and inference controls' },
             ].map((item, index) => (
               <motion.div
                 key={item.title}
@@ -392,13 +410,13 @@ const DigitalThreadPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-white border border-robinson-blue/20 text-center shadow-lg shadow-black/20 drop-shadow-lg hover:scale-105 hover:-translate-y-2 transition-all duration-500"
+                className="p-6 rounded-2xl bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
               >
-                <div className="w-14 h-14 rounded-xl bg-robinson-blue/10 flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="w-7 h-7 text-robinson-blue" />
+                <div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-robinson-blue mb-2">{item.title}</h3>
-                <p className="text-robinson-gray text-sm">{item.desc}</p>
+                <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
+                <p className="text-white/85 text-sm">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -429,16 +447,10 @@ const DigitalThreadPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/about-me"
-                className="px-8 py-4 bg-white text-robinson-blue font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
+                className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300 flex items-center gap-2"
               >
                 See My Background
                 <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                to="/vision"
-                className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
-              >
-                Back to Vision Overview
               </Link>
             </div>
           </motion.div>

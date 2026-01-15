@@ -142,7 +142,7 @@ const AboutMePage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 text-shadow"
           >
             About DJ Cline
           </motion.h1>
@@ -150,7 +150,7 @@ const AboutMePage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed"
+            className="text-lg md:text-xl text-white max-w-3xl mx-auto mb-10 leading-relaxed text-shadow"
           >
             25+ years of IT leadership across manufacturing, government, and enterprise environments.
           </motion.p>
@@ -419,21 +419,6 @@ const AboutMePage = () => {
               With 25+ years of IT leadership across 24/7 manufacturing, multi-site operations, and digital transformation, 
               I'm ready to discuss how I can contribute to Robinson's success.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                to="/"
-                className="px-8 py-4 bg-white text-robinson-blue font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
-              >
-                Back to Overview
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                to="/vision"
-                className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-robinson-blue transition-all duration-300"
-              >
-                Review My Vision
-              </Link>
-            </div>
           </motion.div>
         </div>
       </section>

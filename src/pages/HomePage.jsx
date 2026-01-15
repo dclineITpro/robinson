@@ -81,7 +81,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 text-shadow"
           >
             Leading <span className="text-white">Robinson</span> Through Digital Transformation
           </motion.h1>
@@ -90,7 +90,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="text-md text-gray-400 max-w-2xl mx-auto mb-10"
+            className="text-md text-white max-w-2xl mx-auto mb-10 text-shadow"
           >
             24/7 manufacturing operations across multiple facilities. Global supply chain complexity. Legacy systems requiring modernization. Cybersecurity as a competitive advantage. This is where I deliver results.
           </motion.p>
@@ -103,16 +103,12 @@ const HomePage = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-auto"
           >
             <Link
-              to="/vision"
-              className="px-8 py-4 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300 hover:shadow-lg hover:shadow-safety-orange/30 flex items-center gap-2"
-            >
-              See My Vision for IT
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-            <Link
               to="/why-robinson"
-              className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-white/50 transition-all duration-300"
+              className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
             >
+              <div className="spark-left"></div>
+              <div className="spark-right"></div>
+              <div className="spark-down"></div>
               Why Robinson?
             </Link>
           </motion.div>
@@ -437,17 +433,17 @@ const HomePage = () => {
       </section>
 
       {/* CTA - Let's Talk */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-gradient-to-br from-robinson-blue to-robinson-blue-dark relative overflow-hidden">
         <div className="relative max-w-4xl mx-auto px-6 lg:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-blue mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white/90 mb-6">
               Ready to Discuss How I Can Help?
             </h2>
-            <p className="text-robinson-gray text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
               My 25+ years leading IT through 24/7 manufacturing operations, complex supply chains, 
               and legacy system modernization align directly with Robinson's challenges and opportunities.
             </p>
@@ -460,10 +456,10 @@ const HomePage = () => {
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
-                to="/vision"
-                className="px-8 py-4 border-2 border-robinson-blue text-robinson-blue font-semibold rounded-lg hover:bg-robinson-bg transition-all duration-300"
+                to="/why-robinson"
+                className="px-8 py-4 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange/90 transition-all duration-300"
               >
-                See My Full Vision
+                Why Robinson
               </Link>
             </div>
           </motion.div>

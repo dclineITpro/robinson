@@ -94,18 +94,36 @@ const WhyRobinsonPage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 text-shadow"
           >
-            Why Robinson Inc.?
+            Why Robinson?
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed"
+            className="text-lg md:text-xl text-white max-w-3xl mx-auto mb-10 leading-relaxed text-shadow"
           >
             Understanding the company, the culture, and the opportunity that makes this role exceptional.
           </motion.p>
+
+          {/* Hero CTA Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-auto"
+          >
+            <Link
+              to="/vision"
+              className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
+            >
+              <div className="spark-left"></div>
+              <div className="spark-right"></div>
+              <div className="spark-down"></div>
+              See My Vision
+            </Link>
+          </motion.div>
         </div>
         
         <WeldingSparks />
@@ -389,21 +407,6 @@ const WhyRobinsonPage = () => {
               Based on Robinson's 24/7 operations, multi-site supply chain, and growth ambitions, 
               here's my vision for digital transformation.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                to="/vision"
-                className="px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300 flex items-center gap-2"
-              >
-                See My Vision
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                to="/digital-thread"
-                className="px-8 py-4 border-2 border-robinson-gray/30 text-robinson-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
-              >
-                Digital Thread Strategy
-              </Link>
-            </div>
           </motion.div>
         </div>
       </section>
