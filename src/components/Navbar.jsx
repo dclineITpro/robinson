@@ -49,7 +49,7 @@ const Navbar = () => {
             <img 
               src={robinsonLogo} 
               alt="Robinson Inc." 
-              className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+              className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-lg" 
             />
           </Link>
 

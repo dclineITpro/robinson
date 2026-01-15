@@ -35,7 +35,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div>
             <div className="mb-6">
-              <img src={robinsonLogo} alt="Robinson Inc." className="h-14 w-auto mb-2" />
+              <img src={robinsonLogo} alt="Robinson Inc." className="h-14 w-auto mb-2 drop-shadow-lg" />
               <div className="text-robinson-gray text-xs font-medium">IT Director Candidate Presentation</div>
             </div>
             <p className="text-robinson-gray text-sm leading-relaxed mb-6">
