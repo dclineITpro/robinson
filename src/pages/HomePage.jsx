@@ -132,7 +132,7 @@ const HomePage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2"
+            className="absolute bottom-4 left-1/2 -translate-x-1/2"
           >
             <div className="flex flex-col items-center gap-2 text-white bg-black/20 rounded-full px-4 py-2">
               <span className="text-sm uppercase tracking-widest">Scroll Down</span>
