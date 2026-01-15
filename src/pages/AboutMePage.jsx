@@ -16,7 +16,7 @@ const leadershipCards = [
   },
   {
     title: 'Manufacturing Process Knowledge',
-    description: 'Deep understanding of metal fabrication workflows, CNC operations, quality control systems, and how IT systems integrate with production floors.',
+    description: '15+ years of experience in manufacturing IT, focusing on quality control systems and production floor integration.',
   },
   {
     title: 'Crisis Management Examples',
