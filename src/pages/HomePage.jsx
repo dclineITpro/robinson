@@ -386,7 +386,7 @@ const HomePage = () => {
               {
                 icon: Database,
                 title: 'ERP Modernization',
-                description: 'Unify operations across 6 locations with a modern, cloud-ready ERP platform that provides real-time visibility.',
+                description: 'Unify operations across 5 locations with a modern, cloud-ready ERP platform that provides real-time visibility.',
                 color: 'from-blue-500 to-cyan-500',
               },
               {
