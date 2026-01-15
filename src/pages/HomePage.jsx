@@ -128,6 +128,7 @@ const HomePage = () => {
           </motion.div>
 
         <WeldingSparks />
+      </motion.div>
       </section>
 
       {/* My Track Record - Animated Counters */}
