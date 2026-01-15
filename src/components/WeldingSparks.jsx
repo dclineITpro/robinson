@@ -96,7 +96,7 @@ const WeldingSparks = () => {
           y: mouseY,
           age: 0, // Track age instead of life for consistent color progression
           maxAge: 300, // Frames to live (about 5 seconds at 60fps) - ensures all phases are visible
-          size: 18
+          size: 15
         });
         
         // Generate sparks based on movement speed - more frequent
@@ -196,7 +196,7 @@ const WeldingSparks = () => {
         
         // Core - bright white
         ctx.beginPath();
-        ctx.arc(mouseX, mouseY, 5, 0, Math.PI * 2);
+        ctx.arc(mouseX, mouseY, 4, 0, Math.PI * 2);
         ctx.fillStyle = '#FFFFFF';
         ctx.fill();
         
@@ -204,13 +204,13 @@ const WeldingSparks = () => {
         
         // Inner Glow - white
         ctx.beginPath();
-        ctx.arc(mouseX, mouseY, 12, 0, Math.PI * 2);
+        ctx.arc(mouseX, mouseY, 10, 0, Math.PI * 2);
         ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
         ctx.fill();
         
         // Outer Glow - white
         ctx.beginPath();
-        ctx.arc(mouseX, mouseY, 20, 0, Math.PI * 2);
+        ctx.arc(mouseX, mouseY, 17, 0, Math.PI * 2);
         ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
         ctx.fill();
       }
