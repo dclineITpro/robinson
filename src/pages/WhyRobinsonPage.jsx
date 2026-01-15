@@ -136,7 +136,7 @@ const WhyRobinsonPage = () => {
       </section>
 
       {/* Company Research */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-robinson-blue">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -144,10 +144,10 @@ const WhyRobinsonPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              What I Know About <span className="text-robinson-blue">Robinson</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              What I Know About <span className="text-white">Robinson</span>
             </h2>
-            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
+            <p className="text-white/80 text-lg max-w-2xl mx-auto">
               Demonstrating that I've done my homework on the company, its operations, and its strategic direction.
             </p>
           </motion.div>
@@ -160,14 +160,14 @@ const WhyRobinsonPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-robinson-blue/90 border border-white/10 shadow-2xl shadow-robinson-blue/30 hover:-translate-y-1.5 hover:scale-[1.02] transition-transform duration-300"
+                className="p-8 rounded-2xl bg-white border border-white/10 shadow-2xl shadow-white/10 hover:-translate-y-1.5 hover:scale-[1.02] transition-transform duration-300"
               >
-                <h3 className="text-xl font-bold text-white mb-6">{section.category}</h3>
+                <h3 className="text-xl font-bold text-robinson-blue mb-6">{section.category}</h3>
                 <div className="space-y-4">
                   {section.items.map((item) => (
-                    <div key={item.label} className="flex justify-between items-center py-3 border-b border-white/10 last:border-0">
-                      <span className="text-white/80">{item.label}</span>
-                      <span className="text-white font-semibold">{item.value}</span>
+                    <div key={item.label} className="flex justify-between items-center py-3 border-b border-robinson-blue/20 last:border-0">
+                      <span className="text-robinson-gray">{item.label}</span>
+                      <span className="text-robinson-blue font-semibold">{item.value}</span>
                     </div>
                   ))}
                 </div>
@@ -180,9 +180,9 @@ const WhyRobinsonPage = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="p-8 rounded-2xl bg-white/80 border border-gray-200"
+            className="p-8 rounded-2xl bg-white/90 border border-white/10"
           >
-            <h3 className="text-xl font-bold text-robinson-black mb-6 text-center">Tier-1 Global Clients</h3>
+            <h3 className="text-xl font-bold text-robinson-blue mb-6 text-center">Tier-1 Global Clients</h3>
             <div className="flex flex-wrap justify-center gap-6">
               {tierOneClients.map((client) => (
                 <div
@@ -276,7 +276,7 @@ const WhyRobinsonPage = () => {
       </section>
 
       {/* Why This Role */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-robinson-blue">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -284,11 +284,11 @@ const WhyRobinsonPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-white/10 border border-white/30 text-white text-sm font-medium mb-6">
               Strategic Alignment
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Why This <span className="text-robinson-blue">Role</span> Excites Me
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Why This <span className="text-white">Role</span> Excites Me
             </h2>
           </motion.div>
 
@@ -300,12 +300,12 @@ const WhyRobinsonPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-white/80 border border-gray-200 hover:border-robinson-blue/30 transition-all duration-300"
+                className="p-8 rounded-2xl bg-white/90 border border-white/10 hover:border-white/30 transition-all duration-300"
               >
                 <div className="w-14 h-14 rounded-xl bg-safety-orange/10 flex items-center justify-center mb-6">
                   <reason.icon className="w-7 h-7 text-robinson-blue" />
                 </div>
-                <h3 className="text-xl font-bold text-robinson-black mb-3">{reason.title}</h3>
+                <h3 className="text-xl font-bold text-robinson-blue mb-3">{reason.title}</h3>
                 <p className="text-robinson-gray leading-relaxed">{reason.description}</p>
               </motion.div>
             ))}

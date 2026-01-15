@@ -51,7 +51,7 @@ const HomePage = () => {
   return (
     <main>
       {/* Hero Section */}
-      <section ref={heroRef} className="relative min-h-[70vh] flex items-center justify-center overflow-hidden cursor-none" style={{
+      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden cursor-none" style={{
         backgroundColor: '#2a2a2a',
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23444;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23333;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23222;stop-opacity:1' /%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='100%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23444;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23333;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23222;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='%232a2a2a' width='80' height='80'/%3E%3Cellipse cx='20' cy='20' rx='15' ry='5' fill='url(%23g1)' transform='rotate(45 20 20)'/%3E%3Cellipse cx='60' cy='20' rx='15' ry='5' fill='url(%23g2)' transform='rotate(-45 60 20)'/%3E%3Cellipse cx='20' cy='60' rx='15' ry='5' fill='url(%23g2)' transform='rotate(-45 20 60)'/%3E%3Cellipse cx='60' cy='60' rx='15' ry='5' fill='url(%23g1)' transform='rotate(45 60 60)'/%3E%3C/svg%3E")`,
         backgroundSize: '80px 80px',
@@ -127,8 +127,26 @@ const HomePage = () => {
             </Link>
           </motion.div>
 
+          {/* Scroll Indicator */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.2 }}
+            className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          >
+            <div className="flex flex-col items-center gap-2 text-gray-400">
+              <span className="text-xs uppercase tracking-widest">Explore the strategy</span>
+              <motion.div
+                animate={{ y: [0, 8, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              >
+                <ChevronDown className="w-6 h-6" />
+              </motion.div>
+            </div>
+          </motion.div>
+        </motion.div>
+        
         <WeldingSparks />
-      </motion.div>
       </section>
 
       {/* My Track Record - Animated Counters */}
