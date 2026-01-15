@@ -51,7 +51,7 @@ const WeldingSparks = () => {
         vy: Math.sin(angle) * speed,
         life: 1.0,
         decay: Math.random() * 0.03 + 0.02,
-        gravity: 0.3,
+        gravity: 0.15,
         size: Math.random() * 2 + 1,
         color: Math.random() > 0.5 ? '#FFFFFF' : '#D4AF37' // White or Robinson Gold
       };
@@ -165,12 +165,13 @@ const WeldingSparks = () => {
           
           ctx.fillStyle = `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, ${alpha})`;
           
-          // Shadow
+          // Shadow - less for orange, more for gray
           if (agePercent < 0.25) {
-            ctx.shadowBlur = 12;
-            ctx.shadowColor = `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, 0.9)`;
+            ctx.shadowBlur = 8;
+            ctx.shadowColor = `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, 0.6)`;
           } else {
-            ctx.shadowBlur = 0;
+            ctx.shadowBlur = 6;
+            ctx.shadowColor = `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, 0.6)`;
           }
           
           ctx.fill();
