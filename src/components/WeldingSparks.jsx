@@ -272,7 +272,7 @@ const WeldingSparks = () => {
   return (
     <canvas 
       ref={canvasRef} 
-      className="absolute inset-0 z-20 pointer-events-none"
+      className="absolute inset-0 z-5 pointer-events-none"
     />
   );
 };
