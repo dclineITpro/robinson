@@ -292,10 +292,10 @@ const DigitalThreadPage = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-12 p-8 rounded-2xl bg-gray-50 border border-gray-300 text-center"
+            className="mt-12 p-8 rounded-2xl bg-robinson-blue text-white drop-shadow-lg text-center"
           >
-            <h3 className="text-2xl font-bold text-robinson-black mb-4">The Advantage of Greenfield</h3>
-            <p className="text-robinson-gray max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-white mb-4">The Advantage of Greenfield</h3>
+            <p className="text-white/80 max-w-3xl mx-auto">
               Unlike retrofitting existing facilities, Iowa gives us the opportunity to implement 
               best practices from day one—no legacy constraints, no technical debt, just 
               modern, scalable infrastructure designed for the next 20 years.
