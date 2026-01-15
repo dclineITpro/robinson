@@ -148,16 +148,20 @@ const WeldingSparks = () => {
           const darkGray = [70, 70, 70];
           
           let r, g, b;
-          if (agePercent <= 0.5) {
-            const t = agePercent / 0.5;
+          if (agePercent <= 0.1) {
+            const t = agePercent / 0.1;
             r = white[0] + t * (orange[0] - white[0]);
             g = white[1] + t * (orange[1] - white[1]);
             b = white[2] + t * (orange[2] - white[2]);
-          } else {
-            const t = (agePercent - 0.5) / 0.5;
+          } else if (agePercent <= 0.3) {
+            const t = (agePercent - 0.1) / 0.2;
             r = orange[0] + t * (darkGray[0] - orange[0]);
             g = orange[1] + t * (darkGray[1] - orange[1]);
             b = orange[2] + t * (darkGray[2] - orange[2]);
+          } else {
+            r = darkGray[0];
+            g = darkGray[1];
+            b = darkGray[2];
           }
           
           // Alpha fades linearly
@@ -166,7 +170,7 @@ const WeldingSparks = () => {
           ctx.fillStyle = `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, ${alpha})`;
           
           // Shadow - less for orange, more for gray
-          if (agePercent < 0.5) {
+          if (agePercent < 0.3) {
             ctx.shadowBlur = 8;
             ctx.shadowColor = `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, 0.6)`;
           } else {
