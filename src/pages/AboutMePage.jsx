@@ -352,7 +352,7 @@ const AboutMePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-white/80 border border-gray-200 drop-shadow-lg"
+                className="p-6 rounded-2xl bg-white border border-gray-200 drop-shadow-lg"
               >
                 <h3 className="text-lg font-bold text-robinson-blue mb-4">{skillGroup.category}</h3>
                 <ul className="space-y-2">
@@ -428,10 +428,6 @@ const AboutMePage = () => {
                 to="/"
                 className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
               >
-                <div className="spark-top"></div>
-                <div className="spark-left"></div>
-                <div className="spark-right"></div>
-                <div className="spark-down"></div>
                 Start Over
               </Link>
               <Link

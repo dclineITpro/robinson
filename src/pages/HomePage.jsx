@@ -63,7 +63,7 @@ const HomePage = () => {
         </div>
 
         <motion.div 
-          className="relative z-10 max-w-5xl mx-auto px-6 text-center pointer-events-none opacity-80"
+          className="relative z-10 max-w-5xl mx-auto px-6 text-center pointer-events-none"
         >
           {/* Badge */}
           <motion.div
@@ -322,10 +322,9 @@ const HomePage = () => {
               </ul>
               <Link
                 to="/digital-thread"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-safety-orange text-robinson-black font-semibold rounded-lg hover:bg-safety-orange-light transition-all duration-300"
+                className="sparkler inline-flex items-center gap-2 px-6 py-3 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300 whitespace-nowrap"
               >
                 See My Digital Thread Strategy
-                <ArrowRight className="w-5 h-5" />
               </Link>
             </motion.div>
 
@@ -453,10 +452,6 @@ const HomePage = () => {
               to="/why-robinson"
               className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300 whitespace-nowrap"
             >
-              <div className="spark-top"></div>
-              <div className="spark-left"></div>
-              <div className="spark-right"></div>
-              <div className="spark-down"></div>
               Why Robinson
             </Link>
           </motion.div>

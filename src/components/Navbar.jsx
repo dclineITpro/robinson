@@ -106,9 +106,6 @@ const Navbar = () => {
               to="/about-me"
               className="sparkler px-6 py-2.5 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300 hover:shadow-lg"
             >
-              <div className="spark-left"></div>
-              <div className="spark-right"></div>
-              <div className="spark-down"></div>
               Contact Me
             </Link>
           </div>

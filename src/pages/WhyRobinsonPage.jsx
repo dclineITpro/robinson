@@ -414,14 +414,9 @@ const WhyRobinsonPage = () => {
             </p>
             <Link
               to="/vision"
-              className="sparkler inline-flex items-center justify-center gap-2 px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
+              className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
             >
-              <div className="spark-top"></div>
-              <div className="spark-left"></div>
-              <div className="spark-right"></div>
-              <div className="spark-down"></div>
               See What I Would Do
-              <ArrowRight className="w-5 h-5" />
             </Link>
           </motion.div>
         </div>
