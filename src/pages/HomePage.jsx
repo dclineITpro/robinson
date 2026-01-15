@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import { 
   ArrowRight, Building2, MapPin, Users, Award, Target, Lightbulb,
-  Cpu, Database, Brain, Wifi, ChevronDown, Briefcase, Heart, TrendingUp, Shield, Globe
+  Cpu, Database, Brain, Wifi, Briefcase, Heart, TrendingUp, Shield, Globe
 } from 'lucide-react';
 import AnimatedCounter from '../components/AnimatedCounter';
 import WeldingSparks from '../components/WeldingSparks';
@@ -128,22 +128,7 @@ const HomePage = () => {
           </motion.div>
 
           {/* Scroll Indicator */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.2 }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2"
-          >
-            <div className="flex flex-col items-center gap-2 text-gray-400">
-              <span className="text-xs uppercase tracking-widest">Explore the strategy</span>
-              <motion.div
-                animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-              >
-                <ChevronDown className="w-6 h-6" />
-              </motion.div>
-            </div>
-          </motion.div>
+          
         </motion.div>
         
         <WeldingSparks />
