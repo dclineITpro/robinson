@@ -20,7 +20,7 @@ const HomePage = () => {
 
   const robinsonStats = [
     { value: '1.3M', label: 'Sq. Ft.', desc: 'Total Footprint (with Iowa)' },
-    { value: '4', label: 'WI Locations', desc: 'Plus Iowa Expansion (2027)' },
+    { value: '5', label: 'Locations', desc: '4 WI + Iowa Expansion (2027)' },
     { value: '100%', label: 'Employee-Owned', desc: 'ESOP Company' },
     { value: 'No. 7', label: 'FAB 40 (2025)', desc: 'Industry Ranking by The Fabricator' },
   ];
@@ -51,7 +51,7 @@ const HomePage = () => {
   return (
     <main>
       {/* Hero Section */}
-      <section ref={heroRef} className="relative min-h-[60vh] flex items-center justify-center overflow-hidden cursor-none" style={{
+      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden cursor-none" style={{
         backgroundColor: '#2a2a2a',
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23444;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23333;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23222;stop-opacity:1' /%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='100%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23444;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23333;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23222;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='%232a2a2a' width='80' height='80'/%3E%3Cellipse cx='20' cy='20' rx='15' ry='5' fill='url(%23g1)' transform='rotate(45 20 20)'/%3E%3Cellipse cx='60' cy='20' rx='15' ry='5' fill='url(%23g2)' transform='rotate(-45 60 20)'/%3E%3Cellipse cx='20' cy='60' rx='15' ry='5' fill='url(%23g2)' transform='rotate(-45 20 60)'/%3E%3Cellipse cx='60' cy='60' rx='15' ry='5' fill='url(%23g1)' transform='rotate(45 60 60)'/%3E%3C/svg%3E")`,
         backgroundSize: '80px 80px',
@@ -323,7 +323,7 @@ const HomePage = () => {
                 {[
                   'Modern ERP integration from day one',
                   'IoT-enabled predictive maintenance',
-                  'Unified network architecture across all 6 sites',
+                  'Unified network architecture across all 5 sites',
                   'Scalable cloud infrastructure',
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3 text-white/90">
@@ -364,7 +364,7 @@ const HomePage = () => {
                     <div className="text-robinson-gray text-sm">Grand Opening</div>
                   </div>
                   <div className="p-4 rounded-xl bg-robinson-blue/10 text-center">
-                    <div className="text-3xl font-bold">6th</div>
+                    <div className="text-3xl font-bold">5th</div>
                     <div className="text-robinson-gray text-sm">Location</div>
                   </div>
                 </div>
