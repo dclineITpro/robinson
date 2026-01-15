@@ -226,12 +226,12 @@ const DigitalThreadPage = () => {
                   </div>
                 </div>
 
-                <div className={`p-8 rounded-2xl bg-white/10 border border-white/10 drop-shadow-lg hover:scale-105 hover:-translate-y-2 hover:rotate-1 transition-all duration-500 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                  <h4 className="text-white font-semibold mb-4">Business Benefits</h4>
+                <div className={`p-8 rounded-2xl bg-white border border-robinson-blue/20 drop-shadow-lg hover:scale-105 hover:-translate-y-2 hover:rotate-1 transition-all duration-500 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                  <h4 className="text-robinson-blue font-semibold mb-4">Business Benefits</h4>
                   <ul className="space-y-3">
                     {pillar.benefits.map((benefit) => (
-                      <li key={benefit} className="flex items-start gap-3 text-white/80">
-                        <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                      <li key={benefit} className="flex items-start gap-3 text-robinson-gray">
+                        <CheckCircle className="w-5 h-5 text-robinson-blue flex-shrink-0 mt-0.5" />
                         {benefit}
                       </li>
                     ))}
@@ -273,13 +273,13 @@ const DigitalThreadPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-robinson-blue border border-white/10 drop-shadow-lg hover:scale-105 hover:-translate-y-2 transition-all duration-500"
+                className="p-6 rounded-2xl bg-white border border-robinson-blue/20 drop-shadow-lg hover:scale-105 hover:-translate-y-2 transition-all duration-500"
               >
-                <h3 className="text-xl font-bold text-white mb-4">{section.category}</h3>
+                <h3 className="text-xl font-bold text-robinson-blue mb-4">{section.category}</h3>
                 <ul className="space-y-2">
                   {section.items.map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-white/80 text-sm">
-                      <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
+                    <li key={item} className="flex items-start gap-3 text-robinson-gray text-sm">
+                      <div className="w-1.5 h-1.5 bg-robinson-blue rounded-full mt-2 flex-shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -392,13 +392,13 @@ const DigitalThreadPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-white/10 border border-white/20 text-center shadow-lg shadow-black/20 drop-shadow-lg hover:scale-105 hover:-translate-y-2 transition-all duration-500"
+                className="p-6 rounded-2xl bg-white border border-robinson-blue/20 text-center shadow-lg shadow-black/20 drop-shadow-lg hover:scale-105 hover:-translate-y-2 transition-all duration-500"
               >
-                <div className="w-14 h-14 rounded-xl bg-white/15 flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="w-7 h-7 text-white" />
+                <div className="w-14 h-14 rounded-xl bg-robinson-blue/10 flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="w-7 h-7 text-robinson-blue" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-white/80 text-sm">{item.desc}</p>
+                <h3 className="text-lg font-bold text-robinson-blue mb-2">{item.title}</h3>
+                <p className="text-robinson-gray text-sm">{item.desc}</p>
               </motion.div>
             ))}
           </div>
