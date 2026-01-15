@@ -6,7 +6,7 @@ import AmbientWeldingFlashes from '../components/AmbientWeldingFlashes';
 import { 
   User, Briefcase, Heart,
   ArrowRight, CheckCircle, MapPin, Calendar, Building2,
-  Database, Brain, Shield, Users
+  Database, Brain, Shield, Users, Sparkles
 } from 'lucide-react';
 
 const leadershipCards = [
@@ -19,8 +19,8 @@ const leadershipCards = [
     description: '15+ years of experience in manufacturing IT, focusing on quality control systems and production floor integration.',
   },
   {
-    title: 'Crisis Management Examples',
-    description: 'Handled IT outages during critical production runs, minimizing downtime and maintaining Tier-1 client deliveries.',
+    title: 'Crisis Management',
+    description: 'Handled IT outages during critical production runs, minimizing downtime and maintaining Tier-1 client deliveries. Managed IT recovery from a tornado that struck Branson in 2012.',
   },
   {
     title: 'Team Development Approach',
@@ -138,6 +138,10 @@ const AboutMePage = () => {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pointer-events-none">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-base font-medium mb-6">
+            <Sparkles className="w-4 h-4" />
+            DJ Cline - IT Director Candidate
+          </span>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -419,6 +423,27 @@ const AboutMePage = () => {
               With 25+ years of IT leadership across 24/7 manufacturing, multi-site operations, and digital transformation, 
               I'm ready to discuss how I can contribute to Robinson's success.
             </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link
+                to="/"
+                className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
+              >
+                <div className="spark-top"></div>
+                <div className="spark-left"></div>
+                <div className="spark-right"></div>
+                <div className="spark-down"></div>
+                Start Over
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/dj-cline-22219834/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-white text-robinson-blue font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
+              >
+                Contact Me
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>

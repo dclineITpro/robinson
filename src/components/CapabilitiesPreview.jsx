@@ -131,8 +131,12 @@ const CapabilitiesPreview = () => {
               </p>
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
+                className="sparkler inline-flex items-center justify-center gap-2 px-6 py-3 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
               >
+                <div className="spark-top"></div>
+                <div className="spark-left"></div>
+                <div className="spark-right"></div>
+                <div className="spark-down"></div>
                 Request a Quote
                 <ArrowRight className="w-5 h-5" />
               </Link>

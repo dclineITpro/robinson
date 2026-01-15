@@ -4,7 +4,8 @@ import { useRef } from 'react';
 import { 
   Lightbulb, Target, Users, TrendingUp, Shield, Zap,
   ArrowRight, CheckCircle, Clock, DollarSign, Award,
-  Database, Brain, Wifi, GraduationCap, Cog, ChevronDown
+  Database, Brain, Wifi, GraduationCap, Cog, ChevronDown,
+  Sparkles
 } from 'lucide-react';
 import WeldingSparks from '../components/WeldingSparks';
 import AmbientWeldingFlashes from '../components/AmbientWeldingFlashes';
@@ -136,6 +137,10 @@ const VisionPage = () => {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pointer-events-none">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-base font-medium mb-6">
+            <Sparkles className="w-4 h-4" />
+            DJ Cline - IT Director Candidate
+          </span>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -451,6 +456,17 @@ const VisionPage = () => {
               This is just the overview. I'd love to discuss specific initiatives, 
               timelines, and how my experience aligns with Robinson's needs.
             </p>
+            <Link
+              to="/digital-thread"
+              className="sparkler inline-flex items-center justify-center gap-2 px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
+            >
+              <div className="spark-top"></div>
+              <div className="spark-left"></div>
+              <div className="spark-right"></div>
+              <div className="spark-down"></div>
+              Explore the Digital Thread
+              <ArrowRight className="w-5 h-5" />
+            </Link>
           </motion.div>
         </div>
       </section>

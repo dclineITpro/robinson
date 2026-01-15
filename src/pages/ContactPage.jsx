@@ -232,7 +232,7 @@ const ContactPage = () => {
                           location: '',
                         });
                       }}
-                      className="px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
+                      className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
                     >
                       Send Another Message
                     </button>
@@ -368,8 +368,12 @@ const ContactPage = () => {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
+                        className="sparkler w-full px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
                       >
+                        <div className="spark-top"></div>
+                        <div className="spark-left"></div>
+                        <div className="spark-right"></div>
+                        <div className="spark-down"></div>
                         {isSubmitting ? (
                           <>
                             <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />

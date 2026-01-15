@@ -5,7 +5,7 @@ import WeldingSparks from '../components/WeldingSparks';
 import AmbientWeldingFlashes from '../components/AmbientWeldingFlashes';
 import { 
   Database, Brain, Wifi, Server, Cloud, Lock, Cpu, Cog, Shield,
-  ArrowRight, CheckCircle, TrendingUp, Zap, Layers, Settings
+  ArrowRight, CheckCircle, TrendingUp, Zap, Layers, Sparkles, Settings
 } from 'lucide-react';
 
 const DigitalThreadPage = () => {
@@ -120,6 +120,10 @@ const DigitalThreadPage = () => {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pointer-events-none">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-base font-medium mb-6">
+            <Sparkles className="w-4 h-4" />
+            DJ Cline - IT Director Candidate
+          </span>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -448,8 +452,12 @@ const DigitalThreadPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/about-me"
-                className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300 flex items-center gap-2"
+                className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300 flex items-center gap-2"
               >
+                <div className="spark-top"></div>
+                <div className="spark-left"></div>
+                <div className="spark-right"></div>
+                <div className="spark-down"></div>
                 See My Background
                 <ArrowRight className="w-5 h-5" />
               </Link>

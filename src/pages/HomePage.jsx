@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import { 
   ArrowRight, Building2, MapPin, Users, Award, Target, Lightbulb,
-  Cpu, Database, Brain, Wifi, Briefcase, Heart, TrendingUp, Shield, Globe
+  Cpu, Database, Brain, Wifi, Briefcase, Heart, TrendingUp, Shield, Globe, Sparkles
 } from 'lucide-react';
 import AnimatedCounter from '../components/AnimatedCounter';
 import WeldingSparks from '../components/WeldingSparks';
@@ -58,7 +58,7 @@ const HomePage = () => {
         backgroundRepeat: 'repeat'
       }}>
         {/* Welding Effects Only */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden z-0">
           <AmbientWeldingFlashes />
         </div>
 
@@ -105,13 +105,13 @@ const HomePage = () => {
           >
             <Link
               to="/why-robinson"
-              className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
+              className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300 flex items-center gap-2"
             >
               <div className="spark-top"></div>
               <div className="spark-left"></div>
               <div className="spark-right"></div>
               <div className="spark-down"></div>
-              Why Robinson?
+              Why Robinson
             </Link>
           </motion.div>
 
@@ -293,9 +293,9 @@ const HomePage = () => {
               viewport={{ once: true }}
               className="text-white"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
-                <MapPin className="w-4 h-4 text-white" />
-                <span className="text-white text-sm font-medium">I Understand the Vision</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-base font-medium mb-6">
+                <Sparkles className="w-4 h-4" />
+                DJ Cline - IT Director Candidate
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 The Iowa Expansion Changes Everything
@@ -449,21 +449,16 @@ const HomePage = () => {
               My 25+ years leading IT through 24/7 manufacturing operations, complex supply chains, 
               and legacy system modernization align directly with Robinson's challenges and opportunities.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                to="/about-me"
-                className="px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300 flex items-center gap-2"
-              >
-                View My Background
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                to="/why-robinson"
-                className="px-8 py-4 bg-safety-orange text-white font-semibold rounded-lg hover:bg-safety-orange/90 transition-all duration-300"
-              >
-                Why Robinson
-              </Link>
-            </div>
+            <Link
+              to="/why-robinson"
+              className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300 whitespace-nowrap"
+            >
+              <div className="spark-top"></div>
+              <div className="spark-left"></div>
+              <div className="spark-right"></div>
+              <div className="spark-down"></div>
+              Why Robinson
+            </Link>
           </motion.div>
         </div>
       </section>

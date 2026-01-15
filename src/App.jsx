@@ -7,6 +7,7 @@ import WhyRobinsonPage from './pages/WhyRobinsonPage';
 import VisionPage from './pages/VisionPage';
 import DigitalThreadPage from './pages/DigitalThreadPage';
 import AboutMePage from './pages/AboutMePage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/vision" element={<VisionPage />} />
           <Route path="/digital-thread" element={<DigitalThreadPage />} />
           <Route path="/about-me" element={<AboutMePage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />
       </div>

@@ -408,8 +408,12 @@ const LocationsPage = () => {
                   <div className="mt-6 flex gap-4">
                     <Link
                       to="/contact"
-                      className="flex-1 px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
+                      className="sparkler flex-1 px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
                     >
+                      <div className="spark-top"></div>
+                      <div className="spark-left"></div>
+                      <div className="spark-right"></div>
+                      <div className="spark-down"></div>
                       Contact This Location
                       <ArrowRight className="w-5 h-5" />
                     </Link>
@@ -460,8 +464,12 @@ const LocationsPage = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/careers"
-                className="px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
+                className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
               >
+                <div className="spark-top"></div>
+                <div className="spark-left"></div>
+                <div className="spark-right"></div>
+                <div className="spark-down"></div>
                 Join the Iowa Team
                 <ArrowRight className="w-5 h-5" />
               </Link>
