@@ -29,7 +29,7 @@ const DigitalThreadPage = () => {
     {
       icon: Brain,
       title: 'AI-Driven Predictive Maintenance',
-      color: 'from-robinson-blue to-yellow-500',
+      color: 'from-green-500 to-emerald-500',
       challenge: 'Unplanned equipment downtime disrupts production schedules and impacts Tier-1 client deliveries.',
       solution: 'Deploy IoT sensors and machine learning algorithms to predict equipment failures before they occur.',
       benefits: [
