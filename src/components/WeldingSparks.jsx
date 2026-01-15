@@ -145,7 +145,7 @@ const WeldingSparks = () => {
           // Define color stops
           const white = [255, 255, 255];
           const orange = [255, 140, 0];
-          const darkGray = [70, 70, 70];
+          const darkGray = [40, 40, 40];
           
           let r, g, b;
           if (agePercent <= 0.1) {
