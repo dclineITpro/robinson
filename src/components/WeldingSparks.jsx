@@ -96,7 +96,7 @@ const WeldingSparks = () => {
           y: mouseY,
           age: 0, // Track age instead of life for consistent color progression
           maxAge: 300, // Frames to live (about 5 seconds at 60fps) - ensures all phases are visible
-          size: 4 + Math.random() * 2
+          size: 18
         });
         
         // Generate sparks based on movement speed - more frequent
