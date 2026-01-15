@@ -306,8 +306,8 @@ const AboutMePage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Skills & <span className="text-robinson-blue">Expertise</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Skills & <span className="text-white">Expertise</span>
             </h2>
           </motion.div>
 
