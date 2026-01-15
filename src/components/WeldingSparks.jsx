@@ -145,16 +145,16 @@ const WeldingSparks = () => {
           // Define color stops
           const white = [255, 255, 255];
           const orange = [255, 140, 0];
-          const darkGray = [120, 120, 120];
+          const darkGray = [70, 70, 70];
           
           let r, g, b;
-          if (agePercent <= 0.1) {
-            const t = agePercent / 0.1;
+          if (agePercent <= 0.05) {
+            const t = agePercent / 0.05;
             r = white[0] + t * (orange[0] - white[0]);
             g = white[1] + t * (orange[1] - white[1]);
             b = white[2] + t * (orange[2] - white[2]);
           } else {
-            const t = (agePercent - 0.1) / 0.9;
+            const t = (agePercent - 0.05) / 0.95;
             r = orange[0] + t * (darkGray[0] - orange[0]);
             g = orange[1] + t * (darkGray[1] - orange[1]);
             b = orange[2] + t * (darkGray[2] - orange[2]);
@@ -162,16 +162,16 @@ const WeldingSparks = () => {
           
           // Alpha: faster fade for orange, slower for gray
           let alpha;
-          if (agePercent <= 0.1) {
-            alpha = 0.9 - (agePercent / 0.1) * 0.4; // 0.9 to 0.5
+          if (agePercent <= 0.05) {
+            alpha = 0.9 - (agePercent / 0.05) * 0.4; // 0.9 to 0.5
           } else {
-            alpha = 0.5 - ((agePercent - 0.1) / 0.9) * 0.2; // 0.5 to 0.3
+            alpha = 0.5 - ((agePercent - 0.05) / 0.95) * 0.2; // 0.5 to 0.3
           }
           
           ctx.fillStyle = `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, ${alpha})`;
           
           // Shadow - less for orange, more for gray
-          if (agePercent < 0.1) {
+          if (agePercent < 0.05) {
             ctx.shadowBlur = 8;
             ctx.shadowColor = `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, 0.6)`;
           } else {
