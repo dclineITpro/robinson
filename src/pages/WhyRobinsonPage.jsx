@@ -323,7 +323,7 @@ const WhyRobinsonPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-white/90 border border-white/10 drop-shadow-lg hover:border-white/30 transition-all duration-300"
+                className="p-8 rounded-2xl bg-white/90 border border-white/10 drop-shadow-lg hover:border-white/30 hover:scale-105 hover:-translate-y-2 transition-all duration-300"
               >
                 <div className="w-14 h-14 rounded-xl bg-safety-orange/10 flex items-center justify-center mb-6">
                   <reason.icon className="w-7 h-7 text-robinson-blue" />

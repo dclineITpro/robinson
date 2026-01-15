@@ -259,7 +259,7 @@ const AboutMePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="p-6 rounded-2xl bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
+                className="p-6 rounded-2xl bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300"
               >
                 <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-4">
                   <item.icon className="w-6 h-6 text-white" />
@@ -352,7 +352,7 @@ const AboutMePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-white border border-gray-200 drop-shadow-lg"
+                className="p-6 rounded-2xl bg-white border border-gray-200 drop-shadow-lg hover:scale-105 hover:-translate-y-2 transition-all duration-500"
               >
                 <h3 className="text-lg font-bold text-robinson-blue mb-4">{skillGroup.category}</h3>
                 <ul className="space-y-2">
@@ -434,10 +434,9 @@ const AboutMePage = () => {
                 to="https://www.linkedin.com/in/dj-cline-22219834/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-white text-robinson-blue font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center gap-2"
+                className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300 flex items-center gap-2"
               >
                 Contact Me
-                <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </motion.div>

@@ -264,7 +264,7 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                className="p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300"
               >
                 <div className="w-14 h-14 rounded-lg bg-white/20 flex items-center justify-center mb-5">
                   <item.icon className="w-7 h-7 text-white" />

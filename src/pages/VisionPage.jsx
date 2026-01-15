@@ -352,7 +352,7 @@ const VisionPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="p-6 rounded-2xl bg-white text-robinson-blue shadow-lg"
+                className="p-6 rounded-2xl bg-white text-robinson-blue shadow-lg hover:scale-105 hover:-translate-y-2 transition-all duration-500"
               >
                 <h3 className="text-lg font-bold mb-3">{principle.title}</h3>
                 <p className="text-robinson-gray text-sm leading-relaxed">{principle.description}</p>
@@ -389,7 +389,7 @@ const VisionPage = () => {
                   { metric: 'Accelerate quote-to-delivery', target: '20%' },
                   { metric: 'Enhance cybersecurity posture', target: 'Zero breaches' },
                 ].map((item) => (
-                  <div key={item.metric} className="flex items-center justify-between p-4 rounded-xl bg-gray-50/50 border border-gray-200">
+                  <div key={item.metric} className="flex items-center justify-between p-4 rounded-xl bg-gray-50/50 border border-gray-200 hover:scale-105 hover:-translate-y-2 transition-all duration-500">
                     <span className="text-robinson-gray">{item.metric}</span>
                     <span className="text-robinson-blue font-bold">{item.target}</span>
                   </div>
