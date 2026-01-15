@@ -38,8 +38,8 @@ const Navbar = () => {
       transition={{ duration: 0.6, ease: 'easeOut' }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-gray-200/95 backdrop-blur-xl shadow-lg' 
-          : 'bg-gray-200/80 backdrop-blur-sm'
+          ? 'bg-robinson-blue/95 backdrop-blur-xl shadow-lg' 
+          : 'bg-robinson-blue/80 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
