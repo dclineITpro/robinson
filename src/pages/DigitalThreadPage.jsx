@@ -226,7 +226,7 @@ const DigitalThreadPage = () => {
                   </div>
                 </div>
 
-                <div className={`p-8 rounded-2xl bg-white/10 border border-white/10 drop-shadow-lg ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                <div className={`p-8 rounded-2xl bg-white/10 border border-white/10 drop-shadow-lg hover:scale-105 hover:-translate-y-2 hover:rotate-1 transition-all duration-500 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   <h4 className="text-white font-semibold mb-4">Business Benefits</h4>
                   <ul className="space-y-3">
                     {pillar.benefits.map((benefit) => (
@@ -273,7 +273,7 @@ const DigitalThreadPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-robinson-blue border border-white/10 drop-shadow-lg"
+                className="p-6 rounded-2xl bg-robinson-blue border border-white/10 drop-shadow-lg hover:scale-105 hover:-translate-y-2 transition-all duration-500"
               >
                 <h3 className="text-xl font-bold text-white mb-4">{section.category}</h3>
                 <ul className="space-y-2">
@@ -336,7 +336,7 @@ const DigitalThreadPage = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <div className="p-6 rounded-2xl bg-white text-robinson-blue shadow-lg drop-shadow-lg">
+              <div className="p-6 rounded-2xl bg-white text-robinson-blue shadow-lg drop-shadow-lg hover:scale-105 hover:-translate-y-2 transition-all duration-500">
                 <div className="space-y-3">
                   {rtaTechCurriculum.map((course) => (
                     <div
@@ -392,7 +392,7 @@ const DigitalThreadPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-white/10 border border-white/20 text-center shadow-lg shadow-black/20"
+                className="p-6 rounded-2xl bg-white/10 border border-white/20 text-center shadow-lg shadow-black/20 drop-shadow-lg hover:scale-105 hover:-translate-y-2 transition-all duration-500"
               >
                 <div className="w-14 h-14 rounded-xl bg-white/15 flex items-center justify-center mx-auto mb-4">
                   <item.icon className="w-7 h-7 text-white" />
