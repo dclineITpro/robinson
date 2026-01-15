@@ -51,8 +51,8 @@ const WeldingSparks = () => {
         vy: Math.sin(angle) * speed,
         life: 1.0,
         decay: Math.random() * 0.03 + 0.02,
-        gravity: 0.15,
-        size: Math.random() * 2 + 1,
+        gravity: 0.1,
+        size: Math.random() * 5 + 5,
         color: Math.random() > 0.5 ? '#FFFFFF' : '#D4AF37' // White or Robinson Gold
       };
     };
