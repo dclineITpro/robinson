@@ -217,7 +217,7 @@ const VisionPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-white text-robinson-blue shadow-lg hover:shadow-xl transition-all duration-300 h-full"
+                className="p-8 rounded-2xl bg-white border border-white/10 shadow-2xl shadow-white/10 drop-shadow-lg hover:-translate-y-1.5 hover:scale-[1.02] transition-transform duration-300 h-full"
               >
                 <div className="w-12 h-12 rounded-xl bg-robinson-blue/10 flex items-center justify-center mb-4">
                   <phase.icon className="w-6 h-6 text-robinson-blue" />
@@ -265,7 +265,7 @@ const VisionPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="p-6 rounded-2xl bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                className="p-6 rounded-2xl bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
               >
                 <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center mb-4">
                   <priority.icon className="w-5 h-5 text-white" />

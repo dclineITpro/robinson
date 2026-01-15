@@ -160,7 +160,7 @@ const WhyRobinsonPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-white border border-white/10 shadow-2xl shadow-white/10 hover:-translate-y-1.5 hover:scale-[1.02] transition-transform duration-300"
+                className="p-8 rounded-2xl bg-white border border-white/10 shadow-2xl shadow-white/10 drop-shadow-lg hover:-translate-y-1.5 hover:scale-[1.02] transition-transform duration-300"
               >
                 <h3 className="text-xl font-bold text-robinson-blue mb-6">{section.category}</h3>
                 <div className="space-y-4">
@@ -229,7 +229,7 @@ const WhyRobinsonPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className={`p-6 rounded-2xl border transition-all duration-300 ${
+                className={`p-6 rounded-2xl border transition-all duration-300 drop-shadow-lg ${
                   location.isNew 
                     ? 'bg-robinson-blue/10 border-robinson-blue/30' 
                     : 'bg-gray-50/50 border-gray-200 hover:border-robinson-blue/30'
@@ -300,7 +300,7 @@ const WhyRobinsonPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-white/90 border border-white/10 hover:border-white/30 transition-all duration-300"
+                className="p-8 rounded-2xl bg-white/90 border border-white/10 drop-shadow-lg hover:border-white/30 transition-all duration-300"
               >
                 <div className="w-14 h-14 rounded-xl bg-safety-orange/10 flex items-center justify-center mb-6">
                   <reason.icon className="w-7 h-7 text-robinson-blue" />

@@ -156,7 +156,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
             >
               <TrendingUp className="w-10 h-10 text-white mx-auto mb-4" />
               <div className="text-5xl md:text-6xl font-bold mb-2">
@@ -170,7 +170,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
             >
               <Globe className="w-10 h-10 text-white mx-auto mb-4" />
               <div className="text-4xl md:text-5xl font-bold mb-2 pt-2">
@@ -184,7 +184,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
             >
               <Shield className="w-10 h-10 text-white mx-auto mb-4" />
               <div className="text-5xl md:text-6xl font-bold mb-2">
@@ -198,7 +198,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
             >
               <Cpu className="w-10 h-10 text-white mx-auto mb-4" />
               <div className="text-5xl md:text-6xl font-bold mb-2">

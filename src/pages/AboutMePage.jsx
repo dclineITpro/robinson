@@ -226,7 +226,7 @@ const AboutMePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="p-6 rounded-2xl bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                className="p-6 rounded-2xl bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
               >
                 <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-4">
                   <item.icon className="w-6 h-6 text-white" />
@@ -265,7 +265,7 @@ const AboutMePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-2xl bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                className="p-8 rounded-2xl bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
               >
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-6">
                   <div>
@@ -319,7 +319,7 @@ const AboutMePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-white/80 border border-gray-200"
+                className="p-6 rounded-2xl bg-white/80 border border-gray-200 drop-shadow-lg"
               >
                 <h3 className="text-lg font-bold text-robinson-blue mb-4">{skillGroup.category}</h3>
                 <ul className="space-y-2">
