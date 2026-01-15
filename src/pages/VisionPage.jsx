@@ -15,6 +15,7 @@ const VisionPage = () => {
     {
       phase: 'Days 1-30',
       title: 'Listen & Learn',
+      icon: Users,
       items: [
         'Meet with leadership across all 4 Wisconsin facilities plus Iowa project leads',
         'Audit current IT infrastructure and systems',
@@ -26,6 +27,7 @@ const VisionPage = () => {
     {
       phase: 'Days 31-60',
       title: 'Analyze & Plan',
+      icon: TrendingUp,
       items: [
         'Document current state architecture',
         'Identify quick wins for immediate credibility',
@@ -37,6 +39,7 @@ const VisionPage = () => {
     {
       phase: 'Days 61-90',
       title: 'Execute & Communicate',
+      icon: Target,
       items: [
         'Implement 2-3 quick wins',
         'Present strategic plan to leadership',
