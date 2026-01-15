@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
+/* stylelint-disable */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -347,19 +348,21 @@ body {
   position: relative;
   overflow: visible;
   transition: filter 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .sparkler:hover {
-  filter: brightness(1.2);
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+  filter: brightness(2);
+  box-shadow: 0 0 50px rgba(212, 175, 55, 1), inset 0 0 30px rgba(212, 175, 55, 0.6);
+  border: 2px solid rgba(212, 175, 55, 1);
 }
 
 /* Sparks from corners and edges */
 .sparkler::before {
   content: '';
   position: absolute;
-  width: 2px;
-  height: 2px;
+  width: 3px;
+  height: 3px;
   background: #FFD700;
   border-radius: 50%;
   pointer-events: none;
@@ -372,8 +375,8 @@ body {
 .sparkler::after {
   content: '';
   position: absolute;
-  width: 2px;
-  height: 2px;
+  width: 3px;
+  height: 3px;
   background: #FFD700;
   border-radius: 50%;
   pointer-events: none;
@@ -392,16 +395,23 @@ body {
 }
 
 /* Additional sparks */
+.sparkler .spark-top,
 .sparkler .spark-left,
 .sparkler .spark-right,
 .sparkler .spark-down {
   position: absolute;
-  width: 2px;
-  height: 2px;
+  width: 3px;
+  height: 3px;
   background: #FFD700;
   border-radius: 50%;
   pointer-events: none;
   opacity: 0;
+}
+
+.sparkler .spark-top {
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .sparkler .spark-left {
@@ -420,6 +430,10 @@ body {
   bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.sparkler:hover .spark-top {
+  animation: sparkle-up 0.6s ease-out forwards;
 }
 
 .sparkler:hover .spark-left {
@@ -494,17 +508,17 @@ body {
   }
 }
 
-@keyframes sparkle-down {
+@keyframes sparkle-up {
   0% {
     opacity: 1;
     transform: translateX(-50%) translateY(0) scale(0);
   }
   50% {
     opacity: 1;
-    transform: translateX(-50%) translateY(15px) scale(1);
+    transform: translateX(-50%) translateY(-15px) scale(1);
   }
   100% {
     opacity: 0;
-    transform: translateX(-50%) translateY(30px) scale(0);
+    transform: translateX(-50%) translateY(-30px) scale(0);
   }
 }

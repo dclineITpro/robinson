@@ -70,10 +70,11 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/30 mb-8"
           >
-            <Briefcase className="w-4 h-4 text-white" />
-            <span className="text-white text-sm font-medium">DJ Cline | IT Director Candidate</span>
+            <div className="flex items-center gap-4 bg-white/20 rounded-full px-6 py-3">
+              <Briefcase className="w-6 h-6 text-white" />
+              <span className="text-white text-lg font-bold">DJ Cline | IT Director Candidate</span>
+            </div>
           </motion.div>
 
           {/* Main Headline */}
@@ -104,8 +105,9 @@ const HomePage = () => {
           >
             <Link
               to="/why-robinson"
-              className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
+              className="sparkler px-8 py-4 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
             >
+              <div className="spark-top"></div>
               <div className="spark-left"></div>
               <div className="spark-right"></div>
               <div className="spark-down"></div>
