@@ -215,10 +215,14 @@ const AboutMePage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="p-6 rounded-2xl bg-white border border-robinson-blue/20 drop-shadow-lg text-robinson-blue hover:scale-105 hover:-translate-y-2 transition-all duration-500"
+                  className="p-6 rounded-2xl bg-white border border-robinson-blue/20 drop-shadow-lg text-robinson-blue hover:scale-105 hover:-translate-y-2 transition-all duration-500 relative"
                 >
                   <h3 className="text-lg font-bold mb-2">{card.title}</h3>
                   <p className="text-robinson-gray text-sm leading-relaxed">{card.description}</p>
+                  <motion.div className="absolute top-0 left-1/2 w-1 h-1 bg-yellow-400 rounded-full transform -translate-x-1/2" initial={{ opacity: 0, scale: 0 }} whileHover={{ opacity: 1, scale: 1, y: -15 }} transition={{ duration: 0.4 }} />
+                  <motion.div className="absolute top-1/2 right-0 w-1 h-1 bg-yellow-400 rounded-full transform -translate-y-1/2" initial={{ opacity: 0, scale: 0 }} whileHover={{ opacity: 1, scale: 1, x: 15 }} transition={{ duration: 0.4, delay: 0.1 }} />
+                  <motion.div className="absolute bottom-0 left-1/2 w-1 h-1 bg-yellow-400 rounded-full transform -translate-x-1/2" initial={{ opacity: 0, scale: 0 }} whileHover={{ opacity: 1, scale: 1, y: 15 }} transition={{ duration: 0.4, delay: 0.2 }} />
+                  <motion.div className="absolute top-1/2 left-0 w-1 h-1 bg-yellow-400 rounded-full transform -translate-y-1/2" initial={{ opacity: 0, scale: 0 }} whileHover={{ opacity: 1, scale: 1, x: -15 }} transition={{ duration: 0.4, delay: 0.3 }} />
                 </motion.div>
               ))}
             </motion.div>
