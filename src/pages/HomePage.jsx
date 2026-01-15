@@ -63,7 +63,7 @@ const HomePage = () => {
         </div>
 
         <motion.div 
-          className="relative z-10 max-w-5xl mx-auto px-6 text-center pointer-events-none opacity-80"
+          className="relative z-10 max-w-5xl mx-auto px-6 text-center pointer-events-none"
         >
           {/* Badge */}
           <motion.div
