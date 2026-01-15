@@ -134,13 +134,13 @@ const HomePage = () => {
             transition={{ duration: 1, delay: 1.2 }}
             className="absolute bottom-10 left-1/2 -translate-x-1/2"
           >
-            <div className="flex flex-col items-center gap-2 text-gray-400">
-              <span className="text-xs uppercase tracking-widest">Explore the strategy</span>
+            <div className="flex flex-col items-center gap-2 text-white bg-black/20 rounded-full px-4 py-2">
+              <span className="text-sm uppercase tracking-widest">Scroll Down</span>
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
               >
-                <ChevronDown className="w-6 h-6" />
+                <ChevronDown className="w-8 h-8" />
               </motion.div>
             </div>
           </motion.div>
