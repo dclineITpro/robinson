@@ -177,6 +177,7 @@ const AboutMePage = () => {
                   <span>Manufacturing Focus</span>
                 </div>
               </div>
+            </motion.div>
           </div>
         </div>
       </section>
