@@ -141,13 +141,7 @@ const DigitalThreadPage = () => {
         <WeldingSparks />
       </section>
 
-      {/* Hero */}
-      <section className="relative py-24 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-industrial-dark via-industrial-gray to-industrial-dark">
-          <div className="absolute inset-0 grid-bg opacity-30" />
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-safety-orange/20 rounded-full blur-[150px]" />
-          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-robinson-blue/10 rounded-full blur-[100px]" />
-        </div>
+      <section className="relative py-24 lg:py-32 overflow-hidden bg-white">
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div
@@ -172,7 +166,7 @@ const DigitalThreadPage = () => {
       </section>
 
       {/* Three Pillars Deep Dive */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-robinson-blue">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -180,10 +174,10 @@ const DigitalThreadPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Three Pillars of <span className="text-robinson-blue">Digital Excellence</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Three Pillars of <span className="text-white">Digital Excellence</span>
             </h2>
-            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
+            <p className="text-white/80 text-lg max-w-2xl mx-auto">
               Each pillar addresses a critical business need while building toward 
               a fully integrated digital manufacturing environment.
             </p>
@@ -204,26 +198,26 @@ const DigitalThreadPage = () => {
                     <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${pillar.color} flex items-center justify-center`}>
                       <pillar.icon className="w-8 h-8 text-robinson-black" />
                     </div>
-                    <h3 className="text-3xl font-bold text-robinson-black">{pillar.title}</h3>
+                    <h3 className="text-3xl font-bold text-white">{pillar.title}</h3>
                   </div>
 
                   <div className="mb-6">
-                    <h4 className="text-robinson-blue font-semibold mb-2">The Challenge</h4>
-                    <p className="text-robinson-gray">{pillar.challenge}</p>
+                    <h4 className="text-white font-semibold mb-2">The Challenge</h4>
+                    <p className="text-white/80">{pillar.challenge}</p>
                   </div>
 
                   <div className="mb-6">
-                    <h4 className="text-robinson-blue font-semibold mb-2">My Solution</h4>
-                    <p className="text-robinson-gray">{pillar.solution}</p>
+                    <h4 className="text-white font-semibold mb-2">My Solution</h4>
+                    <p className="text-white/80">{pillar.solution}</p>
                   </div>
 
                   <div>
-                    <h4 className="text-robinson-black font-semibold mb-3">Technologies</h4>
+                    <h4 className="text-white font-semibold mb-3">Technologies</h4>
                     <div className="flex flex-wrap gap-2">
                       {pillar.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 rounded-full bg-white/5 border border-gray-300 text-robinson-gray text-sm"
+                          className="px-3 py-1 rounded-full bg-white/10 border border-white/10 text-white/80 text-sm"
                         >
                           {tech}
                         </span>
@@ -232,12 +226,12 @@ const DigitalThreadPage = () => {
                   </div>
                 </div>
 
-                <div className={`p-8 rounded-2xl bg-gray-50/50 border border-gray-200 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                  <h4 className="text-robinson-black font-semibold mb-4">Business Benefits</h4>
+                <div className={`p-8 rounded-2xl bg-white/10 border border-white/10 drop-shadow-lg ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                  <h4 className="text-white font-semibold mb-4">Business Benefits</h4>
                   <ul className="space-y-3">
                     {pillar.benefits.map((benefit) => (
-                      <li key={benefit} className="flex items-start gap-3 text-robinson-gray">
-                        <CheckCircle className="w-5 h-5 text-robinson-blue flex-shrink-0 mt-0.5" />
+                      <li key={benefit} className="flex items-start gap-3 text-white/80">
+                        <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
                         {benefit}
                       </li>
                     ))}
@@ -250,13 +244,7 @@ const DigitalThreadPage = () => {
       </section>
 
       {/* Iowa IT Blueprint */}
-      <section className="py-24 bg-gradient-to-br from-robinson-blue-dark via-robinson-blue to-robinson-blue-dark relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                           linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-          backgroundSize: '50px 50px',
-        }} />
-
+      <section className="py-24 bg-white">
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -264,14 +252,14 @@ const DigitalThreadPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-6">
-              <Zap className="w-4 h-4 text-robinson-blue" />
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
+              <Zap className="w-4 h-4" />
               Greenfield Opportunity
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
               Iowa Facility IT Blueprint
             </h2>
-            <p className="text-white/80 text-lg max-w-2xl mx-auto">
+            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               The 560,000 sq. ft. Altoona facility is a once-in-a-career opportunity 
               to build IT infrastructure right from the start.
             </p>
@@ -285,13 +273,13 @@ const DigitalThreadPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/30"
+                className="p-6 rounded-2xl bg-robinson-blue border border-white/10 drop-shadow-lg"
               >
                 <h3 className="text-xl font-bold text-white mb-4">{section.category}</h3>
                 <ul className="space-y-2">
                   {section.items.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-white/80 text-sm">
-                      <div className="w-1.5 h-1.5 bg-robinson-blue rounded-full mt-2 flex-shrink-0" />
+                      <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -304,10 +292,10 @@ const DigitalThreadPage = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-12 p-8 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 text-center"
+            className="mt-12 p-8 rounded-2xl bg-gray-50 border border-gray-300 text-center"
           >
-            <h3 className="text-2xl font-bold text-white mb-4">The Advantage of Greenfield</h3>
-            <p className="text-white/80 max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-robinson-black mb-4">The Advantage of Greenfield</h3>
+            <p className="text-robinson-gray max-w-3xl mx-auto">
               Unlike retrofitting existing facilities, Iowa gives us the opportunity to implement 
               best practices from day one—no legacy constraints, no technical debt, just 
               modern, scalable infrastructure designed for the next 20 years.
@@ -317,7 +305,7 @@ const DigitalThreadPage = () => {
       </section>
 
       {/* Robinson Training Academy */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-robinson-blue">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -325,23 +313,22 @@ const DigitalThreadPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/30 text-white text-sm font-medium mb-6">
                 <Settings className="w-4 h-4" />
                 Tech Enablement
               </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-                Robinson Training Academy: <span className="text-robinson-blue">Tech Curriculum</span>
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Robinson Training Academy: <span className="text-white">Tech Curriculum</span>
               </h2>
-              <p className="text-robinson-gray text-lg mb-8 leading-relaxed">
+              <p className="text-white/80 text-lg mb-8 leading-relaxed">
                 The RTA is already a cornerstone of Robinson's culture. I would expand it 
                 to include technology training that empowers every employee-owner to 
                 leverage new digital tools.
               </p>
-              <p className="text-robinson-gray mb-6">
+              <p className="text-white/80 mb-6">
                 Proposed technology courses for the RTA:
               </p>
-            </motion.div
->
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, x: 50 }}
@@ -349,18 +336,18 @@ const DigitalThreadPage = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <div className="p-6 rounded-2xl bg-robinson-blue text-white shadow-lg">
+              <div className="p-6 rounded-2xl bg-white text-robinson-blue shadow-lg drop-shadow-lg">
                 <div className="space-y-3">
                   {rtaTechCurriculum.map((course) => (
                     <div
                       key={course.course}
-                      className="flex items-center justify-between p-4 rounded-xl bg-white/10"
+                      className="flex items-center justify-between p-4 rounded-xl bg-robinson-blue/10"
                     >
                       <div>
-                        <div className="font-medium">{course.course}</div>
-                        <div className="text-white/80 text-sm">{course.audience}</div>
+                        <div className="font-medium text-robinson-blue">{course.course}</div>
+                        <div className="text-robinson-gray text-sm">{course.audience}</div>
                       </div>
-                      <div className="text-white font-medium text-sm">{course.duration}</div>
+                      <div className="text-robinson-blue font-medium text-sm">{course.duration}</div>
                     </div>
                   ))}
                 </div>
