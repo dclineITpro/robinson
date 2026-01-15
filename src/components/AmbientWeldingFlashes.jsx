@@ -4,10 +4,10 @@ import { useEffect, useState, useRef } from 'react';
 const AmbientWeldingFlashes = () => {
   const [flashes, setFlashes] = useState([]);
   const [mousePos, setMousePos] = useState({ x: 50, y: 50 });
-  const [isInHero, setIsInHero] = useState(false);
   const lastMoveTimeRef = useRef(Date.now());
   const mousePositionRef = useRef({ x: 50, y: 50 }); // For interval access
   const containerRef = useRef(null);
+  const isInHeroRef = useRef(false);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -18,25 +18,24 @@ const AmbientWeldingFlashes = () => {
       setMousePos({ x: xPercent, y: yPercent });
       
       lastMoveTimeRef.current = Date.now();
+
+      // Check if mouse is within hero bounds
+      const rect = containerRef.current?.getBoundingClientRect();
+      if (rect && e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom) {
+        isInHeroRef.current = true;
+      } else {
+        isInHeroRef.current = false;
+      }
     };
 
     document.addEventListener('mousemove', handleMouseMove, { passive: true });
-
-    // Mouse enter/leave handlers
-    const handleMouseEnter = () => setIsInHero(true);
-    const handleMouseLeave = () => setIsInHero(false);
-
-    if (containerRef.current) {
-      containerRef.current.addEventListener('mouseenter', handleMouseEnter);
-      containerRef.current.addEventListener('mouseleave', handleMouseLeave);
-    }
 
     // Create flashes only if mouse has moved recently and is in hero
     const interval = setInterval(() => {
       const timeSinceMove = Date.now() - lastMoveTimeRef.current;
       
       // Only create flashes if mouse moved in last 200ms and is in hero
-      if (isInHero && timeSinceMove < 200 && Math.random() > 0.4) { // Increased frequency (was 0.7, now 0.4)
+      if (isInHeroRef.current && timeSinceMove < 200 && Math.random() > 0.4) { // Increased frequency (was 0.7, now 0.4)
         const id = Date.now() + Math.random();
         
         // Spawn flash at mouse position
@@ -56,12 +55,8 @@ const AmbientWeldingFlashes = () => {
     return () => {
       clearInterval(interval);
       document.removeEventListener('mousemove', handleMouseMove);
-      if (containerRef.current) {
-        containerRef.current.removeEventListener('mouseenter', handleMouseEnter);
-        containerRef.current.removeEventListener('mouseleave', handleMouseLeave);
-      }
     };
-  }, [isInHero]);
+  }, []);
 
   return (
     <div ref={containerRef} className="absolute inset-0 pointer-events-none overflow-hidden z-0">
