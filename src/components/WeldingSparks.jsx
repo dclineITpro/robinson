@@ -160,8 +160,8 @@ const WeldingSparks = () => {
             b = orange[2] + t * (darkGray[2] - orange[2]);
           }
           
-          // Alpha fades linearly
-          const alpha = 0.9 - agePercent * 0.8; // 0.9 to 0.1
+          // Alpha fades linearly - slower for longer gray trail
+          const alpha = 0.9 - agePercent * 0.6; // 0.9 to 0.3
           
           ctx.fillStyle = `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, ${alpha})`;
           
