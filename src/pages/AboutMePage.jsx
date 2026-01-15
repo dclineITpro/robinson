@@ -9,6 +9,29 @@ import {
   Database, Brain, Shield, Users
 } from 'lucide-react';
 
+const leadershipCards = [
+  {
+    title: 'Leadership Philosophy',
+    description: 'My approach emphasizes servant leadership, accountability, and business-first technology decisions that drive manufacturing efficiency.',
+  },
+  {
+    title: 'Manufacturing Process Knowledge',
+    description: 'Deep understanding of metal fabrication workflows, CNC operations, quality control systems, and how IT systems integrate with production floors.',
+  },
+  {
+    title: 'Crisis Management Examples',
+    description: 'Handled IT outages during critical production runs, minimizing downtime and maintaining Tier-1 client deliveries.',
+  },
+  {
+    title: 'Team Development Approach',
+    description: 'Methodology for building and developing IT teams, including training, succession planning, and fostering expertise in manufacturing contexts.',
+  },
+  {
+    title: 'Change Management Experience',
+    description: 'Implementing major IT changes in production environments, managing resistance and ensuring minimal disruption to operations.',
+  },
+];
+
 const AboutMePage = () => {
   const heroRef = useRef(null);
   const experience = [
@@ -64,7 +87,7 @@ const AboutMePage = () => {
   const skills = [
     { category: 'Strategic', items: ['IT Strategy & Roadmapping', 'Digital Transformation', 'Global Operations', 'ITIL/ITSM'] },
     { category: 'Technical', items: ['SAP ERP', 'Microsoft 365', 'SDWAN/SASE', 'Cloud Infrastructure'] },
-    { category: 'Security', items: ['XDR', 'Security Compliance', 'Policy Standardization', 'FBI Audit Experience'] },
+    { category: 'Security', items: ['XDR', 'Security Compliance', 'Policy Standardization', 'Zero Reportable Security Incidents'] },
     { category: 'Leadership', items: ['AI/ML Integration', 'Team Building', 'Cross-functional Collaboration', 'Enterprise Architecture'] },
   ];
 
@@ -129,7 +152,7 @@ const AboutMePage = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed"
           >
-            25+ years of IT leadership in 24/7 manufacturing, expert in crisis management, team development, and cross-functional collaboration.
+            25+ years of IT leadership across manufacturing, government, and enterprise environments.
           </motion.p>
         </div>
         
@@ -140,33 +163,34 @@ const AboutMePage = () => {
       <section className="relative py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-industrial-dark via-industrial-gray to-industrial-dark">
           <div className="absolute inset-0 grid-bg opacity-30" />
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-safety-orange/20 rounded-full blur-[150px]" />
-          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-robinson-blue/10 rounded-full blur-[100px]" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-robinson-blue/20 rounded-full blur-[150px]" />
+          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-safety-orange/10 rounded-full blur-[100px]" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl"
-          >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-black text-sm font-medium mb-6">
-              <User className="w-4 h-4" />
-              DJ Cline
-            </span>
-            <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
-              25+ Years of <span className="text-robinson-blue-blue">IT Experience</span>
-            </h1>
-            <p className="text-robinson-gray text-lg md:text-xl leading-relaxed mb-8">
-              Experienced IT Director specializing in manufacturing leadership, crisis management during production outages, 
-              team development, and cross-functional collaboration to drive digital transformation in metal fabrication operations. 
-              Expert in cybersecurity, AI integration, and building high-performing teams that deliver results in 24/7 environments.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <div className="flex items-center gap-2 text-robinson-gray">
-                <Users className="w-5 h-5 text-robinson-blue" />
-                <span>20+ Years Leadership</span>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-black text-sm font-medium mb-6">
+                <User className="w-4 h-4" />
+                DJ Cline
+              </span>
+              <h1 className="text-4xl md:text-6xl font-bold text-robinson-black mb-6 leading-tight">
+                25+ Years of <span className="text-robinson-blue-blue">IT Experience</span>
+              </h1>
+              <p className="text-robinson-gray text-lg md:text-xl leading-relaxed mb-8">
+                Experienced IT Director leading technology transformations across manufacturing, 
+                government, and enterprise environments. Expert in cybersecurity, AI integration, 
+                and building high-performing teams.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <div className="flex items-center gap-2 text-robinson-gray">
+                  <Users className="w-5 h-5 text-robinson-blue" />
+                  <span>20+ Years Leadership</span>
+                </div>
                 <div className="flex items-center gap-2 text-robinson-gray">
                   <Briefcase className="w-5 h-5 text-robinson-blue" />
                   <span>25+ Years Experience</span>
@@ -176,7 +200,28 @@ const AboutMePage = () => {
                   <span>Manufacturing Focus</span>
                 </div>
               </div>
-              </motion.div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="grid md:grid-cols-2 lg:grid-cols-1 gap-6"
+            >
+              {leadershipCards.map((card, index) => (
+                <motion.div
+                  key={card.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="p-6 rounded-2xl bg-white border border-robinson-blue/20 drop-shadow-lg text-robinson-blue hover:scale-105 hover:-translate-y-2 transition-all duration-500"
+                >
+                  <h3 className="text-lg font-bold mb-2">{card.title}</h3>
+                  <p className="text-robinson-gray text-sm leading-relaxed">{card.description}</p>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </section>
@@ -312,335 +357,6 @@ const AboutMePage = () => {
                 </ul>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership Philosophy */}
-      <section className="py-24 bg-robinson-blue">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              My Leadership Philosophy
-            </h2>
-            <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              Guiding principles that shape how I lead IT teams in manufacturing environments.
-            </p>
-          </motion.div>
-
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="p-8 rounded-2xl bg-white/10 border border-white/10 drop-shadow-lg text-center"
-            >
-              <p className="text-white/80 text-lg leading-relaxed mb-6">
-                My leadership approach combines business acumen with technical expertise, always prioritizing 
-                operational excellence and team empowerment. I believe in servant leadership that puts the 
-                needs of the business and team first, while maintaining accountability and driving continuous improvement.
-              </p>
-              <ul className="text-white/80 space-y-2 text-left max-w-2xl mx-auto">
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span><strong>Business-First Technology:</strong> Every IT initiative must tie directly to business outcomes</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span><strong>Servant Leadership:</strong> Leading by supporting and enabling team success</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span><strong>Accountability:</strong> Taking ownership of outcomes and fostering a culture of responsibility</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span><strong>Continuous Improvement:</strong> Always seeking better ways to serve the business and team</span>
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Manufacturing Process Knowledge */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Manufacturing Process Knowledge
-            </h2>
-            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
-              Deep understanding of metal fabrication workflows critical for effective IT leadership.
-            </p>
-          </motion.div>
-
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="p-8 rounded-2xl bg-robinson-blue text-white shadow-lg drop-shadow-lg"
-            >
-              <p className="text-white/80 text-lg leading-relaxed mb-6">
-                Effective IT leadership in manufacturing requires understanding the production processes 
-                that technology supports. My experience spans CNC operations, quality control systems, 
-                supply chain integration, and the unique challenges of 24/7 metal fabrication environments.
-              </p>
-              <ul className="text-white/80 space-y-2">
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>CNC machine operations and programming</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Quality control and inspection systems integration</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>ERP systems for production planning and inventory</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Supply chain and vendor management systems</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>24/7 production scheduling and maintenance coordination</span>
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Crisis Management Examples */}
-      <section className="py-24 bg-robinson-blue">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Crisis Management Experience
-            </h2>
-            <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              Proven ability to handle IT crises in critical manufacturing operations.
-            </p>
-          </motion.div>
-
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="p-8 rounded-2xl bg-white/10 border border-white/10 drop-shadow-lg"
-            >
-              <p className="text-white/80 text-lg leading-relaxed mb-6">
-                Manufacturing operations cannot afford extended IT downtime. My experience includes 
-                rapid response to system failures, coordinating with operations teams, and implementing 
-                failover systems to minimize production impact.
-              </p>
-              <ul className="text-white/80 space-y-2">
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Server failure during peak production—coordinated 2-hour recovery with zero lost production</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Network outage affecting 4 facilities—implemented emergency communication protocols</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Cybersecurity incident response—contained breach within 30 minutes, preventing data loss</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Legacy system crash—developed contingency plans for critical business processes</span>
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Development Approach */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Team Development Approach
-            </h2>
-            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
-              Building and developing high-performing IT teams in manufacturing environments.
-            </p>
-          </motion.div>
-
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="p-8 rounded-2xl bg-robinson-blue text-white shadow-lg drop-shadow-lg"
-            >
-              <p className="text-white/80 text-lg leading-relaxed mb-6">
-                I believe in investing in people as much as technology. My approach focuses on mentorship, 
-                skill development, and creating an environment where team members can grow while delivering 
-                exceptional results for the business.
-              </p>
-              <ul className="text-white/80 space-y-2">
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Individual development plans for each team member</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Regular training in emerging technologies and manufacturing systems</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Mentorship programs pairing junior staff with experienced leaders</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Cross-training to build redundancy and team resilience</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Recognition programs celebrating technical excellence and problem-solving</span>
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cross-Functional Collaboration */}
-      <section className="py-24 bg-robinson-blue">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Cross-Functional Collaboration
-            </h2>
-            <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              Working effectively across departments to align IT with business objectives.
-            </p>
-          </motion.div>
-
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="p-8 rounded-2xl bg-white/10 border border-white/10 drop-shadow-lg"
-            >
-              <p className="text-white/80 text-lg leading-relaxed mb-6">
-                IT doesn't exist in isolation. My success comes from building strong relationships 
-                with operations, engineering, finance, and executive teams to ensure technology 
-                solutions address real business needs.
-              </p>
-              <ul className="text-white/80 space-y-2">
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Regular meetings with production managers to understand operational challenges</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Collaborative design sessions with engineering for equipment integration</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Executive briefings translating technical concepts into business impact</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Cross-departmental task forces for major initiatives</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Joint IT-business planning sessions for strategic alignment</span>
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Change Management Experience */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              Change Management Experience
-            </h2>
-            <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
-              Successfully implementing major IT changes in production environments.
-            </p>
-          </motion.div>
-
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="p-8 rounded-2xl bg-robinson-blue text-white shadow-lg drop-shadow-lg"
-            >
-              <p className="text-white/80 text-lg leading-relaxed mb-6">
-                Manufacturing teams are often resistant to change. My approach focuses on clear communication, 
-                phased implementation, and demonstrating quick wins to build confidence and minimize disruption.
-              </p>
-              <ul className="text-white/80 space-y-2">
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>AS/400 to SAP migration—phased rollout with extensive training and support</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                    <span>Microsoft 365 adoption—champion program with early adopters driving peer adoption</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>IoT sensor deployment—pilot programs demonstrating ROI before full implementation</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Security policy updates—stakeholder engagement and clear communication of benefits</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  <span>Legacy system retirement—data migration planning and contingency systems</span>
-                </li>
-              </ul>
-            </motion.div>
           </div>
         </div>
       </section>
