@@ -41,7 +41,7 @@ const WeldingSparks = () => {
 
     const createSpark = (x, y, velocityMult = 1) => {
       const angle = Math.random() * Math.PI * 2;
-      const speed = Math.random() * 8 * velocityMult + 2;
+      const speed = (Math.random() * 8 * velocityMult + 2) * 2;
       
       // Welding colors: White -> Yellow -> Orange -> Red
       return {
