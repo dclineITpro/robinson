@@ -22,7 +22,7 @@ const HomePage = () => {
     { value: '1.3M', label: 'Sq. Ft.', desc: 'Total Footprint (with Iowa)' },
     { value: '4', label: 'Locations', desc: '3 WI Facilities + IA Expansion (2027)' },
     { value: '100%', label: 'Employee-Owned', desc: 'ESOP Company' },
-    { value: 'FAB 40 (2025)', label: 'Industry Ranking by The Fabricator', desc: 'Elite group of top contract metal fabricators' },
+    { value: 'No. 7', label: 'FAB 40 (2025)', desc: 'Industry Ranking by The Fabricator' },
   ];
 
   const whyRobinson = [
