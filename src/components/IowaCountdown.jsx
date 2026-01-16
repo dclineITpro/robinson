@@ -42,7 +42,7 @@ const IowaCountdown = () => {
   ];
 
   const features = [
-    { icon: Building2, text: '560,000 Sq. Ft. Facility' },
+    { icon: Building2, text: '622,788 Sq. Ft. Facility' },
     { icon: MapPin, text: 'Altoona, Iowa' },
     { icon: Calendar, text: 'Opening 2027' },
   ];
@@ -86,7 +86,7 @@ const IowaCountdown = () => {
             </h2>
 
             <p className="text-robinson-black/80 text-lg mb-8 leading-relaxed">
-              Our most ambitious project yet: a state-of-the-art 560,000 square foot 
+              Our most ambitious project yet: a state-of-the-art 622,788 square foot 
               manufacturing facility in Altoona, Iowa. This expansion represents our 
               commitment to growth, innovation, and creating new opportunities for 
               employee-owners.

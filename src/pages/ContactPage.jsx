@@ -40,7 +40,7 @@ const ContactPage = () => {
     { name: 'De Pere Facility 2', phone: '(920) 336-1700' },
     { name: 'De Pere Facility 3', phone: '(920) 336-1700' },
     { name: 'Manitowoc, WI', phone: '(920) 682-5000' },
-    { name: 'Altoona, IA (Coming 2027)', phone: '(515) 555-0000' },
+    { name: 'Altoona, IA (Coming 2027) - 622,788 Sq. Ft.', phone: '(515) 555-0000' },
   ];
 
   return (

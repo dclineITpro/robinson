@@ -155,11 +155,11 @@ Simply connect your GitHub repository and deploy. The build command is `npm run 
 - **100% Employee-Owned ESOP** - Every employee is an owner
 - **1.4 Million Sq. Ft.** - Manufacturing space across 6 locations
 - **FAB 40 Top 10** - Recognized industry leader
-- **560,000 Sq. Ft. Iowa Expansion** - Opening 2027
+- **622,788 Sq. Ft. Iowa Expansion** - Opening 2027
 
 ## License
 
-Copyright © 2026 Robinson Inc. All rights reserved.
+Copyright 2026 Robinson Inc. All rights reserved.
 
 ---
 

@@ -26,18 +26,18 @@ const WhyRobinsonPage = () => {
         { label: 'Total Footprint', value: '~1.4 Million Sq. Ft.' },
         { label: 'Locations', value: '5 WI Locations + IA Expansion' },
         { label: 'States', value: 'Wisconsin (current) & Iowa (2027)' },
-        { label: 'Expansion', value: 'Altoona, IA — 560K Sq. Ft. (2027)' },
+        { label: 'Expansion', value: 'Altoona, IA — 622,788 Sq. Ft. (2027)' },
       ],
     },
   ];
 
   const locations = [
-    { name: 'De Pere Facility 1', type: 'Production Facility', sqft: '220,000', address: '1740 Eisenhower Rd' },
-    { name: 'De Pere Facility 2', type: 'Production Facility', sqft: '180,000', address: '2107 American Blvd' },
-    { name: 'De Pere Facility 3', type: 'Production Facility', sqft: '240,000', address: '2121 American Blvd' },
-    { name: 'Manitowoc Campus', type: 'Production Facility', sqft: '137,000', address: '2121 South 30th Street' },
-    { name: 'De Pere Headquarters', type: 'Headquarters', sqft: '51,000', address: '1580 Mid Valley Dr (Acquired 2025)' },
-    { name: 'Altoona, IA (2027)', type: 'Production Facility', sqft: '560,000', isNew: true, address: 'Coming Soon' },
+    { name: 'De Pere Headquarters', type: 'Corporate/Administrative', sqft: '51,000', address: '1580 Mid Valley Dr (Acquired 2025)' },
+    { name: 'De Pere Facility 1', type: 'Heavy Manufacturing & Main Logistics', sqft: '220,000', address: '1740 Eisenhower Rd' },
+    { name: 'De Pere Facility 2', type: 'Dedicated Coatings and Painting', sqft: '180,000', address: '2107 American Blvd' },
+    { name: 'De Pere Facility 3', type: 'Fabrication and Assembly', sqft: '240,000', address: '2121 American Blvd' },
+    { name: 'Manitowoc Campus', type: 'Specialized Welding and Integration', sqft: '137,000', address: '2121 South 30th Street' },
+    { name: 'Altoona, IA (2027)', type: 'Production Facility', sqft: '622,788', isNew: true, address: 'Coming Soon' },
   ];
 
   const whyThisRole = [

@@ -279,7 +279,7 @@ const DigitalThreadPage = () => {
               Iowa Facility IT Blueprint
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
-              The 560,000 sq. ft. Altoona facility is a once-in-a-career opportunity 
+              The 622,788 sq. ft. Altoona facility is a once-in-a-career opportunity 
               to build IT infrastructure right from the start.
             </p>
           </motion.div>

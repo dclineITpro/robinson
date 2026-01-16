@@ -34,7 +34,7 @@ const HomePage = () => {
     {
       icon: Building2,
       title: 'Strategic Growth',
-      description: 'The 560,000 sq. ft. Iowa expansion signals aggressive, forward-thinking leadership.',
+      description: 'The 622,788 sq. ft. Iowa expansion signals aggressive, forward-thinking leadership.',
     },
     {
       icon: Cpu,
@@ -301,7 +301,7 @@ const HomePage = () => {
                 The Iowa Expansion Changes Everything
               </h2>
               <p className="text-white/90 text-lg mb-6 leading-relaxed">
-                The 560,000 sq. ft. Altoona facility will be the 5th production location—it's a greenfield 
+                The 622,788 sq. ft. Altoona facility will be the 5th production location—it's a greenfield 
                 opportunity to build IT infrastructure right from the start.
               </p>
               <p className="text-white/80 mb-8">
