@@ -350,10 +350,10 @@ const WhyRobinsonPage = () => {
       </section>
 
       {/* ESOP Deep Dive */}
-      <section className="py-24 bg-gradient-to-br from-robinson-blue to-robinson-blue-dark relative overflow-hidden">
+      <section className="py-24 bg-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                           linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+                           linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)`,
           backgroundSize: '50px 50px',
         }} />
 
@@ -363,15 +363,14 @@ const WhyRobinsonPage = () => {
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                The ESOP Advantage
-              </h2>
-              <p className="text-white/90 text-lg mb-6 leading-relaxed">
+              <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">The ESOP Advantage</h2>
+              <p className="text-robinson-gray text-lg mb-6 leading-relaxed">
                 "Build your career, own the company." This isn't just a tagline—it's a 
                 fundamental difference in how Robinson operates.
               </p>
-              <p className="text-white/90 mb-8">
+              <p className="text-robinson-gray mb-8">
                 As an IT Director, I understand that employee ownership means:
               </p>
               <ul className="space-y-4">
@@ -382,8 +381,8 @@ const WhyRobinsonPage = () => {
                   'Higher retention means institutional knowledge stays',
                   'Alignment between IT initiatives and business outcomes',
                 ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 text-white/90">
-                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                  <li key={index} className="flex items-start gap-3 text-robinson-gray">
+                    <CheckCircle className="w-5 h-5 text-robinson-blue flex-shrink-0 mt-0.5" />
                     {item}
                   </li>
                 ))}
@@ -396,11 +395,11 @@ const WhyRobinsonPage = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <div className="bg-white/10 backdrop-blur-sm rounded-3xl border border-white/20 p-8 text-center">
-                <Users className="w-16 h-16 text-white mx-auto mb-6" />
-                <div className="text-5xl font-bold text-white mb-2">100%</div>
-                <div className="text-white text-xl mb-6">Employee-Owned</div>
-                <p className="text-white/80">
+              <div className="bg-robinson-blue/10 backdrop-blur-sm rounded-3xl border border-robinson-blue/20 p-8 text-center">
+                <Users className="w-16 h-16 text-robinson-blue mx-auto mb-6" />
+                <div className="text-5xl font-bold text-robinson-black mb-2">100%</div>
+                <div className="text-robinson-gray text-xl mb-6">Employee-Owned</div>
+                <p className="text-robinson-gray">
                   Every team member has a stake in Robinson's success—and in the 
                   technology systems that drive it.
                 </p>
@@ -411,17 +410,17 @@ const WhyRobinsonPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-robinson-blue">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Now See What I Would Do
             </h2>
-            <p className="text-robinson-gray text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
               Based on Robinson's 24/7 operations, multi-site supply chain, and growth ambitions, 
               here's my vision for digital transformation.
             </p>
