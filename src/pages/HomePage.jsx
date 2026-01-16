@@ -19,8 +19,8 @@ const HomePage = () => {
   const y = useTransform(scrollYProgress, [0, 0.5], [0, 100]);
 
   const robinsonStats = [
-    { value: '1.3M', label: 'Sq. Ft.', desc: 'Total Footprint (with Iowa)' },
-    { value: '4', label: 'Locations', desc: '3 WI Facilities + IA Expansion (2027)' },
+    { value: '1.4M', label: 'Sq. Ft.', desc: 'Total Footprint (with Iowa)' },
+    { value: '6', label: 'Locations', desc: '5 WI Locations + IA Expansion (2027)' },
     { value: '100%', label: 'Employee-Owned', desc: 'ESOP Company' },
     { value: 'No. 7', label: 'FAB 40 (2025)', desc: 'Industry Ranking by The Fabricator' },
   ];
@@ -301,7 +301,7 @@ const HomePage = () => {
                 The Iowa Expansion Changes Everything
               </h2>
               <p className="text-white/90 text-lg mb-6 leading-relaxed">
-                The 560,000 sq. ft. Altoona facility isn't just growth—it's a greenfield 
+                The 560,000 sq. ft. Altoona facility will be the 5th production location—it's a greenfield 
                 opportunity to build IT infrastructure right from the start.
               </p>
               <p className="text-white/80 mb-8">
@@ -311,7 +311,7 @@ const HomePage = () => {
                 {[
                   'Modern ERP integration from day one',
                   'IoT-enabled predictive maintenance',
-                  'Unified network architecture across all 5 sites',
+                  'Unified network architecture across all 6 sites',
                   'Scalable cloud infrastructure',
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3 text-white/90">
@@ -343,7 +343,7 @@ const HomePage = () => {
                     <div className="text-robinson-gray text-sm">Square Feet</div>
                   </div>
                   <div className="p-4 rounded-xl bg-robinson-blue/10 text-center">
-                    <div className="text-3xl font-bold">500+</div>
+                    <div className="text-3xl font-bold">100</div>
                     <div className="text-robinson-gray text-sm">New Jobs</div>
                   </div>
                   <div className="p-4 rounded-xl bg-robinson-blue/10 text-center">
@@ -352,7 +352,7 @@ const HomePage = () => {
                   </div>
                   <div className="p-4 rounded-xl bg-robinson-blue/10 text-center">
                     <div className="text-3xl font-bold">5th</div>
-                    <div className="text-robinson-gray text-sm">Location</div>
+                    <div className="text-robinson-gray text-sm">Production Location</div>
                   </div>
                 </div>
               </div>
@@ -383,7 +383,7 @@ const HomePage = () => {
               {
                 icon: Database,
                 title: 'ERP Modernization',
-                description: 'Unify operations across 5 locations with a modern, cloud-ready ERP platform that provides real-time visibility.',
+                description: 'Unify operations across 6 locations with a modern, cloud-ready ERP platform that provides real-time visibility.',
                 color: 'from-blue-500 to-cyan-500',
               },
               {

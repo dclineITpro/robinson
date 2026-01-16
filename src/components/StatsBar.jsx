@@ -37,7 +37,7 @@ const StatsBar = () => {
   const stats = [
     {
       icon: Building2,
-      value: 1.3,
+      value: 1.4,
       suffix: ' Million',
       label: 'Square Feet',
       description: 'Manufacturing Space',
@@ -51,10 +51,10 @@ const StatsBar = () => {
     },
     {
       icon: MapPin,
-      value: 5,
+      value: 6,
       suffix: '',
       label: 'Locations',
-      description: '4 in WI + Iowa Expansion',
+      description: '6 Locations (5 WI + 1 IA)',
       prefix: '',
     },
   ];
