@@ -212,9 +212,9 @@ const HomePage = () => {
             className="text-center mb-12"
           >
             <span className="text-white/70 text-sm font-medium uppercase tracking-widest">
-              I Know Robinson
+              Understanding Robinson
             </span>
-            <p className="text-white text-lg mt-4 max-w-2xl mx-auto">Understanding your business is the foundation of effective IT leadership</p>
+            <p className="text-white text-lg mt-4 max-w-2xl mx-auto">Insight into your business is the foundation of effective IT leadership</p>
           </motion.div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {robinsonStats.map((stat, index) => (
