@@ -102,12 +102,14 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <Link
-              to="/about-me"
+            <a
+              href="https://www.linkedin.com/in/dj-cline-22219834/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="sparkler px-6 py-2.5 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300 hover:shadow-lg"
             >
               Contact Me
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -159,12 +161,14 @@ const Navbar = () => {
                 </div>
               ))}
               <div className="pt-4">
-                <Link
-                  to="/about-me"
+                <a
+                  href="https://www.linkedin.com/in/dj-cline-22219834/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block w-full text-center px-6 py-3 bg-robinson-gold text-robinson-black font-semibold rounded-lg hover:bg-robinson-gold-light transition-all duration-300"
                 >
                   Contact Me
-                </Link>
+                </a>
               </div>
             </div>
           </motion.div>
