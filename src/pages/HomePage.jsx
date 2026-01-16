@@ -34,7 +34,7 @@ const HomePage = () => {
     {
       icon: Building2,
       title: 'Strategic Growth',
-      description: 'The 560,000 sq. ft. Iowa expansion signals aggressive, forward-thinking leadership. Our Manitowoc, WI facility is 137,000 sq ft.',
+      description: 'The 560,000 sq. ft. Iowa expansion signals aggressive, forward-thinking leadership.',
     },
     {
       icon: Cpu,
