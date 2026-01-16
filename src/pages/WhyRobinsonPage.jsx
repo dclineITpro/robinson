@@ -14,7 +14,7 @@ const WhyRobinsonPage = () => {
     {
       category: 'Company Profile',
       items: [
-        { label: 'Founded', value: '1923 (De Pere, WI)' },
+        { label: 'Founded', value: '1975 (De Pere, WI)' },
         { label: 'Ownership', value: '100% Employee-Owned (ESOP)' },
         { label: 'Industry', value: 'Custom Metal Fabrication' },
         { label: 'Ranking', value: 'FAB 40 Top 10' },
@@ -23,8 +23,8 @@ const WhyRobinsonPage = () => {
     {
       category: 'Scale & Capacity',
       items: [
-        { label: 'Total Footprint', value: '~1.3 Million Sq. Ft.' },
-        { label: 'Locations', value: '4 Wisconsin Production Facilities + IA Expansion' },
+        { label: 'Total Footprint', value: '~1.4 Million Sq. Ft.' },
+        { label: 'Locations', value: '5 WI Locations + IA Expansion' },
         { label: 'States', value: 'Wisconsin (current) & Iowa (2027)' },
         { label: 'Expansion', value: 'Altoona, IA — 560K Sq. Ft. (2027)' },
       ],
@@ -159,7 +159,7 @@ const WhyRobinsonPage = () => {
               Why <span className="text-robinson-blue">Robinson</span> is the Right Fit
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
-              A 24/7 Midwest manufacturer serving global clients from four Wisconsin facilities and an Iowa expansion underway. This is exactly where my 25+ years of IT leadership delivers measurable impact.
+              A 24/7 Midwest manufacturer serving global clients from five WI locations and an Iowa expansion underway. This is exactly where my 25+ years of IT leadership delivers measurable impact.
             </p>
           </motion.div>
         </div>
@@ -178,7 +178,7 @@ const WhyRobinsonPage = () => {
               What I Know About <span className="text-white">Robinson</span>
             </h2>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              Demonstrating that I've done my homework on the company, its operations, and its strategic direction.
+              Highlighting my understanding of the company, its operations, and its strategic direction.
             </p>
           </motion.div>
 
@@ -244,7 +244,7 @@ const WhyRobinsonPage = () => {
               Hub-and-Spoke Architecture
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              4 Wisconsin Production Facilities + Iowa Expansion
+              5 WI Locations + IA Expansion
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Understanding the multi-site architecture is critical for IT strategy.
@@ -300,7 +300,7 @@ const WhyRobinsonPage = () => {
           >
             <h3 className="text-2xl font-bold text-robinson-black mb-4">IT Implication</h3>
             <p className="text-robinson-gray max-w-2xl mx-auto">
-              Managing IT across four Wisconsin production facilities with an Iowa expansion requires unified systems, standardized processes, 
+              Managing IT across five WI locations with an Iowa expansion requires unified systems, standardized processes, 
               Our strategic hub-and-spoke model centers production facilities in Wisconsin with expansion into Iowa. the perfect opportunity to implement these from day one.
             </p>
           </motion.div>
