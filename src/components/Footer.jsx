@@ -15,7 +15,7 @@ const Footer = () => {
     ],
     robinsonFacts: [
       { name: '1.3M Sq. Ft. Manufacturing', path: '/why-robinson' },
-      { name: '4 WI Locations + IA Expansion', path: '/why-robinson' },
+      { name: '5 WI Locations + IA Expansion', path: '/why-robinson' },
       { name: '100% Employee-Owned', path: '/why-robinson' },
       { name: 'FAB 40 Top 10', path: '/why-robinson' },
     ],
