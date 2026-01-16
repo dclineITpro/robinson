@@ -243,7 +243,7 @@ const WhyRobinsonPage = () => {
               Hub-and-Spoke Architecture
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              4 Wisconsin Facilities + Iowa Expansion
+              4 Wisconsin Production Facilities + Iowa Expansion
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Understanding the multi-site architecture is critical for IT strategy.
@@ -297,8 +297,8 @@ const WhyRobinsonPage = () => {
           >
             <h3 className="text-2xl font-bold text-robinson-black mb-4">IT Implication</h3>
             <p className="text-robinson-gray max-w-2xl mx-auto">
-              Managing IT across four Wisconsin facilities with an Iowa expansion requires unified systems, standardized processes, 
-              and a hub-and-spoke network architecture. The Iowa expansion is the perfect opportunity to implement these from day one.
+              Managing IT across four Wisconsin production facilities with an Iowa expansion requires unified systems, standardized processes, 
+              Our strategic hub-and-spoke model centers production facilities in Wisconsin with expansion into Iowa. the perfect opportunity to implement these from day one.
             </p>
           </motion.div>
         </div>
