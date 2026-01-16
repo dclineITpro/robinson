@@ -211,7 +211,7 @@ const WhyRobinsonPage = () => {
             viewport={{ once: true }}
             className="p-8 rounded-2xl bg-white/90 border border-white/10"
           >
-            <h3 className="text-xl font-bold text-robinson-blue mb-6 text-center">Tier-1 Global Clients</h3>
+            <h3 className="text-xl font-bold text-robinson-blue mb-6 text-center">Industries Served</h3>
             <div className="flex flex-wrap justify-center gap-6">
               {tierOneClients.map((client) => (
                 <div
@@ -223,7 +223,7 @@ const WhyRobinsonPage = () => {
               ))}
             </div>
             <p className="text-center text-robinson-gray mt-6 text-sm">
-              Serving these clients requires world-class IT systems and processes.
+              Delivering for these industries requires world-class IT systems and processes.
             </p>
           </motion.div>
         </div>
