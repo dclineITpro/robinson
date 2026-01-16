@@ -397,10 +397,10 @@ const AboutMePage = () => {
                 I've developed a comprehensive vision for digital transformation. Now I'm ready to discuss how I can 
                 help Robinson write its next chapter.
               </p>
-              <p>
+              <div className="bg-yellow-400 text-robinson-black p-4 rounded-lg font-bold mt-4" style={{ boxShadow: '0 0 50px rgba(212, 175, 55, 1)', filter: 'brightness(1.5)' }}>
                 Outside of work, I'm a passionate fisherman and BBQ competitor. I'd love to bring my prize-winning 
-                BBQ skills to Robinson's events and complement the company's famous fish fry tradition.
-              </p>
+                BBQ skills to Robinson's events and complement the company's famous fish fry tradition. Know anyone who could make a custom smoker?
+              </div>
             </div>
           </motion.div>
         </div>
