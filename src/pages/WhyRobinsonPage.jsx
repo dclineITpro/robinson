@@ -36,6 +36,7 @@ const WhyRobinsonPage = () => {
     { name: 'De Pere Facility 2', type: 'Production Facility', sqft: '180,000', address: '2107 American Blvd' },
     { name: 'De Pere Facility 3', type: 'Production Facility', sqft: '240,000', address: '2121 American Blvd' },
     { name: 'Manitowoc Campus', type: 'Production Facility', sqft: '137,000', address: '2121 South 30th Street' },
+    { name: 'De Pere Headquarters', type: 'Headquarters', sqft: '', address: '1580 Mid Valley Dr (Acquired 2025)' },
     { name: 'Altoona, IA (2027)', type: 'Production Facility', sqft: '560,000', isNew: true, address: 'Coming Soon' },
   ];
 
@@ -280,10 +281,12 @@ const WhyRobinsonPage = () => {
                     <MapPin className="w-4 h-4 text-robinson-blue" />
                     <span className="text-robinson-gray text-sm">{location.address}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Building2 className="w-4 h-4 text-robinson-blue" />
-                    <span className="text-robinson-gray text-sm">{location.sqft} sq. ft.</span>
-                  </div>
+                  {location.sqft && (
+                    <div className="flex items-center gap-2">
+                      <Building2 className="w-4 h-4 text-robinson-blue" />
+                      <span className="text-robinson-gray text-sm">{location.sqft} sq. ft.</span>
+                    </div>
+                  )}
                 </div>
               </motion.div>
             ))}
