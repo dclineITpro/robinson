@@ -32,10 +32,10 @@ const WhyRobinsonPage = () => {
   ];
 
   const locations = [
-    { name: 'De Pere Main Campus', type: 'Headquarters', sqft: '300,000', address: '1740 Eisenhower Rd' },
-    { name: 'De Pere Facility 2', type: 'Manufacturing', sqft: '150,000', address: '2107 American Blvd' },
-    { name: 'De Pere Facility 3', type: 'Manufacturing', sqft: '100,000', address: '2121 American Blvd' },
-    { name: 'Manitowoc Campus', type: 'Manufacturing', sqft: '270,000', address: '2121 South 30th Street' },
+    { name: 'De Pere Main Campus', type: 'Headquarters', sqft: '185,000', address: '1740 Eisenhower Rd' },
+    { name: 'De Pere Facility 2', type: 'Manufacturing', sqft: '179,000', address: '2107 American Blvd' },
+    { name: 'De Pere Facility 3', type: 'Manufacturing', sqft: '275,000', address: '2121 American Blvd' },
+    { name: 'Manitowoc Campus', type: 'Manufacturing', sqft: '137,000', address: '2121 South 30th Street' },
     { name: 'Altoona, IA (2027)', type: 'New Facility', sqft: '560,000', isNew: true, address: 'Coming Soon' },
   ];
 

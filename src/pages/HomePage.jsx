@@ -20,7 +20,7 @@ const HomePage = () => {
 
   const robinsonStats = [
     { value: '1.3M', label: 'Sq. Ft.', desc: 'Total Footprint (with Iowa)' },
-    { value: '5', label: 'Locations', desc: '4 WI + Iowa Expansion (2027)' },
+    { value: '3', label: 'Locations', desc: '2 WI + Iowa Expansion (2027)' },
     { value: '100%', label: 'Employee-Owned', desc: 'ESOP Company' },
     { value: 'No. 7', label: 'FAB 40 (2025)', desc: 'Industry Ranking by The Fabricator' },
   ];
@@ -34,7 +34,7 @@ const HomePage = () => {
     {
       icon: Building2,
       title: 'Strategic Growth',
-      description: 'The 560,000 sq. ft. Iowa expansion signals aggressive, forward-thinking leadership.',
+      description: 'The 560,000 sq. ft. Iowa expansion signals aggressive, forward-thinking leadership. Our Manitowoc, WI facility is 137,000 sq ft.',
     },
     {
       icon: Cpu,
