@@ -18,6 +18,7 @@ const WhyRobinsonPage = () => {
         { label: 'Ownership', value: '100% Employee-Owned (ESOP)' },
         { label: 'Industry', value: 'Custom Metal Fabrication' },
         { label: 'Ranking', value: 'FAB 40 Top 10' },
+        { label: 'Award Finalist', value: '2026 Wisconsin Manufacturer of the Year' },
       ],
     },
     {
@@ -27,6 +28,7 @@ const WhyRobinsonPage = () => {
         { label: 'Locations', value: '5 WI Locations + IA Expansion' },
         { label: 'States', value: 'Wisconsin (current) & Iowa (2027)' },
         { label: 'Expansion', value: 'Altoona, IA — 622,788 Sq. Ft. (2027)' },
+        { label: 'Employees', value: '500+' },
       ],
     },
   ];

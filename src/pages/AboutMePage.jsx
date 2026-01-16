@@ -397,6 +397,10 @@ const AboutMePage = () => {
                 I've developed a comprehensive vision for digital transformation. Now I'm ready to discuss how I can 
                 help Robinson write its next chapter.
               </p>
+              <p>
+                Outside of work, I'm a passionate fisherman and BBQ competitor. I'd love to bring my prize-winning 
+                BBQ skills to Robinson's events and complement the company's famous fish fry tradition.
+              </p>
             </div>
           </motion.div>
         </div>
