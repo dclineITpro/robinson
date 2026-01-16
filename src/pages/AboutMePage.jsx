@@ -376,11 +376,11 @@ const AboutMePage = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="p-8 lg:p-12 rounded-3xl bg-gray-50/50 border border-gray-300"
+            className="p-8 lg:p-12 rounded-3xl bg-robinson-blue border border-white/20 shadow-2xl shadow-robinson-blue/30 hover:shadow-3xl hover:shadow-robinson-blue/40 transition-all duration-500"
           >
-            <Heart className="w-12 h-12 text-robinson-blue mb-6" />
-            <h2 className="text-3xl font-bold text-robinson-black mb-6">A Personal Note from DJ Cline</h2>
-            <div className="space-y-4 text-robinson-gray leading-relaxed">
+            <Heart className="w-12 h-12 text-white mb-6 drop-shadow-lg" />
+            <h2 className="text-3xl font-bold text-white mb-6">A Personal Note from DJ Cline</h2>
+            <div className="space-y-4 text-white/90 leading-relaxed">
               <p>
                 With 20+ years of IT leadership across manufacturing, government, and enterprise 
                 environments, I know what I'm looking for in my next role—a company where technology 
