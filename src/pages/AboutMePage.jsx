@@ -209,7 +209,7 @@ const AboutMePage = () => {
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               className="grid md:grid-cols-2 lg:grid-cols-1 gap-6"
             >
               {leadershipCards.map((card, index) => (
@@ -217,7 +217,7 @@ const AboutMePage = () => {
                   key={card.title}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{}}
                   transition={{ delay: index * 0.1 }}
                   className="p-6 rounded-2xl bg-white border border-robinson-blue/20 drop-shadow-lg text-robinson-blue hover:scale-105 hover:-translate-y-2 transition-all duration-500 relative"
                 >
@@ -240,7 +240,7 @@ const AboutMePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
@@ -257,7 +257,7 @@ const AboutMePage = () => {
                 key={item.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ delay: index * 0.05 }}
                 className="p-6 rounded-2xl bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300"
               >
@@ -278,7 +278,7 @@ const AboutMePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
@@ -296,7 +296,7 @@ const AboutMePage = () => {
                 key={job.title + job.company}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ delay: index * 0.1 }}
                 className="p-8 rounded-2xl bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
               >
@@ -336,7 +336,7 @@ const AboutMePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -350,7 +350,7 @@ const AboutMePage = () => {
                 key={skillGroup.category}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ delay: index * 0.1 }}
                 className="p-6 rounded-2xl bg-white border border-gray-200 drop-shadow-lg hover:scale-105 hover:-translate-y-2 transition-all duration-500"
               >
@@ -375,7 +375,7 @@ const AboutMePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="p-8 lg:p-12 rounded-3xl bg-robinson-blue border border-white/20 shadow-2xl shadow-robinson-blue/30 hover:shadow-3xl hover:shadow-robinson-blue/40 transition-all duration-500"
           >
             <Heart className="w-12 h-12 text-white mb-6 drop-shadow-lg" />
@@ -414,7 +414,7 @@ const AboutMePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Let's Start the Conversation

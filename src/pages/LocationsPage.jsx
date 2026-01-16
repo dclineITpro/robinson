@@ -447,7 +447,7 @@ const LocationsPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 text-robinson-black text-sm font-medium mb-6">

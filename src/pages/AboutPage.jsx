@@ -116,7 +116,7 @@ const AboutPage = () => {
                 key={stat.label}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
@@ -135,7 +135,7 @@ const AboutPage = () => {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.8 }}
             >
               <span className="inline-block px-4 py-2 rounded-full bg-safety-orange/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
@@ -168,7 +168,7 @@ const AboutPage = () => {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="relative aspect-square rounded-3xl bg-gray-50/50 border border-gray-300 overflow-hidden">
@@ -192,7 +192,7 @@ const AboutPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
@@ -215,7 +215,7 @@ const AboutPage = () => {
                   key={item.year}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{}}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className={`flex flex-col lg:flex-row items-center gap-8 ${
                     index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
@@ -242,7 +242,7 @@ const AboutPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
@@ -263,7 +263,7 @@ const AboutPage = () => {
                 key={value.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-8 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-robinson-blue/30 transition-all duration-300 group"
               >
@@ -284,7 +284,7 @@ const AboutPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
@@ -306,7 +306,7 @@ const AboutPage = () => {
                 key={leader.name}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-8 rounded-2xl bg-white/80 border border-gray-200 text-center group hover:border-robinson-blue/30 transition-all duration-300"
               >
@@ -336,7 +336,7 @@ const AboutPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

@@ -104,7 +104,7 @@ const WhyRobinsonPage = () => {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 text-shadow"
           >
@@ -113,7 +113,7 @@ const WhyRobinsonPage = () => {
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-white max-w-3xl mx-auto mb-10 leading-relaxed text-shadow"
           >
@@ -124,7 +124,7 @@ const WhyRobinsonPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-auto"
           >
@@ -151,7 +151,7 @@ const WhyRobinsonPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
@@ -175,7 +175,7 @@ const WhyRobinsonPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -192,7 +192,7 @@ const WhyRobinsonPage = () => {
                 key={section.category}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ delay: index * 0.1 }}
                 className="p-8 rounded-2xl bg-white border border-white/10 shadow-2xl shadow-white/10 drop-shadow-lg hover:-translate-y-1.5 hover:scale-[1.02] transition-transform duration-300"
               >
@@ -213,7 +213,7 @@ const WhyRobinsonPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="p-8 rounded-2xl bg-white/90 border border-white/10"
           >
             <h3 className="text-xl font-bold text-robinson-blue mb-6 text-center">Industries Served</h3>
@@ -240,7 +240,7 @@ const WhyRobinsonPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
@@ -261,7 +261,7 @@ const WhyRobinsonPage = () => {
                 key={location.name}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ delay: index * 0.05 }}
                 className={`p-6 rounded-2xl border transition-all duration-300 drop-shadow-lg ${
                   location.isNew 
@@ -299,7 +299,7 @@ const WhyRobinsonPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-robinson-blue/20 to-robinson-blue/20 border border-gray-300 text-center"
           >
             <h3 className="text-2xl font-bold text-robinson-black mb-4">IT Implication</h3>
@@ -317,7 +317,7 @@ const WhyRobinsonPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-white/10 border border-white/30 text-white text-sm font-medium mb-6">
@@ -334,7 +334,7 @@ const WhyRobinsonPage = () => {
                 key={reason.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ delay: index * 0.1 }}
                 className="p-8 rounded-2xl bg-white/90 border border-white/10 drop-shadow-lg hover:border-white/30 hover:scale-105 hover:-translate-y-2 transition-all duration-300"
               >
@@ -362,7 +362,7 @@ const WhyRobinsonPage = () => {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">The ESOP Advantage</h2>
@@ -392,7 +392,7 @@ const WhyRobinsonPage = () => {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ delay: 0.2 }}
             >
               <div className="bg-robinson-blue/10 backdrop-blur-sm rounded-3xl border border-robinson-blue/20 p-8 text-center">
@@ -415,7 +415,7 @@ const WhyRobinsonPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Now See What I Would Do

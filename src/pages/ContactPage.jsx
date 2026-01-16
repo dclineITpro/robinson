@@ -116,7 +116,7 @@ const ContactPage = () => {
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.8 }}
               className="space-y-8"
             >
@@ -205,7 +205,7 @@ const ContactPage = () => {
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="lg:col-span-2"
             >
@@ -401,7 +401,7 @@ const ContactPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
@@ -416,7 +416,7 @@ const ContactPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="aspect-[21/9] rounded-3xl bg-white text-robinson-blue border border-white/30 overflow-hidden relative shadow-2xl"
           >
@@ -447,7 +447,7 @@ const ContactPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

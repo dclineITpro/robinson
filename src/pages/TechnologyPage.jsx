@@ -91,7 +91,7 @@ const TechnologyPage = () => {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
           >
@@ -100,7 +100,7 @@ const TechnologyPage = () => {
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed"
           >
@@ -123,7 +123,7 @@ const TechnologyPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
@@ -163,7 +163,7 @@ const TechnologyPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
@@ -185,7 +185,7 @@ const TechnologyPage = () => {
                 key={pillar.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="p-8 rounded-2xl bg-gray-50/50 border border-gray-200 hover:border-robinson-blue/30 transition-all duration-300 group"
               >
@@ -224,7 +224,7 @@ const TechnologyPage = () => {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.8 }}
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
@@ -264,7 +264,7 @@ const TechnologyPage = () => {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
@@ -280,7 +280,7 @@ const TechnologyPage = () => {
                       key={item.label}
                       initial={{ opacity: 0, scale: 0.8 }}
                       whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
+                      viewport={{}}
                       transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                       className="aspect-square rounded-2xl bg-gray-100 flex flex-col items-center justify-center gap-3 hover:bg-white/20 transition-colors cursor-pointer"
                     >
@@ -301,7 +301,7 @@ const TechnologyPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
@@ -319,7 +319,7 @@ const TechnologyPage = () => {
                 key={tech.name}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
                 className="p-6 rounded-2xl bg-gray-50/50 border border-gray-200 text-center hover:border-robinson-blue/30 transition-all duration-300 group"
               >
@@ -340,7 +340,7 @@ const TechnologyPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
@@ -362,7 +362,7 @@ const TechnologyPage = () => {
                 key={role.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="p-8 rounded-2xl bg-white/10 border border-white/15 shadow-xl shadow-black/20 hover:-translate-y-1 hover:scale-[1.01] transition-all duration-300 group"
               >
@@ -397,7 +397,7 @@ const TechnologyPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="mt-16 p-8 lg:p-12 rounded-3xl bg-white/10 border border-white/20 text-center shadow-2xl shadow-black/25"
           >

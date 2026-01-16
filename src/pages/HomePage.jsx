@@ -128,7 +128,7 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-12"
           >
             <span className="text-robinson-blue/60 text-sm font-medium uppercase tracking-widest">
@@ -142,7 +142,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.5 }}
               className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
             >
@@ -156,7 +156,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
             >
@@ -170,7 +170,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
             >
@@ -184,7 +184,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
             >
@@ -208,7 +208,7 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-12"
           >
             <span className="text-white/70 text-sm font-medium uppercase tracking-widest">
@@ -222,7 +222,7 @@ const HomePage = () => {
                 key={stat.label}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center p-6 rounded-lg bg-white text-robinson-blue shadow-lg hover:shadow-xl transition-all duration-300"
               >
@@ -241,7 +241,7 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <span className="inline-block px-5 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/20 text-robinson-blue text-sm font-medium uppercase tracking-wider mb-6">
@@ -262,7 +262,7 @@ const HomePage = () => {
                 key={item.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300"
               >
@@ -290,7 +290,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               className="text-white"
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-base font-medium mb-6">
@@ -331,7 +331,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ delay: 0.2 }}
               className="relative"
             >
@@ -367,7 +367,7 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
@@ -403,7 +403,7 @@ const HomePage = () => {
                 key={pillar.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-8 rounded-2xl bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300 card-hover"
               >
@@ -419,7 +419,7 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="mt-12 text-center"
           >
             <Link
@@ -439,7 +439,7 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white/90 mb-6">
               Ready to Discuss How I Can Help?
