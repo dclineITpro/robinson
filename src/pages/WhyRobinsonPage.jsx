@@ -73,7 +73,13 @@ const WhyRobinsonPage = () => {
   ];
 
   const tierOneClients = [
-    'Rolls-Royce', 'Caterpillar', 'John Deere', 'Oshkosh Defense', 'CNH Industrial', 'AGCO'
+    'Energy',
+    'Power Generation',
+    'Food & Beverage',
+    'Heavy Equipment',
+    'Pulp & Paper',
+    'Oil & Gas',
+    'Military & Defense',
   ];
 
   return (
