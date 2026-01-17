@@ -271,7 +271,7 @@ const WhyRobinsonPage = () => {
               Hub-and-Spoke Architecture
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              5 WI Locations + IA Expansion
+              4 WI Production Facilities + Headquarters + IA Expansion (2027)
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Understanding the multi-site architecture is critical for IT strategy.
