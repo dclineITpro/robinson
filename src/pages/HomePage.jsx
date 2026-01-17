@@ -20,7 +20,7 @@ const HomePage = () => {
 
   const robinsonStats = [
     { value: '1.4M', label: 'Sq. Ft.', desc: 'Total Footprint (with Iowa)' },
-    { value: '6', label: 'Locations', desc: '5 WI Locations + IA Expansion (2027)' },
+    { value: '6', label: 'Locations', desc: '5 WI Production Facilities + IA Expansion (2027)' },
     { value: '100%', label: 'Employee-Owned', desc: 'ESOP Company' },
     { value: 'No. 7', label: 'FAB 40 (2025)', desc: 'Industry Ranking by The Fabricator' },
   ];
@@ -383,7 +383,7 @@ const HomePage = () => {
               {
                 icon: Database,
                 title: 'ERP Modernization',
-                description: 'Unify operations across 6 locations with a modern, cloud-ready ERP platform that provides real-time visibility.',
+                description: 'Unify operations across all locations with Epicor Kinetic, utilizing Epicor Prism for advanced analytics and Grow for real-time business intelligence.',
                 color: 'from-blue-500 to-cyan-500',
               },
               {
@@ -395,7 +395,7 @@ const HomePage = () => {
               {
                 icon: Wifi,
                 title: 'OT/IT Convergence',
-                description: 'Bridge the gap between shop floor systems and enterprise IT for seamless data flow and decision-making.',
+                description: 'Bridge shop floor systems with enterprise IT for real-time visibility, enabling AI-driven process optimization and ensuring cybersecurity controls extend to operational technology.',
                 color: 'from-purple-500 to-pink-500',
               },
             ].map((pillar, index) => (
