@@ -301,7 +301,7 @@ const HomePage = () => {
                 The Iowa Expansion Changes Everything
               </h2>
               <p className="text-white/90 text-lg mb-6 leading-relaxed">
-                The 622,788 sq. ft. Altoona facility will be the 5th production location—it's a greenfield 
+                The 622,788 sq. ft. Altoona facility will be the 6th location—it's a greenfield 
                 opportunity to build IT infrastructure right from the start.
               </p>
               <p className="text-white/80 mb-8">
@@ -351,8 +351,8 @@ const HomePage = () => {
                     <div className="text-robinson-gray text-sm">Grand Opening</div>
                   </div>
                   <div className="p-4 rounded-xl bg-robinson-blue/10 text-center">
-                    <div className="text-3xl font-bold">5th</div>
-                    <div className="text-robinson-gray text-sm">Production Location</div>
+                    <div className="text-3xl font-bold">6</div>
+                    <div className="text-robinson-gray text-sm">Location</div>
                   </div>
                 </div>
               </div>
