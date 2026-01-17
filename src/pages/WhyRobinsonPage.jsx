@@ -208,17 +208,24 @@ const WhyRobinsonPage = () => {
                 key={section.category}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{}}
+                viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 className="p-8 rounded-2xl bg-white border border-white/10 shadow-2xl shadow-white/10 drop-shadow-lg hover:-translate-y-1.5 hover:scale-[1.02] transition-transform duration-300"
               >
                 <h3 className="text-xl font-bold text-robinson-blue mb-6">{section.category}</h3>
-                <div className="space-y-4">
-                  {section.items.map((item) => (
-                    <div key={item.label} className="flex justify-between items-center py-3 border-b border-robinson-blue/20 last:border-0">
-                      <span className="text-robinson-gray">{item.label}</span>
-                      <span className="text-robinson-blue font-semibold">{item.value}</span>
-                    </div>
+                <div className="grid gap-4">
+                  {section.items.map((item, itemIndex) => (
+                    <motion.div
+                      key={item.label}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 + itemIndex * 0.05 }}
+                      className="p-4 rounded-xl bg-robinson-blue/5 border border-robinson-blue/10 hover:bg-robinson-blue/10 transition-colors duration-300"
+                    >
+                      <h4 className="text-lg font-semibold text-robinson-black mb-2">{item.label}</h4>
+                      <p className="text-robinson-gray leading-relaxed">{item.value}</p>
+                    </motion.div>
                   ))}
                 </div>
               </motion.div>
