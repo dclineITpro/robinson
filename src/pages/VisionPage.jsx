@@ -83,7 +83,7 @@ const VisionPage = () => {
     {
       icon: GraduationCap,
       title: 'RTA Tech Enablement',
-      description: 'Expand Robinson Training Academy with technology curriculum, including AI literacy, cybersecurity awareness, and digital transformation skills essential for the IT Director role.',
+      description: 'Expand Robinson Training Academy with technology curriculum, including AI literacy, cybersecurity awareness, and digital transformation skills.',
       timeline: 'Year 1',
       impact: 'Medium',
     },
