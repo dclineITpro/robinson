@@ -34,7 +34,7 @@ const HomePage = () => {
     {
       icon: Building2,
       title: 'Strategic Growth',
-      description: 'The 622,788 sq. ft. Iowa expansion signals aggressive, forward-thinking leadership.',
+      description: 'The 560,000 sq. ft. Iowa expansion signals aggressive, forward-thinking leadership.',
     },
     {
       icon: Cpu,
