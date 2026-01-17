@@ -69,7 +69,7 @@ const VisionPage = () => {
     {
       icon: Wifi,
       title: 'OT/IT Convergence',
-      description: 'Bridge shop floor systems with enterprise IT for real-time visibility, enabling AI-driven process optimization and ensuring cybersecurity controls extend to operational technology.',
+      description: 'Bridge shop floor systems with enterprise IT for real-time visibility, enabling AI-driven process optimization and increasing worker safety through better monitoring and automation.',
       timeline: 'Year 1-3',
       impact: 'Critical',
     },
@@ -90,7 +90,7 @@ const VisionPage = () => {
     {
       icon: Cog,
       title: 'Iowa Greenfield IT',
-      description: 'Build world-class IT infrastructure for the new facility, incorporating AI capabilities for predictive maintenance, robust cybersecurity frameworks, and seamless integration with Robinson\'s existing systems.',
+      description: 'Build world-class IT infrastructure for the new 560,000 sqft facility in Altoona, incorporating AI capabilities for predictive maintenance, robust cybersecurity frameworks, and seamless integration with Robinson\'s existing systems.',
       timeline: 'Year 1-2',
       impact: 'Critical',
     },
