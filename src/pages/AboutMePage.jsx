@@ -105,7 +105,7 @@ const AboutMePage = () => {
     {
       icon: Brain,
       title: 'AI Integration Expert',
-      description: 'Implementing locally hosted AI solutions that keep proprietary manufacturing data secure and under control.',
+      description: 'Implementing locally hosted AI solutions that keep proprietary manufacturing data secure and under control, including Epicor Prism for advanced manufacturing analytics and Grow for real-time business intelligence.',
     },
     {
       icon: Shield,

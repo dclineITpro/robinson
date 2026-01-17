@@ -389,7 +389,7 @@ const HomePage = () => {
               {
                 icon: Brain,
                 title: 'AI-Driven Predictive Maintenance',
-                description: 'Leverage IoT sensors and machine learning to predict equipment failures before they impact production.',
+                description: 'Leverage IoT sensors and machine learning to predict equipment failures before they impact production, utilizing Epicor Prism for predictive analytics and Grow for operational dashboards.',
                 color: 'from-orange-500 to-yellow-500',
               },
               {

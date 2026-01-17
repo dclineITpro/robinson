@@ -39,7 +39,7 @@ const DigitalThreadPage = () => {
         'Lower maintenance costs',
         'Improve production reliability',
       ],
-      technologies: ['Azure IoT Hub / AWS IoT', 'Machine Learning models', 'Edge computing for real-time analysis'],
+      technologies: ['Azure IoT Hub / AWS IoT', 'Machine Learning models', 'Edge computing for real-time analysis', 'Epicor Prism for predictive analytics', 'Grow for operational dashboards'],
     },
     {
       icon: Wifi,

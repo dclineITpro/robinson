@@ -62,7 +62,7 @@ const VisionPage = () => {
     {
       icon: Brain,
       title: 'Predictive Maintenance',
-      description: 'IoT sensors + ML to predict equipment failures before they happen.',
+      description: 'IoT sensors + ML to predict equipment failures before they happen, utilizing Epicor Prism for predictive analytics and Grow for operational dashboards.',
       timeline: 'Year 1-2',
       impact: 'High',
     },
