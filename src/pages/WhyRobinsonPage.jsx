@@ -12,23 +12,37 @@ const WhyRobinsonPage = () => {
   const heroRef = useRef(null);
   const companyResearch = [
     {
-      category: 'Company Profile',
+      category: 'Foundation & Ownership',
       items: [
-        { label: 'Founded', value: '1975 (De Pere, WI)' },
+        { label: 'Founded', value: '1923 (De Pere, WI)' },
         { label: 'Ownership', value: '100% Employee-Owned (ESOP)' },
         { label: 'Industry', value: 'Custom Metal Fabrication' },
         { label: 'Ranking', value: 'FAB 40 Top 10' },
-        { label: 'Award Finalist', value: '2026 Wisconsin Manufacturer of the Year' },
       ],
     },
     {
       category: 'Scale & Capacity',
       items: [
-        { label: 'Total Footprint', value: '~1.4 Million Sq. Ft.' },
-        { label: 'Locations', value: '5 WI Locations + IA Expansion' },
+        { label: 'Total Footprint', value: '~1.3 Million Sq. Ft.' },
+        { label: 'Locations', value: '4 Wisconsin Production Facilities + IA Expansion' },
         { label: 'States', value: 'Wisconsin (current) & Iowa (2027)' },
-        { label: 'Expansion', value: 'Altoona, IA — 622,788 Sq. Ft. (2027)' },
-        { label: 'Employees', value: '500+' },
+        { label: 'Expansion', value: 'Altoona, IA — 560K Sq. Ft. (2027)' },
+      ],
+    },
+    {
+      category: 'Core Manufacturing Divisions',
+      items: [
+        { label: 'Fab & Machine', value: 'The core of the company, providing custom metal fabrication, large-scale weldments, and precision machining (milling and turning) for various industries.' },
+        { label: 'Custom Enclosures', value: 'Specializes in large-scale, fully integrated metal enclosures for power generation, battery energy storage systems (BESS), and electrical equipment.' },
+        { label: 'Pipe & Vessel', value: 'Focused on the design and fabrication of ASME-certified pressure vessels, custom tanks, and complex piping skids.' },
+      ],
+    },
+    {
+      category: 'Specialized Business Units',
+      items: [
+        { label: 'Product Handling Concepts (PHC)', value: 'Provides material handling and automation solutions, including conveyors and sortation systems for the food, beverage, and pharmaceutical industries.' },
+        { label: 'Gas Trailer', value: 'Dedicated to the manufacturing of specialized gas and liquid transport/storage trailers.' },
+        { label: 'Coatings', value: 'A high-capacity division focused on industrial painting and powder coating, operating out of a dedicated 178,000-square-foot facility in De Pere.' },
       ],
     },
   ];
