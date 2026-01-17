@@ -76,7 +76,7 @@ const VisionPage = () => {
     {
       icon: Shield,
       title: 'Cybersecurity Hardening',
-      description: 'Zero-trust architecture protecting manufacturing operations.',
+      description: 'Zero-trust architecture protecting manufacturing operations, including NIST 800-171 compliance for government contracts.',
       timeline: 'Immediate',
       impact: 'Critical',
     },
