@@ -352,7 +352,7 @@ const HomePage = () => {
                   </div>
                   <div className="p-4 rounded-xl bg-robinson-blue/10 text-center">
                     <div className="text-3xl font-bold">6</div>
-                    <div className="text-robinson-gray text-sm">Location</div>
+                    <div className="text-robinson-gray text-sm">Locations</div>
                   </div>
                 </div>
               </div>
