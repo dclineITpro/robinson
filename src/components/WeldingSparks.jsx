@@ -234,19 +234,19 @@ const WeldingSparks = () => {
         ctx.beginPath();
         ctx.arc(spark.x, spark.y, sparkRadius, 0, Math.PI * 2);
         
-        // Color transition based on life - brighter molten metal colors
+        // Color transition based on life - brighter molten metal colors with stronger glow
         if (spark.life > 0.7) {
           ctx.fillStyle = '#FFFFFF'; // Hot white
-          ctx.shadowBlur = 8;
-          ctx.shadowColor = 'rgba(255, 255, 255, 0.8)';
+          ctx.shadowBlur = 15;
+          ctx.shadowColor = 'rgba(255, 255, 255, 1)';
         } else if (spark.life > 0.4) {
           ctx.fillStyle = '#FFD700'; // Bright gold/yellow
-          ctx.shadowBlur = 6;
-          ctx.shadowColor = 'rgba(255, 215, 0, 0.8)';
+          ctx.shadowBlur = 12;
+          ctx.shadowColor = 'rgba(255, 215, 0, 1)';
         } else {
           ctx.fillStyle = '#FF8C00'; // Bright orange
-          ctx.shadowBlur = 4;
-          ctx.shadowColor = 'rgba(255, 140, 0, 0.8)';
+          ctx.shadowBlur = 10;
+          ctx.shadowColor = 'rgba(255, 140, 0, 1)';
         }
         
         ctx.fill();
