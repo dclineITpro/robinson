@@ -186,7 +186,7 @@ const AboutMePage = () => {
                 25+ Years of <span className="text-robinson-blue-blue">IT Experience</span>
               </h1>
               <p className="text-robinson-gray text-lg md:text-xl leading-relaxed mb-8">
-                The 622,788 sq. ft. Altoona facility will be the 6th location—it's a greenfield opportunity to build IT infrastructure right from the start.
+                The 560,000 sq. ft. Altoona facility will be the 6th location—it's a greenfield opportunity to build IT infrastructure right from the start.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center gap-2 text-robinson-gray">

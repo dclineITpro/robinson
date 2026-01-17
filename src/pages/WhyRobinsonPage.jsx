@@ -53,7 +53,7 @@ const WhyRobinsonPage = () => {
     { name: 'De Pere Facility 2', type: 'Dedicated Coatings and Painting', sqft: '180,000', address: '2107 American Blvd' },
     { name: 'De Pere Facility 3', type: 'Fabrication and Assembly', sqft: '240,000', address: '2121 American Blvd' },
     { name: 'Manitowoc Campus', type: 'Specialized Welding and Integration', sqft: '137,000', address: '2121 South 30th Street' },
-    { name: 'Altoona, IA (2027)', type: 'Production Facility', sqft: '622,788', isNew: true, address: 'Coming Soon' },
+    { name: 'Altoona, IA (2027)', type: 'Production Facility', sqft: '560,000', isNew: true, address: 'Coming Soon' },
   ];
 
   const whyThisRole = [
