@@ -16,7 +16,7 @@ const DigitalThreadPage = () => {
       title: 'ERP Modernization',
       color: 'from-blue-500 to-cyan-500',
       challenge: 'Multiple locations with potentially disparate systems create data silos and inefficiencies.',
-      solution: 'Implement a unified, cloud-ready ERP platform that provides real-time visibility across all operations.',
+      solution: 'Unify operations across all locations with Epicor Kinetic, utilizing Epicor Prism for advanced analytics and Grow for real-time business intelligence.',
       benefits: [
         'Single source of truth for all operations',
         'Real-time production tracking and scheduling',
@@ -31,7 +31,7 @@ const DigitalThreadPage = () => {
       title: 'AI-Driven Predictive Maintenance',
       color: 'from-green-500 to-emerald-500',
       challenge: 'Unplanned equipment downtime disrupts production schedules and impacts Tier-1 client deliveries.',
-      solution: 'Deploy IoT sensors and machine learning algorithms to predict equipment failures before they occur.',
+      solution: 'Leverage IoT sensors and ML to predict equipment failures before they happen, utilizing Epicor Prism for predictive analytics and Grow for operational dashboards.',
       benefits: [
         'Reduce unplanned downtime by 30%+',
         'Extend equipment lifespan',
@@ -46,7 +46,7 @@ const DigitalThreadPage = () => {
       title: 'OT/IT Convergence',
       color: 'from-purple-500 to-pink-500',
       challenge: 'Shop floor operational technology (OT) is often disconnected from enterprise IT systems.',
-      solution: 'Create a unified data architecture that bridges PLCs, SCADA systems, and enterprise applications.',
+      solution: 'Bridge shop floor systems with enterprise IT for real-time visibility, enabling AI-driven process optimization and ensuring cybersecurity controls extend to operational technology.',
       benefits: [
         'Real-time production visibility',
         'Automated quality tracking',
@@ -89,7 +89,7 @@ const DigitalThreadPage = () => {
     {
       category: 'Security',
       items: [
-        'Zero-trust network architecture',
+        'Zero-trust network architecture with CMMC 2.0 compliance for defense contracts',
         'Industrial firewall between IT/OT',
         'Security Operations Center (SOC) monitoring',
         '24/7 threat detection and response',
