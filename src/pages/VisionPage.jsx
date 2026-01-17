@@ -69,7 +69,7 @@ const VisionPage = () => {
     {
       icon: Wifi,
       title: 'OT/IT Convergence',
-      description: 'Bridge shop floor systems with enterprise IT for real-time visibility, integrating AI-driven insights and robust cybersecurity measures to protect operational data.',
+      description: 'Bridge shop floor systems with enterprise IT for real-time visibility, enabling AI-driven process optimization and ensuring cybersecurity controls extend to operational technology.',
       timeline: 'Year 1-3',
       impact: 'Critical',
     },
@@ -83,14 +83,14 @@ const VisionPage = () => {
     {
       icon: GraduationCap,
       title: 'RTA Tech Enablement',
-      description: 'Expand Robinson Training Academy with technology curriculum, including AI fundamentals, cybersecurity best practices, and advanced data analytics training to prepare employees for Industry 4.0.',
+      description: 'Expand Robinson Training Academy with technology curriculum, including AI literacy, cybersecurity awareness, and digital transformation skills essential for the IT Director role.',
       timeline: 'Year 1',
       impact: 'Medium',
     },
     {
       icon: Cog,
       title: 'Iowa Greenfield IT',
-      description: 'Build world-class IT infrastructure for the new facility, incorporating AI capabilities from day one, zero-trust cybersecurity architecture, and scalable solutions to support Robinson\'s growth ambitions.',
+      description: 'Build world-class IT infrastructure for the new facility, incorporating AI capabilities for predictive maintenance, robust cybersecurity frameworks, and seamless integration with Robinson\'s existing systems.',
       timeline: 'Year 1-2',
       impact: 'Critical',
     },
