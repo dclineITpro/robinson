@@ -33,9 +33,34 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
-          <div className="flex items-center justify-center">
-            <div className="bg-robinson-blue rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-              <img src={robinsonLogo} alt="Robinson Inc." className="h-16 w-auto" />
+          <div>
+            <div className="mb-6">
+              <div className="bg-robinson-blue p-2 rounded-lg inline-block mb-2">
+                <img src={robinsonLogo} alt="Robinson Inc." className="h-14 w-auto drop-shadow-lg" />
+              </div>
+              <div className="text-robinson-gray text-xs font-medium">IT Director Candidate Presentation</div>
+            </div>
+            <p className="text-robinson-gray text-sm leading-relaxed mb-6">
+              20+ years of technology leadership across manufacturing, government, 
+              and enterprise environments.
+            </p>
+            <div className="flex items-center gap-4">
+              <a 
+                href="https://www.linkedin.com/in/dj-cline-22219834/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-robinson-bg flex items-center justify-center text-robinson-gray hover:text-robinson-blue hover:bg-robinson-bg-dark transition-all duration-300"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a 
+                href="https://dclineitpro.github.io/portfolio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-robinson-bg flex items-center justify-center text-robinson-gray hover:text-robinson-blue hover:bg-robinson-bg-dark transition-all duration-300"
+              >
+                <Globe className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
