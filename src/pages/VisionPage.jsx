@@ -55,7 +55,7 @@ const VisionPage = () => {
     {
       icon: Database,
       title: 'ERP Modernization',
-      description: 'Unify operations across all locations with a modern, cloud-ready platform.',
+      description: 'Unify operations across all locations with Epicor Kinetic, utilizing Epicor Prism for advanced analytics and Grow for real-time business intelligence.',
       timeline: 'Year 1-2',
       impact: 'High',
     },
