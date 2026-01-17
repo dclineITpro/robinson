@@ -23,7 +23,7 @@ const WhyRobinsonPage = () => {
     {
       category: 'Scale & Capacity',
       items: [
-        { label: 'Total Footprint', value: '~1.3 Million Sq. Ft.' },
+        { label: 'Total Footprint', value: '~1.4 Million Sq. Ft.' },
         { label: 'Locations', value: '4 Wisconsin Production Facilities + IA Expansion' },
         { label: 'States', value: 'Wisconsin (current) & Iowa (2027)' },
         { label: 'Expansion', value: 'Altoona, IA — 560K Sq. Ft. (2027)' },
