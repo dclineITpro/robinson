@@ -401,9 +401,6 @@ const AboutMePage = () => {
                 Outside of work, I'm an avid fisherman and BBQ competitor. I'd love to bring my prize-winning 
                 BBQ skills to Robinson's events and complement the company's famous fish fry tradition. Know somewhere that could make a custom smoker for such an event? ;)
               </div>
-              <p className="mt-4 text-white/90">
-                As a side note, I also did HVAC (commerical and residential install) for a few years straight out of high school and have the scars to prove it.
-              </p>
             </div>
           </motion.div>
         </div>
