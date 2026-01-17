@@ -19,8 +19,8 @@ const HomePage = () => {
   const y = useTransform(scrollYProgress, [0, 0.5], [0, 100]);
 
   const robinsonStats = [
-    { value: '1.3M', label: 'Sq. Ft.', desc: 'Total Footprint (with Iowa)' },
-    { value: '4', label: 'Locations', desc: '3 WI Facilities + IA Expansion (2027)' },
+    { value: '1.4M', label: 'Sq. Ft.', desc: 'Total Footprint (with Iowa)' },
+    { value: '6', label: 'Locations', desc: '5 WI Locations + IA Expansion (2027)' },
     { value: '100%', label: 'Employee-Owned', desc: 'ESOP Company' },
     { value: 'No. 7', label: 'FAB 40 (2025)', desc: 'Industry Ranking by The Fabricator' },
   ];
@@ -34,7 +34,7 @@ const HomePage = () => {
     {
       icon: Building2,
       title: 'Strategic Growth',
-      description: 'The 560,000 sq. ft. Iowa expansion signals aggressive, forward-thinking leadership.',
+      description: 'The 622,788 sq. ft. Iowa expansion signals aggressive, forward-thinking leadership.',
     },
     {
       icon: Cpu,
@@ -128,7 +128,7 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-12"
           >
             <span className="text-robinson-blue/60 text-sm font-medium uppercase tracking-widest">
@@ -142,7 +142,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.5 }}
               className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
             >
@@ -156,7 +156,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
             >
@@ -170,7 +170,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
             >
@@ -184,7 +184,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-center p-8 rounded-lg bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
             >
@@ -208,13 +208,13 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-12"
           >
             <span className="text-white/70 text-sm font-medium uppercase tracking-widest">
-              I Know Robinson
+              Understanding Robinson
             </span>
-            <p className="text-white text-lg mt-4 max-w-2xl mx-auto">Understanding your business is the foundation of effective IT leadership</p>
+            <p className="text-white text-lg mt-4 max-w-2xl mx-auto">Insight into your business is the foundation of effective IT leadership</p>
           </motion.div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {robinsonStats.map((stat, index) => (
@@ -222,7 +222,7 @@ const HomePage = () => {
                 key={stat.label}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center p-6 rounded-lg bg-white text-robinson-blue shadow-lg hover:shadow-xl transition-all duration-300"
               >
@@ -241,7 +241,7 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <span className="inline-block px-5 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/20 text-robinson-blue text-sm font-medium uppercase tracking-wider mb-6">
@@ -262,7 +262,7 @@ const HomePage = () => {
                 key={item.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-8 rounded-lg bg-robinson-blue text-white shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300"
               >
@@ -290,7 +290,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               className="text-white"
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-base font-medium mb-6">
@@ -301,7 +301,7 @@ const HomePage = () => {
                 The Iowa Expansion Changes Everything
               </h2>
               <p className="text-white/90 text-lg mb-6 leading-relaxed">
-                The 560,000 sq. ft. Altoona facility isn't just growth—it's a greenfield 
+                The 622,788 sq. ft. Altoona facility will be the 5th production location—it's a greenfield 
                 opportunity to build IT infrastructure right from the start.
               </p>
               <p className="text-white/80 mb-8">
@@ -311,7 +311,7 @@ const HomePage = () => {
                 {[
                   'Modern ERP integration from day one',
                   'IoT-enabled predictive maintenance',
-                  'Unified network architecture across all 5 sites',
+                  'Unified network architecture across all 6 sites',
                   'Scalable cloud infrastructure',
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3 text-white/90">
@@ -331,7 +331,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ delay: 0.2 }}
               className="relative"
             >
@@ -343,7 +343,7 @@ const HomePage = () => {
                     <div className="text-robinson-gray text-sm">Square Feet</div>
                   </div>
                   <div className="p-4 rounded-xl bg-robinson-blue/10 text-center">
-                    <div className="text-3xl font-bold">500+</div>
+                    <div className="text-3xl font-bold">100</div>
                     <div className="text-robinson-gray text-sm">New Jobs</div>
                   </div>
                   <div className="p-4 rounded-xl bg-robinson-blue/10 text-center">
@@ -352,7 +352,7 @@ const HomePage = () => {
                   </div>
                   <div className="p-4 rounded-xl bg-robinson-blue/10 text-center">
                     <div className="text-3xl font-bold">5th</div>
-                    <div className="text-robinson-gray text-sm">Location</div>
+                    <div className="text-robinson-gray text-sm">Production Location</div>
                   </div>
                 </div>
               </div>
@@ -367,7 +367,7 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
@@ -383,7 +383,7 @@ const HomePage = () => {
               {
                 icon: Database,
                 title: 'ERP Modernization',
-                description: 'Unify operations across 5 locations with a modern, cloud-ready ERP platform that provides real-time visibility.',
+                description: 'Unify operations across 6 locations with a modern, cloud-ready ERP platform that provides real-time visibility.',
                 color: 'from-blue-500 to-cyan-500',
               },
               {
@@ -403,7 +403,7 @@ const HomePage = () => {
                 key={pillar.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-8 rounded-2xl bg-robinson-blue text-white shadow-lg hover:shadow-xl transition-all duration-300 card-hover"
               >
@@ -419,7 +419,7 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="mt-12 text-center"
           >
             <Link
@@ -439,7 +439,7 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white/90 mb-6">
               Ready to Discuss How I Can Help?

@@ -14,30 +14,32 @@ const WhyRobinsonPage = () => {
     {
       category: 'Company Profile',
       items: [
-        { label: 'Founded', value: '1923 (De Pere, WI)' },
+        { label: 'Founded', value: '1975 (De Pere, WI)' },
         { label: 'Ownership', value: '100% Employee-Owned (ESOP)' },
         { label: 'Industry', value: 'Custom Metal Fabrication' },
         { label: 'Ranking', value: 'FAB 40 Top 10' },
+        { label: 'Award Finalist', value: '2026 Wisconsin Manufacturer of the Year' },
       ],
     },
     {
       category: 'Scale & Capacity',
       items: [
-        { label: 'Total Footprint', value: '~1.3 Million Sq. Ft.' },
-        { label: 'Locations', value: '4 Wisconsin Production Facilities + IA Expansion' },
+        { label: 'Total Footprint', value: '~1.4 Million Sq. Ft.' },
+        { label: 'Locations', value: '5 WI Locations + IA Expansion' },
         { label: 'States', value: 'Wisconsin (current) & Iowa (2027)' },
-        { label: 'Expansion', value: 'Altoona, IA — 560K Sq. Ft. (2027)' },
+        { label: 'Expansion', value: 'Altoona, IA — 622,788 Sq. Ft. (2027)' },
+        { label: 'Employees', value: '500+' },
       ],
     },
   ];
 
   const locations = [
-    { name: 'De Pere Facility 1', type: 'Production Facility', sqft: '220,000', address: '1740 Eisenhower Rd' },
-    { name: 'De Pere Facility 2', type: 'Production Facility', sqft: '180,000', address: '2107 American Blvd' },
-    { name: 'De Pere Facility 3', type: 'Production Facility', sqft: '240,000', address: '2121 American Blvd' },
-    { name: 'Manitowoc Campus', type: 'Production Facility', sqft: '137,000', address: '2121 South 30th Street' },
-    { name: 'De Pere Headquarters', type: 'Headquarters', sqft: '51,000', address: '1580 Mid Valley Dr (Acquired 2025)' },
-    { name: 'Altoona, IA (2027)', type: 'Production Facility', sqft: '560,000', isNew: true, address: 'Coming Soon' },
+    { name: 'De Pere Headquarters', type: 'Corporate/Administrative', sqft: '51,000', address: '1580 Mid Valley Dr (Acquired 2025)' },
+    { name: 'De Pere Facility 1', type: 'Heavy Manufacturing & Main Logistics', sqft: '220,000', address: '1740 Eisenhower Rd' },
+    { name: 'De Pere Facility 2', type: 'Dedicated Coatings and Painting', sqft: '180,000', address: '2107 American Blvd' },
+    { name: 'De Pere Facility 3', type: 'Fabrication and Assembly', sqft: '240,000', address: '2121 American Blvd' },
+    { name: 'Manitowoc Campus', type: 'Specialized Welding and Integration', sqft: '137,000', address: '2121 South 30th Street' },
+    { name: 'Altoona, IA (2027)', type: 'Production Facility', sqft: '622,788', isNew: true, address: 'Coming Soon' },
   ];
 
   const whyThisRole = [
@@ -103,7 +105,8 @@ const WhyRobinsonPage = () => {
           </span>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{}}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 text-shadow"
           >
@@ -111,7 +114,8 @@ const WhyRobinsonPage = () => {
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{}}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-white max-w-3xl mx-auto mb-10 leading-relaxed text-shadow"
           >
@@ -121,7 +125,8 @@ const WhyRobinsonPage = () => {
           {/* Hero CTA Button */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{}}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-auto"
           >
@@ -147,7 +152,8 @@ const WhyRobinsonPage = () => {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
@@ -159,7 +165,7 @@ const WhyRobinsonPage = () => {
               Why <span className="text-robinson-blue">Robinson</span> is the Right Fit
             </h1>
             <p className="text-robinson-gray text-lg md:text-xl leading-relaxed">
-              A 24/7 Midwest manufacturer serving global clients from four Wisconsin facilities and an Iowa expansion underway. This is exactly where my 25+ years of IT leadership delivers measurable impact.
+              A 24/7 Midwest manufacturer serving global clients from five WI locations and an Iowa expansion underway. This is exactly where my 25+ years of IT leadership delivers measurable impact.
             </p>
           </motion.div>
         </div>
@@ -171,14 +177,14 @@ const WhyRobinsonPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               What I Know About <span className="text-white">Robinson</span>
             </h2>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              Demonstrating that I've done my homework on the company, its operations, and its strategic direction.
+              Highlighting my understanding of the company, its operations, and its strategic direction.
             </p>
           </motion.div>
 
@@ -188,7 +194,7 @@ const WhyRobinsonPage = () => {
                 key={section.category}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ delay: index * 0.1 }}
                 className="p-8 rounded-2xl bg-white border border-white/10 shadow-2xl shadow-white/10 drop-shadow-lg hover:-translate-y-1.5 hover:scale-[1.02] transition-transform duration-300"
               >
@@ -209,7 +215,7 @@ const WhyRobinsonPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="p-8 rounded-2xl bg-white/90 border border-white/10"
           >
             <h3 className="text-xl font-bold text-robinson-blue mb-6 text-center">Industries Served</h3>
@@ -236,7 +242,7 @@ const WhyRobinsonPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
@@ -244,7 +250,7 @@ const WhyRobinsonPage = () => {
               Hub-and-Spoke Architecture
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              4 Wisconsin Production Facilities + Iowa Expansion
+              5 WI Locations + IA Expansion
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
               Understanding the multi-site architecture is critical for IT strategy.
@@ -257,7 +263,7 @@ const WhyRobinsonPage = () => {
                 key={location.name}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ delay: index * 0.05 }}
                 className={`p-6 rounded-2xl border transition-all duration-300 drop-shadow-lg ${
                   location.isNew 
@@ -295,12 +301,12 @@ const WhyRobinsonPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-robinson-blue/20 to-robinson-blue/20 border border-gray-300 text-center"
           >
             <h3 className="text-2xl font-bold text-robinson-black mb-4">IT Implication</h3>
             <p className="text-robinson-gray max-w-2xl mx-auto">
-              Managing IT across four Wisconsin production facilities with an Iowa expansion requires unified systems, standardized processes, 
+              Managing IT across five WI locations with an Iowa expansion requires unified systems, standardized processes, 
               Our strategic hub-and-spoke model centers production facilities in Wisconsin with expansion into Iowa. the perfect opportunity to implement these from day one.
             </p>
           </motion.div>
@@ -313,7 +319,7 @@ const WhyRobinsonPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-white/10 border border-white/30 text-white text-sm font-medium mb-6">
@@ -330,7 +336,7 @@ const WhyRobinsonPage = () => {
                 key={reason.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ delay: index * 0.1 }}
                 className="p-8 rounded-2xl bg-white/90 border border-white/10 drop-shadow-lg hover:border-white/30 hover:scale-105 hover:-translate-y-2 transition-all duration-300"
               >
@@ -346,10 +352,10 @@ const WhyRobinsonPage = () => {
       </section>
 
       {/* ESOP Deep Dive */}
-      <section className="py-24 bg-gradient-to-br from-robinson-blue to-robinson-blue-dark relative overflow-hidden">
+      <section className="py-24 bg-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                           linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+                           linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)`,
           backgroundSize: '50px 50px',
         }} />
 
@@ -358,16 +364,15 @@ const WhyRobinsonPage = () => {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
+              transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                The ESOP Advantage
-              </h2>
-              <p className="text-white/90 text-lg mb-6 leading-relaxed">
+              <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">The ESOP Advantage</h2>
+              <p className="text-robinson-gray text-lg mb-6 leading-relaxed">
                 "Build your career, own the company." This isn't just a tagline—it's a 
                 fundamental difference in how Robinson operates.
               </p>
-              <p className="text-white/90 mb-8">
+              <p className="text-robinson-gray mb-8">
                 As an IT Director, I understand that employee ownership means:
               </p>
               <ul className="space-y-4">
@@ -378,8 +383,8 @@ const WhyRobinsonPage = () => {
                   'Higher retention means institutional knowledge stays',
                   'Alignment between IT initiatives and business outcomes',
                 ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 text-white/90">
-                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                  <li key={index} className="flex items-start gap-3 text-robinson-gray">
+                    <CheckCircle className="w-5 h-5 text-robinson-blue flex-shrink-0 mt-0.5" />
                     {item}
                   </li>
                 ))}
@@ -389,14 +394,14 @@ const WhyRobinsonPage = () => {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ delay: 0.2 }}
             >
-              <div className="bg-white/10 backdrop-blur-sm rounded-3xl border border-white/20 p-8 text-center">
-                <Users className="w-16 h-16 text-white mx-auto mb-6" />
-                <div className="text-5xl font-bold text-white mb-2">100%</div>
-                <div className="text-white text-xl mb-6">Employee-Owned</div>
-                <p className="text-white/80">
+              <div className="bg-robinson-blue/10 backdrop-blur-sm rounded-3xl border border-robinson-blue/20 p-8 text-center">
+                <Users className="w-16 h-16 text-robinson-blue mx-auto mb-6" />
+                <div className="text-5xl font-bold text-robinson-black mb-2">100%</div>
+                <div className="text-robinson-gray text-xl mb-6">Employee-Owned</div>
+                <p className="text-robinson-gray">
                   Every team member has a stake in Robinson's success—and in the 
                   technology systems that drive it.
                 </p>
@@ -407,17 +412,17 @@ const WhyRobinsonPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-robinson-blue">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Now See What I Would Do
             </h2>
-            <p className="text-robinson-gray text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
               Based on Robinson's 24/7 operations, multi-site supply chain, and growth ambitions, 
               here's my vision for digital transformation.
             </p>

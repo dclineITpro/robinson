@@ -54,7 +54,7 @@ const CapabilitiesPreview = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{}}
           transition={{ duration: 0.8 }}
           className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16"
         >
@@ -86,7 +86,7 @@ const CapabilitiesPreview = () => {
               key={capability.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Link
@@ -119,7 +119,7 @@ const CapabilitiesPreview = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
             <div className="h-full p-8 rounded-2xl bg-gradient-to-br from-robinson-blue/20 to-robinson-blue/5 border border-robinson-blue/30 flex flex-col justify-center">

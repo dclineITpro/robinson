@@ -190,7 +190,7 @@ const DigitalThreadPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -208,7 +208,7 @@ const DigitalThreadPage = () => {
                 key={pillar.title}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ delay: index * 0.1 }}
                 className="grid lg:grid-cols-2 gap-12 items-start"
               >
@@ -268,7 +268,7 @@ const DigitalThreadPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
@@ -279,7 +279,7 @@ const DigitalThreadPage = () => {
               Iowa Facility IT Blueprint
             </h2>
             <p className="text-robinson-gray text-lg max-w-2xl mx-auto">
-              The 560,000 sq. ft. Altoona facility is a once-in-a-career opportunity 
+              The 622,788 sq. ft. Altoona facility is a once-in-a-career opportunity 
               to build IT infrastructure right from the start.
             </p>
           </motion.div>
@@ -290,7 +290,7 @@ const DigitalThreadPage = () => {
                 key={section.category}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ delay: index * 0.1 }}
                 className="p-6 rounded-2xl bg-white border border-robinson-blue/20 drop-shadow-lg hover:scale-105 hover:-translate-y-2 transition-all duration-500"
               >
@@ -310,7 +310,7 @@ const DigitalThreadPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="mt-12 p-8 rounded-2xl bg-robinson-blue text-white drop-shadow-lg text-center"
           >
             <h3 className="text-2xl font-bold text-white mb-4">The Advantage of Greenfield</h3>
@@ -330,7 +330,7 @@ const DigitalThreadPage = () => {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
             >
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/30 text-white text-sm font-medium mb-6">
                 <Settings className="w-4 h-4" />
@@ -352,7 +352,7 @@ const DigitalThreadPage = () => {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{}}
               transition={{ delay: 0.2 }}
             >
               <div className="p-6 rounded-2xl bg-white text-robinson-blue shadow-lg drop-shadow-lg hover:scale-105 hover:-translate-y-2 transition-all duration-500">
@@ -381,7 +381,7 @@ const DigitalThreadPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-robinson-blue/10 border border-robinson-blue/30 text-robinson-blue text-sm font-medium mb-6">
@@ -409,7 +409,7 @@ const DigitalThreadPage = () => {
                 key={item.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ delay: index * 0.1 }}
                 className="p-6 rounded-2xl bg-robinson-blue text-white shadow-lg drop-shadow-lg hover:shadow-xl hover:drop-shadow-xl transition-all duration-300"
               >
@@ -436,7 +436,7 @@ const DigitalThreadPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Ready to Make This Real?

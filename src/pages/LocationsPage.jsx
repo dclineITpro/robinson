@@ -78,13 +78,13 @@ const LocationsPage = () => {
       name: 'Altoona',
       state: 'Iowa',
       type: 'New Facility - 2027',
-      sqft: '560,000',
+      sqft: '622,788',
       employees: '100+ (Projected)',
       capabilities: ['Full-Service Fabrication', 'Advanced Automation', 'Powder Coating', 'Assembly'],
       address: 'Coming Soon - Altoona, IA',
       phone: '(515) 555-0000',
       email: 'sales@robinsoninc.com',
-      description: 'Our most ambitious project: a massive 560,000 sq. ft. state-of-the-art facility opening in 2027, expanding our Midwest footprint.',
+      description: 'Our most ambitious project: a massive 622,788 sq. ft. state-of-the-art facility opening in 2027, expanding our Midwest footprint.',
       featured: true,
       isNew: true,
       coordinates: { lat: 41.6442, lng: -93.4647 },
@@ -447,7 +447,7 @@ const LocationsPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-white/20 text-robinson-black text-sm font-medium mb-6">
@@ -455,7 +455,7 @@ const LocationsPage = () => {
               Strategic Expansion
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-robinson-black mb-6">
-              560,000 Sq. Ft. Iowa Facility
+              622,788 Sq. Ft. Iowa Facility
             </h2>
             <p className="text-robinson-gray text-lg mb-10 max-w-2xl mx-auto">
               Our Altoona, Iowa facility represents the largest single investment in Robinson's 

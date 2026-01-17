@@ -42,7 +42,7 @@ const IowaCountdown = () => {
   ];
 
   const features = [
-    { icon: Building2, text: '560,000 Sq. Ft. Facility' },
+    { icon: Building2, text: '622,788 Sq. Ft. Facility' },
     { icon: MapPin, text: 'Altoona, Iowa' },
     { icon: Calendar, text: 'Opening 2027' },
   ];
@@ -71,7 +71,7 @@ const IowaCountdown = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8 }}
           >
             {/* Badge */}
@@ -86,7 +86,7 @@ const IowaCountdown = () => {
             </h2>
 
             <p className="text-robinson-black/80 text-lg mb-8 leading-relaxed">
-              Our most ambitious project yet: a state-of-the-art 560,000 square foot 
+              Our most ambitious project yet: a state-of-the-art 622,788 square foot 
               manufacturing facility in Altoona, Iowa. This expansion represents our 
               commitment to growth, innovation, and creating new opportunities for 
               employee-owners.
@@ -122,7 +122,7 @@ const IowaCountdown = () => {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-gray-300 p-8 lg:p-12">
@@ -136,7 +136,7 @@ const IowaCountdown = () => {
                     key={unit.label}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{}}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="text-center"
                   >
@@ -166,7 +166,7 @@ const IowaCountdown = () => {
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: '45%' }}
-                    viewport={{ once: true }}
+                    viewport={{}}
                     transition={{ duration: 1.5, ease: 'easeOut' }}
                     className="h-full bg-gradient-to-r from-robinson-blue to-robinson-blue-light rounded-full"
                   />

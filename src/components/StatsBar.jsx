@@ -37,7 +37,7 @@ const StatsBar = () => {
   const stats = [
     {
       icon: Building2,
-      value: 1.3,
+      value: 1.4,
       suffix: ' Million',
       label: 'Square Feet',
       description: 'Manufacturing Space',
@@ -51,10 +51,10 @@ const StatsBar = () => {
     },
     {
       icon: MapPin,
-      value: 5,
+      value: 6,
       suffix: '',
       label: 'Locations',
-      description: '4 in WI + Iowa Expansion',
+      description: '6 Locations (5 WI + 1 IA)',
       prefix: '',
     },
   ];
@@ -74,7 +74,7 @@ const StatsBar = () => {
               key={stat.label}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="text-center group"
             >

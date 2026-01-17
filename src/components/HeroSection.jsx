@@ -93,7 +93,7 @@ const HeroSection = () => {
           >
             From precision laser cutting to 60-foot powder coat booths, Robinson delivers 
             world-class custom fabrication for Tier-1 global clients. Now expanding with our 
-            massive 560,000 sq. ft. Iowa facility.
+            massive 622,788 Sq. Ft. Iowa facility.
           </motion.p>
 
           {/* CTA Buttons */}
