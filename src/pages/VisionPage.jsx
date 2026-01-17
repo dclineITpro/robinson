@@ -76,7 +76,7 @@ const VisionPage = () => {
     {
       icon: Shield,
       title: 'Cybersecurity Hardening',
-      description: 'Zero-trust architecture protecting manufacturing operations, including NIST 800-171 compliance for government contracts.',
+      description: 'Zero-trust architecture protecting manufacturing operations, transitioning from NIST 800-171 foundation to CMMC 2.0 with third-party audits required by 2026 for defense contracts.',
       timeline: 'Immediate',
       impact: 'Critical',
     },
