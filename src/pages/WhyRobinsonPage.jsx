@@ -14,7 +14,7 @@ const WhyRobinsonPage = () => {
     {
       category: 'Foundation & Ownership',
       items: [
-        { label: 'Founded', value: '1923 (De Pere, WI)' },
+        { label: 'Founded', value: '1975 (De Pere, WI)' },
         { label: 'Ownership', value: '100% Employee-Owned (ESOP)' },
         { label: 'Industry', value: 'Custom Metal Fabrication' },
         { label: 'Ranking', value: 'FAB 40 Top 10' },

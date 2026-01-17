@@ -7,7 +7,7 @@ import {
 
 const AboutPage = () => {
   const timeline = [
-    { year: '1923', event: 'Founded by Al Robinson in Green Bay, Wisconsin' },
+    { year: '1975', event: 'Founded by the Robinson family in Green Bay, Wisconsin' },
     { year: '1975', event: 'Maurie and Tom Robinson launch Robinson Metal & Roofing' },
     { year: '2020', event: 'Expanded with new facility in De Pere' },
     { year: '2023', event: 'Became 100% Employee-Owned (ESOP)' },
@@ -77,10 +77,10 @@ const AboutPage = () => {
               About Robinson
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Built on <span className="text-robinson-blue">Excellence</span> Since 1923
+              Built on <span className="text-robinson-blue">Excellence</span> Since 1975
             </h1>
             <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-8">
-              For over a century, Robinson has been a leader in custom metal fabrication. 
+              For nearly five decades, Robinson has been a leader in custom metal fabrication. 
               Now as a 100% employee-owned company, we bring an ownership mentality to every project.
             </p>
             <div className="flex flex-wrap gap-4">
