@@ -398,7 +398,7 @@ const AboutMePage = () => {
                 help Robinson write its next chapter.
               </p>
               <div className="bg-white text-robinson-blue p-4 rounded-lg font-bold mt-4">
-                Outside of work, I'm a passionate fisherman and BBQ competitor. I'd love to bring my prize-winning 
+                Outside of work, I'm an avid fisherman and BBQ competitor. I'd love to bring my prize-winning 
                 BBQ skills to Robinson's events and complement the company's famous fish fry tradition. Know somewhere that could make a custom smoker for such an event? ;)
               </div>
               <p className="mt-4 text-white/90">
