@@ -79,21 +79,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Robinson Facts */}
+          {/* Robinson Logo Card */}
           <div>
-            <h4 className="text-robinson-black font-semibold mb-4">Robinson Facts</h4>
-            <ul className="space-y-3">
-              {footerLinks.robinsonFacts.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    to={link.path}
-                    className="text-robinson-gray hover:text-robinson-blue transition-colors duration-300 text-sm"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className="bg-robinson-blue rounded-lg p-8 text-center shadow-lg">
+              <img src={robinsonLogo} alt="Robinson Inc." className="h-16 w-auto mx-auto" />
+            </div>
           </div>
 
           {/* My Strategy */}
